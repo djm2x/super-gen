@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Groupe AL OMRANE - Alomrane</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+  <link rel="icon" type="image/png" href="assets/favicon.png"/>
+<link rel="stylesheet" href="styles.a3f00ac4542d2b671b88.css"></head>
+
+<body class="mat-typography mat-app-background">
+  <style>
+
+    #splash-screen {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* background: #fcfcfc; */
+      z-index: 99999;
+      pointer-events: none;
+    }
+
+    #splash-screen .header {
+      margin-bottom: 7vh;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 370px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      background: #ddd;
+      border-radius: 50%;
+    }
+
+    .inner-circle {
+      width: 92%;
+      height: 92%;
+      background: white;
+      border-radius: 50%;
+      margin: auto;
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+
+    }
+
+    .spinner {
+      height: 0;
+      width: 0;
+      border-radius: 50%;
+      border-right: 50px solid #f44336;
+      border-top: 50px solid transparent;
+      border-left: 50px solid transparent;
+      border-bottom: 50px solid transparent;
+
+      animation: rotate 1.5s infinite linear;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <div id="splash-screen" class="mat-app-background">
+    <div class="header">
+      <img src="assets/logo-mini.png" width="250">
+    </div>
+    <!-- <div class="wrapper">
+      <div class="ball-scale-multiple">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div> -->
+    <div class="circle">
+      <div class="spinner"></div>
+      <div class="inner-circle mat-app-background"></div>
+    </div>
+    <div class="footer">
+      <!-- <img src="assets/logo-mini.png" width="35"> -->
+      <p>&copy; <span id="date"></span>&nbsp;<span id="appname">Time Track</span> </p>
+    </div>
+  </div>
+  <app-root></app-root>
+  <script>
+    document.querySelector('#date').innerHTML = new Date().getFullYear();
+  </script>
+<script src="runtime-es2015.b1d932d73e9b482db4ff.js" type="module"></script><script src="runtime-es5.b1d932d73e9b482db4ff.js" nomodule defer></script><script src="polyfills-es5.bf328977897be0d2576f.js" nomodule defer></script><script src="polyfills-es2015.38e6d259b4bbb7813560.js" type="module"></script><script src="main-es2015.cec321657e99d03fc3af.js" type="module"></script><script src="main-es5.cec321657e99d03fc3af.js" nomodule defer></script></body>
+
+</html>

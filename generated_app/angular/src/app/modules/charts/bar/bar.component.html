@@ -1,0 +1,16 @@
+<div>
+
+  <div  >
+    <div style="display: block; width: 100%;" [style.height]="height">
+      <h3 style="color: gray; margin: 5px;">{{title}}</h3>
+      <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+        [legend]="barChartLegend" [chartType]="barChartType" [plugins]="pieChartPlugins" [colors]="pieChartColors"
+        (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+
+      <button class="m-1" mat-mini-fab color="accent" (click)="randomize()"><mat-icon>compare_arrows</mat-icon></button>
+
+    </div>
+
+
+  </div>
+</div>

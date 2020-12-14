@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Angular</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="shortcut icon" href="//cvtic.unilim.fr/pluginfile.php/1/theme_boost/favicon/1584449612/cvtic-2015-o.png" /> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+<body>
+  <style>
+    /* #splash-screen {
+      z-index: 99999;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    } */
+
+    #splash-screen {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #fcfcfc;
+      z-index: 99999;
+      pointer-events: none;
+    }
+
+    #splash-screen .header {
+      margin-bottom: 7vh;
+    }
+
+    @-webkit-keyframes ball-scale-multiple {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes ball-scale-multiple {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    .ball-scale-multiple {
+      position: relative;
+    }
+
+    .ball-scale-multiple>div:nth-child(2) {
+      -webkit-animation-delay: -0.4s;
+      animation-delay: -0.4s;
+    }
+
+    .ball-scale-multiple>div:nth-child(3) {
+      -webkit-animation-delay: -0.2s;
+      animation-delay: -0.2s;
+    }
+
+    .ball-scale-multiple>div {
+      background-color: #2304bfb9;
+      border-radius: 100%;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      position: absolute;
+      left: -45px;
+      top: 0;
+      opacity: 0;
+      margin: 0;
+      width: 90px;
+      height: 90px;
+      -webkit-animation: ball-scale-multiple 1s 0s linear infinite;
+      animation: ball-scale-multiple 1s 0s linear infinite;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer p {
+      margin: 0;
+      font-weight: bold;
+    }
+
+
+  </style>
+
+  <div id="splash-screen">
+    <div class="header">
+      <img src="assets/1.jpg" width="350" >
+    </div>
+    <div class="wrapper">
+      <div class="ball-scale-multiple">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="footer">
+      <img src="assets/1.jpg" width="30" height="30">
+      <p>&nbsp;- Super-Gen</p>
+    </div>
+  </div>
+  <app-root></app-root>
+</body>
+</html>

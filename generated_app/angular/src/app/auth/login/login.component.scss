@@ -1,0 +1,10 @@
+h1 {
+  color: var(--warn);
+}
+.mywith {
+  @media screen and (min-width: 600px) {
+    width: 25rem;
+  }
+
+  margin: 0 auto;
+}

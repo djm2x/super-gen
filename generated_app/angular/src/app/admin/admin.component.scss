@@ -1,0 +1,24 @@
+.router-active {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
+
+mat-toolbar {
+  min-height: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  span {
+    cursor: pointer;
+  }
+}
+
+mat-sidenav-container {
+  mat-sidenav {
+
+    // box-shadow: 3px 0  5px -1px rgba(56, 56, 56, 0.2), 6px 0 10px 0 rgba(65, 65, 65, 0.14), 1px 0 18px 0 rgba(65, 65, 65, 0.12);
+  }
+}

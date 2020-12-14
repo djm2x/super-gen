@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-12 d-flex flex-column mb-3">
+
+      <!-- accept="application/pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" -->
+      <input hidden style="display: none;" accept=".ts" #file1 type="file" multiple="false"
+        (change)="upload(file1.files)">
+
+      <button mat-raised-button type="button" (click)="openInput(file1)" color="accent">
+        <mat-icon>add</mat-icon> {{nameBtn}}
+      </button>
+
+
+
+    <div class="">
+      <p *ngFor="let e of listOfNames; let i=index" style="font-size: .7em;margin: 0;">
+        <!-- <img [src]="setIcon(e)" alt="pdf/word">  -->
+        - {{e.substring(14)}}
+
+        <button mat-icon-button color="warn" (click)="remove(e)" type="button">
+          <mat-icon style="font-size: 1.3em !important;">delete_sweep</mat-icon>
+        </button>
+      </p>
+    </div>
+  </div>
+</div>
