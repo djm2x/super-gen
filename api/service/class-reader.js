@@ -4,9 +4,14 @@ export class ClassReader {
 
   constructor() { }
 
-  methode(MODELS_TS) {
+  /**
+   * 
+   * @param {string} modelsTs 
+   */
+
+  methode(modelsTs) {
     const pathAbs = !process.env.IS_DEV ? `${process.cwd()}/dist` : `${process.cwd()}`
-    const program = ts.createProgram([`${pathAbs}/api/public/${MODELS_TS}`], {
+    const program = ts.createProgram([modelsTs], {
       module: ts.ModuleKind.ES2015,
       moduleResolution: ts.ModuleResolutionKind.NodeJs,
       target: ts.ScriptTarget.Latest

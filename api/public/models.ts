@@ -24,6 +24,15 @@ export class User {
   role = new Role();
 }
 
+export class Options {
+  modules = {
+    settings: ['Role'],
+    mymenu: ['User']
+  };
+
+  title = 'my super app';
+}
+
 export class Role {
   id = 0;
   nom = '';

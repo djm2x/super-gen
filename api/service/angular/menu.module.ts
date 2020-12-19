@@ -13,59 +13,88 @@ export class MenuModule {
 
 
     generateTs() {
+        // get content
+        const adminFolder = `${this.configs.angularAppFolder}/admin`;
 
-        // if (file === ADMIN_ROUTING_MODULE_TS) {
-            // get content
-            const adminFolder = `${this.configs.angularAppFolder}/admin`;
+        const modules = this.configs.modules;
 
-            let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${ADMIN_ROUTING_MODULE_TS}`, 'utf8');
-            let contentHtml = fse.readFileSync(`${this.configs.pathBaseFiles}/${ADMIN_COMPONENT_HTML}`, 'utf8');
-            // let imports = '';
-            let routes = '';
-            let navs = '';
-            let navs2 = '';
-            let menus =
-                `<mat-list-item [routerLink]="['/${adminFolder}/{class}']" routerLinkActive="router-active">
-                    <span>{Class}s</span>
-                    <mat-divider></mat-divider>
-                </mat-list-item>\r\n`;
-            // edit content
-            this.configs.classes.forEach(e => {
-                // for ADMIN_ROUTING_MODULE_TS
-                routes += `{ path: '${e.class}', loadChildren: () => import('./${e.class}/${e.class}.module').then(m => m.${this.helper.Cap(e.class)}Module), data: {animation: '${e.class}'} },\r\n`;
 
-                // for ADMIN_COMPONENT_HTML
-                if (e.class.includes('user') || this.helper.propertyPrimitiveLenght(e) <= 4) {
-                    // console.log(`>>>>>>>>>>>>>>nav 2 ${e.class} / ${this.helper.propertyPrimitiveLenght(e)}`);
-                    navs2 += menus.replace(/\{class\}/g, e.class);
-                    navs2 = navs2.replace(/\{Class\}/g, this.helper.Cap(e.class) );
-                } else {
-                    // console.log(`<<<<<<<<<<<<<<< nav 1 ${e.class} / ${this.helper.propertyPrimitiveLenght(e)}`);
-                    navs += menus.replace(/\{class\}/g, e.class);
-                    navs = navs.replace(/\{Class\}/g, this.helper.Cap(e.class) );
+
+
+        let routingContent = fse.readFileSync(`${this.configs.pathBaseFiles}/${ADMIN_ROUTING_MODULE_TS}`, 'utf8');
+        let adminHtml = fse.readFileSync(`${this.configs.pathBaseFiles}/${ADMIN_COMPONENT_HTML}`, 'utf8');
+        // let imports = '';
+        let routes = '';
+        let navs = '';
+        let navs2 = '';
+        const menus = `
+        <mat-list-item [routerLink]="['/${adminFolder}/{class}']" routerLinkActive="router-active">
+            <span>{Class}s</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>\r\n`;
+        // edit content
+        this.configs.classes.forEach(e => {
+
+            // loop foe every module folder inside admin folder
+            modules.forEach(m => {
+                if (m.module.toLowerCase() !== 'admin') {
+
+                    m.classes.forEach(c => {
+
+                        // check the current class in {this.configs.classes} if it should be in this module
+                        if (c === e.class) {
+                            navs += menus.replace(/\{class\}/g, e.class);
+                            navs = navs.replace(/\{Class\}/g, this.helper.Cap(e.class));
+
+                        }
+                        
+                        
+                    });
+                    
+                    adminHtml = adminHtml.replace('{navs}', navs);
+                    // create new module folder
+                    fse.ensureDirSync(`${this.configs.angularAppFolder}/${adminFolder}/${m.module}`);
+                    fse.writeFileSync(`${this.configs.angularAppFolder}/${adminFolder}/${m.module}/${ADMIN_ROUTING_MODULE_TS}`, routingContent);
+                    fse.writeFileSync(`${this.configs.angularAppFolder}/${adminFolder}/${m.module}/${ADMIN_COMPONENT_HTML}`, adminHtml);
+
                 }
-
             });
 
 
-            content = content.replace('/*{routes}*/', routes);
-            contentHtml = contentHtml.replace('{navs}', navs);
-            contentHtml = contentHtml.replace('{navs2}', navs2);
-            // write content in new location
-            fse.ensureDirSync(`${this.configs.angularAppFolder}/${adminFolder}`);
-            fse.writeFileSync(`${this.configs.angularAppFolder}/${adminFolder}/${ADMIN_ROUTING_MODULE_TS}`, content);
-            fse.writeFileSync(`${this.configs.angularAppFolder}/${adminFolder}/${ADMIN_COMPONENT_HTML}`, contentHtml);
+            // for ADMIN_ROUTING_MODULE_TS
+            routes += `{ path: '${e.class}', loadChildren: () => import('./${e.class}/${e.class}.module').then(m => m.${this.helper.Cap(e.class)}Module), data: {animation: '${e.class}'} },\r\n`;
 
-            this.helper.progress(`>> ${ADMIN_ROUTING_MODULE_TS} done`);
-            this.helper.progress(`>> ${ADMIN_COMPONENT_HTML} done`);
-            
-            if (true /*this.configs.initFiles*/) {
-                fse.copySync(`${this.configs.angularAppFolder}/${ADMIN_MODULE_TS}`, `${this.configs.angularAppFolder}/${adminFolder}/${ADMIN_MODULE_TS}`);
-                this.helper.progress(`>> ${ADMIN_MODULE_TS} done`);
+            // for ADMIN_COMPONENT_HTML
+            if (e.class.includes('user') || this.helper.propertyPrimitiveLenght(e) <= 4) {
+                // console.log(`>>>>>>>>>>>>>>nav 2 ${e.class} / ${this.helper.propertyPrimitiveLenght(e)}`);
+                navs2 += menus.replace(/\{class\}/g, e.class);
+                navs2 = navs2.replace(/\{Class\}/g, this.helper.Cap(e.class));
+            } else {
+                // console.log(`<<<<<<<<<<<<<<< nav 1 ${e.class} / ${this.helper.propertyPrimitiveLenght(e)}`);
+                navs += menus.replace(/\{class\}/g, e.class);
+                navs = navs.replace(/\{Class\}/g, this.helper.Cap(e.class));
             }
 
-            fse.copySync(`${this.configs.pathAbs}/api/public/${MODELS_TS}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
-            this.helper.progress(`>> ${MODELS_TS} done`);
+        });
+
+
+        // routingContent = routingContent.replace('/*{routes}*/', routes);
+        // adminHtml = adminHtml.replace('{navs}', navs);
+        // adminHtml = adminHtml.replace('{navs2}', navs2);
+        // write content in new location
+        // fse.ensureDirSync(`${this.configs.angularAppFolder}/${adminFolder}`);
+        // fse.writeFileSync(`${this.configs.angularAppFolder}/${adminFolder}/${ADMIN_ROUTING_MODULE_TS}`, routingContent);
+        // fse.writeFileSync(`${this.configs.angularAppFolder}/${adminFolder}/${ADMIN_COMPONENT_HTML}`, adminHtml);
+
+        // this.helper.progress(`>> ${ADMIN_ROUTING_MODULE_TS} done`);
+        // this.helper.progress(`>> ${ADMIN_COMPONENT_HTML} done`);
+
+        // if (true /*this.configs.initFiles*/) {
+        //     fse.copySync(`${this.configs.angularAppFolder}/${ADMIN_MODULE_TS}`, `${this.configs.angularAppFolder}/${adminFolder}/${ADMIN_MODULE_TS}`);
+        //     this.helper.progress(`>> ${ADMIN_MODULE_TS} done`);
         // }
+
+        fse.copySync(`${this.configs.pathAbs}/api/public/${MODELS_TS}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
+        this.helper.progress(`>> ${MODELS_TS} done`);
     }
 }

@@ -30,7 +30,7 @@ const UPDATE_COMPONENT_TS = 'update.component.ts';
 
 
 const USER_SERVICE_TS = 'class.service.ts';
-const MODELS_TS = 'models.ts';
+// const MODELS_TS = 'models.ts';
 
 export interface IConfigs {
     pathAbs: string;
@@ -39,13 +39,24 @@ export interface IConfigs {
     currentBaseFile: string;
     pathBaseFiles: string;
     replaceModels: boolean;
-    classes: Model[]
+    classes: Model[],
+    modules: { module: string, classes: string[] }[];
+}
+
+export interface IOptions {
+    modules: {
+        settings: string[],
+        admin: string[],
+        [key: string]: string[],
+    };
+    title: string;
 }
 
 export class MapHelper {
-    private pathAbs = !process.env.IS_DEV ? `${process.cwd()}/dist` : `${process.cwd()}`;
+    private pathAbs = this.isDev ? `${process.cwd()}` : `${process.cwd()}/dist`;
     private generatedAppPath = `${this.pathAbs}/generated_app`;
     private helper: HelperFunctions = Container.get(HelperFunctions);
+    private modelsTs = `${this.pathAbs}/api/public/models.ts`;
 
     private configs = {
         pathAbs: this.pathAbs,
@@ -54,10 +65,26 @@ export class MapHelper {
         currentBaseFile: '',
         pathBaseFiles: '',
         replaceModels: true,
-        classes: new ClassReader().methode(MODELS_TS),
+        classes: new ClassReader().methode(this.modelsTs) as Model[],
+        modules: [],
     }
 
-    constructor() { }
+    constructor(private isDev: boolean) { }
+
+    onInit() {
+        const i = this.configs.classes.findIndex(e => e.class.includes('options'.toLowerCase()));
+
+        if (i > -1) {
+            const Options = require(this.modelsTs).Options;
+
+            this.configs.classes.splice(i, 1);
+            const opt: IOptions = new Options();
+
+            for (const [module, classes] of Object.entries(opt.modules)) {
+                this.configs.modules.push({module, classes})
+            }
+        }
+    }
 
     mapAngular() {
         // const primitivetypes = ['string', 'boolean', 'Date', 'number'];
@@ -72,18 +99,18 @@ export class MapHelper {
             new ModelsHandler(this.helper, this.configs).generateTs();
 
             switch (file) {
-                // case ADMIN_ROUTING_MODULE_TS: new MenuModule(this.helper, configs).generateTs(); break;
-                // case USER_ROUTING_MODULE_TS: new MenuModule(this.helper, configs); break;
-                // case USER_MODULE_TS: new MenuModule(this.helper, configs); break;
-                
+                // case ADMIN_ROUTING_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs(); break;
+                // case USER_ROUTING_MODULE_TS: new MenuModule(this.helper, this.configs); break;
+                case USER_MODULE_TS: new MenuModule(this.helper, this.configs); break;
+
                 case USER_COMPONENT_HTML: new ClassComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case USER_COMPONENT_TS: new ClassComponent(this.helper, this.configs).generateTs(); break;
-                
+
                 case UPDATE_COMPONENT_HTML: new UpdateComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case UPDATE_COMPONENT_TS: new UpdateComponent(this.helper, this.configs).generateTs(); break;
-                
+
                 case UOW_SERVICE_TS: new UowClass(this.helper, this.configs).generateTs(); break;
-            
+
                 default: break;
             }
         });
@@ -108,10 +135,10 @@ export class MapHelper {
             switch (file) {
                 case DATASEEDING_CS: new DataSeeding(this.helper, this.configs).generateTs(); break;
                 case MYCONTEXT_CS: new MyContext(this.helper, this.configs).generateTs(); break;
-                
+
                 case CLASSCONTROLLER_CS: new ClassController(this.helper, this.configs).generateTs(); break;
                 case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
-            
+
                 default: break;
             }
         });
@@ -122,9 +149,9 @@ export class MapHelper {
 
 
 // launch programme
- 
-const m = new MapHelper();
 
-m.mapAngular();
+// const m = new MapHelper();
 
-m.mapAsp();
+// m.mapAngular();
+
+// m.mapAsp();
