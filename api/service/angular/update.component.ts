@@ -53,7 +53,7 @@ export class UpdateComponent {
         // else if (file === UPDATE_COMPONENT_HTML) {
         const adminFolder = `${this.configs.angularAppFolder}/admin`;
 
-        const distination = adminFolder;
+        // const distination = adminFolder;
 
         let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${UPDATE_COMPONENT_HTML}`, 'utf8');
 
@@ -61,7 +61,7 @@ export class UpdateComponent {
 
         // edit content
         this.configs.classes.forEach(e => {
-            fse.ensureDirSync(`${distination}/${e.class}`);
+            
             let formFields = '';
             let images = '';
 
@@ -103,13 +103,17 @@ export class UpdateComponent {
 
             let newContent = content.replace('{formFields}', formFields);
 
+            const moduleName = this.helper.moduleName(this.configs.modules, e.class);
+            const path = moduleName ? `${adminFolder}/${moduleName}` : adminFolder;
+
+
 
             // write content in new location
-            fse.ensureDirSync(`${distination}/${e.class}/update`);
-            fse.writeFileSync(`${distination}/${e.class}/update/update.component.html`, newContent);
+            fse.ensureDirSync(`${path}/${e.class}/update`);
+            fse.writeFileSync(`${path}/${e.class}/update/update.component.html`, newContent);
             this.helper.progress(`>> ${e.class}/update.component.html done`);
 
-            fse.copySync(`${this.configs.pathBaseFiles}/${UPDATE_COMPONENT_SCSS}`, `${distination}/${e.class}/update/${UPDATE_COMPONENT_SCSS}`)
+            fse.copySync(`${this.configs.pathBaseFiles}/${UPDATE_COMPONENT_SCSS}`, `${path}/${e.class}/update/${UPDATE_COMPONENT_SCSS}`)
             this.helper.progress(`>> ${e.class}/update.component.scss done`);
         });
 
@@ -121,7 +125,7 @@ export class UpdateComponent {
         // else if (file === UPDATE_COMPONENT_TS) {
         const adminFolder = `${this.configs.angularAppFolder}/admin`;
 
-        const distination = adminFolder;
+        // const distination = adminFolder;
 
         let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${UPDATE_COMPONENT_TS}`, 'utf8');
         // edit content
@@ -180,10 +184,13 @@ export class UpdateComponent {
                 newContent = newContent.replace(/this.eventSubmitFromParent.next\(true\)\;/g, '');
             }
 
+            const moduleName = this.helper.moduleName(this.configs.modules, e.class);
+            const path = moduleName ? `${adminFolder}/${moduleName}` : adminFolder;
+
 
             // write content in new location
-            fse.ensureDirSync(`${distination}/${e.class}/update`);
-            fse.writeFileSync(`${distination}/${e.class}/update/update.component.ts`, newContent);
+            fse.ensureDirSync(`${path}/${e.class}/update`);
+            fse.writeFileSync(`${path}/${e.class}/update/update.component.ts`, newContent);
             this.helper.progress(`>> ${e.class}/update.component.ts done`);
         });
         // }

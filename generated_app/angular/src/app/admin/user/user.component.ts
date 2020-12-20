@@ -10,7 +10,6 @@ import { User } from 'src/app/models/models';
 import { ExcelService } from 'src/app/shared/excel.service';
 import { FormControl } from '@angular/forms';
 import { startWith } from 'rxjs/operators';
-import { MyrouteService } from '../../myroute.service';
 
 @Component({
   selector: 'app-user',
@@ -50,8 +49,7 @@ idRole = new FormControl(0);
   chartTabSelectedEvent = new Subject();
 
   constructor(public uow: UowService, public dialog: MatDialog, private excel: ExcelService
-    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string, public breadcrumb: MyrouteService ) { 
-      this.breadcrumb.name = 'Users';
+    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) {
     }
 
   ngOnInit() {
@@ -161,7 +159,7 @@ this.idRole.setValue(0);
   }
 
   add() {
-    this.openDialog(new User(), `Ajouter ${this.breadcrumb.name}`, false).subscribe(result => {
+    this.openDialog(new User(), `Ajouter User`, false).subscribe(result => {
       if (result) {
         this.update.next(true);
       }
@@ -169,7 +167,7 @@ this.idRole.setValue(0);
   }
 
   edit(o: User) {
-    this.openDialog(o, `Modifier ${this.breadcrumb.name}`, false).subscribe((result: User) => {
+    this.openDialog(o, `Modifier User`, false).subscribe((result: User) => {
       if (result) {
         this.update.next(true);
       }
@@ -177,7 +175,7 @@ this.idRole.setValue(0);
   }
 
   detail(o: User) {
-    this.openDialog(o, `Détail ${this.breadcrumb.name}`, true).subscribe((result: User) => {
+    this.openDialog(o, `Détail User`, true).subscribe((result: User) => {
       if (result) {
         this.update.next(true);
       }
@@ -185,7 +183,7 @@ this.idRole.setValue(0);
   }
 
   async delete(id: number) {
-    const r = await this.mydialog.openDialog(this.breadcrumb.name).toPromise();
+    const r = await this.mydialog.openDialog('this.breadcrumb.name').toPromise();
     if (r === 'ok') {
       const sub = this.uow.users.delete(id).subscribe(() => this.update.next(true));
 
@@ -237,7 +235,7 @@ this.idRole.setValue(0);
   async deleteList() {
     const r = await this.mydialog.openDialog('role').toPromise();
     if (r === 'ok') {
-      const sub = this.uow.users.deleteRange(this.selectedList).subscribe(() => {
+      const sub = this.uow.users.deleteRange(this.selectedList as any).subscribe(() => {
         this.selectedList = [];
         this.update.next(true);
       });

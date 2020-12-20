@@ -9,6 +9,18 @@ export class HelperFunctions {
         console.log('>>>>>>>>>>>>>>HelperFunctions')
     }
 
+    public moduleName(modules: { module: string; classes: string[]; }[], className: string): string {
+        let module = null;
+        modules.forEach(m => {
+            if (m.classes.map(e => e.toLowerCase()).includes(className.toLowerCase())) {
+                module = m.module;
+                return;
+            }
+        });
+
+        return module;
+    }
+
     public Cap(word: string): string {
         return word.charAt(0).toUpperCase() + word.slice(1);
     }

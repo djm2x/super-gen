@@ -9,8 +9,9 @@ const routes: Routes = [
   {
     path: '', component: AdminComponent,
     children: [
-      { path: '', redirectTo: 'pointage', pathMatch: 'full' },
-      { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule), canActivate: [AdminGuard] }
+      { path: '', redirectTo: 'menu', pathMatch: 'full' },
+      { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule), canActivate: [AdminGuard] },
+      { path: 'menu', loadChildren: () => import('./menu/menu.module').then(m => m.MenuModule) },
     ]
   },
 ];

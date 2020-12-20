@@ -11,18 +11,18 @@
 //   imageUrl = '';
 // }
 
-export class User {
-  id = 0;
-  nom = '';
-  email = '';
-  password = '';
-  isActive = false;
-  imageUrl = '';
-  profil = '';
+// export class User {
+//   id = 0;
+//   nom = '';
+//   email = '';
+//   password = '';
+//   isActive = false;
+//   imageUrl = '';
+//   profil = '';
 
-  idRole = 0;
-  role = new Role();
-}
+//   idRole = 0;
+//   role = new Role();
+// }
 
 export class Options {
   modules = {
@@ -36,5 +36,5 @@ export class Options {
 export class Role {
   id = 0;
   nom = '';
-  users: User[] = [];
+  // users: User[] = [];
 }

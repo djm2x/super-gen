@@ -10,7 +10,6 @@ import { Role } from 'src/app/models/models';
 import { ExcelService } from 'src/app/shared/excel.service';
 import { FormControl } from '@angular/forms';
 import { startWith } from 'rxjs/operators';
-import { MyrouteService } from '../../myroute.service';
 
 @Component({
   selector: 'app-role',
@@ -37,7 +36,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   nom = new FormControl('');
 
 
-  
+
 
   dataSubject = new Subject();
   isListTabSelected = true;
@@ -46,8 +45,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   chartTabSelectedEvent = new Subject();
 
   constructor(public uow: UowService, public dialog: MatDialog, private excel: ExcelService
-    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string, public breadcrumb: MyrouteService ) { 
-      this.breadcrumb.name = 'Roles';
+    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) {
     }
 
   ngOnInit() {
@@ -148,7 +146,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   }
 
   add() {
-    this.openDialog(new Role(), `Ajouter ${this.breadcrumb.name}`, false).subscribe(result => {
+    this.openDialog(new Role(), `Ajouter Role`, false).subscribe(result => {
       if (result) {
         this.update.next(true);
       }
@@ -156,7 +154,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   }
 
   edit(o: Role) {
-    this.openDialog(o, `Modifier ${this.breadcrumb.name}`, false).subscribe((result: Role) => {
+    this.openDialog(o, `Modifier Role`, false).subscribe((result: Role) => {
       if (result) {
         this.update.next(true);
       }
@@ -164,7 +162,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   }
 
   detail(o: Role) {
-    this.openDialog(o, `Détail ${this.breadcrumb.name}`, true).subscribe((result: Role) => {
+    this.openDialog(o, `Détail Role`, true).subscribe((result: Role) => {
       if (result) {
         this.update.next(true);
       }
@@ -172,7 +170,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   }
 
   async delete(id: number) {
-    const r = await this.mydialog.openDialog(this.breadcrumb.name).toPromise();
+    const r = await this.mydialog.openDialog('this.breadcrumb.name').toPromise();
     if (r === 'ok') {
       const sub = this.uow.roles.delete(id).subscribe(() => this.update.next(true));
 
@@ -224,7 +222,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   async deleteList() {
     const r = await this.mydialog.openDialog('role').toPromise();
     if (r === 'ok') {
-      const sub = this.uow.roles.deleteRange(this.selectedList).subscribe(() => {
+      const sub = this.uow.roles.deleteRange(this.selectedList as any).subscribe(() => {
         this.selectedList = [];
         this.update.next(true);
       });

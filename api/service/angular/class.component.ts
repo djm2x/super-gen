@@ -45,7 +45,6 @@ export class ClassComponent {
 
         // edit content
         this.configs.classes.forEach(e => {
-            fse.ensureDirSync(`${adminFolder}/${e.class}`);
             let search = '';
             let rows = '';
 
@@ -115,13 +114,16 @@ export class ClassComponent {
             //     newContent = newContent.replace('{tabsEnds}', '');
             // }
 
+            const moduleName = this.helper.moduleName(this.configs.modules, e.class);
+            const path = moduleName ? `${adminFolder}/${moduleName}` : adminFolder;
+
 
             // write content in new location
-            fse.ensureDirSync(`${adminFolder}/${e.class}`);
-            fse.writeFileSync(`${adminFolder}/${e.class}/${e.class}.component.html`, newContent);
+            fse.ensureDirSync(`${path}/${e.class}`);
+            fse.writeFileSync(`${path}/${e.class}/${e.class}.component.html`, newContent);
             this.helper.progress(`>> ${e.class}.component.html done`);
 
-            fse.copySync(`${this.configs.pathBaseFiles}/${CLASS_COMPONENT_SCSS}`, `${adminFolder}/${e.class}/${e.class}.component.scss`)
+            fse.copySync(`${this.configs.pathBaseFiles}/${CLASS_COMPONENT_SCSS}`, `${path}/${e.class}/${e.class}.component.scss`)
             this.helper.progress(`>> ${e.class}.component.scss done`);
         });
         // }
@@ -133,7 +135,6 @@ export class ClassComponent {
         let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${this.configs.currentBaseFile}`, 'utf8');
         // edit content
         this.configs.classes.forEach(e => {
-            fse.ensureDirSync(`${adminFolder}/${e.class}`);
             let columnDefs = '';
             let formControlInit = '';
             let formControlReset = '';
@@ -199,9 +200,13 @@ export class ClassComponent {
             newContent = newContent.replace('/*{params3}*/', params2);
             newContent = newContent.replace('/*{selections}*/', selections);
 
+
+            const moduleName = this.helper.moduleName(this.configs.modules, e.class);
+            const path = moduleName ? `${adminFolder}/${moduleName}` : adminFolder;
+
             // write content in new location
-            fse.ensureDirSync(`${adminFolder}/${e.class}`);
-            fse.writeFileSync(`${adminFolder}/${e.class}/${e.class}.component.ts`, newContent);
+            fse.ensureDirSync(`${path}/${e.class}`);
+            fse.writeFileSync(`${path}/${e.class}/${e.class}.component.ts`, newContent);
             this.helper.progress(`>> ${e.class}.component.ts done`);
         });
 

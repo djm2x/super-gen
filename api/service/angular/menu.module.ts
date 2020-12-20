@@ -35,7 +35,7 @@ export class MenuModule {
         // edit content
         this.configs.classes.forEach(e => {
 
-            // loop foe every module folder inside admin folder
+            // for every module will create a folder inside admin folder
             modules.forEach(m => {
                 if (m.module.toLowerCase() !== 'admin') {
 

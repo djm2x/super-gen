@@ -1,7 +1,6 @@
 import * as fse from 'fs-extra';
 import { ClassReader } from './class-reader';
 import { HelperFunctions, Model, IConfig } from './helper.functions';
-import Container from 'typedi';
 import { MenuModule } from './angular/menu.module';
 import { UowClass } from './angular/uow.class';
 import { ClassComponent } from './angular/class.component';
@@ -10,26 +9,27 @@ import { DataSeeding } from './asp/data.seeding';
 import { MyContext } from './asp/my.context';
 import { ClassController } from './asp/class.controller';
 import { AccountController } from './asp/account.controller';
-import { ModelsHandler } from './angular/models.handler';
+// import { ModelsHandler } from './angular/models.handler';
+import { ClassModule } from './angular/class.module';
 
 const ADMIN_ROUTING_MODULE_TS = 'admin-routing.module.ts';
 const ADMIN_MODULE_TS = 'admin.module.ts';
 const ADMIN_COMPONENT_HTML = 'admin.component.html';
 const UOW_SERVICE_TS = 'uow.service.ts';
 
-const USER_ROUTING_MODULE_TS = 'class-routing.module.ts';
-const USER_MODULE_TS = 'class.module.ts';
+const CLASS_ROUTING_MODULE_TS = 'class-routing.module.ts';
+const CLASS_MODULE_TS = 'class.module.ts';
 
-const USER_COMPONENT_HTML = 'class.component.html';
-const USER_COMPONENT_SCSS = 'class.component.scss';
-const USER_COMPONENT_TS = 'class.component.ts';
+const CLASS_COMPONENT_HTML = 'class.component.html';
+const CLASS_COMPONENT_SCSS = 'class.component.scss';
+const CLASS_COMPONENT_TS = 'class.component.ts';
 
 const UPDATE_COMPONENT_HTML = 'update.component.html';
 const UPDATE_COMPONENT_SCSS = 'update.component.scss';
 const UPDATE_COMPONENT_TS = 'update.component.ts';
 
 
-const USER_SERVICE_TS = 'class.service.ts';
+const CLASS_SERVICE_TS = 'class.service.ts';
 // const MODELS_TS = 'models.ts';
 
 export interface IConfigs {
@@ -54,11 +54,12 @@ export interface IOptions {
 
 export class MapHelper {
     private pathAbs = this.isDev ? `${process.cwd()}` : `${process.cwd()}/dist`;
-    private generatedAppPath = `${this.pathAbs}/generated_app`;
-    private helper: HelperFunctions = Container.get(HelperFunctions);
+    private generatedAppPath0 = `${this.pathAbs}/generated_app`;
+    private generatedAppPath = `${this.pathAbs}/test`;
+    private helper = new HelperFunctions();
     private modelsTs = `${this.pathAbs}/api/public/models.ts`;
 
-    private configs = {
+    private configs: IConfigs = {
         pathAbs: this.pathAbs,
         angularAppFolder: `${this.generatedAppPath}/angular/src/app`,
         aspFolder: this.generatedAppPath,
@@ -75,13 +76,13 @@ export class MapHelper {
         const i = this.configs.classes.findIndex(e => e.class.includes('options'.toLowerCase()));
 
         if (i > -1) {
-            const Options = require(this.modelsTs).Options;
+            const { Options } = require(this.modelsTs);
 
             this.configs.classes.splice(i, 1);
             const opt: IOptions = new Options();
 
             for (const [module, classes] of Object.entries(opt.modules)) {
-                this.configs.modules.push({module, classes})
+                this.configs.modules.push({ module, classes })
             }
         }
     }
@@ -96,15 +97,17 @@ export class MapHelper {
 
             this.configs.currentBaseFile = file;
 
-            new ModelsHandler(this.helper, this.configs).generateTs();
+            // new ModelsHandler(this.helper, this.configs).generateTs();
 
             switch (file) {
-                // case ADMIN_ROUTING_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs(); break;
-                // case USER_ROUTING_MODULE_TS: new MenuModule(this.helper, this.configs); break;
-                case USER_MODULE_TS: new MenuModule(this.helper, this.configs); break;
 
-                case USER_COMPONENT_HTML: new ClassComponent(this.helper, this.configs).generateHTMLCss(); break;
-                case USER_COMPONENT_TS: new ClassComponent(this.helper, this.configs).generateTs(); break;
+                // case ADMIN_ROUTING_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs(); break;
+
+                // case CLASS_ROUTING_MODULE_TS: new ClassModule(this.helper, this.configs); break;
+                case CLASS_MODULE_TS: new ClassModule(this.helper, this.configs).generateTs(); break;
+
+                case CLASS_COMPONENT_HTML: new ClassComponent(this.helper, this.configs).generateHTMLCss(); break;
+                case CLASS_COMPONENT_TS: new ClassComponent(this.helper, this.configs).generateTs(); break;
 
                 case UPDATE_COMPONENT_HTML: new UpdateComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case UPDATE_COMPONENT_TS: new UpdateComponent(this.helper, this.configs).generateTs(); break;

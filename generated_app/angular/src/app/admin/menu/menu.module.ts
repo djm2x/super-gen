@@ -1,8 +1,6 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { SettingsRoutingModule } from './settings-routing.module';
-import { SettingsComponent } from './settings.component';
+import { MenuRoutingModule } from './menu-routing.module';
 //
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
@@ -18,12 +16,23 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RoleComponent } from './role/role.component';
+
+@Component({
+  selector: 'app-menu',
+  template: '<router-outlet></router-outlet>',
+})
+export class MenuComponent { }
+
 
 @NgModule({
-  declarations: [SettingsComponent],
+  declarations: [
+    MenuComponent,
+    RoleComponent,
+  ],
   imports: [
     CommonModule,
-    SettingsRoutingModule,
+    MenuRoutingModule,
     //
     MatProgressSpinnerModule,
     MatTableModule,
@@ -41,4 +50,4 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatCheckboxModule,
   ]
 })
-export class SettingsModule { }
+export class MenuModule { }

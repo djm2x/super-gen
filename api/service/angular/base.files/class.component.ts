@@ -10,7 +10,6 @@ import { User$ } from 'src/app/models/models';
 import { ExcelService } from 'src/app/shared/excel.service';
 import { FormControl } from '@angular/forms';
 import { startWith } from 'rxjs/operators';
-import { MyrouteService } from '../../myroute.service';
 
 @Component({
   selector: 'app-user',
@@ -45,8 +44,7 @@ export class User$Component implements OnInit, OnDestroy {
   chartTabSelectedEvent = new Subject();
 
   constructor(public uow: UowService, public dialog: MatDialog, private excel: ExcelService
-    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string, public breadcrumb: MyrouteService ) { 
-      this.breadcrumb.name = 'User$s';
+    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) { 
     }
 
   ngOnInit() {
@@ -133,18 +131,18 @@ export class User$Component implements OnInit, OnDestroy {
     // this.chartTabSelectedEvent.next(index === 1);
   }
 
-  openDialog(o: User$, text, bool) {
+  openDialog(o: User$, text) {
     const dialogRef = this.dialog.open(UpdateComponent, {
       width: '1100px',
       disableClose: true,
-      data: { model: o, title: text, visualisation: bool }
+      data: { model: o, title: text }
     });
 
     return dialogRef.afterClosed();
   }
 
   add() {
-    this.openDialog(new User$(), `Ajouter ${this.breadcrumb.name}`, false).subscribe(result => {
+    this.openDialog(new User$(), `Ajouter User$`).subscribe(result => {
       if (result) {
         this.update.next(true);
       }
@@ -152,7 +150,7 @@ export class User$Component implements OnInit, OnDestroy {
   }
 
   edit(o: User$) {
-    this.openDialog(o, `Modifier ${this.breadcrumb.name}`, false).subscribe((result: User$) => {
+    this.openDialog(o, `Modifier User$`).subscribe((result: User$) => {
       if (result) {
         this.update.next(true);
       }
@@ -160,7 +158,7 @@ export class User$Component implements OnInit, OnDestroy {
   }
 
   detail(o: User$) {
-    this.openDialog(o, `Détail ${this.breadcrumb.name}`, true).subscribe((result: User$) => {
+    this.openDialog(o, `Détail User$`).subscribe((result: User$) => {
       if (result) {
         this.update.next(true);
       }
@@ -168,7 +166,7 @@ export class User$Component implements OnInit, OnDestroy {
   }
 
   async delete(id: number) {
-    const r = await this.mydialog.openDialog(this.breadcrumb.name).toPromise();
+    const r = await this.mydialog.openDialog('User$').toPromise();
     if (r === 'ok') {
       const sub = this.uow.users.delete(id).subscribe(() => this.update.next(true));
 
@@ -220,7 +218,7 @@ export class User$Component implements OnInit, OnDestroy {
   async deleteList() {
     const r = await this.mydialog.openDialog('role').toPromise();
     if (r === 'ok') {
-      const sub = this.uow.users.deleteRange(this.selectedList).subscribe(() => {
+      const sub = this.uow.users.deleteRange(this.selectedList as any).subscribe(() => {
         this.selectedList = [];
         this.update.next(true);
       });

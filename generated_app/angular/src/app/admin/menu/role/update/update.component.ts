@@ -32,11 +32,7 @@ export class UpdateComponent implements OnInit, OnDestroy {
     this.title = this.data.title;
     this.visualisation = this.data.visualisation;
     this.createForm();
-    if (this.o.id !== 0) {
-      this.selectChange('region', this.o.idRegion);
-      this.selectChange('province', this.o.idProvince);
-      setTimeout(() => this.createForm(), 300);
-    }
+    
     /*{imagesFrom}*/
 
     setTimeout(() => {
@@ -44,17 +40,6 @@ export class UpdateComponent implements OnInit, OnDestroy {
     }, 100);
   }
 
-  selectChange(name: string, id: number) {
-    if (name === 'region') {
-      this.uow.provinces.getByForeignkey(id).subscribe(r => {
-        this.provinces = r;
-      });
-    } else if (name === 'province'){
-      this.uow.communes.getByForeignkey(id).subscribe(r => {
-        this.communes = r;
-      });
-    }
-  }
 
   onNoClick(): void {
     this.dialogRef.close();
