@@ -1,0 +1,65 @@
+<mat-toolbar color="warn" class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <button mat-button (click)="snav.toggle()" routerLinkActive="active">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <p>App name</p>
+    <span style="flex: 1 1 auto;"></span>
+
+    <button mat-button [matMenuTriggerFor]="beforeMenu">Bienvenue, Me</button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+      <button mat-menu-item [routerLink]="['/admin/compte']">Info Compte</button>
+      <button mat-menu-item (click)="disconnect()">Se déconnecter</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!--  -->
+<mat-sidenav-container #sidenav class="example-sidenav-container h-100" style=" z-index: 9;">
+  <mat-sidenav #snav [mode]="'side'" [opened]="true" [fixedInViewport]="true" fixedTopGap="49.9">
+    <mat-nav-list class="list" style="width: 220px; padding: 0;">
+      <div class="logo">
+        <img src="assets/1.jpg" alt="mourabit mohamed" width="220">
+      </div>
+
+      <mat-list-item [routerLink]="['/admin/blog']" routerLinkActive="router-link-active">
+                        <mat-icon>home</mat-icon>&nbsp;<span>blog</span>
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+
+
+      <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Paramétrage
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-list-item [routerLink]="['/admin/user']" routerLinkActive="router-link-active">
+                        <mat-icon>home</mat-icon>&nbsp;<span>user</span>
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+<mat-list-item [routerLink]="['/admin/role']" routerLinkActive="router-link-active">
+                        <mat-icon>home</mat-icon>&nbsp;<span>role</span>
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+<mat-list-item [routerLink]="['/admin/category']" routerLinkActive="router-link-active">
+                        <mat-icon>home</mat-icon>&nbsp;<span>category</span>
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+
+
+        </mat-expansion-panel>
+      </mat-accordion>
+      <mat-divider></mat-divider>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <main [@routeAnimations]="prepareRoute(o)" style="margin-top: 65px; overflow-x: hidden;">
+      <div class="p-2">
+        <router-outlet #o="outlet"></router-outlet>
+      </div>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

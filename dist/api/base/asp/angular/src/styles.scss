@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap-css-only/css/bootstrap.min.css";
+// @import "../node_modules/bootstrap-css-only/css/bootstrap-grid.min.css";
+// @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '../node_modules/ngx-toastr/toastr.css';
+@import "./mat_table.scss";
+@import "./iconfont/material-icons.css";
+
+@import './variables';
+@include mat-core();
+
+@include angular-material-theme($pink-bluegrey-theme);
+
+
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: cursive, Roboto, "Helvetica Neue", sans-serif;
+  // --primary: map-get($pink-bluegrey-theme, primary);
+  --primary: green;
+}
+
+.mat-dialog-container {
+  padding: 0 !important;
+  .mat-dialog-content {
+    padding: 0 !important;
+
+  }
+}
+
+.mat-expansion-panel-body {
+  padding: 0 16px 16px !important;
+}
+
+mat-label {
+  text-transform: capitalize;
+}
