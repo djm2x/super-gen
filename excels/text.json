@@ -1,0 +1,170 @@
+[
+    {
+        "id0": 1,
+        "id": 1,
+        "name": "Le renforcement de l'Etat de droit et la séparation des pouvoirs",
+        "nameAr": "تعزيز حكم القانون وفصل السلط"
+    },
+    {
+        "id0": 1,
+        "id": 2,
+        "name": "le système de la justice",
+        "nameAr": "منظومة العدالة"
+    },
+    {
+        "id0": 2,
+        "id": 3,
+        "name": "La ratification et l'adhésion aux instruments internationaux des droits de l'homme",
+        "nameAr": "الانضمام للصكوك الدولية لحقوق الإنسان"
+    },
+    {
+        "id0": 2,
+        "id": 4,
+        "name": "La coopération avec les mécanismes onusiens des droits de l'homme",
+        "nameAr": "التعاون مع الآليات الأممية لحقوق الإنسان"
+    },
+    {
+        "id0": 2,
+        "id": 5,
+        "name": "Le suivi des résultats des conférences et des déclarations internationales",
+        "nameAr": "متابعة نتائج وتوصيات المؤتمرات الدولية"
+    },
+    {
+        "id0": 3,
+        "id": 6,
+        "name": "Les droits culturels",
+        "nameAr": "الحقوق الثقافية"
+    },
+    {
+        "id0": 3,
+        "id": 7,
+        "name": "Le droit à la santé",
+        "nameAr": "الحق في الصحة"
+    },
+    {
+        "id0": 3,
+        "id": 8,
+        "name": "Le droit à l’éducation",
+        "nameAr": "الحق في والتعليم"
+    },
+    {
+        "id0": 3,
+        "id": 9,
+        "name": "Le droit au travail",
+        "nameAr": "الحق في الشغل"
+    },
+    {
+        "id0": 3,
+        "id": 10,
+        "name": "Le droit au développement",
+        "nameAr": "الحق في التنمية"
+    },
+    {
+        "id0": 3,
+        "id": 11,
+        "name": "Le droit et l’accès à l’eau",
+        "nameAr": "الحق في الولوج إلى الماء"
+    },
+    {
+        "id0": 3,
+        "id": 12,
+        "name": "Le droit à un logement convenable",
+        "nameAr": "الحق في السكن اللائق"
+    },
+    {
+        "id0": 3,
+        "id": 13,
+        "name": "Le Droit à l’environnement et au développement durable",
+        "nameAr": "الحق في البيئة والتنمية المستدامة"
+    },
+    {
+        "id0": 4,
+        "id": 14,
+        "name": "La protection du droit à la vie, l’éradication de toutes les formes de torture et de mauvais traitements et la lutte contre l’impunité",
+        "nameAr": "الحق في الحياة ومناهضة كافة أشكال التعذيب والإفلات من العقاب"
+    },
+    {
+        "id0": 4,
+        "id": 15,
+        "name": "Droits des prisonniers",
+        "nameAr": "حقوق السجناء"
+    },
+    {
+        "id0": 4,
+        "id": 16,
+        "name": "La réparation des victimes de violations flagrantes des droits de l’homme",
+        "nameAr": "جبر ضرر ضحايا انتهاكات حقوق الإنسان"
+    },
+    {
+        "id0": 4,
+        "id": 17,
+        "name": "La promotion de la participation à la vie publique et la vie politique",
+        "nameAr": "المشاركة في الحياة العامة والحياة السياسية"
+    },
+    {
+        "id0": 4,
+        "id": 18,
+        "name": "La protection de la liberté d’opinion et d’expression",
+        "nameAr": "حماية حرية الرأي والتعبير"
+    },
+    {
+        "id0": 4,
+        "id": 19,
+        "name": "La garantie de la liberté de réunion et d’association",
+        "nameAr": "حرية التجمع وتكوين الجمعيات"
+    },
+    {
+        "id0": 4,
+        "id": 20,
+        "name": "La promotion du droit à l’information et le droit à la vie privée",
+        "nameAr": "الحق في المعلومة والحق في الخصوصية"
+    },
+    {
+        "id0": 4,
+        "id": 21,
+        "name": "La garantie de la liberté de conscience et de croyance",
+        "nameAr": "حرية الضمير والمعتقد"
+    },
+    {
+        "id0": 5,
+        "id": 22,
+        "name": "La promotion et la protection des droits des femmes",
+        "nameAr": "حقوق المرأة"
+    },
+    {
+        "id0": 5,
+        "id": 23,
+        "name": "La promotion et la protection des droits des enfants",
+        "nameAr": "حقوق الطفل"
+    },
+    {
+        "id0": 5,
+        "id": 24,
+        "name": "La promotion et la protection des droits des personnes handicapées",
+        "nameAr": "حقوق الأشخاص المعاقين"
+    },
+    {
+        "id0": 5,
+        "id": 25,
+        "name": "La promotion et la protection des droits de l’homme des migrants",
+        "nameAr": "حقوق المهاجرين"
+    },
+    {
+        "id0": 5,
+        "id": 26,
+        "name": "La lutte contre la traite des êtres humains",
+        "nameAr": "الاتجار بالبشر"
+    },
+    {
+        "id0": 6,
+        "id": 27,
+        "name": "Education et formation aux droits de l’Homme",
+        "nameAr": "التدريب والتكوين في مجال حقوق الإنسان"
+    },
+    {
+        "id0": 6,
+        "id": 28,
+        "name": "Diffusion de la culture des droits de l’Homme",
+        "nameAr": "نشر ثقافة حقوق الإنسان"
+    }
+]

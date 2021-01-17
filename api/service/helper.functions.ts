@@ -37,7 +37,11 @@ export class HelperFunctions {
         });
         // console.log(parentClass)
         if (parentClass) {
-            return { classNav, displayproperty: parentClass.properties[1].name, type : this.lowerFirst(realType) }
+            return { 
+                classNav, 
+                displayproperty: parentClass.properties[1] ? parentClass.properties[1].name : 'displayproperty', 
+                type : this.lowerFirst(realType) 
+            }
         }
         // console.log('>>>>>>>>>>>>>>>>', { classNav, displayproperty: 'name', type : this.lowerFirst(realType) }) 
         return { classNav, displayproperty: 'name', type : this.lowerFirst(realType) }

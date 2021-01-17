@@ -76,14 +76,21 @@ export class MapHelper {
         const i = this.configs.classes.findIndex(e => e.class.includes('options'.toLowerCase()));
 
         if (i > -1) {
-            const { Options } = require(this.modelsTs);
+            try {
+                const { Options } = require(this.modelsTs);
 
-            this.configs.classes.splice(i, 1);
-            const opt: IOptions = new Options();
+                this.configs.classes.splice(i, 1);
+                const opt: IOptions = new Options();
+    
+                for (const [module, classes] of Object.entries(opt.modules)) {
+                    this.configs.modules.push({ module, classes })
+                } 
+            } catch (error) {
+                const e: Error = error;
 
-            for (const [module, classes] of Object.entries(opt.modules)) {
-                this.configs.modules.push({ module, classes })
+                console.log(e.message)
             }
+            
         }
     }
 

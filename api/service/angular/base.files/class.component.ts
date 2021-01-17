@@ -7,8 +7,6 @@ import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { DeleteService } from 'src/app/components/delete/delete.service';
 import { User$ } from 'src/app/models/models';
-import { ExcelService } from 'src/app/shared/excel.service';
-import { FormControl } from '@angular/forms';
 import { startWith } from 'rxjs/operators';
 
 @Component({
@@ -19,7 +17,7 @@ import { startWith } from 'rxjs/operators';
 export class User$Component implements OnInit, OnDestroy {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
-  update = new EventEmitter();
+  update = new Subject<boolean>();
   isLoadingResults = true;
   resultsLength = 0;
   isRateLimitReached = false;
@@ -37,13 +35,7 @@ export class User$Component implements OnInit, OnDestroy {
 
   /*{selections}*/
 
-  dataSubject = new Subject();
-  isListTabSelected = true;
-  isChartTabSelected = true;
-  listTabSelectedEvent = new Subject();
-  chartTabSelectedEvent = new Subject();
-
-  constructor(public uow: UowService, public dialog: MatDialog, private excel: ExcelService
+  constructor(public uow: UowService, public dialog: MatDialog
     , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) { 
     }
 
@@ -64,27 +56,12 @@ export class User$Component implements OnInit, OnDestroy {
       }
     );
 
-    const sub2 = merge(...[this.chartTabSelectedEvent, this.update]).pipe(startWith(null as any)).subscribe(r => {
-
-      if (this.isChartTabSelected) {
-        this.getAllForStatistique(
-          /*{params}*/
-        );
-      }
-    }
-    );
-
     this.subs.push(sub);
-    this.subs.push(sub2);
   }
 
   reset() {
     /*{formControlReset}*/
     this.update.next(true);
-  }
-
-  generateExcel() {
-    this.excel.json_to_sheet(this.dataSource);
   }
 
   search() {
@@ -102,33 +79,6 @@ export class User$Component implements OnInit, OnDestroy {
     );
 
     this.subs.push(sub);
-  }
-
-  getAllForStatistique(/*{params2}*/) {
-    const sub = this.uow.users.getAllForStatistique(/*{params2}*/).subscribe(
-      (r: any[]) => {
-        console.log(r);
-        const barChartLabels = r.map(e => e.name);
-        const barChartData = [
-          { data: [], label: 'name' },
-        ];
-
-        r.forEach(e => {
-          barChartData[0].data.push(e.value);
-        });
-
-        this.dataSubject.next({barChartLabels, barChartData, title: 'User$'});
-      }
-    );
-
-    this.subs.push(sub);
-  }
-
-  selectedIndexChange(index: number) {
-    // this.isListTabSelected = index === 0;
-    // this.isChartTabSelected = index === 1;
-    // this.listTabSelectedEvent.next(index === 0);
-    // this.chartTabSelectedEvent.next(index === 1);
   }
 
   openDialog(o: User$, text) {

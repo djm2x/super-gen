@@ -1,6 +1,8 @@
 **/e2e
 **/.vscode
 **/node_modules
+**/dist
+**/test
 **/*.zip
 **/*.xlsx
 
@@ -8,6 +10,7 @@
 **/fotos
 
 **/app_source
-**/didh
-**/excels
+# **/didh
+**/old
+# **/excels
 **/database-scripte
