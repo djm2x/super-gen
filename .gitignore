@@ -4,7 +4,7 @@
 **/dist
 **/test
 **/*.zip
-**/*.xlsx
+# **/*.xlsx
 
 
 **/fotos
