@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { User$Component } from './user.component';
+import { RoleComponent } from './role.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'list', pathMatch: 'full'},
-  { path: 'list', component: User$Component }
+  { path: 'list', component: RoleComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class User$RoutingModule { }
+export class RoleRoutingModule { }

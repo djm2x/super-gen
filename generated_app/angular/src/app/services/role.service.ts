@@ -11,13 +11,9 @@ export class RoleService extends SuperService<Role> {
     super('roles');
   }
 
-  getAll(startIndex, pageSize, sortBy, sortDir, nom, ) {
+  getAll(startIndex, pageSize, sortBy, sortDir, name, ) {
 
-    return this.http.get(`${this.urlApi}/${this.controller}/getAll/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${nom}`);
-  }
-
-  getAllForStatistique(nom, ) {
-    return this.http.get(`${this.urlApi}/${this.controller}/getAllForStatistique/${nom}`);
+    return this.http.get(`${this.urlApi}/${this.controller}/getAll/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${name}`);
   }
 
 }

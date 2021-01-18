@@ -2,7 +2,6 @@
 import { Injectable } from '@angular/core';
 import { AccountService } from './account.service';
 import configs from '../../assets/json/configs.json';
-import { UserService } from './user.service';
 import { RoleService } from './role.service';
 
 @Injectable({
@@ -11,8 +10,7 @@ import { RoleService } from './role.service';
 export class UowService {
   configs = configs;
   accounts = new AccountService();
-  users = new UserService();
-roles = new RoleService();
+  roles = new RoleService();
 
   
   years = [...Array(new Date().getFullYear() - 2015).keys()].map(e => 2015 + e + 1);

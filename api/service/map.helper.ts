@@ -1,7 +1,7 @@
 import * as fse from 'fs-extra';
 import { ClassReader } from './class-reader';
 import { HelperFunctions, Model, IConfig } from './helper.functions';
-import { MenuModule } from './angular/menu.module';
+import { SuperMenu } from './angular/super.menu';
 import { UowClass } from './angular/uow.class';
 import { ClassComponent } from './angular/class.component';
 import { UpdateComponent } from './angular/update.component';
@@ -11,11 +11,14 @@ import { ClassController } from './asp/class.controller';
 import { AccountController } from './asp/account.controller';
 // import { ModelsHandler } from './angular/models.handler';
 import { ClassModule } from './angular/class.module';
+import { MenuModule } from './angular/menu.module';
 
-const ADMIN_ROUTING_MODULE_TS = 'admin-routing.module.ts';
 const ADMIN_MODULE_TS = 'admin.module.ts';
 const ADMIN_COMPONENT_HTML = 'admin.component.html';
+
 const UOW_SERVICE_TS = 'uow.service.ts';
+
+const MENU_MODULE_TS = 'menu.module.ts';
 
 const CLASS_ROUTING_MODULE_TS = 'class-routing.module.ts';
 const CLASS_MODULE_TS = 'class.module.ts';
@@ -32,25 +35,6 @@ const UPDATE_COMPONENT_TS = 'update.component.ts';
 const CLASS_SERVICE_TS = 'class.service.ts';
 // const MODELS_TS = 'models.ts';
 
-export interface IConfigs {
-    pathAbs: string;
-    angularAppFolder: string;
-    aspFolder: string;
-    currentBaseFile: string;
-    pathBaseFiles: string;
-    replaceModels: boolean;
-    classes: Model[],
-    modules: { module: string, classes: string[] }[];
-}
-
-export interface IOptions {
-    modules: {
-        settings: string[],
-        admin: string[],
-        [key: string]: string[],
-    };
-    title: string;
-}
 
 export class MapHelper {
     private pathAbs = this.isDev ? `${process.cwd()}` : `${process.cwd()}/dist`;
@@ -73,6 +57,13 @@ export class MapHelper {
     constructor(private isDev: boolean) { }
 
     onInit() {
+        // remove old code generated
+
+        if (this.generatedAppPath.includes('test') && fse.pathExistsSync(this.configs.aspFolder)) {
+            fse.removeSync(this.configs.aspFolder)
+        }
+
+
         const i = this.configs.classes.findIndex(e => e.class.includes('options'.toLowerCase()));
 
         if (i > -1) {
@@ -100,6 +91,8 @@ export class MapHelper {
 
         const angularBaseFiles = fse.readdirSync(this.configs.pathBaseFiles);
 
+
+        // will be executer foreach file in folder base
         angularBaseFiles.forEach(file => {
 
             this.configs.currentBaseFile = file;
@@ -108,14 +101,17 @@ export class MapHelper {
 
             switch (file) {
 
-                // case ADMIN_ROUTING_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs(); break;
+                case MENU_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs(); break;
 
-                // case CLASS_ROUTING_MODULE_TS: new ClassModule(this.helper, this.configs); break;
+                case ADMIN_MODULE_TS: new SuperMenu(this.helper, this.configs).generateTs().generateHtml(); break;
+                
+                case CLASS_ROUTING_MODULE_TS: new ClassModule(this.helper, this.configs); break;
                 case CLASS_MODULE_TS: new ClassModule(this.helper, this.configs).generateTs(); break;
-
+                
                 case CLASS_COMPONENT_HTML: new ClassComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case CLASS_COMPONENT_TS: new ClassComponent(this.helper, this.configs).generateTs(); break;
-
+                
+                
                 case UPDATE_COMPONENT_HTML: new UpdateComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case UPDATE_COMPONENT_TS: new UpdateComponent(this.helper, this.configs).generateTs(); break;
 
@@ -125,7 +121,7 @@ export class MapHelper {
             }
         });
 
-        console.log('       angular generation done');
+        console.log('angular generation done');
     }
 
     mapAsp() {
@@ -158,10 +154,22 @@ export class MapHelper {
 }
 
 
-// launch programme
+export interface IConfigs {
+    pathAbs: string;
+    angularAppFolder: string;
+    aspFolder: string;
+    currentBaseFile: string;
+    pathBaseFiles: string;
+    replaceModels: boolean;
+    classes: Model[],
+    modules: { module: string, classes: string[] }[];
+}
 
-// const m = new MapHelper();
-
-// m.mapAngular();
-
-// m.mapAsp();
+export interface IOptions {
+    modules: {
+        settings: string[],
+        admin: string[],
+        [key: string]: string[],
+    };
+    title: string;
+}

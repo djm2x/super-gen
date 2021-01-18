@@ -4,9 +4,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const ts = require('typescript');
 class ClassReader {
     constructor() { }
-    methode(MODELS_TS) {
+    /**
+     *
+     * @param {string} modelsTs
+     */
+    methode(modelsTs) {
         const pathAbs = !process.env.IS_DEV ? `${process.cwd()}/dist` : `${process.cwd()}`;
-        const program = ts.createProgram([`${pathAbs}/api/public/${MODELS_TS}`], {
+        const program = ts.createProgram([modelsTs], {
             module: ts.ModuleKind.ES2015,
             moduleResolution: ts.ModuleResolutionKind.NodeJs,
             target: ts.ScriptTarget.Latest
@@ -30,10 +34,13 @@ class ClassReader {
                     // console.log("Name:", property.name, " | Type:", typeChecker.typeToString(propertyType));
                     properties.push({ name: property.name, type: typeChecker.typeToString(propertyType) });
                 }
-                l.push({ class: className.toLowerCase(), properties });
+                l.push({ class: this.lowerFirst(className), properties });
             });
         });
         return l;
+    }
+    lowerFirst(name) {
+        return name.charAt(0).toLowerCase() + name.slice(1);
     }
 }
 exports.ClassReader = ClassReader;
