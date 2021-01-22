@@ -45,7 +45,7 @@ password = e.Password,
 isActive = e.IsActive,
 imageUrl = e.ImageUrl,
 profil = e.Profil,
-role = e.Role.Nom,
+role = e.Role.Name,
 idRole = e.IdRole,
 
 })

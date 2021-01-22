@@ -19,11 +19,11 @@ namespace Controllers
         public RolesController(MyContext context ) : base(context)
         { }
 
-        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{nom}")]
-        public async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, string nom)
+        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{name}")]
+        public async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, string name)
         {
             var q = _context.Roles
-                .Where(e => nom == "*" ? true : e.Nom.ToLower().Contains(nom.ToLower()))
+                .Where(e => name == "*" ? true : e.Name.ToLower().Contains(name.ToLower()))
 
                 ;
 
@@ -36,7 +36,7 @@ namespace Controllers
                 .Select(e => new 
 {
 id = e.Id,
-nom = e.Nom,
+name = e.Name,
 
 })
                 .ToListAsync()

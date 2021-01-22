@@ -13,7 +13,7 @@ namespace Models
                     int id = 1;
                     var faker = new Faker<Role>(DataSeeding.lang)
                         .CustomInstantiator(f => new Role { Id = id++ })
-.RuleFor(o => o.Nom, f => f.Lorem.Word())
+.RuleFor(o => o.Name, f => f.Lorem.Word())
 ;
 modelBuilder.Entity<Role>().HasData(faker.Generate(10));
 return modelBuilder;
@@ -25,7 +25,7 @@ public static ModelBuilder Users(this ModelBuilder modelBuilder)
                     var faker = new Faker<User>(DataSeeding.lang)
                         .CustomInstantiator(f => new User { Id = id++ })
 .RuleFor(o => o.Nom, f => f.Lorem.Word())
-.RuleFor(o => o.Email, f => id - 1 == 1 ? "dj-m2x@hotmail.com" : f.Internet.Email())
+.RuleFor(o => o.Email, f => id - 1 == 1 ? "sa@angular.io" : f.Internet.Email())
 .RuleFor(o => o.Password, f => "123")
 .RuleFor(o => o.IsActive, f => id - 1 == 1 ? true : f.Random.Bool())
 .RuleFor(o => o.ImageUrl, f => "")

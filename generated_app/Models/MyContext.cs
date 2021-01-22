@@ -28,7 +28,7 @@ entity.HasOne(e => e.Role).WithMany(e => e.Users).HasForeignKey(e => e.IdRole);
 modelBuilder.Entity<Role>(entity => 
 {entity.HasKey(e => e.Id);
 entity.Property(e => e.Id).ValueGeneratedOnAdd();
-entity.Property(e => e.Nom);
+entity.Property(e => e.Name);
 entity.HasMany(e => e.Users).WithOne(p => p.Role).HasForeignKey(e => e.IdRole).OnDelete(DeleteBehavior.Cascade);
 });
 

@@ -6,46 +6,42 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatDialog } from '@angular/material/dialog';
 import { DeleteService } from 'src/app/components/delete/delete.service';
-import { Role } from 'src/app/models/models';
-import { ExcelService } from 'src/app/shared/excel.service';
-import { FormControl } from '@angular/forms';
+import { User } from 'src/app/models/models';
 import { startWith } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-role',
-  templateUrl: './role.component.html',
-  styleUrls: ['./role.component.scss']
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.scss']
 })
-export class RoleComponent implements OnInit, OnDestroy {
+export class UserComponent implements OnInit, OnDestroy {
   @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort, { static: true }) sort: MatSort;
-  update = new EventEmitter();
+  update = new Subject<boolean>();
   isLoadingResults = true;
   resultsLength = 0;
   isRateLimitReached = false;
 
   subs: Subscription[] = [];
 
-  dataSource: Role[] = [];
-  selectedList: Role[] = [];
+  dataSource: User[] = [];
+  selectedList: User[] = [];
 
-  displayedColumns = [/*'select',*/  'nom', 'option'];
+  displayedColumns = [/*'select',*/  'imageUrl', 'nom', 'email', 'isActive', 'profil', 'role', 'option'];
 
   panelOpenState = false;
 
   nom = new FormControl('');
+email = new FormControl('');
+profil = new FormControl('');
+idRole = new FormControl(0);
 
 
+  roles = this.uow.roles.get();
 
 
-  dataSubject = new Subject();
-  isListTabSelected = true;
-  isChartTabSelected = true;
-  listTabSelectedEvent = new Subject();
-  chartTabSelectedEvent = new Subject();
-
-  constructor(public uow: UowService, public dialog: MatDialog, private excel: ExcelService
-    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) {
+  constructor(public uow: UowService, public dialog: MatDialog
+    , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) { 
     }
 
   ngOnInit() {
@@ -61,42 +57,32 @@ export class RoleComponent implements OnInit, OnDestroy {
           this.sort.active ? this.sort.active : 'id',
           this.sort.direction ? this.sort.direction : 'desc',
           this.nom.value === '' ? '*' : this.nom.value,
+this.email.value === '' ? '*' : this.email.value,
+this.profil.value === '' ? '*' : this.profil.value,
+this.idRole.value === 0 ? 0 : this.idRole.value,
 
         );
       }
-    );
-
-    const sub2 = merge(...[this.chartTabSelectedEvent, this.update]).pipe(startWith(null as any)).subscribe(r => {
-
-      if (this.isChartTabSelected) {
-        this.getAllForStatistique(
-          this.nom.value === '' ? '*' : this.nom.value,
-
-        );
-      }
-    }
     );
 
     this.subs.push(sub);
-    this.subs.push(sub2);
   }
 
   reset() {
     this.nom.setValue('');
+this.email.setValue('');
+this.profil.setValue('');
+this.idRole.setValue(0);
 
     this.update.next(true);
-  }
-
-  generateExcel() {
-    this.excel.json_to_sheet(this.dataSource);
   }
 
   search() {
     this.update.next(true);
   }
 
-  getPage(startIndex, pageSize, sortBy, sortDir, nom,) {
-    const sub = this.uow.roles.getAll(startIndex, pageSize, sortBy, sortDir,  nom,).subscribe(
+  getPage(startIndex, pageSize, sortBy, sortDir, nom, email, profil, idRole,) {
+    const sub = this.uow.users.getAll(startIndex, pageSize, sortBy, sortDir,  nom, email, profil, idRole,).subscribe(
       (r: any) => {
         console.log(r.list);
         this.dataSource = r.list;
@@ -108,61 +94,34 @@ export class RoleComponent implements OnInit, OnDestroy {
     this.subs.push(sub);
   }
 
-  getAllForStatistique( nom,) {
-    const sub = this.uow.roles.getAllForStatistique( nom,).subscribe(
-      (r: any[]) => {
-        console.log(r);
-        const barChartLabels = r.map(e => e.name);
-        const barChartData = [
-          { data: [], label: 'name' },
-        ];
-
-        r.forEach(e => {
-          barChartData[0].data.push(e.value);
-        });
-
-        this.dataSubject.next({barChartLabels, barChartData, title: 'Role'});
-      }
-    );
-
-    this.subs.push(sub);
-  }
-
-  selectedIndexChange(index: number) {
-    // this.isListTabSelected = index === 0;
-    // this.isChartTabSelected = index === 1;
-    // this.listTabSelectedEvent.next(index === 0);
-    // this.chartTabSelectedEvent.next(index === 1);
-  }
-
-  openDialog(o: Role, text, bool) {
+  openDialog(o: User, text) {
     const dialogRef = this.dialog.open(UpdateComponent, {
       width: '1100px',
       disableClose: true,
-      data: { model: o, title: text, visualisation: bool }
+      data: { model: o, title: text }
     });
 
     return dialogRef.afterClosed();
   }
 
   add() {
-    this.openDialog(new Role(), `Ajouter Role`, false).subscribe(result => {
+    this.openDialog(new User(), `Ajouter User`).subscribe(result => {
       if (result) {
         this.update.next(true);
       }
     });
   }
 
-  edit(o: Role) {
-    this.openDialog(o, `Modifier Role`, false).subscribe((result: Role) => {
+  edit(o: User) {
+    this.openDialog(o, `Modifier User`).subscribe((result: User) => {
       if (result) {
         this.update.next(true);
       }
     });
   }
 
-  detail(o: Role) {
-    this.openDialog(o, `Détail Role`, true).subscribe((result: Role) => {
+  detail(o: User) {
+    this.openDialog(o, `Détail User`).subscribe((result: User) => {
       if (result) {
         this.update.next(true);
       }
@@ -170,9 +129,9 @@ export class RoleComponent implements OnInit, OnDestroy {
   }
 
   async delete(id: number) {
-    const r = await this.mydialog.openDialog('this.breadcrumb.name').toPromise();
+    const r = await this.mydialog.openDialog('User').toPromise();
     if (r === 'ok') {
-      const sub = this.uow.roles.delete(id).subscribe(() => this.update.next(true));
+      const sub = this.uow.users.delete(id).subscribe(() => this.update.next(true));
 
       this.subs.push(sub);
     }
@@ -186,7 +145,7 @@ export class RoleComponent implements OnInit, OnDestroy {
       return urlImage;
     }
 
-    return `${this.url}/roles/${urlImage.replace(';', '')}`;
+    return `${this.url}/users/${urlImage.replace(';', '')}`;
   }
 
   imgError(img: any) {
@@ -195,11 +154,11 @@ export class RoleComponent implements OnInit, OnDestroy {
 
   //check box
   //
-  isSelected(row: Role): boolean {
+  isSelected(row: User): boolean {
     return this.selectedList.find(e => e.id === row.id) ? true : false;
   }
 
-  check(row: Role) {
+  check(row: User) {
     const i = this.selectedList.findIndex(o => row.id === o.id);
     const existe: boolean = i !== -1;
 
@@ -222,7 +181,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   async deleteList() {
     const r = await this.mydialog.openDialog('role').toPromise();
     if (r === 'ok') {
-      const sub = this.uow.roles.deleteRange(this.selectedList as any).subscribe(() => {
+      const sub = this.uow.users.deleteRange(this.selectedList as any).subscribe(() => {
         this.selectedList = [];
         this.update.next(true);
       });

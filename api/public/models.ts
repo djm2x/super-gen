@@ -27,6 +27,7 @@ export class User {
 export class Role {
   id = 0;
   name = '';
+  users: User[] = [];
 }
 
 export class Options {

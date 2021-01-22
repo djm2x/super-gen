@@ -16,8 +16,4 @@ export class UserService extends SuperService<User> {
     return this.http.get(`${this.urlApi}/${this.controller}/getAll/${startIndex}/${pageSize}/${sortBy}/${sortDir}/${nom}/${email}/${profil}/${idRole}`);
   }
 
-  getAllForStatistique(nom, email, profil, idRole, ) {
-    return this.http.get(`${this.urlApi}/${this.controller}/getAllForStatistique/${nom}/${email}/${profil}/${idRole}`);
-  }
-
 }

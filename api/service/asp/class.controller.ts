@@ -2,13 +2,12 @@ import * as fse from 'fs-extra';
 import { HelperFunctions } from '../helper.functions';
 import { IConfigs } from '../map.helper';
 
+const USERSCONTROLLER_CS = 'UsersController.cs';
+const SUPERCONTROLLER_CS = 'SuperController.cs';
 export class ClassController {
     constructor(private helper: HelperFunctions, private configs: IConfigs) { }
 
-
     generateTs() {
-        const USERSCONTROLLER_CS = 'UsersController.cs';
-        // else if (file === USERSCONTROLLER_CS) {
         let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${USERSCONTROLLER_CS}`, 'utf8');
         // edit content
         this.configs.classes.forEach(e => {
@@ -45,8 +44,6 @@ export class ClassController {
                         }
                     }
 
-
-
                     if (isPropertyNav) {
                         const { classNav, displayproperty, type } = this.helper.displayPropertyForSelectHtml(this.configs.classes, p.name, e);
                         // includes += `.Include(e => e.${this.helper.Cap(classNav)})`;
@@ -60,9 +57,7 @@ export class ClassController {
 
             select += `\r\n${this.helper.spaceTab(5)}})`
 
-            // params = params.substring(0, params.lastIndexOf(','))
             params2 = params2.substring(0, params2.lastIndexOf(','))
-            // content = content.replace('/*{imports}*/', imports);
             let newContent = content.replace(/\/\*\{params\}\*\//g, params);
             newContent = newContent.replace(/\/\*\{params2\}\*\//g, params2);
             newContent = newContent.replace(/\/\*\{whereClause\}\*\//g, whereClause);
@@ -71,26 +66,13 @@ export class ClassController {
 
             newContent = newContent.replace(/UserX/g, this.helper.Cap(e.class));
 
-            // if (e.properties.length >= 5) {
-            //     content = content.replace(/\/\/\>State/g, '');
-            //     content = content.replace(/\/\/\<State/g, '');
-            // } else {
-            //     const length = (content.match(/\/\/\>State/g) || []).length;
-            //     for (let i = 0; i < length; i++) {
-            //         content = this.helper.removeZoneOfText(content, '//>State', '//<State');
-            //     }
-            // }
-            // write content in new location
-
             fse.ensureDirSync(`${this.configs.aspFolder}/Controllers`);
 
             fse.writeFileSync(`${this.configs.aspFolder}/Controllers/${this.helper.Cap(e.class)}Controller.cs`, newContent);
             this.helper.progress(`>> ${this.helper.Cap(e.class)}Controller.cs done`);
         });
-
-        // const distination = `${asp}/Controllers`;
-        // fse.ensureDirSync(distination);
-        // fse.copySync(`${source}/${SUPERCONTROLLER_CS}`, `${distination}/${SUPERCONTROLLER_CS}`)
+        
+        fse.copySync(`${this.configs.pathBaseFiles}/${SUPERCONTROLLER_CS}`, `${this.configs.aspFolder}/Controllers/${SUPERCONTROLLER_CS}`)
         // }
     }
 }

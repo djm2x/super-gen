@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
   selector: 'app-menu',
   template: '<router-outlet></router-outlet>',
 })
-export class SettingsComponent { }
+export class MymenuComponent { }
 
 /**
  * 
@@ -15,10 +15,10 @@ export class SettingsComponent { }
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
   {
-    path: '', component: SettingsComponent,
+    path: '', component: MymenuComponent,
     children: [
-      { path: '', redirectTo: 'User', pathMatch: 'full' },
-      { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+      { path: '', redirectTo: 'Role', pathMatch: 'full' },
+      { path: 'role', loadChildren: () => import('./role/role.module').then(m => m.RoleModule) },
 
     ]
   },
@@ -27,11 +27,11 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    SettingsComponent,
+    MymenuComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
   ]
 })
-export class SettingsModule { }
+export class MymenuModule { }

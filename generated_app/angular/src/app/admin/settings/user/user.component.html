@@ -1,8 +1,8 @@
-<!-- <app-title title="Roles"></app-title> -->
+<!-- <app-title title="Users"></app-title> -->
 
 <div class="d-flex flex-row-reverse pt-3 mb-3">
   <button mat-raised-button color="primary" (click)="add()">
-    <mat-icon>add</mat-icon> Role
+    <mat-icon>add</mat-icon> User
   </button>
   <!-- &nbsp;
   <button mat-raised-button color="accent" (click)="generateExcel()">
@@ -40,6 +40,17 @@
       <mat-form-field appearance="fill" class="col-md-6">
         <mat-label>nom</mat-label>
         <input matInput [formControl]="nom" required>
+    </mat-form-field><mat-form-field appearance="fill" class="col-md-6">
+        <mat-label>email</mat-label>
+        <input matInput [formControl]="email" required>
+    </mat-form-field><mat-form-field appearance="fill" class="col-md-6">
+        <mat-label>profil</mat-label>
+        <input matInput [formControl]="profil" required>
+    </mat-form-field><mat-form-field appearance="fill" class="col-md-6">
+        <mat-label>roles</mat-label>
+        <mat-select [formControl]="idRole">
+            <mat-option *ngFor="let e of roles | async" [value]="e.id">{{ e.name }}</mat-option>
+        </mat-select>
     </mat-form-field>
     </div>
 
@@ -57,7 +68,6 @@
   </mat-expansion-panel>
 </mat-accordion>
 
-{tabsBegins}
 <div class="example-container mat-elevation-z8 m-2">
   <div class="example-loading-shade" *ngIf="isLoadingResults">
     <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
@@ -79,6 +89,23 @@
       <ng-container matColumnDef="nom">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Nom</th>
         <td mat-cell *matCellDef="let row">{{row.nom}}</td>
+    </ng-container><ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Email</th>
+        <td mat-cell *matCellDef="let row">{{row.email}}</td>
+    </ng-container><ng-container matColumnDef="isActive">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Is Active</th>
+        <td mat-cell *matCellDef="let row">{{row.isActive ? 'Oui' : 'Non'}}</td>
+    </ng-container><ng-container matColumnDef="imageUrl">
+        <th mat-header-cell *matHeaderCellDef>Profil</th>
+        <td mat-cell *matCellDef="let row">
+            <img #img (error)="imgError(img)" [src]="displayImage(row.imageUrl)" alt="" srcset="">
+        </td>
+    </ng-container><ng-container matColumnDef="profil">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Profil</th>
+        <td mat-cell *matCellDef="let row">{{row.profil}}</td>
+    </ng-container><ng-container matColumnDef="role">
+        <th mat-header-cell *matHeaderCellDef >Role</th>
+        <td mat-cell *matCellDef="let row">{{row.role}}</td>
     </ng-container>
       <ng-container matColumnDef="option" style="flex-direction: row-reverse;">
         <th mat-header-cell *matHeaderCellDef>

@@ -38,8 +38,8 @@ const CLASS_SERVICE_TS = 'class.service.ts';
 
 export class MapHelper {
     private pathAbs = this.isDev ? `${process.cwd()}` : `${process.cwd()}/dist`;
-    private generatedAppPath0 = `${this.pathAbs}/generated_app`;
-    private generatedAppPath = `${this.pathAbs}/test`;
+    private generatedAppPath = `${this.pathAbs}/generated_app`;
+    private generatedAppPath0 = `${this.pathAbs}/test`;
     private helper = new HelperFunctions();
     private modelsTs = `${this.pathAbs}/api/public/models.ts`;
 
@@ -143,7 +143,7 @@ export class MapHelper {
                 case MYCONTEXT_CS: new MyContext(this.helper, this.configs).generateTs(); break;
 
                 case CLASSCONTROLLER_CS: new ClassController(this.helper, this.configs).generateTs(); break;
-                case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
+                // case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
 
                 default: break;
             }
