@@ -6,11 +6,7 @@ using Api.Providers;
 using System.Linq;
 using Models;
 using System;
-using System.Linq.Expressions;
-using System.Reflection;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.JsonPatch;
-
 namespace Controllers
 {
     public class SuperController<T> : ControllerBase where T : class
@@ -198,98 +194,97 @@ namespace Controllers
         //     return Ok();
         // }
 
-        // [HttpGet]
-        // public async Task<ActionResult<int>> Count()
-        // {
-        //     return await _context.Set<T>().CountAsync();
-        // }
+        [HttpGet]
+        public async Task<ActionResult<int>> Count()
+        {
+            return await _context.Set<T>().CountAsync();
+        }
 
-        // [HttpGet("{column}/{name}")]
-        // public virtual async Task<ActionResult<IEnumerable<T>>> Autocomplete([FromRoute] string column,[FromRoute] string name)
-        // {
-        //     int i = typeof(T).FullName.LastIndexOf('.');
-        //     string tableName = typeof(T).FullName.Substring(i + 1) + "s";
+        [HttpGet("{column}/{name}")]
+        public virtual async Task<ActionResult<IEnumerable<T>>> Autocomplete([FromRoute] string column,[FromRoute] string name)
+        {
+            int i = typeof(T).FullName.LastIndexOf('.');
+            string tableName = typeof(T).FullName.Substring(i + 1) + "s";
 
-        //     return await _context.Set<T>()
-        //         .FromSqlRaw(String.Format(@"SELECT * FROM {0} where {1} LIKE '%{2}%'", tableName, column, name))
-        //         .Take(10)
-        //         .ToListAsync();
-        // }
+            return await _context.Set<T>()
+                .FromSqlRaw(String.Format(@"SELECT * FROM {0} where {1} LIKE '%{2}%'", tableName, column, name))
+                .Take(10)
+                .ToListAsync();
+        }
 
-        // [HttpPost]
-        // public virtual async Task<IActionResult> UpdateRange(List<T> models)
-        // {
-        //     if (models.Count == 0)
-        //     {
-        //         return Ok(new { message = "count = 0" });
-        //     }
+        [HttpPost]
+        public virtual async Task<IActionResult> UpdateRange(List<T> models)
+        {
+            if (models.Count == 0)
+            {
+                return Ok(new { message = "count = 0" });
+            }
 
-        //     _context.Set<T>().UpdateRange(models);
+            _context.Set<T>().UpdateRange(models);
 
-        //     try
-        //     {
-        //         await _context.SaveChangesAsync();
-        //     }
-        //     catch (DbUpdateConcurrencyException ex)
-        //     {
-        //         return BadRequest(new { message = ex.Message });
-        //     }
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
 
-        //     return NoContent();
-        // }
+            return NoContent();
+        }
 
-        // [HttpPost]
-        // public virtual async Task<IActionResult> DeleteRange(List<T> models)
-        // {
-        //     if (models.Count == 0)
-        //     {
-        //         return Ok(new { message = "count = 0" });
-        //     }
+        [HttpPost]
+        public virtual async Task<IActionResult> DeleteRange(List<T> models)
+        {
+            if (models.Count == 0)
+            {
+                return Ok(new { message = "count = 0" });
+            }
 
-        //     _context.Set<T>().RemoveRange(models);
+            _context.Set<T>().RemoveRange(models);
 
-        //     try
-        //     {
-        //         await _context.SaveChangesAsync();
-        //     }
-        //     catch (DbUpdateConcurrencyException ex)
-        //     {
-        //         return BadRequest(new { message = ex.Message });
-        //     }
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
 
-        //     return NoContent();
-        // }
+            return NoContent();
+        }
+
+        [HttpPost]
+        public virtual async Task<IActionResult> DeleteRangeByIds(List<int> ids)
+        {
+            if (ids.Count == 0)
+            {
+                return Ok(new { message = "count = 0" });
+            }
+
+            // var l =  ids.Select(model => (int)model.GetType().GetProperty("Id").GetValue(model, null)).ToList();
+            var l =  ids.Select(id => _context.Set<T>().Find(id)).ToList();
+
+            _context.Set<T>().RemoveRange(l);
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+
+            return NoContent();
+        }
 
         // T GetInstance<T>() where T : new()
         // {
         //     T instance = new T();
         //     return instance;
-        // }
-
-
-        // [HttpPost]
-        // public virtual async Task<ActionResult<T>> DeleteRange(List<int> models)
-        // {
-        //     if (models.Count == 0)
-        //     {
-        //         return Ok(new { message = "count = 0" });
-        //     }
-
-        //     // var l =  models.Select(model => (int)model.GetType().GetProperty("Id").GetValue(model, null)).ToList();
-        //     var l =  models.Select(id => _context.Set<T>().Find(id)).ToList();
-
-        //     _context.Set<T>().RemoveRange(l);
-
-        //     try
-        //     {
-        //         await _context.SaveChangesAsync();
-        //     }
-        //     catch (DbUpdateConcurrencyException ex)
-        //     {
-        //         return BadRequest(new { message = ex.Message });
-        //     }
-
-        //     return NoContent();
         // }
     }
 }

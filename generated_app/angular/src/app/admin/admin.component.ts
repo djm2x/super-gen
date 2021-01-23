@@ -6,6 +6,7 @@ import { MediaService } from '../shared/media.service';
 import { MatDialog } from '@angular/material/dialog';
 import { UowService } from '../services/uow.service';
 
+
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -16,6 +17,7 @@ export class AdminComponent implements OnInit {
   panelOpenState = false;
   isMobileWidth = false;
   actuelRoute = this.router.url;
+
   constructor(public session: SessionService, private router: Router
     , public myMedia: MediaService , public dialog: MatDialog
     , @Inject('BASE_URL') private url: string, public uow: UowService) { }

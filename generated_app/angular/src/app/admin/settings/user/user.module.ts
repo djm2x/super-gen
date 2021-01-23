@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateComponent } from './update/update.component';
 import { Routes, RouterModule } from '@angular/router';
 import { MatModule } from 'src/app/mat.module';
-
+import { ManageFilesModule } from 'src/app/modules/manage-files/manage-files.module';
 const routes: Routes = [
   { path: '', redirectTo: 'list', pathMatch: 'full'},
   { path: 'list', component: UserComponent }
@@ -20,6 +20,7 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatModule,
+    ManageFilesModule,
   ]
 })
 export class UserModule { }

@@ -117,7 +117,7 @@ export class HelperFunctions {
     }
 
     progress(info: string) {
-        // console.log(info);
+        console.log(info);
     }
 
     removeZoneOfText(source: string, begin: string, end: string) {

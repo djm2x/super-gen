@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-mymenu',
   template: '<router-outlet></router-outlet>',
 })
 export class MymenuComponent { }
@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: '', component: MymenuComponent,
     children: [
-      { path: '', redirectTo: 'Role', pathMatch: 'full' },
+      { path: '', redirectTo: 'role', pathMatch: 'full' },
       { path: 'role', loadChildren: () => import('./role/role.module').then(m => m.RoleModule) },
 
     ]

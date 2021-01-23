@@ -35,6 +35,8 @@ export class Options {
     settings: ['User'],
     mymenu: ['Role']
   };
-
-  title = 'my super app';
+  configJson = {
+    apptitle: 'GSI',
+    appname: 'Gestion System Informatique',
+  }
 }

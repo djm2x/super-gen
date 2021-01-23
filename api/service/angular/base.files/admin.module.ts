@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Routes, RouterModule } from '@angular/router';
 import { MatModule } from 'src/app/mat.module';
+import { ThemeModule } from '../shared/theme.module';
+import { MyMenuModule } from '../modules/menu/my.menu.module';
 
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
@@ -28,6 +30,8 @@ const routes: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     MatModule,
+    ThemeModule,
+    MyMenuModule,
   ]
 })
 export class AdminModule { }

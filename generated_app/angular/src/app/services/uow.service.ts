@@ -1,7 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { AccountService } from './account.service';
-import configs from '../../assets/json/configs.json';
+import { ConfigService } from './config.service';
 import { UserService } from './user.service';
 import { RoleService } from './role.service';
 
@@ -9,7 +9,7 @@ import { RoleService } from './role.service';
   providedIn: 'root'
 })
 export class UowService {
-  configs = configs;
+  config = new ConfigService();
   accounts = new AccountService();
   users = new UserService();
 roles = new RoleService();

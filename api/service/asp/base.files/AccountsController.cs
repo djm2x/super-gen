@@ -199,6 +199,7 @@ namespace Controllers
 
                 // remove password before returning
                 user.Password = "";
+                //  await _context.Entry(model).Reference(e => e.Role).LoadAsync();
 
                 //>IsActive
                 if (user.IsActive == false)

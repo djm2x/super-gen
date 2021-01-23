@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-settings',
   template: '<router-outlet></router-outlet>',
 })
 export class SettingsComponent { }
@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: '', component: SettingsComponent,
     children: [
-      { path: '', redirectTo: 'User', pathMatch: 'full' },
+      { path: '', redirectTo: 'user', pathMatch: 'full' },
       { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
 
     ]

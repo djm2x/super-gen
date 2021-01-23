@@ -1,13 +1,13 @@
 
 import { Injectable } from '@angular/core';
 import { AccountService } from './account.service';
-import configs from '../../assets/json/configs.json';
+import { ConfigService } from './config.service';
 /*{imports}*/
 @Injectable({
   providedIn: 'root'
 })
 export class UowService {
-  configs = configs;
+  config = new ConfigService();
   accounts = new AccountService();
   /*{services}*/
   

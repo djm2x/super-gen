@@ -4,56 +4,75 @@ import { IConfigs } from '../map.helper';
 
 const UOW_SERVICE_TS = 'uow.service.ts';
 const CLASS_SERVICE_TS = 'class.service.ts';
+const SUPER_SERVICE_TS = 'super.service.ts';
+const CONFIG_SERVICE_TS = 'config.service.ts';
+const CONFIG_JSON = 'configs.json';
 
 export class UowClass {
     constructor(private helper: HelperFunctions, private configs: IConfigs) { }
 
 
     generateTs() {
-        // else if (file === UOW_SERVICE_TS) { // and services
-            const distination = `${this.configs.angularAppFolder}/services`;
-            fse.ensureDirSync(distination);
+        const distination = `${this.configs.angularAppFolder}/services`;
+        fse.ensureDirSync(distination);
 
-            let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${UOW_SERVICE_TS}`, 'utf8');
+        let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${UOW_SERVICE_TS}`, 'utf8');
 
-            let contentService = fse.readFileSync(`${this.configs.pathBaseFiles}/${CLASS_SERVICE_TS}`, 'utf8');
+        let contentService = fse.readFileSync(`${this.configs.pathBaseFiles}/${CLASS_SERVICE_TS}`, 'utf8');
 
-            let imports = '';
-            let services = '';
-            // edit content
-            this.configs.classes.forEach(e => {
-                let params = '';
-                let params2 = '';
-                imports += `import { ${this.helper.Cap(e.class)}Service } from './${e.class}.service';\r\n`;
-                services += `${e.class}s = new ${this.helper.Cap(e.class)}Service();\r\n`;
+        let imports = '';
+        let services = '';
+        // edit content
+        this.configs.classes.forEach(e => {
+            let params = '';
+            let params2 = '';
+            imports += `import { ${this.helper.Cap(e.class)}Service } from './${e.class}.service';\r\n`;
+            services += `${e.class}s = new ${this.helper.Cap(e.class)}Service();\r\n`;
 
-                e.properties.forEach(p => {
-                    const isTypePrimitive = this.helper.isTypePrimitive(p.type);
+            e.properties.forEach(p => {
+                const isTypePrimitive = this.helper.isTypePrimitive(p.type);
 
-                    if (isTypePrimitive && p.name.toLowerCase() !== 'id' && p.type !== 'Date' && p.type !== 'boolean'
-                        && !p.name.startsWith('image') && !p.name.startsWith('desc') && !p.name.includes('pass')) {
+                if (isTypePrimitive && p.name.toLowerCase() !== 'id' && p.type !== 'Date' && p.type !== 'boolean'
+                    && !p.name.startsWith('image') && !p.name.startsWith('desc') && !p.name.includes('pass')) {
 
-                        params += `${p.name}, `;
-                        params2 += `/\${${p.name}}`;
-                    }
-                });
-
-                // content = content.replace('/*{imports}*/', imports);
-                let newContentService = contentService.replace(/\/\*\{params\}\*\//g, params);
-                newContentService = newContentService.replace(/\/\*\{params2\}\*\//g, params2);
-                newContentService = newContentService.replace(/User\$/g, this.helper.Cap(e.class));
-                newContentService = newContentService.replace(`('users')`, `('${e.class}s')`);
-
-                // write content in new location
-                fse.writeFileSync(`${distination}/${e.class}.service.ts`, newContentService);
-                this.helper.progress(`>> ${e.class}.service.ts done`);
+                    params += `${p.name}, `;
+                    params2 += `/\${${p.name}}`;
+                }
             });
 
-            content = content.replace('/*{imports}*/', imports);
-            content = content.replace('/*{services}*/', services);
+            // content = content.replace('/*{imports}*/', imports);
+            let newContentService = contentService.replace(/\/\*\{params\}\*\//g, params);
+            newContentService = newContentService.replace(/\/\*\{params2\}\*\//g, params2);
+            newContentService = newContentService.replace(/User\$/g, this.helper.Cap(e.class));
+            newContentService = newContentService.replace(`('users')`, `('${e.class}s')`);
+
             // write content in new location
-            fse.writeFileSync(`${distination}/${UOW_SERVICE_TS}`, content);
-            this.helper.progress(`>> ${UOW_SERVICE_TS} done`);
-        // }
+            fse.writeFileSync(`${distination}/${e.class}.service.ts`, newContentService);
+            this.helper.progress(`>> ${e.class}.service.ts done`);
+        });
+
+        content = content.replace('/*{imports}*/', imports);
+        content = content.replace('/*{services}*/', services);
+        // write content in new location
+        fse.writeFileSync(`${distination}/${UOW_SERVICE_TS}`, content);
+
+        fse.copySync(`${this.configs.pathBaseFiles}/${SUPER_SERVICE_TS}`, `${distination}/${SUPER_SERVICE_TS}`)
+        fse.copySync(`${this.configs.pathBaseFiles}/${CONFIG_SERVICE_TS}`, `${distination}/${CONFIG_SERVICE_TS}`)
+
+        this.helper.progress(`>> ${UOW_SERVICE_TS} done`);
+
+        return this;
+    }
+
+    writeConfigs() {
+        let configJson = JSON.stringify(this.configs.configJson, null, '  ');
+
+        fse.writeFileSync(`${this.configs.aspFolder}/angular/src/assets/json/${CONFIG_JSON}`, configJson);
+
+        let indexHtml = fse.readFileSync(`${this.configs.aspFolder}/angular/src/index.html`, 'utf8');
+
+        indexHtml = indexHtml.replace(/\-apptitle\-/g, this.configs.configJson.apptitle);
+
+        fse.writeFileSync(`${this.configs.aspFolder}/angular/src/index.html`, indexHtml);
     }
 }

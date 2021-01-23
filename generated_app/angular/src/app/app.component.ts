@@ -13,12 +13,10 @@ export class AppComponent implements OnInit {
   constructor(private splashScreenService: SplashScreenService, @Inject(DOCUMENT) private document: Document
   , public uow: UowService) { }
 
-  ngOnInit() {
-    this.document.head.querySelector('title').innerHTML = this.uow.configs.apptitle;
-    this.document.body.querySelector('#appname').innerHTML = this.uow.configs.appname;
-
-    // this.getRoute();
-
+  async ngOnInit() {
+    const items = await this.uow.config.items.toPromise();
+    this.document.head.querySelector('title').innerHTML = items.apptitle;
+    this.document.body.querySelector('#appname').innerHTML = items.appname;
   }
 
   // get patchRoute() { return this.route.split('/'); }

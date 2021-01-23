@@ -5,8 +5,10 @@
     </button>
 
     <img style="height: 35px; margin-right: 10px;" src="assets/favicon.png" alt="omran">
-    <span [routerLink]="['/admin']" routerLinkActive="active">{{uow.configs.appname}}</span>
-    <!-- <button mat-raised-button class="ml-5" [routerLink]="['/desktop']">Systeme-info</button> -->
+    <span [routerLink]="['/admin']" routerLinkActive="active">{{(uow.config.items | async)?.appname}}</span>
+    
+    <app-menu></app-menu>
+
     <span style="flex: 1 1 auto;"></span>
     <app-theme></app-theme>
     <button mat-button [matMenuTriggerFor]="beforeMenu">
@@ -18,7 +20,7 @@
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
-<!--  -->
+
 <mat-sidenav-container #sidenav class="admin-sidenav-container" style=" z-index: 9; height: 100vh;">
   <mat-sidenav #snav [mode]="isMobileWidth ? 'push' : 'side'" [opened]="!isMobileWidth" [fixedInViewport]="true"
     fixedTopGap="49.9">
@@ -26,8 +28,6 @@
       <div class="logo">
         <!-- <img [src]="displayImage(profile.image)" #img (error)="imgError(img)" alt="mourabit mohamed" width="100%"> -->
         <img src="assets/logo-mini.png" #img (error)="imgError(img)" alt="mourabit mohamed" width="100%" class="my-2">
-
-
       </div>
       <mat-divider></mat-divider>
       <!-- <mat-list-item [routerLink]="['/admin/dash']" routerLinkActive="router-active">
@@ -36,63 +36,48 @@
       </mat-list-item> -->
 
       <mat-accordion>
-        <mat-list-item [routerLink]="['/admin/pointage']" routerLinkActive="router-active" *ngIf="session.isUser || session.isSA">
-          <span>Pointage</span>
-          <mat-divider></mat-divider>
-        </mat-list-item>
 
-        <mat-list-item [routerLink]="['/admin/historique-pointage']" routerLinkActive="router-active" *ngIf="session.isAdmin || session.isSA">
-          <span>Historique Pointage</span>
-          <mat-divider></mat-divider>
-        </mat-list-item>
-
-        <mat-list-item [routerLink]="['/admin/user']" routerLinkActive="router-active" *ngIf="session.isAdmin || session.isSA">
-          <span>user</span>
-          <mat-divider></mat-divider>
-        </mat-list-item>
-
-        <mat-list-item [routerLink]="['/admin/role']" routerLinkActive="router-active" *ngIf="session.isAdmin || session.isSA">
-          <span>role</span>
-          <mat-divider></mat-divider>
-        </mat-list-item>
-
-        <mat-list-item [routerLink]="['/admin/state']" routerLinkActive="router-active" *ngIf="session.isAdmin || session.isSA">
-          <span>Statistiques</span>
-          <mat-divider></mat-divider>
-        </mat-list-item>
-
-        <mat-expansion-panel *ngIf="session.isSA" [expanded]="actuelRoute.includes('settings')" [ngClass]="{'router-link-active': actuelRoute.includes('settings') }"
-          (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-          <mat-expansion-panel-header>
-            <mat-panel-title class=" titleDomaine">
-              Paramétrage
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-divider></mat-divider>
-
-
-          <mat-list-item [routerLink]="['/admin/settings/user']" routerLinkActive="router-active">
-            <span>Utilisateurs</span>
+        
+        <mat-expansion-panel [expanded]="actuelRoute.includes('settings')"
+        [ngClass]="{'router-link-active': actuelRoute.includes('settings') }" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    settings
+                </mat-panel-title>
+            </mat-expansion-panel-header>
             <mat-divider></mat-divider>
-          </mat-list-item>
-
-          <mat-list-item [routerLink]="['/admin/settings/collaborateur']" routerLinkActive="router-active">
-            <span>collaborateurs</span>
+            
+        <mat-list-item [routerLink]="['/admin/settings/user']" routerLinkActive="router-active">
+            <span>Users</span>
             <mat-divider></mat-divider>
-          </mat-list-item>
+        </mat-list-item>
 
-          <mat-list-item [routerLink]="['/admin/settings/planing']" routerLinkActive="router-active">
-            <span>planings</span>
-            <mat-divider></mat-divider>
-          </mat-list-item>
         </mat-expansion-panel>
+
+        <mat-expansion-panel [expanded]="actuelRoute.includes('mymenu')"
+        [ngClass]="{'router-link-active': actuelRoute.includes('mymenu') }" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    mymenu
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-divider></mat-divider>
+            
+        <mat-list-item [routerLink]="['/admin/mymenu/role']" routerLinkActive="router-active">
+            <span>Roles</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        </mat-expansion-panel>
+
+
       </mat-accordion>
       <mat-divider></mat-divider>
     </mat-nav-list>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <main [@routeAnimations]="prepareRoute(o)" style="margin-top: 65px;">
+    <main style="margin-top: 65px;">
       <div class="ml-3 mr-3 mb-5">
         <router-outlet #o="outlet"></router-outlet>
       </div>

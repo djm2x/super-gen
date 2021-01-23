@@ -9,7 +9,7 @@
     "b": "dotnet watch run",
     "reverse": "dotnet ef dbcontext scaffold 'data source=DESKTOP-3550K4L\\HARMONY;database=rfid;user id=sa; password=123' Microsoft.EntityFrameworkCore.SqlServer -o Model -c 'MyContext'",
     "m0": "node ./remove-script.js && dotnet ef migrations add first && dotnet ef database drop -f && dotnet ef database update && dotnet watch run",
-    "m": "dotnet ef migrations add first && dotnet ef database update && dotnet watch run",
+    "m": "node ./remove-script.js && dotnet ef migrations add first && dotnet ef database update && dotnet watch run",
     "build-prod": "----------------------",
     "f-p0": "cd angular && ng build --prod --output-path ../wwwroot/a --base-href=/a/ && cd .. && node ./copy.script.js",
     "f-p": "cd angular && ng build --prod --output-path ../wwwroot",

@@ -31,7 +31,7 @@ export class SuperMenu {
         });
 
         adminModule = adminModule
-            .replace(/firstRoute\$/g, modules[0].module)
+            .replace(/firstRoute\$/g, this.helper.lowerFirst(modules[0].module))
             .replace(/\/\/generate/g, route)
             ;
 
@@ -44,43 +44,57 @@ export class SuperMenu {
 
 
     generateHtml() {
-        // get content
-        const adminFolder = `${this.configs.angularAppFolder}/admin`;
-
         const modules = this.configs.modules;
 
         let adminHtml = fse.readFileSync(`${this.configs.pathBaseFiles}/${ADMIN_COMPONENT_HTML}`, 'utf8');
-        // let imports = '';
-        let routes = '';
-        let navs = '';
-        let navs2 = '';
-        const menus = `
-        <mat-list-item [routerLink]="['/${adminFolder}/{class}']" routerLinkActive="router-active">
+        let matExpansionPanel = '';
+        const menu = `
+        <mat-list-item [routerLink]="['/admin/{parent}/{class}']" routerLinkActive="router-active">
             <span>{Class}s</span>
             <mat-divider></mat-divider>
         </mat-list-item>\r\n`;
-        // edit content
-        this.configs.classes.forEach(e => {
 
-            // for ADMIN_ROUTING_MODULE_TS
-            routes += `{ path: '${e.class}', loadChildren: () => import('./${e.class}/${e.class}.module').then(m => m.${this.helper.Cap(e.class)}Module), data: {animation: '${e.class}'} },\r\n`;
+        const expansionPanel = `
+        <mat-expansion-panel [expanded]="actuelRoute.includes('{parent}')"
+        [ngClass]="{'router-link-active': actuelRoute.includes('{parent}') }" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {parent}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-divider></mat-divider>
+            {navs}
+        </mat-expansion-panel>\r\n`;
 
-            // for ADMIN_COMPONENT_HTML
-            if (e.class.includes('user') || this.helper.propertyPrimitiveLenght(e) <= 4) {
-                // console.log(`>>>>>>>>>>>>>>nav 2 ${e.class} / ${this.helper.propertyPrimitiveLenght(e)}`);
-                navs2 += menus.replace(/\{class\}/g, e.class);
-                navs2 = navs2.replace(/\{Class\}/g, this.helper.Cap(e.class));
-            } else {
-                // console.log(`<<<<<<<<<<<<<<< nav 1 ${e.class} / ${this.helper.propertyPrimitiveLenght(e)}`);
-                navs += menus.replace(/\{class\}/g, e.class);
-                navs = navs.replace(/\{Class\}/g, this.helper.Cap(e.class));
-            }
+        this.configs.modules.map(e => {
 
-        });
+            matExpansionPanel += expansionPanel.replace(/\{parent\}/g, e.module);
 
-        fse.copySync(`${this.configs.pathAbs}/api/public/${MODELS_TS}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
-        this.helper.progress(`>> ${MODELS_TS} done`);
+            let navs = '';
+
+            e.classes.map(c => {
+                navs += menu
+                    .replace(/\{parent\}/g, e.module)
+                    .replace(/\{class\}/g, this.helper.lowerFirst(c))
+                    .replace(/\{Class\}/g, this.helper.Cap(c))
+                    ;
+            });
+
+            matExpansionPanel = matExpansionPanel.replace(/\{navs\}/g, navs);
+        })
+
+        adminHtml = adminHtml.replace('{mat-expansion-panel}', matExpansionPanel)
+
+        fse.ensureDirSync(`${this.configs.angularAppFolder}/admin`);
+
+        fse.writeFileSync(`${this.configs.angularAppFolder}/admin/${ADMIN_COMPONENT_HTML}`, adminHtml);
+
+        this.helper.progress(`>> ${ADMIN_COMPONENT_HTML} done`);
 
         return this;
+    }
+
+    copyModels() {
+        fse.copySync(`${this.configs.pathAbs}/api/public/${MODELS_TS}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
     }
 }

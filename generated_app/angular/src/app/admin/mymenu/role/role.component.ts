@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DeleteService } from 'src/app/components/delete/delete.service';
 import { Role } from 'src/app/models/models';
 import { startWith } from 'rxjs/operators';
-
+import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-role',
   templateUrl: './role.component.html',
@@ -27,7 +27,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   dataSource: Role[] = [];
   selectedList: Role[] = [];
 
-  displayedColumns = [/*'select',*/  'name', 'option'];
+  displayedColumns = ['select',  'name', 'option'];
 
   panelOpenState = false;
 
@@ -171,7 +171,7 @@ export class RoleComponent implements OnInit, OnDestroy {
   async deleteList() {
     const r = await this.mydialog.openDialog('role').toPromise();
     if (r === 'ok') {
-      const sub = this.uow.roles.deleteRange(this.selectedList as any).subscribe(() => {
+      const sub = this.uow.roles.deleteRangeByIds(this.selectedList.map(e => e.id)).subscribe(() => {
         this.selectedList = [];
         this.update.next(true);
       });

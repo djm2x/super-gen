@@ -1,5 +1,6 @@
 // @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import "./iconfont/montserrat.css";
 @import "~@angular/material/theming";
 @include mat-core();
 

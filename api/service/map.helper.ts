@@ -52,6 +52,7 @@ export class MapHelper {
         replaceModels: true,
         classes: new ClassReader().methode(this.modelsTs) as Model[],
         modules: [],
+        configJson: {appname: 'untitled', apptitle: 'untitled'}
     }
 
     constructor(private isDev: boolean) { }
@@ -71,17 +72,20 @@ export class MapHelper {
                 const { Options } = require(this.modelsTs);
 
                 this.configs.classes.splice(i, 1);
+
                 const opt: IOptions = new Options();
-    
+
                 for (const [module, classes] of Object.entries(opt.modules)) {
                     this.configs.modules.push({ module, classes })
-                } 
+                }
+
+                this.configs.configJson = opt.configJson;
             } catch (error) {
                 const e: Error = error;
 
                 console.log(e.message)
             }
-            
+
         }
     }
 
@@ -101,21 +105,21 @@ export class MapHelper {
 
             switch (file) {
 
-                case MENU_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs(); break;
+                case MENU_MODULE_TS: new MenuModule(this.helper, this.configs).generateTs().generateMatMenu(); break;
 
-                case ADMIN_MODULE_TS: new SuperMenu(this.helper, this.configs).generateTs().generateHtml(); break;
-                
+                case ADMIN_MODULE_TS: new SuperMenu(this.helper, this.configs).generateTs().generateHtml().copyModels(); break;
+
                 case CLASS_ROUTING_MODULE_TS: new ClassModule(this.helper, this.configs); break;
                 case CLASS_MODULE_TS: new ClassModule(this.helper, this.configs).generateTs(); break;
-                
+
                 case CLASS_COMPONENT_HTML: new ClassComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case CLASS_COMPONENT_TS: new ClassComponent(this.helper, this.configs).generateTs(); break;
-                
-                
+
+
                 case UPDATE_COMPONENT_HTML: new UpdateComponent(this.helper, this.configs).generateHTMLCss(); break;
                 case UPDATE_COMPONENT_TS: new UpdateComponent(this.helper, this.configs).generateTs(); break;
 
-                case UOW_SERVICE_TS: new UowClass(this.helper, this.configs).generateTs(); break;
+                case UOW_SERVICE_TS: new UowClass(this.helper, this.configs).generateTs().writeConfigs(); break;
 
                 default: break;
             }
@@ -130,8 +134,6 @@ export class MapHelper {
         const ACCOUNTSCONTROLLER_CS = 'AccountsController.cs';
         const CLASSCONTROLLER_CS = 'UsersController.cs';
 
-        // const primitivetypes = ['string', 'boolean', 'Date', 'number'];
-
         this.configs.pathBaseFiles = `${this.pathAbs}/api/service/asp/base.files`;
 
         const aspBaseFiles = fse.readdirSync(this.configs.pathBaseFiles);
@@ -143,7 +145,7 @@ export class MapHelper {
                 case MYCONTEXT_CS: new MyContext(this.helper, this.configs).generateTs(); break;
 
                 case CLASSCONTROLLER_CS: new ClassController(this.helper, this.configs).generateTs(); break;
-                // case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
+                case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
 
                 default: break;
             }
@@ -163,6 +165,10 @@ export interface IConfigs {
     replaceModels: boolean;
     classes: Model[],
     modules: { module: string, classes: string[] }[];
+    configJson: {
+        apptitle: string;
+        appname: string;
+    }
 }
 
 export interface IOptions {
@@ -171,5 +177,8 @@ export interface IOptions {
         admin: string[],
         [key: string]: string[],
     };
-    title: string;
+    configJson: {
+        apptitle: string;
+        appname: string;
+    }
 }

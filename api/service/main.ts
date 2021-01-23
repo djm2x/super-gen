@@ -7,7 +7,7 @@ function main(argvs: string[]) {
 
     m.onInit();
     m.mapAngular();
-    m.mapAsp();
+    // m.mapAsp();
 }
 
 // launch programme

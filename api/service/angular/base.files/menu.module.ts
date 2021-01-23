@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-menuLow$',
   template: '<router-outlet></router-outlet>',
 })
 export class menuCap$Component { }
