@@ -34,11 +34,6 @@
     </mat-form-field><mat-form-field appearance="fill" class="col-md-6">
         <mat-label>profil</mat-label>
         <input matInput [formControl]="profil" required>
-    </mat-form-field><mat-form-field appearance="fill" class="col-md-6">
-        <mat-label>roles</mat-label>
-        <mat-select [formControl]="idRole">
-            <mat-option *ngFor="let e of roles | async" [value]="e.id">{{ e.name }}</mat-option>
-        </mat-select>
     </mat-form-field>
     </div>
 
@@ -91,9 +86,6 @@
     </ng-container><ng-container matColumnDef="profil">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Profil</th>
         <td mat-cell *matCellDef="let row">{{row.profil}}</td>
-    </ng-container><ng-container matColumnDef="role">
-        <th mat-header-cell *matHeaderCellDef >Role</th>
-        <td mat-cell *matCellDef="let row">{{row.role}}</td>
     </ng-container>
       <ng-container matColumnDef="option" style="flex-direction: row-reverse;">
         <th mat-header-cell *matHeaderCellDef>

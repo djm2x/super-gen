@@ -2,8 +2,21 @@
 import { Injectable } from '@angular/core';
 import { AccountService } from './account.service';
 import { ConfigService } from './config.service';
+import { OrganismeService } from './organisme.service';
+import { SiteService } from './site.service';
+import { EntiteService } from './entite.service';
+import { CategorieService } from './categorie.service';
 import { UserService } from './user.service';
-import { RoleService } from './role.service';
+import { CollaborateurService } from './collaborateur.service';
+import { FonctionService } from './fonction.service';
+import { AffectationService } from './affectation.service';
+import { ConstructeurService } from './constructeur.service';
+import { FamilleService } from './famille.service';
+import { ArticleService } from './article.service';
+import { FournisseurService } from './fournisseur.service';
+import { ReceptionService } from './reception.service';
+import { DetailsReceptionService } from './detailsReception.service';
+import { FormatEmballageService } from './formatEmballage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +24,21 @@ import { RoleService } from './role.service';
 export class UowService {
   config = new ConfigService();
   accounts = new AccountService();
-  users = new UserService();
-roles = new RoleService();
+  organismes = new OrganismeService();
+sites = new SiteService();
+entites = new EntiteService();
+categories = new CategorieService();
+users = new UserService();
+collaborateurs = new CollaborateurService();
+fonctions = new FonctionService();
+affectations = new AffectationService();
+constructeurs = new ConstructeurService();
+familles = new FamilleService();
+articles = new ArticleService();
+fournisseurs = new FournisseurService();
+receptions = new ReceptionService();
+detailsReceptions = new DetailsReceptionService();
+formatEmballages = new FormatEmballageService();
 
   
   years = [...Array(new Date().getFullYear() - 2015).keys()].map(e => 2015 + e + 1);

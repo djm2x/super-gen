@@ -10,7 +10,5 @@ public string Password { get; set; }
 public bool IsActive { get; set; }
 public string ImageUrl { get; set; }
 public string Profil { get; set; }
-public int IdRole { get; set; }
-public virtual Role Role { get; set; }
 }
 }

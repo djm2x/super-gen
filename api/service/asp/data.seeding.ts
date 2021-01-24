@@ -32,12 +32,13 @@ export class DataSeeding {
 
                 if (isTypePrimitive && p.name.toLowerCase() !== 'id') {
                     const isDate = p.type === 'Date';
-                    const isInt = p.type === 'number';
+                    const isIdParent = p.name.toLowerCase().includes('parent');
+                    const isInt = p.type === 'number' && p.name.toLowerCase().includes('parent') === false;
                     const isBoolean = p.type === 'boolean';
                     const isEmail = p.name.toLowerCase().includes('email');
                     const isImage = p.name.toLowerCase().includes('image');
                     const isPassword = p.name.toLowerCase().includes('pass');
-                    // const isString = p.type === 'string';
+
                     switch (true) {
                         case isDate: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => f.Date.Past())\r\n`; break;
                         case isInt: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => f.Random.Number(1, 10))\r\n`; break;
@@ -45,7 +46,7 @@ export class DataSeeding {
                         case isEmail: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => id - 1 == 1 ? "sa@angular.io" : f.Internet.Email())\r\n`; break;
                         case isImage: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => "")\r\n`; break;
                         case isPassword: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => "123")\r\n`; break;
-                        // case isString: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => f.Lorem.Word())`;break;
+                        case isIdParent: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => id - 1 == 1 ? null : id - 2)\r\n`; break;
                         default: seed += `.RuleFor(o => o.${this.helper.Cap(p.name)}, f => f.Lorem.Word())\r\n`; break;
                     }
                 }

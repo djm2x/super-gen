@@ -33,13 +33,6 @@
         <input matInput formControlName="profil" required>
     </mat-form-field>
 
-<mat-form-field appearance="fill" class="col-md-6">
-        <mat-label>roles</mat-label>
-        <mat-select formControlName="idRole">
-            <mat-option *ngFor="let e of roles | async" [value]="e.id">{{ e.name }}</mat-option>
-        </mat-select>
-    </mat-form-field>
-
 <div class="col-md-12">
         <app-upload-image nameBtn="Image" [folderToSaveInServer]="folderToSaveInServer" [propertyOfParent]="imageUrlTo"
             [eventSubmitToParent]="imageUrlFrom" [eventSubmitFromParent]="eventSubmitFromParent">

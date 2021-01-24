@@ -39,6 +39,9 @@ export class MyContext {
                     } else if (p.name.toLowerCase() === 'email') {
                         modelBuilderEntity += `entity.HasIndex(e => e.${this.helper.Cap(p.name)}).IsUnique();\r\n`; // .IsRequired(false)
                         models += `public string ${this.helper.Cap(p.name)} { get; set; }\r\n`;
+                    } else if (p.name.toLowerCase().includes('parent')) {
+                        modelBuilderEntity += `entity.Property(e => e.${this.helper.Cap(p.name)});\r\n`; // .IsRequired(false)
+                        models += `public int? ${this.helper.Cap(p.name)} { get; set; }\r\n`;
                     } else {
                         modelBuilderEntity += `entity.Property(e => e.${this.helper.Cap(p.name)});\r\n`; // .IsRequired(false)
                         const type = p.type === 'Date' ? 'DateTime' : (p.type === 'number' ? 'int' : (p.type === 'boolean' ? 'bool' : p.type));
@@ -47,17 +50,23 @@ export class MyContext {
                 } else {
                     if (p.type.includes('[]')) {
 
+                        if (p.name.toLowerCase() === 'childs') {
+                            modelBuilderEntity += `entity.HasMany(e => e.${this.helper.Cap(p.name)}).WithOne(p => p.Parent).HasForeignKey(e => e.IdParent).OnDelete(DeleteBehavior.Cascade);\r\n`;
+                        } else {
+                            modelBuilderEntity += `entity.HasMany(e => e.${this.helper.Cap(p.name)}).WithOne(p => p.${this.helper.Cap(e.class)}).HasForeignKey(e => e.Id${this.helper.Cap(e.class)}).OnDelete(DeleteBehavior.Cascade);\r\n`;
+                        }
 
-                        // const pr: { name: string, type: string } = this.helper.getNameFor_withOne_ef_relation(e.class, p, this.configs.classes);
-                        // console.log(pr)
-                        modelBuilderEntity += `entity.HasMany(e => e.${this.helper.Cap(p.name)}).WithOne(p => p.${this.helper.Cap(e.class)}).HasForeignKey(e => e.Id${this.helper.Cap(e.class)}).OnDelete(DeleteBehavior.Cascade);\r\n`;
 
                         const cls = p.type.replace('[]', '');
+
                         models += `public virtual ICollection<${this.helper.Cap(cls)}> ${this.helper.Cap(p.name)} { get; set; }\r\n`;
                     } else {
-                        const pr: { name: string, type: string } = this.helper.getNameFor_HasOne_ef_relation(e.class, p, this.configs.classes);
+                        if (p.name.toLowerCase() === 'parent') {
+                            modelBuilderEntity += `entity.HasOne(e => e.${this.helper.Cap(p.name)}).WithMany(e => e.Childs).HasForeignKey(e => e.Id${this.helper.Cap(p.name)});\r\n`;
+                        } else {
+                            modelBuilderEntity += `entity.HasOne(e => e.${this.helper.Cap(p.name)}).WithMany(e => e.${this.helper.Cap(e.class)}s).HasForeignKey(e => e.Id${this.helper.Cap(p.name)});\r\n`;
+                        }
 
-                        modelBuilderEntity += `entity.HasOne(e => e.${this.helper.Cap(p.name)}).WithMany(e => e.${this.helper.Cap(e.class)}s).HasForeignKey(e => e.Id${this.helper.Cap(p.name)});\r\n`;
 
                         models += `public virtual ${this.helper.Cap(p.type !== 'any' ? p.type : p.name)} ${this.helper.Cap(p.name)} { get; set; }\r\n`;
                     }

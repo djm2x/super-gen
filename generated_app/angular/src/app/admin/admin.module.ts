@@ -15,7 +15,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'settings', pathMatch: 'full' },
       { path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule) },
-{ path: 'mymenu', loadChildren: () => import('./mymenu/mymenu.module').then(m => m.MymenuModule) },
+{ path: 'domaine', loadChildren: () => import('./domaine/domaine.module').then(m => m.DomaineModule) },
 
     ]
   }

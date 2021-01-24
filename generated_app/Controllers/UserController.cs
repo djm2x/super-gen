@@ -19,14 +19,13 @@ namespace Controllers
         public UsersController(MyContext context ) : base(context)
         { }
 
-        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{nom}/{email}/{profil}/{idRole}")]
-        public async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, string nom, string email, string profil, int idRole)
+        [HttpGet("{startIndex}/{pageSize}/{sortBy}/{sortDir}/{nom}/{email}/{profil}")]
+        public async Task<IActionResult> GetAll(int startIndex, int pageSize, string sortBy, string sortDir, string nom, string email, string profil)
         {
             var q = _context.Users
                 .Where(e => nom == "*" ? true : e.Nom.ToLower().Contains(nom.ToLower()))
 .Where(e => email == "*" ? true : e.Email.ToLower().Contains(email.ToLower()))
 .Where(e => profil == "*" ? true : e.Profil.ToLower().Contains(profil.ToLower()))
-.Where(e => idRole == 0 ? true : e.IdRole == idRole)
 
                 ;
 
@@ -45,8 +44,6 @@ password = e.Password,
 isActive = e.IsActive,
 imageUrl = e.ImageUrl,
 profil = e.Profil,
-role = e.Role.Name,
-idRole = e.IdRole,
 
 })
                 .ToListAsync()

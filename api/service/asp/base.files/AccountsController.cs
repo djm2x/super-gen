@@ -214,7 +214,7 @@ namespace Controllers
                         // new Claim(ClaimTypes.Role, user.Role.ToString()),
                     };
 
-                return Ok(new { code = 1, user, token = _tokkenHandler.GenerateTokken(claims) });
+                return Ok(new { code = 1, user, token = _tokkenHandler.GenerateTokken(claims), message = "connexion réussite" });
             }
 
             return Ok(new { message = "Mot de passe érroné, vous pouvez utiliser l'option de réinitialisation de mot de passe.", code = -1 });

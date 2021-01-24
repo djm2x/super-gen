@@ -17,8 +17,8 @@ const routes: Routes = [
   {
     path: '', component: SettingsComponent,
     children: [
-      { path: '', redirectTo: 'user', pathMatch: 'full' },
-      { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
+      { path: '', redirectTo: 'organisme', pathMatch: 'full' },
+      { path: 'affectation', loadChildren: () => import('./affectation/affectation.module').then(m => m.AffectationModule) },
 
     ]
   },

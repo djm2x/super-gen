@@ -27,18 +27,16 @@ export class UserComponent implements OnInit, OnDestroy {
   dataSource: User[] = [];
   selectedList: User[] = [];
 
-  displayedColumns = ['select',  'imageUrl', 'nom', 'email', 'isActive', 'profil', 'role', 'option'];
+  displayedColumns = ['select',  'imageUrl', 'nom', 'email', 'isActive', 'profil', 'option'];
 
   panelOpenState = false;
 
   nom = new FormControl('');
 email = new FormControl('');
 profil = new FormControl('');
-idRole = new FormControl(0);
 
 
-  roles = this.uow.roles.get();
-
+  
 
   constructor(public uow: UowService, public dialog: MatDialog
     , private mydialog: DeleteService, @Inject('BASE_URL') private url: string ) { 
@@ -59,7 +57,6 @@ idRole = new FormControl(0);
           this.nom.value === '' ? '*' : this.nom.value,
 this.email.value === '' ? '*' : this.email.value,
 this.profil.value === '' ? '*' : this.profil.value,
-this.idRole.value === 0 ? 0 : this.idRole.value,
 
         );
       }
@@ -72,7 +69,6 @@ this.idRole.value === 0 ? 0 : this.idRole.value,
     this.nom.setValue('');
 this.email.setValue('');
 this.profil.setValue('');
-this.idRole.setValue(0);
 
     this.update.next(true);
   }
@@ -81,8 +77,8 @@ this.idRole.setValue(0);
     this.update.next(true);
   }
 
-  getPage(startIndex, pageSize, sortBy, sortDir, nom, email, profil, idRole,) {
-    const sub = this.uow.users.getAll(startIndex, pageSize, sortBy, sortDir,  nom, email, profil, idRole,).subscribe(
+  getPage(startIndex, pageSize, sortBy, sortDir, nom, email, profil,) {
+    const sub = this.uow.users.getAll(startIndex, pageSize, sortBy, sortDir,  nom, email, profil,).subscribe(
       (r: any) => {
         console.log(r.list);
         this.dataSource = r.list;

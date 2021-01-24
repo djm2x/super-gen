@@ -15,8 +15,7 @@ export class UpdateComponent implements OnInit, OnDestroy {
   myForm: FormGroup;
   o: User;
   title = '';
-  roles = this.uow.roles.get();
-
+  
 
   folderToSaveInServer = 'users';
 
@@ -74,7 +73,6 @@ password: [this.o.password, [Validators.required, ]],
 isActive: [this.o.isActive, [Validators.required, ]],
 imageUrl: [this.o.imageUrl, [Validators.required, ]],
 profil: [this.o.profil, [Validators.required, ]],
-idRole: [this.o.idRole, [Validators.required, ]],
 
     });
   }

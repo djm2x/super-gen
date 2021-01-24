@@ -7,7 +7,7 @@
     <img style="height: 35px; margin-right: 10px;" src="assets/favicon.png" alt="omran">
     <span [routerLink]="['/admin']" routerLinkActive="active">{{(uow.config.items | async)?.appname}}</span>
     
-    <app-menu></app-menu>
+    <app-menu *ngIf="!isMobileWidth"></app-menu>
 
     <span style="flex: 1 1 auto;"></span>
     <app-theme></app-theme>
@@ -22,7 +22,7 @@
 </mat-toolbar>
 
 <mat-sidenav-container #sidenav class="admin-sidenav-container" style=" z-index: 9; height: 100vh;">
-  <mat-sidenav #snav [mode]="isMobileWidth ? 'push' : 'side'" [opened]="!isMobileWidth" [fixedInViewport]="true"
+  <mat-sidenav #snav [mode]="isMobileWidth ? 'push' : 'side'" [opened]="isMobileWidth" [fixedInViewport]="true"
     fixedTopGap="49.9">
     <mat-nav-list class="list" style="width: 200px; padding: 0;">
       <div class="logo">
@@ -47,24 +47,94 @@
             </mat-expansion-panel-header>
             <mat-divider></mat-divider>
             
+        <mat-list-item [routerLink]="['/admin/settings/organisme']" routerLinkActive="router-active">
+            <span>Organismes</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/settings/site']" routerLinkActive="router-active">
+            <span>Sites</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/settings/entite']" routerLinkActive="router-active">
+            <span>Entites</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/settings/categorie']" routerLinkActive="router-active">
+            <span>Categories</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/settings/collaborateur']" routerLinkActive="router-active">
+            <span>Collaborateurs</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
         <mat-list-item [routerLink]="['/admin/settings/user']" routerLinkActive="router-active">
             <span>Users</span>
             <mat-divider></mat-divider>
         </mat-list-item>
 
+        <mat-list-item [routerLink]="['/admin/settings/role']" routerLinkActive="router-active">
+            <span>Roles</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/settings/fonction']" routerLinkActive="router-active">
+            <span>Fonctions</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/settings/affectation']" routerLinkActive="router-active">
+            <span>Affectations</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
         </mat-expansion-panel>
 
-        <mat-expansion-panel [expanded]="actuelRoute.includes('mymenu')"
-        [ngClass]="{'router-link-active': actuelRoute.includes('mymenu') }" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel [expanded]="actuelRoute.includes('domaine')"
+        [ngClass]="{'router-link-active': actuelRoute.includes('domaine') }" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    mymenu
+                    domaine
                 </mat-panel-title>
             </mat-expansion-panel-header>
             <mat-divider></mat-divider>
             
-        <mat-list-item [routerLink]="['/admin/mymenu/role']" routerLinkActive="router-active">
-            <span>Roles</span>
+        <mat-list-item [routerLink]="['/admin/domaine/constructeur']" routerLinkActive="router-active">
+            <span>Constructeurs</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/domaine/famille']" routerLinkActive="router-active">
+            <span>Familles</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/domaine/article']" routerLinkActive="router-active">
+            <span>Articles</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/domaine/fournisseur']" routerLinkActive="router-active">
+            <span>Fournisseurs</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/domaine/reception']" routerLinkActive="router-active">
+            <span>Receptions</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/domaine/detailsReception']" routerLinkActive="router-active">
+            <span>DetailsReceptions</span>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+
+        <mat-list-item [routerLink]="['/admin/domaine/formatEmballage']" routerLinkActive="router-active">
+            <span>FormatEmballages</span>
             <mat-divider></mat-divider>
         </mat-list-item>
 
