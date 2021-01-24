@@ -5,6 +5,7 @@ import { LoaderService } from './loader.service';
 import { Router } from '@angular/router';
 import { SnackBarService } from './snack-bar.service';
 import { SessionService } from '../shared';
+import { DialogMessageService } from './dialog-message.component';
 // import { SessionService } from '../shared';
 
 @Injectable({
@@ -21,6 +22,7 @@ export class LoaderInterceptor implements HttpInterceptor {
 
   constructor(private loaderService: LoaderService, public router: Router
     , public snackBar: SnackBarService , private session: SessionService
+    , public dialog: DialogMessageService
   ) { }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
@@ -67,6 +69,7 @@ export class LoaderInterceptor implements HttpInterceptor {
               // this.toast.toastError(err.error);
               const er = err.error ? `${err.status}: ${err.error.Description}` : `${err.status}`
               this.snackBar.manageStatusCode(err.status);
+              this.dialog.openDialog(err);
               // this.snackBar.notifyAlert(er);
               // this.snackBar.openSnackBar(`${err.status} : ${err.error.Description}`);
             }

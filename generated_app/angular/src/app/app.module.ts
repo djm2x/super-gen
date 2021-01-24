@@ -17,7 +17,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
-
+import { LoadModuleIndicatorService } from './shared/load-module-indicator.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,6 +44,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     // MatProgressSpinnerModule,
   ],
   providers: [
+    LoadModuleIndicatorService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: LoaderInterceptor,
