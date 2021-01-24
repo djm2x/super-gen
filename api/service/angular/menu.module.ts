@@ -22,8 +22,9 @@ export class MenuModule {
             let route = '';
 
             e.classes.map(c => {
-                route = routes.replace(/childLower\$/g, this.helper.lowerFirst(c));
-                route = route.replace(/childCap\$/g, this.helper.Cap(c));
+                route += routes
+                    .replace(/childLower\$/g, this.helper.lowerFirst(c))
+                    .replace(/childCap\$/g, this.helper.Cap(c));
             });
 
             let newMenuModule = menuModule

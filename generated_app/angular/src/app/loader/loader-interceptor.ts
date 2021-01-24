@@ -49,12 +49,8 @@ export class LoaderInterceptor implements HttpInterceptor {
           if (event instanceof HttpResponse) {
             this.removeRequest(req);
             observer.next(event);
-            if (event.body?.costumMessage) {
-              this.snackBar.notifyOk(200, event.body?.costumMessage);
-            } else {
-              this.snackBar.manageStatusCode(event.status);
-
-            }
+            const code = event.status === 200 && event.url.includes('post') ? 201 : event.status;
+            this.snackBar.manageStatusCode(code);
           }
         },
         err => {

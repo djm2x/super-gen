@@ -7,7 +7,6 @@ export class Options {
       'Categorie',
       'Collaborateur',
       'User',
-      'Role',
       'Fonction',
       'Affectation',
     ],
