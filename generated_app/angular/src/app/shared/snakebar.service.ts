@@ -9,11 +9,8 @@ export class SnackbarService {
   constructor(private snackBar: MatSnackBar) { }
 
   openMySnackBar(message: string, action?: string) {
-    // this.snackBarRef = this.snackBar.open(message, action, {
-    //   duration: 2000,
-    // });
     const configs: MatSnackBarConfig<any> = {
-      panelClass: ['customClass'],
+      panelClass: ['load-snackbar'],
       data: message,
     };
 
@@ -22,7 +19,7 @@ export class SnackbarService {
 
   openSnackBar(message: string, action = 'close') {
     this.snackBarRef = this.snackBar.open(message, action, {
-      duration: 10000,
+      // duration: 10000,
     });
   }
 
@@ -36,11 +33,12 @@ export class SnackbarService {
   selector: 'app-snack-bar',
   template: `
   <div class="row">
-    <p>{{ data }}</p>
+    <span>{{ data }}</span>
     <mat-spinner color="warn" class="custom-spinner" diameter="27"></mat-spinner>
   </div>`,
   styles: [`
     .row {
+      padding: 0 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -48,5 +46,5 @@ export class SnackbarService {
   `]
 })
 export class MessageComponent {
-  constructor(@Inject(MAT_SNACK_BAR_DATA) public data: any) { }
+  constructor(@Inject(MAT_SNACK_BAR_DATA) public data: string) { }
 }

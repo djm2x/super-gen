@@ -51,6 +51,12 @@ $dark: mat-dark-theme($primary, $accent, $warn);
     color: white !important;
   }
 
+  .load-snackbar {
+    background-color: var(--accent);
+    color: white !important;
+    font-weight: bold;
+  }
+
   .green-snackbar {
     background-color: var(--primary);
     color: white !important;
@@ -66,6 +72,12 @@ $dark: mat-dark-theme($primary, $accent, $warn);
 
   .alert-snackbar {
     background-color: var(--warn);
+  }
+
+  .load-snackbar {
+    background-color: var(--accent);
+    color: white !important;
+    font-weight: bold;
   }
 
   .green-snackbar {
