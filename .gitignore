@@ -4,7 +4,7 @@
 **/dist
 **/test
 **/*.zip
-# **/*.xlsx
+**/*.xlsx
 
 
 **/fotos
@@ -12,5 +12,5 @@
 **/generated_app
 **/didh
 **/old
-# **/excels
+**/excel
 **/database-scripte
