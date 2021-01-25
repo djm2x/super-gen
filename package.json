@@ -41,7 +41,7 @@
     "merge-branch-to-master-branch": "git merge new-one",
     "init": "git init && git remote add origin https://github.com/djm2x/super-gen.git",
     "cmt": "git add . && git commit -m \"some changes\"",
-    "push": "git add . && git commit -m \"change name foler api to node\" && git push -u origin master"
+    "push": "git add . && git commit -m \"change dir for generator\" && git push -u origin master"
   },
   "private": true,
   "dependencies": {
