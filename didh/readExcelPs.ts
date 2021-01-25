@@ -3,8 +3,8 @@ import * as _ from 'lodash';
 import * as fse from 'fs-extra';
 
 async function main() {
-    const path = `${__dirname}/excel/ps2011.xlsx`;
-    const createFiles = fse.createWriteStream(`${__dirname}/excel/ps2011.sql`, { flags: 'w' /*flags: 'a' preserved old data*/ })
+    const path = `${__dirname}/excel/ps2008.xlsx`;
+    const createFiles = fse.createWriteStream(`${__dirname}/excel/ps2008.sql`, { flags: 'w' /*flags: 'a' preserved old data*/ })
 
     let schema = {
         'Id': { prop: 'Id', type: Number, required: false },
@@ -80,11 +80,16 @@ async function main() {
             { id: 6, name: `détention arbitraire` },
             { id: 7, name: `EI droits culturels 20111` },
             { id: 8, name: `EI solidarité inle 2016` },
+
+            { id: 9, name: `GTDFA` },
+            { id: 10, name: `GT droit éducation` },
+            { id: 11, name: `RS migrants` },
+            { id: 12, name: `GT prostituition enfant` },
         ]
 
         const sheets: { name: string }[] = await readXlsxFile(path, { getSheets: true });
 
-        let recomLenght = 300;
+        let recomLenght = 1000;
 
 
         for (const sheet of sheets/*.filter((e, i) => i < 2)*/) {
