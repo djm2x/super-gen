@@ -31,7 +31,7 @@ export class SuperMenu {
         });
 
         adminModule = adminModule
-            .replace(/firstRoute\$/g, this.helper.lowerFirst(modules[0].module))
+            .replace(/firstRoute\$/g, this.helper.lowerFirst(modules[0]?.module))
             .replace(/\/\/generate/g, route)
             ;
 
@@ -95,6 +95,6 @@ export class SuperMenu {
     }
 
     copyModels() {
-        fse.copySync(`${this.configs.pathAbs}/api/public/${MODELS_TS}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
+        fse.copySync(`${this.configs.modelsTs}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
     }
 }

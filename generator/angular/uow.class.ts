@@ -65,14 +65,21 @@ export class UowClass {
     }
 
     writeConfigs() {
-        let configJson = JSON.stringify(this.configs.configJson, null, '  ');
+        try {
+            let configJson = JSON.stringify(this.configs.configJson, null, '  ');
 
-        fse.writeFileSync(`${this.configs.aspFolder}/angular/src/assets/json/${CONFIG_JSON}`, configJson);
+            fse.writeFileSync(`${this.configs.aspFolder}/angular/src/assets/json/${CONFIG_JSON}`, configJson);
 
-        let indexHtml = fse.readFileSync(`${this.configs.aspFolder}/angular/src/index.html`, 'utf8');
+            let indexHtml = fse.readFileSync(`${this.configs.aspFolder}/angular/src/index.html`, 'utf8');
 
-        indexHtml = indexHtml.replace(/\-apptitle\-/g, this.configs.configJson.apptitle);
+            indexHtml = indexHtml.replace(/\-apptitle\-/g, this.configs.configJson.apptitle);
 
-        fse.writeFileSync(`${this.configs.aspFolder}/angular/src/index.html`, indexHtml);
+            fse.writeFileSync(`${this.configs.aspFolder}/angular/src/index.html`, indexHtml);
+        } catch (error) {
+            const e: Error = error;
+
+            console.log(e.message);
+        }
+        
     }
 }

@@ -38,13 +38,14 @@ const CLASS_SERVICE_TS = 'class.service.ts';
 
 export class MapHelper {
     private pathAbs = this.isDev ? `${process.cwd()}` : `${process.cwd()}/dist`;
-    private generatedAppPath = `${this.pathAbs}/generated_app`;
-    private generatedAppPath0 = `${this.pathAbs}/test`;
+    private generatedAppPath0 = `${this.pathAbs}/generated_app`;
+    private generatedAppPath = `${this.pathAbs}/test`;
     private helper = new HelperFunctions();
-    private modelsTs = `${this.pathAbs}/api/public/models.ts`;
+    private modelsTs = `${this.pathAbs}/generator/models.ts`;
 
     private configs: IConfigs = {
         pathAbs: this.pathAbs,
+        modelsTs: this.modelsTs,
         angularAppFolder: `${this.generatedAppPath}/angular/src/app`,
         aspFolder: this.generatedAppPath,
         currentBaseFile: '',
@@ -91,7 +92,7 @@ export class MapHelper {
 
     mapAngular() {
         // const primitivetypes = ['string', 'boolean', 'Date', 'number'];
-        this.configs.pathBaseFiles = `${this.pathAbs}/api/service/angular/base.files`;
+        this.configs.pathBaseFiles = `${this.pathAbs}/generator/angular/base.files`;
 
         const angularBaseFiles = fse.readdirSync(this.configs.pathBaseFiles);
 
@@ -134,7 +135,7 @@ export class MapHelper {
         const ACCOUNTSCONTROLLER_CS = 'AccountsController.cs';
         const CLASSCONTROLLER_CS = 'UsersController.cs';
 
-        this.configs.pathBaseFiles = `${this.pathAbs}/api/service/asp/base.files`;
+        this.configs.pathBaseFiles = `${this.pathAbs}/generator/asp/base.files`;
 
         const aspBaseFiles = fse.readdirSync(this.configs.pathBaseFiles);
 
@@ -158,6 +159,7 @@ export class MapHelper {
 
 export interface IConfigs {
     pathAbs: string;
+    modelsTs: string;
     angularAppFolder: string;
     aspFolder: string;
     currentBaseFile: string;

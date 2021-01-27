@@ -5,8 +5,8 @@ import { filter } from 'lodash';
 
 
 const configs = {
-  pathBaseFiles: `${process.cwd()}/generate-i18n/base-files`,
-  pathGenerateFiles: `${process.cwd()}/generate-i18n/generated`,
+  pathBaseFiles: `${__dirname}/base-files`,
+  pathGenerateFiles: `${__dirname}/generated`,
 }
 
 
@@ -19,7 +19,8 @@ async function doReady() {
   files.forEach((e, i) => {
     const index = e.lastIndexOf('/');
 
-    const newFolder = e.substring(0, index).replace(configs.pathBaseFiles, '');
+    const newFolder0 = e.substring(0, index).replace(configs.pathBaseFiles.replace('\\', '/'), '');
+    const newFolder = newFolder0.replace(configs.pathBaseFiles, '');
     const file = e.substring(index + 1)
     console.log(newFolder + '>>>>>>>>>>>>>')
     console.log(file)

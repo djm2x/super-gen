@@ -113,6 +113,9 @@ export class HelperFunctions {
     }
 
     lowerFirst(name: string) {
+        if (!name) {
+            return 'undefined'
+        }
         return name.charAt(0).toLowerCase() + name.slice(1);
     }
 
