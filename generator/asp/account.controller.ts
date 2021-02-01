@@ -41,7 +41,7 @@ export class AccountController {
 
         }
 
-
+        fse.ensureDirSync(`${this.configs.aspFolder}/Controllers`)
         fse.writeFileSync(`${this.configs.aspFolder}/Controllers/${ACCOUNTSCONTROLLER_CS}`, content);
         this.helper.progress(`>> ${ACCOUNTSCONTROLLER_CS} done`);
         // }

@@ -1,30 +1,22 @@
-export class User {
+export class CustomerProduct {
+  customerId = 0;
+  productId = 0;
+  customer = new Customer();
+  product = new Product();
+}
+
+export class Customer {
   id = 0;
-  firstname = '';
-  lastname = '';
-  phone = '';
   email = '';
-  password = '';
+  subscriptionDate = new Date();
+  cashback = 0;
 
-  username = '';
-  ExternalId = null;
-  languageId = 0;
-  language: Language;
+  //cart:Cart;
 
-  roleId = 0;
-  role: Role;
-}
-
-export class Role {
-  id = 0;
-  value= '';
-
-}
-
-
-export class Language {
-  id = 0;
-  value= '';
+  addresses: Array<_Address>;
+  shopCustomerOrders: ShopCustomerOrder[] = [];//Migration
+  products: Product[] = [];//Migration
+  reviews: Review[] = [];//Migration maybe
 }
 
 export class Options {

@@ -3,10 +3,10 @@
   <div class="row">
     <div class="col-12">
         <div class="page-title-box d-flex align-items-center justify-content-between">
-            <h4 class="mb-0 font-size-18">Tableau de bord </h4>
+            <h4 class="mb-0 font-size-18">{{ 'Tableau_de_bord' | translate }} </h4>
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item active">Bienvenue à bord !</li>
+                    <li class="breadcrumb-item active">{{ 'Bienvenue_à_bord_!' | translate }}</li>
                 </ol>
             </div>
         </div>
@@ -17,6 +17,13 @@
       <div class="card">
           <div class="card-body">
             <app-stat title="Commande" [value]="nbOrders" icon="bx bx-shopping-bag"></app-stat>
+            <input type="text" placeholder="{{ '{{ '{{ '{{ '{{ 'jjjjjj' | translate }}' | translate }}' | translate }}' | translate }}' | translate }}">
+            <input type="text" placeholder="jjjjjj">
+            <input type="text" placeholder="jjjjjj">
+            <input type="text" placeholder="jjjjjj">
+            <input type="text" placeholder="jjjjjj">
+
+            <mat-icon>{{ 'jjjjjjj' | translate }}</mat-icon>
           </div>
       </div>
     </div>
@@ -30,7 +37,7 @@
     <div class="col-xl-4">
       <div class="card">
           <div class="card-body">
-            <app-stat title="Prix moyen" [value]="'MAD '+round(average)" icon="bx bx-stats"></app-stat>
+            <app-stat title="{{ 'Prix' | translate }} moyen" [value]="'MAD '+round(average)" icon="bx bx-stats"></app-stat>
           </div>
       </div>
     </div>
@@ -38,7 +45,7 @@
 
   <div class="card">
     <div class="card-body">
-        <h4 class="card-title mb-4 float-sm-left">Evolution moyenne des commandes</h4>
+        <h4 class="card-title mb-4 float-sm-left">{{ 'Evolution_moyenne_des_commandes' | translate }}</h4>
         <div class="clearfix"></div>
         <apx-chart dir="ltr" class="apex-charts" [chart]="emailSentBarChart.chart"
             [series]="emailSentBarChart.series" [legend]="emailSentBarChart.legend"
@@ -61,11 +68,11 @@
                   <table class="table table-centered mb-0 table-nowrap">
                     <thead class="thead-light">
                       <tr>
-                        <th>Produit</th>
-                        <th>Description du produit</th>
+                        <th>{{ 'Produit' | translate }}</th>
+                        <th>{{ 'Description_du_produit' | translate }}</th>
                         <th>Prix</th>
-                        <th>Stock</th>
-                        <th>Nombre de commandes</th>
+                        <th>{{ 'Stock' | translate }}</th>
+                        <th>{{ 'Nombre_de_commandes' | translate }}</th>
                       </tr>
                     </thead>
                     <tbody>

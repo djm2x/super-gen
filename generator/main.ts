@@ -6,8 +6,8 @@ function main(argvs: string[]) {
     const m = new MapHelper(isDev);
 
     m.onInit();
-    m.mapAngular();
-    // m.mapAsp();
+    // m.mapAngular();
+    m.mapAsp();
 }
 
 // launch programme
