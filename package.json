@@ -36,7 +36,7 @@
     "move-to-master-branch": "git checkout",
     "merge-branch-to-master-branch": "git merge new-one",
     "init": "git init && git remote add origin https://github.com/djm2x/super-gen.git",
-    "cmt": "git add . && git commit -m \"some changes\"",
+    "cmt": "git add . && git commit -m \"translate : add generator\"",
     "push": "git add . && git commit -m \"change dir for generator\" && git push -u origin master"
   },
   "private": true,

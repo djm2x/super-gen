@@ -29,6 +29,7 @@ async function doReady() {
 
     // let obj = '{_}';
     let obj = `{"${hierarchy[hierarchy.length - 1]}": {_}}`;
+    let obj = `{"${hierarchy[hierarchy.length - 1]}": {_}}`;
 
     // hierarchy.forEach(e => {
     //   obj = obj.replace('_', `"${e}": {_}`)
