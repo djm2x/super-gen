@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShopCustomerOrderService, OrderService, ProductService, ShopService, SessionService } from 'src/app/core/services';
-import { ShopCustomerOrder, Order, Shop } from 'src/app/core/models';
+import { ShopCustomerOrder, Order, Shop, Partner } from 'src/app/core/models';
 import localeFr from '@angular/common/locales/fr';
 
 import { emailSentBarChart } from './data';
@@ -11,6 +11,8 @@ import { PictureService } from 'src/app/core/services/picture.service';
 import { Picture } from 'src/app/core/models/picture';
 import { startWith, take } from 'rxjs/operators';
 import { DatePipe, registerLocaleData } from '@angular/common';
+import { UowService } from 'src/app/core/services/uow.service';
+import { displayImage } from 'src/environments/environment';
 
 const IMAGE = 'assets/images/profile-img.png';
 
@@ -23,7 +25,7 @@ registerLocaleData(localeFr, 'fr');
   styleUrls: ['./default.component.scss']
 })
 export class DefaultComponent implements OnInit {
-
+  displayImage = displayImage;
   // bread crumb items
   breadCrumbItems: Array<{}>;
   //dasboard stat
@@ -34,18 +36,9 @@ export class DefaultComponent implements OnInit {
   data: number[] = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   formData: FormGroup;
 
-  constructor(private shopCustomerOrderService: ShopCustomerOrderService,
-    private orderService: OrderService,
-    private formbuilder: FormBuilder,
-    private productService: ProductService,
-    private pictureService: PictureService,
-    private session: SessionService,
-  ) { }
-
+  constructor(private formbuilder: FormBuilder, public session: SessionService, private uow: UowService,) { }
 
   ngOnInit() {
-
-
     this.formData = this.formbuilder.group({
       products: this.formbuilder.array([])
     })
@@ -57,47 +50,91 @@ export class DefaultComponent implements OnInit {
       data: this.data
     }];
 
-    this.session.eventFromTopBar.pipe(startWith(0)).subscribe(r => {
+    this.session.eventFromTopBar.pipe(startWith(0)).subscribe(async r => {
 
       const shopId = this.session.shop.id ?? r;
       this.reset();
 
-      // const shop = JSON.parse(sessionStorage.getItem('shop')) as Shop;
-      // console.log(shop)
-      this.getAllByShop(shopId);
-      this.getAllByShopForDashboard(shopId);
+      if (this.session.isPartner) {
+        // get products
+        await this.getAllByPartnerId(this.session.partner)
+      } else {
+        this.getAllByShop(shopId);
+        // get products
+        this.getAllByShopForDashboard(shopId);
+      }
     });
+  }
 
+  async getAllByPartnerId(partner: Partner) {
+    // 1 get products
+    const products = await this.uow.products.getAllByPartnerId(partner.id).toPromise();
 
+    const productsForm = this.formData.get('products') as FormArray;
 
+    products.map(e => this.product(e, e?.pictures[0]?.urlTn)).map(e => productsForm.push(e));
 
+    // 2 get specific product from shopCustomerOrders
+    const shops: Shop[] = (partner as any)?.shops;
+
+    const shopCustomerOrders = await this.uow.shopCustomerOrders.getAllByPartner(partner.id, shops.map(e => e.id).join(';')).toPromise();
+
+    shopCustomerOrders.forEach((shopCustomerOrder, i) => {
+
+      let productsInCart = shopCustomerOrder.order.cart.productVariantCarts
+        .map(c => {
+          let p: Product = null;
+          try {
+            p = JSON.parse(c.product);
+          } catch (error) { }
+
+          return p;
+        })
+        .filter(e => e !== null && e !== undefined)
+        ;
+
+      //obtain the product equivalent to that on products (filterd bu patener and crategory brand)
+      productsInCart = productsInCart.filter(p => products.map(p => p.id).includes(p.id));
+
+      productsInCart.map(e => {
+        this.calculeChartData(e, shopCustomerOrder.order.orderDate, i);
+      });
+
+      this.nbOrders = productsInCart.length;
+    })
   }
 
   getAllByShop(shopId) {
-    this.shopCustomerOrderService.getAllByShop(shopId).subscribe((shopCustomerOrders) => {
+    this.uow.shopCustomerOrders.getAllByShop(shopId).subscribe((shopCustomerOrders) => {
 
       this.nbOrders = shopCustomerOrders.length;
 
-      let i = 0;
-
-      shopCustomerOrders.forEach(shopCustomerOrder => {
-        this.orderService.getById(shopCustomerOrder.orderId).subscribe((order) => {
-          i++;
-          if (order?.price) {
-            this.revenue += order.price;
-            this.average += order.price / i;
-          }
-          // const date = new Date(pipe.transform(shopCustomerOrder.date, 'short'));
-          const date = new Date(shopCustomerOrder.date);
-
-          if (date && date.getFullYear() === new Date().getFullYear()) {
-            const month = date.getMonth();
-            this.data[month] += 1;
-            this.refreshChart();
-          }
-        })
+      shopCustomerOrders.forEach((shopCustomerOrder, i) => {
+        this.calculeChartData(shopCustomerOrder.order, shopCustomerOrder.date, i)
       })
     })
+  }
+
+  getAllByShopForDashboard(shopId) {
+    this.uow.products.getAllByShopForDashboard(shopId).subscribe((products) => {
+
+      let productsForm = this.formData.get('products') as FormArray;
+      products.map(e => this.product(e, e?.pictures[0]?.urlTn)).map(e => productsForm.push(e))
+    })
+  }
+
+  calculeChartData(e: Order | Product, dateAchat: Date, i: number) {
+    if (e?.price) {
+      this.revenue += e.price;
+      this.average += e.price / (i + 1);
+    }
+    const date = new Date(dateAchat);
+
+    if (date && date.getFullYear() === new Date().getFullYear()) {
+      const month = date.getMonth();
+      this.data[month] += 1;
+      this.refreshChart();
+    }
   }
 
   reset() {
@@ -107,24 +144,6 @@ export class DefaultComponent implements OnInit {
     this.data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     (this.formData.get('products') as FormArray).clear();
-  }
-
-  getAllByShopForDashboard(shopId) {
-    this.productService.getAllByShopForDashboard(shopId).subscribe((products) => {
-
-      products.forEach(product => {
-        let productsForm = this.formData.get('products') as FormArray;
-
-        if (product.pictures.length !== 0) {
-          this.pictureService.getById(product.pictures[0].id).subscribe((picture: Picture) => {
-            productsForm.push(this.product(product, picture.urlTn));
-          }
-          );
-        } else {
-          productsForm.push(this.product(product, null));
-        }
-      })
-    })
   }
 
   imgError(img: any) {
@@ -149,8 +168,7 @@ export class DefaultComponent implements OnInit {
     this.emailSentBarChart.series = [{
       name: 'Nombre de commandes',
       data: this.data
-    }
-    ]
+    }]
   }
 
   form(): FormArray {

@@ -2,6 +2,10 @@ import * as fse from 'fs-extra';
 import * as glob from 'glob';
 import { Glob } from 'glob';
 import { filter } from 'lodash';
+import * as translate from '@vitalets/google-translate-api';
+// const translate = require('@vitalets/google-translate-api');
+import { IOptions, languages } from '@vitalets/google-translate-api';
+import { httpsOverHttp } from 'tunnel';
 
 
 const configs = {
@@ -12,67 +16,105 @@ const configs = {
 
 async function doReady() {
   // const files = fse.readdirSync(configs.pathBaseFiles);
-  const p = new Promise<string[]>((res, rej) => new Glob(`${configs.pathBaseFiles}/**/*.html`, (err, files) => err ? rej(err) : res(files)))
+  const files = await new Promise<string[]>((res, rej) => new Glob(`${configs.pathBaseFiles}/**/*.html`, (err, files) => err ? rej(err) : res(files)))
 
-  const files = await p;
+  await Promise.all(
+    files?.map(async (e, i) => {
+      const dist = e.substring(e.indexOf('base-files/')).replace('base-files/', '');
+      const fileName = e.substring(e.lastIndexOf('/') + 1);
 
-  files.forEach((e, i) => {
-    const dist = e.substring(e.indexOf('base-files/')).replace('base-files/', '');
-    const fileName = e.substring(e.lastIndexOf('/') + 1);
+      let htmlContent = fse.readFileSync(e, 'utf8');
 
-    console.log(__dirname)
-    console.log(dist)
-    console.log(fileName)
+      let listOfText = doHtml(htmlContent);
 
-    const hierarchy = dist.split('/')
-    hierarchy.pop();
+      listOfText.map(e => {
+        htmlContent = htmlContent.replace(e, `{{ '${e.replace(/\s/g, '_')}' | translate }}`)
+      })
 
-    // let obj = '{_}';
-    let obj = `{"${hierarchy[hierarchy.length - 1]}": {_}}`;
-    let obj = `{"${hierarchy[hierarchy.length - 1]}": {_}}`;
+      fse.ensureDirSync(`${configs.pathGenerateFiles}/${dist}`)
 
-    // hierarchy.forEach(e => {
-    //   obj = obj.replace('_', `"${e}": {_}`)
-    // });
+      //write html
+      fse.writeFileSync(`${configs.pathGenerateFiles}/${dist}/${fileName}`, htmlContent);
 
-    let htmlContent = fse.readFileSync(e, 'utf8');
+      console.log(`${configs.pathGenerateFiles}/${dist}/${fileName}\r\n`)
 
-
-
-    let listOfText = doHtml(htmlContent);
-
-    listOfText.map(e => {
-      htmlContent = htmlContent.replace(e, `{{ '${e.replace(/\s/g,'_')}' | translate }}`)
+      await createJsonFiles(dist, listOfText);
     })
+  );
+}
 
-    let keyValue = listOfText.map(e => `"${e.replace(/\s/g,'_')}":"${e}"`).join(',');
+function timeOut(time = 1000) {
+  return new Promise<boolean>((res, _) => setTimeout(() => res(true), time));
+}
 
-    // remove last -,-
-    // keyValue = keyValue.slice(0, -1);
+async function createJsonFiles(distination: string, listOfText: string[]) {
 
-    obj = obj.replace('_', keyValue)
+  await Promise.all(
+    ['en', 'fr', 'ar'].map(async lang => {
 
-    // console.log(JSON.stringify(obj, null, '  '));
-    fse.ensureDirSync(`${configs.pathGenerateFiles}/${dist}`)
+      let promise = await Promise.all(
+        listOfText.map(async (text, i) => `"${text.replace(/\s/g, '_')}":"${await tran(text, lang)}"`)
+      );
 
-    // write json
-    fse.writeFileSync(`${configs.pathGenerateFiles}/${dist}/fr.json`, JSON.parse(JSON.stringify(obj, null, '  ')) );
+      let keyValue = promise.join(',');
 
-    //write html
-    fse.writeFileSync(`${configs.pathGenerateFiles}/${dist}/${fileName}`, htmlContent);
+      const hierarchy = distination.split('/');
 
-  })
+      hierarchy.pop();
 
-  // files.filter(e => e.endsWith('.html')).forEach((fileName, i) => {
-  //   let htmlContent = fse.readFileSync(`${configs.pathBaseFiles}/${fileName}`, 'utf8');
+      let obj = '{_}';
+      // let obj = `{"${hierarchy[hierarchy.length - 1]}": {_}}`;
 
-  //   doHtml(htmlContent)
+      hierarchy?.forEach(e => {
+        obj = obj.replace('_', `"${e}": {_}`)
+      });
 
+      obj = obj.replace('_', keyValue)
 
-  //   fse.ensureDirSync(`${configs.pathGenerateFiles}`);
+      // console.log(JSON.stringify(obj, null, '  '));
+      fse.ensureDirSync(`${configs.pathGenerateFiles}/${distination}`)
 
-  //   fse.writeFileSync(`${configs.pathGenerateFiles}/${fileName}`, htmlContent);
-  // });
+      const jsonLang = JSON.parse(JSON.stringify(obj));
+      // write json
+      fse.writeFileSync(`${configs.pathGenerateFiles}/${distination}/${lang}.json`, jsonLang);
+
+      console.log(`${configs.pathGenerateFiles}/${distination}/${lang}.json`)
+    })
+  );
+
+  console.log(`\r\n`)
+}
+async function tran(text: string, lang: string): Promise<string> {
+  try {
+    // const b = await timeOut();
+    const proxy = {
+      agent: httpsOverHttp({
+        proxy: {
+          host: '127.0.0.1',
+          proxyAuth: 'me:12345679',
+          port: 9000,
+          headers: {
+            'User-Agent': 'Node'
+          }
+        }
+      })
+    }
+
+    if (languages.fr === lang) {
+      return text;
+    }
+
+    // for the moment we cant acces translate.api
+    return text;
+
+    const r = await translate(text, { from: languages.fr, to: lang });
+
+    return r.text;
+  } catch (e) {
+    console.log('>>>>>>> : ', (e as Error));
+
+    return text
+  }
 }
 
 function doHtml(content: string) {
@@ -86,21 +128,18 @@ function doHtml(content: string) {
     .filter(e => e !== '')
     ;
 
-  const listOfPlaceholders = content.match(rePlaceHolder).map(e => e.replace(/placeholder(.*)=(.*?)"/gi, '"'))
+  const listOfPlaceholders = content.match(rePlaceHolder)?.map(e => e.replace(/placeholder(.*)=(.*?)"/gi, '"'))
 
-  listOfPlaceholders.map(e => listOfText.push(e.replace(/"/g, '')))
+  listOfPlaceholders?.map(e => listOfText.push(e.replace(/"/g, '')))
 
   listOfText = listOfText.filter(e => e.includes('{{') !== true)
-
-  // console.log(listOfPlaceholders);
-  // console.log(listOfText);
-  // console.log(listOfText.length);
 
   return listOfText;
 }
 
-function main() {
+async function main() {
   doReady();
+  console.log(await tran('Ik spreek Engels', 'en'));
   return
   const stringTest = `
   <h4 class="mb-0 font-size-18">Tableau de bord </h4>

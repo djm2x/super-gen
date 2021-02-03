@@ -37,12 +37,13 @@
     "merge-branch-to-master-branch": "git merge new-one",
     "init": "git init && git remote add origin https://github.com/djm2x/super-gen.git",
     "cmt": "git add . && git commit -m \"translate : add generator\"",
-    "push": "git add . && git commit -m \"change dir for generator\" && git push -u origin master"
+    "push": "git add . && git commit -m \"add translate.google unsuccessfully\" && git push -u origin master"
   },
   "private": true,
   "dependencies": {
     "@types/glob": "^7.1.3",
     "@types/lodash": "^4.14.168",
+    "@vitalets/google-translate-api": "^5.0.0",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
     "cors": "^2.8.5",
@@ -56,7 +57,9 @@
     "npm": "^6.14.11",
     "read-excel-file": "^4.1.0",
     "routing-controllers": "^0.8.1-alpha.2",
+    "translatte": "^3.0.0",
     "tslib": "^1.14.1",
+    "tunnel": "0.0.6",
     "typedi": "^0.8.0",
     "typescript": "~3.7.5",
     "zip-local": "^0.3.4"
