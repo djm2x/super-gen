@@ -1,12 +1,12 @@
 <div class="container-fluid">
-  <!-- start page title {{ '-->' | translate }}
+  <!-- start page title {{ 'pages.dashboards.default.-->' | translate }}
   <div class="row">
     <div class="col-12">
       <div class="page-title-box d-flex align-items-center justify-content-between">
-        <h4 class="mb-0 font-size-18">{{ 'Tableau_de_bord' | translate }} </h4>
+        <h4 class="mb-0 font-size-18">{{ 'pages.dashboards.default.Tableau_de_bord' | translate }} </h4>
         <div class="page-title-right">
           <ol class="breadcrumb m-0">
-            <li class="breadcrumb-item active">{{ 'Bienvenue_à_bord_!' | translate }}</li>
+            <li class="breadcrumb-item active">{{ 'pages.dashboards.default.Bienvenue_à_bord_!' | translate }}</li>
           </ol>
         </div>
       </div>
@@ -16,7 +16,7 @@
     <div class="col-xl-4">
       <div class="card">
         <div class="card-body">
-          <app-stat [title]="session.isPartner ? '{{ 'Produit' | translate }}s' : 'Commande'" [value]="nbOrders" icon="bx bx-shopping-bag"></app-stat>
+          <app-stat [title]="session.isPartner ? '{{ 'pages.dashboards.default.Produit' | translate }}s' : 'Commande'" [value]="nbOrders" icon="bx bx-shopping-bag"></app-stat>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@
     <div class="col-xl-4">
       <div class="card">
         <div class="card-body">
-          <app-stat title="{{ 'Prix' | translate }} moyen" [value]="'MAD '+round(average)" icon="bx bx-stats"></app-stat>
+          <app-stat title="{{ 'pages.dashboards.default.Prix' | translate }} moyen" [value]="'MAD '+round(average)" icon="bx bx-stats"></app-stat>
         </div>
       </div>
     </div>
@@ -61,10 +61,10 @@
                     <thead class="thead-light">
                       <tr>
                         <th>Produit</th>
-                        <th>{{ 'Description_du_produit' | translate }}</th>
+                        <th>{{ 'pages.dashboards.default.Description_du_produit' | translate }}</th>
                         <th>Prix</th>
-                        <th>{{ 'Stock' | translate }}</th>
-                        <th>{{ 'Nombre_de_commandes' | translate }}</th>
+                        <th>{{ 'pages.dashboards.default.Stock' | translate }}</th>
+                        <th>{{ 'pages.dashboards.default.Nombre_de_commandes' | translate }}</th>
                       </tr>
                     </thead>
                     <tbody>

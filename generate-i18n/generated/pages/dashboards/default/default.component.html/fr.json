@@ -1,1 +1,15 @@
-{"pages": {"dashboards": {"default": {"Tableau_de_bord":"Tableau de bord","Bienvenue_à_bord_!":"Bienvenue à bord !","Produit":"Produit","Description_du_produit":"Description du produit","Prix":"Prix","Stock":"Stock","Nombre_de_commandes":"Nombre de commandes","-->":"-->"}}}}
+{
+    "pages": {
+        "dashboards": {
+            "default": {
+                "Tableau_de_bord": "Tableau de bord",
+                "Bienvenue_à_bord_!": "Bienvenue à bord !",
+                "Produit": "Produit",
+                "Description_du_produit": "Description du produit",
+                "Prix": "Prix",
+                "Stock": "Stock",
+                "Nombre_de_commandes": "Nombre de commandes"
+            }
+        }
+    }
+}

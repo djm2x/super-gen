@@ -1,5 +1,4 @@
 import * as fse from 'fs-extra';
-import * as glob from 'glob';
 import { Glob } from 'glob';
 import { filter } from 'lodash';
 import * as translate from '@vitalets/google-translate-api';
@@ -27,8 +26,17 @@ async function doReady() {
 
       let listOfText = doHtml(htmlContent);
 
+      const hierarchy = dist.split('/');
+
+      hierarchy.pop();
+
+      // if (hierarchy.includes('passwordreset')) {
+      //   console.log(listOfText)
+      // }
+
+
       listOfText.map(e => {
-        htmlContent = htmlContent.replace(e, `{{ '${e.replace(/\s/g, '_')}' | translate }}`)
+        htmlContent = htmlContent.replace(e, `{{ '${hierarchy.join('.')}.${e.replace(/\s|'/g, '_')}' | translate }}`)
       })
 
       fse.ensureDirSync(`${configs.pathGenerateFiles}/${dist}`)
@@ -36,11 +44,12 @@ async function doReady() {
       //write html
       fse.writeFileSync(`${configs.pathGenerateFiles}/${dist}/${fileName}`, htmlContent);
 
-      console.log(`${configs.pathGenerateFiles}/${dist}/${fileName}\r\n`)
+      // console.log(`${configs.pathGenerateFiles}/${dist}/${fileName}\r\n`)
 
       await createJsonFiles(dist, listOfText);
     })
   );
+  console.log('done')
 }
 
 function timeOut(time = 1000) {
@@ -52,8 +61,9 @@ async function createJsonFiles(distination: string, listOfText: string[]) {
   await Promise.all(
     ['en', 'fr', 'ar'].map(async lang => {
 
+
       let promise = await Promise.all(
-        listOfText.map(async (text, i) => `"${text.replace(/\s/g, '_')}":"${await tran(text, lang)}"`)
+        listOfText.map(async (text, i) => `"${text.replace(/\s|'/g, '_')}":"${await tran(text, lang)}"`)
       );
 
       let keyValue = promise.join(',');
@@ -78,11 +88,11 @@ async function createJsonFiles(distination: string, listOfText: string[]) {
       // write json
       fse.writeFileSync(`${configs.pathGenerateFiles}/${distination}/${lang}.json`, jsonLang);
 
-      console.log(`${configs.pathGenerateFiles}/${distination}/${lang}.json`)
+      // console.log(`${configs.pathGenerateFiles}/${distination}/${lang}.json`);
     })
   );
 
-  console.log(`\r\n`)
+  // console.log(`\r\n`)
 }
 async function tran(text: string, lang: string): Promise<string> {
   try {
@@ -139,7 +149,6 @@ function doHtml(content: string) {
 
 async function main() {
   doReady();
-  console.log(await tran('Ik spreek Engels', 'en'));
   return
   const stringTest = `
   <h4 class="mb-0 font-size-18">Tableau de bord </h4>
