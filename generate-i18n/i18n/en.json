@@ -1,0 +1,503 @@
+{
+  "auth": {
+    "login": {
+      "Bienvenue_sur_Shopeo_!": "Welcome to Shopeo!",
+      "Connectez_vous_pour_accéder_à_votre_compte.": "Log in to access your account.",
+      "Email": "E-mail",
+      "Email_est_requis": "Email is required",
+      "Email_doit_être_une_adresse_mail_valide": "Email must be a valid email address",
+      "Mot_de_passe": "Password",
+      "Mot_de_passe_est_requis": "Password is required",
+      "Se_souvenir_de_moi": "Remember me",
+      "Se_connecter": "To log in",
+      "Mot_de_passe_oublié": "Forgot your password",
+      "Vous_n_avez_pas_de_compte_?": "You do not have an account ?",
+      "S_inscrire_maintenant": "Register now"
+    },
+    "signup": {
+      "Inscription_gratuite": "Free registration",
+      "Créer_votre_boutique_en_ligne_en_quelques_clics_!": "Create your online store in a few clicks!",
+      "Inscription_réussie.": "Successful registration.",
+      "Prénom": "First name",
+      "Le_champs_est_requis": "The field is required",
+      "Nom": "Last name",
+      "Sous_domaine": "Subdomain",
+      "Le_sous_domaine_est_non_disponible": "The subdomain is not available",
+      "Email": "E-mail",
+      "L_Email_est_requis": "Email is required",
+      "L_Email_doit_être_valide": "Email must be valid",
+      "Mot_de_passe": "Password",
+      "Le_mot_de_passe_est_requis": "Password is required",
+      "S_inscrire": "Register",
+      "En_vous_inscrivant,_vous_acceptez_les_conditions_générales_de_Shopeo": "By registering, you accept the general conditions of Shopeo",
+      "Conditions_générales": "Terms and conditions",
+      "Vous_avez_déjà_un_compte_?": "Already have an account ?",
+      "S_authentifier": "Authenticate",
+      "Adresse_mail": "Mail address"
+    },
+    "passwordreset": {
+      "Réinitialiser_votre_mot_de_passe": "Reset your password",
+      "Mot_de_passe_avec_Shopeo.": "Password with Shopeo.",
+      "Email": "E-mail",
+      "Email_est_requis": "Email is required",
+      "Email_doit_être_une_adresse_valide": "Email must be a valid address",
+      "Réinitialiser": "Reset",
+      "Vous_vous_en_souvenez_?": "You remember ?",
+      "Se_connecter": "To log in",
+      "by_GénéraFI": "by GénéraFI"
+    },
+    "passwordchange": {
+      "Réinitialiser_votre_mot_de_passe": "Reset your password",
+      "Mot_de_passe_avec_Shopeo.": "Password with Shopeo.",
+      "Password": "Password",
+      "Password_is_required": "Password is required",
+      "Repeat_Password": "Repeat Password",
+      "Repeat_Password_is_required": "Repeat Password is required",
+      "Réinitialiser": "Reset",
+      "Vous_vous_en_souvenez_?": "You remember ?",
+      "Se_connecter": "To log in",
+      "password": "password"
+    }
+  },
+  "pages": {
+    "Français": "French",
+    "Anglais": "English",
+    "Arab": "Arab",
+    "Recherche...": "Research...",
+    "Modifier": "Edit",
+    "Enregistrer": "Save",
+    "Affichage": "Display",
+    "Nouveau": "New",
+    "Information": "Information",
+    "List_des": "List of",
+    "sur": "sure",
+    "Remplir_les_informations_suivantes": "Fill in the following information",
+    "categories": {
+      "list-category": {
+        "Nouvelle_catégorie": "New category",
+        "categories": "categories",
+        "Nom_de_la_catégorie": "Category name",
+        "Variante": "Variant",
+        "Active": "Active",
+        "Frais_supplémentaire": "Additional fees",
+        "Promotion": "Promotion",
+        "Action": "Action"
+      },
+      "new-category": {
+        "Catégorie": "Category",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Nom": "Last name",
+        "Order": "Order",
+        "Promotion": "Promotion",
+        "Suppléments": "Supplements",
+        "Frais_supplémentaire": "Additional fees",
+        "Prix": "Price",
+        "Variant": "Variant",
+        "Actif": "Active",
+        "Brand": "Brand"
+      }
+    },
+    "customers": {
+      "New_Customers": "New Customers",
+      "clients": "clients",
+      "Nom_complet": "Full Name",
+      "Téléphone_/_Email": "Phone / Email",
+      "Date_d_inscription": "Registration date",
+      "Action": "Action"
+    },
+    "dashboards": {
+      "default": {
+        "Tableau_de_bord": "Dashboard",
+        "Bienvenue_à_bord_!": "Welcome aboard !",
+        "Produit": "Product",
+        "Produits": "Products",
+        "Commandes": "Orders",
+        "Revenu": "Returned",
+        "Prix_moyen": "Average price",
+        "Evolution_moyenne_des": "Average evolution of",
+        "Description_du_produit": "Product Description",
+        "Prix": "Price",
+        "Stock": "Stock",
+        "Nombre_de_commandes": "Number of orders"
+      }
+    },
+    "discount": {
+      "list-discount": {
+        "Nouvelle_promotion": "New promotion",
+        "promotions": "promotions",
+        "Nom": "Last name",
+        "Description": "Description",
+        "Type": "Type",
+        "Montant": "Amount",
+        "Pourcentage": "Percentage",
+        "Date_début": "Start date",
+        "Date_de_fin": "End date",
+        "Action": "Action"
+      },
+      "add-discount": {
+        "Nouvelle_promotion": "New promotion",
+        "promotion": "promotion",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Nom": "Last name",
+        "Description": "Description",
+        "Type": "Type",
+        "Montant": "Amount",
+        "Poucentage": "Percentage",
+        "Date_de_démarrage": "Starting date",
+        "Date_de_fin": "End date",
+        "Affectation_de_la_promotion": "Promotion assignment",
+        "Magasin": "Store",
+        "Produit": "Product",
+        "Catégorie": "Category",
+        "Customer": "Customer"
+      }
+    },
+    "extra": {
+      "list-extra": {
+        "Nouveau_supplément": "New supplement",
+        "Nom_du_supplément": "Name of supplement",
+        "Action": "Action",
+        "Suppléments": "Supplements"
+      },
+      "add-extra": {
+        "Supplément": "Extra charge",
+        "Nom": "Last name",
+        "Merci_de_bien_renseigner_le_nom": "Please fill in the name",
+        "Min": "Min",
+        "Max": "Max",
+        "Ajouter_un_élément": "Add an element",
+        "Prix_supplémentaire": "Additional price",
+        "Disponible": "Available",
+        "Stock": "Stock",
+        "Enregistrer": "Save"
+      }
+    },
+    "characteristic": {
+      "list-characteristic": {
+        "New": "New feature",
+        "Name": "Name of the characteristic",
+        "Values": "Values",
+        "Type": "Type",
+        "Action": "Action",
+        "Caractéristiques": "Characteristics"
+      },
+      "add-characteristic": {
+        "Caractéristique": "Feature",
+        "Name": "Name of the characteristic",
+        "Type": "Type",
+        "Element": "Element",
+        "Add_Element": "Add an element",
+        "Required":"Le champs est requis",
+        "Selectionner":"Selectionner",
+        "Enregistrer": "Save"
+      }
+    },
+    "orders": {
+      "Liste_des_commandes": "List of commands",
+      "Modifier": "Edit",
+      "Supprimer": "Remove",
+      "Annulée": "Canceled",
+      "En_cours": "In progress",
+      "En_livraison": "In delivery",
+      "Livrée": "Delivered",
+      "MAD": "MAD",
+      "Prix": "Price",
+      "order-detail": {
+        "Commande_payée": "Order paid",
+        "Annuler_le_paiement": "Cancel payment",
+        "En_livraison": "In delivery",
+        "Livraison_terminée": "Delivery completed",
+        "Annuler_la_commande": "Cancel the order",
+        "Client": "Customer",
+        "Livraison": "Delivery",
+        "Adresse_de_livraison_:": "Delivery address :",
+        "Date_de_livraison_:": "Delivery date :",
+        "Livreur": "Delivery man",
+        "Selectionner": "To select",
+        "Commande": "Ordered",
+        "Commandes": "Orders",
+        "Etat_de_la_commande_:": "Order status :",
+        "Date_de_la_commande_:": "Date of the order :",
+        "Etat_du_paiement_:": "Payment status:",
+        "Produit": "Product",
+        "Description_du_produit": "Product Description",
+        "Prix": "Price",
+        "Quantité": "Quantity",
+        "Total": "Total",
+        "Variantes_:": "Variants:",
+        "Sous_Total_:": "Sub Total:",
+        "Frais_de_livraison_:": "Shipping cost :",
+        "MAD:": "MAD",
+        "Total_:": "Total:"
+      }
+    },
+    "products": {
+      "list-product": {
+        "Nouveau_produit": "New product",
+        "Affichage": "Display",
+        "produits": "products",
+        "Produit": "Product",
+        "Nom": "Last name",
+        "Prix": "Price",
+        "Publié": "Posted",
+        "Rating": "Rating",
+        "Action": "Action",
+        "Reviews_:": "Reviews:",
+        "Like": "Like",
+        "Comment": "How? 'Or' What",
+        "Close": "Close",
+        "term": "term" 
+      },
+      "new-product": {
+        "produit": "product",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Nom_du_produit": "Product Name",
+        "Merci_de_bien_renseigner_le_nom": "Please fill in the name",
+        "Slug_du_produit": "Product slug",
+        "Description": "Description",
+        "Content_of_the_editor.": "Content of the editor.",
+        "Images_(maximum_3)": "Images (maximum 3)",
+        "Image": "Picture",
+        "Catégorie": "Category",
+        "catégorie": "category",
+        "Prix": "Price",
+        "Stock": "Stock",
+        "Publié": "Posted",
+        "Date_de_publication": "Publication date",
+        "A_suggérer_seulement": "To suggest only",
+        "A_la_une": "Featured",
+        "Supplément": "Extra charge",
+        "Nom": "Last name",
+        "Type": "Type",
+        "Min": "Min",
+        "Max": "Max",
+        "Ajouter_un_élément": "Add an element",
+        "Prix_supplémentaire": "Additional price",
+        "Disponible": "Available",
+        "supplément": "extra charge",
+        "Selectionner": "To select",
+        "Supplément_existant": "Existing supplement",
+        "Variante": "Variant",
+        "Eléments": "Elements",
+        "variante": "variant",
+        "Générer_les_variantes": "Generate variants",
+        "Enregistrer": "Save",
+        "Metadata": "Metadata",
+        "Titre": "Title",
+        "Annuler": "To cancel",
+        "picture": {
+          "Images_(maximum_3)": "Images (maximum 3)",
+          "Image": "Picture"
+        }
+      }
+    },
+    "settings": {
+      "account-setting": {
+        "utilisateur": "user",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Nom_d_utilisateur": "Username",
+        "Nom": "Last name",
+        "Prenom": "First name",
+        "Email": "E-mail",
+        "Téléphone": "Phone",
+        "Droit_du_compte": "Account right",
+        "Langage": "Language",
+        "Réinitialiser_le_mot_de_passe": "Reset password",
+        "Enregistrer_le_profile": "Save profile"
+      },
+      "cashback": {
+        "Cashback": "Cashback",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Gain_à_partir_de_(en_MAD)": "Gain from (in MAD)",
+        "Application_à_partir_de_(en_MAD)": "Application from (in MAD)",
+        "Gain_(en_%)": "Gain (in%)",
+        "Enregistrer": "Save"
+      },
+      "contact": {
+        "Contact": "Contact",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Téléphone": "Phone",
+        "Email": "E-mail",
+        "Facebook": "Facebook",
+        "Whatsapp": "WhatsApp",
+        "Enregistrer": "Save"
+      },
+      "customization": {
+        "Pour_Personnalisation_de_la_boutique": "For Personalization of the store",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Logo": "Logo",
+        "Logo_de_la_boutique": "Shop logo",
+        "Votre_logo_sera_visible_sur_la_page_principale_de_la_boutique": "Your logo will be visible on the main page of the store",
+        "Choisir_un_logo": "Choose a logo",
+        "Header": "Header",
+        "Header_de_la_boutique": "Header of the store",
+        "Votre_header_sera_visible_sur_la_page_principale_de_la_boutique": "Your header will be visible on the main page of the store",
+        "Choisir_un_header": "Choose a header",
+        "List": "List",
+        "Grid": "Grid",
+        "Enregistrer_le_magasin": "Save the store"
+      },
+      "delivery": {
+        "Choisir_votre_mode_de_livraison": "Choose your delivery method",
+        "Mode_de_livraison": "Delivery method",
+        "En_ville": "In the city",
+        "De_(min_jour_de_livraison)": "From (min delivery day)",
+        "De_(distance_min_rayon_en_km)": "From (min radius distance in km)",
+        "A_(max_jour_de_livraison)": "To (max delivery day)",
+        "A_(distance_max_rayon_en_km)": "A (max radius distance in km)",
+        "Villes_/_Regions": "Cities / Regions",
+        "Ajouter_un_ville/region": "Add a city / region",
+        "Temps_de_livraison(heures)": "Delivery time (hours)",
+        "Minimum_de_livraison": "Minimum delivery",
+        "Frais": "Fresh",
+        "Livraison_gratuite_à_partir_de": "Free delivery from",
+        "Ajouter": "Add",
+        "Réinitialiser": "Reset",
+        "Enregistrer": "Save"
+      },
+      "opening-time": {
+        "Temps_d_ouverture_de_votre_magasin": "Opening time of your store",
+        "Toujours_ouvert": "Always open",
+        "Précommande": "Preorder",
+        "Jour": "Day",
+        "Selectionner": "To select",
+        "De": "From",
+        "À": "AT",
+        "Ajouter": "Add",
+        "Enregistrer": "Save"
+      },
+      "shop-setting": {
+        "générale_de_la_boutique": "general of the shop",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Nom_de_la_boutique": "Shop name",
+        "Merci_de_bien_renseigner_le_nom": "Please fill in the name",
+        "Nom_de_la_société": "Company Name",
+        "Description": "Description",
+        "Politique_de_remboursement": "Refund policy",
+        "Politique_de_satisfaction": "Satisfaction policy",
+        "Garantie": "Guarantee",
+        "Activité": "Activity",
+        "Avis": "Notice",
+        "Actif": "Active",
+        "À_emporter": "To take away",
+        "Unité": "Unit",
+        "Poids": "Weight",
+        "Dimension": "Dimension",
+        "Enregistrer_le_magasin": "Save the store"
+      },
+      "stores": {
+        "list-store": {
+          "Nouveau_store": "New store",
+          "Boutiques": "Shops",
+          "Nom_du_store": "Store name",
+          "Téléphone_/_Email": "Phone / Email",
+          "Adresse": "Address",
+          "Ville": "City",
+          "Action": "Action"
+        },
+        "new-store": {
+          "Boutique": "Shop",
+          "Remplir_les_informations_suivantes": "Fill in the following information",
+          "Nom": "Last name",
+          "Merci_de_bien_renseigner_le_nom": "Please fill in the name",
+          "Téléphone": "Phone",
+          "Merci_de_respecter_la_saisie": "Please respect the entry",
+          "Email": "E-mail",
+          "Adresse": "Address",
+          "Gps": "Gps",
+          "Ville": "City"
+        }
+      },
+      "subdomain": {
+        "Sous_domaine": "Subdomain",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Enregistrer_le_sous_domaine": "Save the subdomain"
+      },
+      "user": {
+        "Nouveau": "New",
+        "Nom": "Last name",
+        "Prenom": "First name",
+        "Tel": "Phone",
+        "Email": "E-mail",
+        "Langage": "Language",
+        "Utilisateurs": "Users",
+        "Role": "Role",
+        "new": {
+          "Utilisateur": "User",
+          "Nouvelle": "News",
+          "Remplir_les_informations_suivantes": "Fill in the following information",
+          "Nom": "Last name",
+          "Prenom": "First name",
+          "Tel": "Phone",
+          "Email": "E-mail",
+          "Mot_de_pass": "Password",
+          "Role": "Role",
+          "Shops": "Shops",
+          "Langage": "Language"
+        }
+      }
+    },
+    "tickets": {
+      "list-ticket": {
+        "Nouveau_Ticket": "New Ticket",
+        "Inbox": "Inbox",
+        "Départements": "Departments",
+        "Support": "Support",
+        "Sales": "Sales",
+        "Nouveau_ticket": "New ticket",
+        "Votre_Message": "Your message",
+        "Département": "Department",
+        "Priorité": "Priority",
+        "Annuler": "To cancel",
+        "Envoyer": "To send",
+        "Sujet": "Subject",
+        "Etat": "State",
+        "Date": "Date",
+        "View_Details": "View Details"
+      },
+      "view-ticket": {
+        "Nouveau_ticket": "New ticket",
+        "ticket": "ticket",
+        "Remplir_les_informations_suivantes": "Fill in the following information",
+        "Object": "Object",
+        "Message": "Message",
+        "Priorité": "Priority",
+        "Etat": "State",
+        "Envoyer_le_ticket": "Send ticket"
+      }
+    },
+    "cms": {
+      "page": {
+        "pages": "pages",
+        "title": "Title",
+        "slug": "Slug",
+        "description": "Description",
+        "active": "Active",
+        "new-page": {
+          "page": "page",
+          "title": "title",
+          "slug": "slug",
+          "active": "active",
+          "description": "description" ,
+          "Articles": "Articles"
+        }
+      },
+      "article": {
+        "articles": "articles",
+        "title": "Title",
+        "slug": "Slug",
+        "content": "content",
+        "active": "Active",
+        "new": {
+          "article": "article",
+          "pages": "pages",
+          "title": "title",
+          "content": "content",
+          "slug": "slug",
+          "active": "active",
+          "description": "description"
+        }
+      }
+    }
+  }
+}

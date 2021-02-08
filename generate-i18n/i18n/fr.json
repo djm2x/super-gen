@@ -1,0 +1,503 @@
+{
+  "auth": {
+    "login": {
+      "Bienvenue_sur_Shopeo_!": "Bienvenue sur Shopeo !",
+      "Connectez_vous_pour_accéder_à_votre_compte.": "Connectez vous pour accéder à votre compte.",
+      "Email": "Email",
+      "Email_est_requis": "Email est requis",
+      "Email_doit_être_une_adresse_mail_valide": "Email doit être une adresse mail valide",
+      "Mot_de_passe": "Mot de passe",
+      "Mot_de_passe_est_requis": "Mot de passe est requis",
+      "Se_souvenir_de_moi": "Se souvenir de moi",
+      "Se_connecter": "Se connecter",
+      "Mot_de_passe_oublié": "Mot de passe oublié",
+      "Vous_n_avez_pas_de_compte_?": "Vous n'avez pas de compte ?",
+      "S_inscrire_maintenant": "S'inscrire maintenant"
+    },
+    "signup": {
+      "Inscription_gratuite": "Inscription gratuite",
+      "Créer_votre_boutique_en_ligne_en_quelques_clics_!": "Créer votre boutique en ligne en quelques clics !",
+      "Inscription_réussie.": "Inscription réussie.",
+      "Prénom": "Prénom",
+      "Le_champs_est_requis": "Le champs est requis",
+      "Nom": "Nom",
+      "Sous_domaine": "Sous domaine",
+      "Le_sous_domaine_est_non_disponible": "Le sous domaine est non disponible",
+      "Email": "Email",
+      "L_Email_est_requis": "L'Email est requis",
+      "L_Email_doit_être_valide": "L'Email doit être valide",
+      "Mot_de_passe": "Mot de passe",
+      "Le_mot_de_passe_est_requis": "Le mot de passe est requis",
+      "S_inscrire": "S'inscrire",
+      "En_vous_inscrivant,_vous_acceptez_les_conditions_générales_de_Shopeo": "En vous inscrivant, vous acceptez les conditions générales de Shopeo",
+      "Conditions_générales": "Conditions générales",
+      "Vous_avez_déjà_un_compte_?": "Vous avez déjà un compte ?",
+      "S_authentifier": "S'authentifier",
+      "Adresse_mail": "Adresse mail"
+    },
+    "passwordreset": {
+      "Réinitialiser_votre_mot_de_passe": "Réinitialiser votre mot de passe",
+      "Mot_de_passe_avec_Shopeo.": "Mot de passe avec Shopeo.",
+      "Email": "Email",
+      "Email_est_requis": "Email est requis",
+      "Email_doit_être_une_adresse_valide": "Email doit être une adresse valide",
+      "Réinitialiser": "Réinitialiser",
+      "Vous_vous_en_souvenez_?": "Vous vous en souvenez ?",
+      "Se_connecter": "Se connecter",
+      "by_GénéraFI": "by GénéraFI"
+    },
+    "passwordchange": {
+      "Réinitialiser_votre_mot_de_passe": "Réinitialiser votre mot de passe",
+      "Mot_de_passe_avec_Shopeo.": "Mot de passe avec Shopeo.",
+      "Password": "Password",
+      "Password_is_required": "Password is required",
+      "Repeat_Password": "Repeat Password",
+      "Repeat_Password_is_required": "Repeat Password is required",
+      "Réinitialiser": "Réinitialiser",
+      "Vous_vous_en_souvenez_?": "Vous vous en souvenez ?",
+      "Se_connecter": "Se connecter",
+      "password": "password"
+    }
+  },
+  "pages": {
+    "Français": "Français",
+    "Anglais": "Anglais",
+    "Arab": "Arab",
+    "Recherche...": "Recherche...",
+    "Modifier": "Modifier",
+    "Enregistrer": "Enregistrer",
+    "Affichage": "Affichage",
+    "Nouveau": "Nouveau",
+    "Information": "Information",
+    "List_des": "List des",
+    "sur": "sur",
+    "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+    "categories": {
+      "list-category": {
+        "Nouvelle_catégorie": "Nouvelle catégorie",
+        "categories": "categories",
+        "Nom_de_la_catégorie": "Nom de la catégorie",
+        "Variante": "Variante",
+        "Active": "Actif",
+        "Frais_supplémentaire": "Frais supplémentaire",
+        "Promotion": "Promotion",
+        "Action": "Action"
+      },
+      "new-category": {
+        "Catégorie": "Catégorie",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Nom": "Nom",
+        "Order": "Order",
+        "Promotion": "Promotion",
+        "Suppléments": "Suppléments",
+        "Frais_supplémentaire": "Frais supplémentaire",
+        "Prix": "Prix",
+        "Variant": "Variant",
+        "Actif": "Actif",
+        "Brand": "Brand"
+      }
+    },
+    "customers": {
+      "New_Customers": "New Customers",
+      "clients": "clients",
+      "Nom_complet": "Nom complet",
+      "Téléphone_/_Email": "Téléphone / Email",
+      "Date_d_inscription": "Date d'inscription",
+      "Action": "Action"
+    },
+    "dashboards": {
+      "default": {
+        "Tableau_de_bord": "Tableau de bord",
+        "Bienvenue_à_bord_!": "Bienvenue à bord !",
+        "Produit": "Produit",
+        "Produits": "Produits",
+        "Commandes": "Commandes",
+        "Revenu": "Revenu",
+        "Prix_moyen": "Prix moyen",
+        "Evolution_moyenne_des": "Evolution moyenne des",
+        "Description_du_produit": "Description du produit",
+        "Prix": "Prix",
+        "Stock": "Stock",
+        "Nombre_de_commandes": "Nombre de commandes"
+      }
+    },
+    "discount": {
+      "list-discount": {
+        "Nouvelle_promotion": "Nouvelle promotion",
+        "promotions": "promotions",
+        "Nom": "Nom",
+        "Description": "Description",
+        "Type": "Type",
+        "Montant": "Montant",
+        "Pourcentage": "Pourcentage",
+        "Date_début": "Date début",
+        "Date_de_fin": "Date de fin",
+        "Action": "Action"
+      },
+      "add-discount": {
+        "Nouvelle_promotion": "Nouvelle promotion",
+        "promotion": "promotion",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Nom": "Nom",
+        "Description": "Description",
+        "Type": "Type",
+        "Montant": "Montant",
+        "Poucentage": "Poucentage",
+        "Date_de_démarrage": "Date de démarrage",
+        "Date_de_fin": "Date de fin",
+        "Affectation_de_la_promotion": "Affectation de la promotion",
+        "Magasin": "Magasin",
+        "Produit": "Produit",
+        "Catégorie": "Catégorie",
+        "Customer": "Client"
+      }
+    },
+    "extra": {
+      "list-extra": {
+        "Nouveau_supplément": "Nouveau supplément",
+        "Nom_du_supplément": "Nom du supplément",
+        "Action": "Action",
+        "Suppléments": "Suppléments"
+      },
+      "add-extra": {
+        "Supplément": "Supplément",
+        "Nom": "Nom",
+        "Merci_de_bien_renseigner_le_nom": "Merci de bien renseigner le nom",
+        "Min": "Min",
+        "Max": "Max",
+        "Ajouter_un_élément": "Ajouter un élément",
+        "Prix_supplémentaire": "Prix supplémentaire",
+        "Disponible": "Disponible",
+        "Stock": "Stock",
+        "Enregistrer": "Enregistrer"
+      }
+    },
+    "characteristic": {
+      "list-characteristic": {
+        "New": "Nouvelle caractéristique",
+        "Name": "Nom de la caractéristique",
+        "Values": "Valeurs",
+        "Type": "Type",
+        "Action": "Action",
+        "Caractéristiques": "Caractéristiques"
+      },
+      "add-characteristic": {
+        "Caractéristique": "Caractéristique",
+        "Name": "Nom de la caractéristique",
+        "Type": "Type",
+        "Element": "Elément",
+        "Add_Element": "Ajouter un élément",
+        "Required":"Le champs est requis",
+        "Selectionner":"Selectionner",
+        "Enregistrer": "Enregistrer"
+      }
+    },
+    "orders": {
+      "Liste_des_commandes": "Liste des commandes",
+      "Modifier": "Modifier",
+      "Supprimer": "Supprimer",
+      "Annulée": "Annulée",
+      "En_cours": "En cours",
+      "En_livraison": "En livraison",
+      "Livrée": "Livrée",
+      "MAD": "MAD",
+      "Prix": "Prix",
+      "order-detail": {
+        "Commande_payée": "Commande payée",
+        "Annuler_le_paiement": "Annuler le paiement",
+        "En_livraison": "En livraison",
+        "Livraison_terminée": "Livraison terminée",
+        "Annuler_la_commande": "Annuler la commande",
+        "Client": "Client",
+        "Livraison": "Livraison",
+        "Adresse_de_livraison_:": "Adresse de livraison :",
+        "Date_de_livraison_:": "Date de livraison :",
+        "Livreur": "Livreur",
+        "Selectionner": "Selectionner",
+        "Commande": "Commande",
+        "Commandes": "Commandes",
+        "Etat_de_la_commande_:": "Etat de la commande :",
+        "Date_de_la_commande_:": "Date de la commande :",
+        "Etat_du_paiement_:": "Etat du paiement :",
+        "Produit": "Produit",
+        "Description_du_produit": "Description du produit",
+        "Prix": "Prix",
+        "Quantité": "Quantité",
+        "Total": "Total",
+        "Variantes_:": "Variantes :",
+        "Sous_Total_:": "Sous Total :",
+        "Frais_de_livraison_:": "Frais de livraison :",
+        "MAD:": "MAD",
+        "Total_:": "Total :"
+      }
+    },
+    "products": {
+      "list-product": {
+        "Nouveau_produit": "Nouveau produit",
+        "Affichage": "Affichage",
+        "produits": "produits",
+        "Produit": "Produit",
+        "Nom": "Nom",
+        "Prix": "Prix",
+        "Publié": "Publié",
+        "Rating": "Rating",
+        "Action": "Action",
+        "Reviews_:": "Reviews :",
+        "Like": "Like",
+        "Comment": "Comment",
+        "Close": "Close",
+        "term": "term"
+      },
+      "new-product": {
+        "produit": "produit",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Nom_du_produit": "Nom du produit",
+        "Merci_de_bien_renseigner_le_nom": "Merci de bien renseigner le nom",
+        "Slug_du_produit": "Slug du produit",
+        "Description": "Description",
+        "Content_of_the_editor.": "Content of the editor.",
+        "Images_(maximum_3)": "Images (maximum 3)",
+        "Image": "Image",
+        "Catégorie": "Catégorie",
+        "catégorie": "catégorie",
+        "Prix": "Prix",
+        "Stock": "Stock",
+        "Publié": "Publié",
+        "Date_de_publication": "Date de publication",
+        "A_suggérer_seulement": "A suggérer seulement",
+        "A_la_une": "A la une",
+        "Supplément": "Supplément",
+        "Nom": "Nom",
+        "Type": "Type",
+        "Min": "Min",
+        "Max": "Max",
+        "Ajouter_un_élément": "Ajouter un élément",
+        "Prix_supplémentaire": "Prix supplémentaire",
+        "Disponible": "Disponible",
+        "supplément": "supplément",
+        "Selectionner": "Selectionner",
+        "Supplément_existant": "Supplément existant",
+        "Variante": "Variante",
+        "Eléments": "Eléments",
+        "variante": "variante",
+        "Générer_les_variantes": "Générer les variantes",
+        "Enregistrer": "Enregistrer",
+        "Metadata": "Metadata",
+        "Titre": "Titre",
+        "Annuler": "Annuler",
+        "picture": {
+          "Images_(maximum_3)": "Images (maximum 3)",
+          "Image": "Image"
+        }
+      }
+    },
+    "settings": {
+      "account-setting": {
+        "utilisateur": "utilisateur",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Nom_d_utilisateur": "Nom d'utilisateur",
+        "Nom": "Nom",
+        "Prenom": "Prenom",
+        "Email": "Email",
+        "Téléphone": "Téléphone",
+        "Droit_du_compte": "Droit du compte",
+        "Langage": "Langage",
+        "Réinitialiser_le_mot_de_passe": "Réinitialiser le mot de passe",
+        "Enregistrer_le_profile": "Enregistrer le profile"
+      },
+      "cashback": {
+        "Cashback": "Cashback",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Gain_à_partir_de_(en_MAD)": "Gain à partir de (en MAD)",
+        "Application_à_partir_de_(en_MAD)": "Application à partir de (en MAD)",
+        "Gain_(en_%)": "Gain (en %)",
+        "Enregistrer": "Enregistrer"
+      },
+      "contact": {
+        "Contact": "Contact",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Téléphone": "Téléphone",
+        "Email": "Email",
+        "Facebook": "Facebook",
+        "Whatsapp": "Whatsapp",
+        "Enregistrer": "Enregistrer"
+      },
+      "customization": {
+        "Pour_Personnalisation_de_la_boutique": "Pour Personnalisation de la boutique",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Logo": "Logo",
+        "Logo_de_la_boutique": "Logo de la boutique",
+        "Votre_logo_sera_visible_sur_la_page_principale_de_la_boutique": "Votre logo sera visible sur la page principale de la boutique",
+        "Choisir_un_logo": "Choisir un logo",
+        "Header": "Header",
+        "Header_de_la_boutique": "Header de la boutique",
+        "Votre_header_sera_visible_sur_la_page_principale_de_la_boutique": "Votre header sera visible sur la page principale de la boutique",
+        "Choisir_un_header": "Choisir un header",
+        "List": "List",
+        "Grid": "Grid",
+        "Enregistrer_le_magasin": "Enregistrer le magasin"
+      },
+      "delivery": {
+        "Choisir_votre_mode_de_livraison": "Choisir votre mode de livraison",
+        "Mode_de_livraison": "Mode de livraison",
+        "En_ville": "En ville",
+        "De_(min_jour_de_livraison)": "De (min jour de livraison)",
+        "De_(distance_min_rayon_en_km)": "De (distance min rayon en km)",
+        "A_(max_jour_de_livraison)": "A (max jour de livraison)",
+        "A_(distance_max_rayon_en_km)": "A (distance max rayon en km)",
+        "Villes_/_Regions": "Villes / Regions",
+        "Ajouter_un_ville/region": "Ajouter un ville/region",
+        "Temps_de_livraison(heures)": "Temps de livraison(heures)",
+        "Minimum_de_livraison": "Minimum de livraison",
+        "Frais": "Frais",
+        "Livraison_gratuite_à_partir_de": "Livraison gratuite à partir de",
+        "Ajouter": "Ajouter",
+        "Réinitialiser": "Réinitialiser",
+        "Enregistrer": "Enregistrer"
+      },
+      "opening-time": {
+        "Temps_d_ouverture_de_votre_magasin": "Temps d'ouverture de votre magasin",
+        "Toujours_ouvert": "Toujours ouvert",
+        "Précommande": "Précommande",
+        "Jour": "Jour",
+        "Selectionner": "Selectionner",
+        "De": "De",
+        "À": "À",
+        "Ajouter": "Ajouter",
+        "Enregistrer": "Enregistrer"
+      },
+      "shop-setting": {
+        "générale_de_la_boutique": "générale de la boutique",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Nom_de_la_boutique": "Nom de la boutique",
+        "Merci_de_bien_renseigner_le_nom": "Merci de bien renseigner le nom",
+        "Nom_de_la_société": "Nom de la société",
+        "Description": "Description",
+        "Politique_de_remboursement": "Politique de remboursement",
+        "Politique_de_satisfaction": "Politique de satisfaction",
+        "Garantie": "Garantie",
+        "Activité": "Activité",
+        "Avis": "Avis",
+        "Actif": "Actif",
+        "À_emporter": "À emporter",
+        "Unité": "Unité",
+        "Poids": "Poids",
+        "Dimension": "Dimension",
+        "Enregistrer_le_magasin": "Enregistrer le magasin"
+      },
+      "stores": {
+        "list-store": {
+          "Nouveau_store": "Nouveau store",
+          "Boutiques": "Boutiques",
+          "Nom_du_store": "Nom du store",
+          "Téléphone_/_Email": "Téléphone / Email",
+          "Adresse": "Adresse",
+          "Ville": "Ville",
+          "Action": "Action"
+        },
+        "new-store": {
+          "Boutique": "Boutique",
+          "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+          "Nom": "Nom",
+          "Merci_de_bien_renseigner_le_nom": "Merci de bien renseigner le nom",
+          "Téléphone": "Téléphone",
+          "Merci_de_respecter_la_saisie": "Merci de respecter la saisie",
+          "Email": "Email",
+          "Adresse": "Adresse",
+          "Gps": "Gps",
+          "Ville": "Ville"
+        }
+      },
+      "subdomain": {
+        "Sous_domaine": "Sous domaine",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Enregistrer_le_sous_domaine": "Enregistrer le sous domaine"
+      },
+      "user": {
+        "Nouveau": "Nouveau",
+        "Nom": "Nom",
+        "Prenom": "Prenom",
+        "Tel": "Tel",
+        "Email": "Email",
+        "Langage": "Langage",
+        "Utilisateurs": "Utilisateurs",
+        "Role": "Role",
+        "new": {
+          "Utilisateur": "Utilisateur",
+          "Nouvelle": "Nouvelle",
+          "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+          "Nom": "Nom",
+          "Prenom": "Prenom",
+          "Tel": "Tel",
+          "Email": "Email",
+          "Mot_de_pass": "Mot de pass",
+          "Role": "Role",
+          "Shops": "Shops",
+          "Langage": "Langage"
+        }
+      }
+    },
+    "tickets": {
+      "list-ticket": {
+        "Nouveau_Ticket": "Nouveau Ticket",
+        "Inbox": "Inbox",
+        "Départements": "Départements",
+        "Support": "Support",
+        "Sales": "Sales",
+        "Nouveau_ticket": "Nouveau ticket",
+        "Votre_Message": "Votre Message",
+        "Département": "Département",
+        "Priorité": "Priorité",
+        "Annuler": "Annuler",
+        "Envoyer": "Envoyer",
+        "Sujet": "Sujet",
+        "Etat": "Etat",
+        "Date": "Date",
+        "View_Details": "View Details"
+      },
+      "view-ticket": {
+        "Nouveau_ticket": "Nouveau ticket",
+        "ticket": "ticket",
+        "Remplir_les_informations_suivantes": "Remplir les informations suivantes",
+        "Object": "Object",
+        "Message": "Message",
+        "Priorité": "Priorité",
+        "Etat": "Etat",
+        "Envoyer_le_ticket": "Envoyer le ticket"
+      }
+    },
+    "cms": {
+      "page": {
+        "pages": "pages",
+        "title": "Titre",
+        "slug": "Slug",
+        "description": "Description",
+        "active": "Actif",
+        "new-page": {
+          "page": "page",
+          "title": "title",
+          "slug": "slug",
+          "active": "actif",
+          "description": "description",
+          "Articles": "Articles"
+        }
+      },
+      "article": {
+        "articles": "articles",
+        "title": "Titre",
+        "slug": "Slug",
+        "content": "contenu",
+        "active": "Actif",
+        "new": {
+          "article": "article",
+          "pages": "pages",
+          "title": "title",
+          "content": "contenu",
+          "slug": "slug",
+          "active": "actif",
+          "description": "description"
+        }
+      }
+    }
+  }
+}

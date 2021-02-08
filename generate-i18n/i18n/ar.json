@@ -1,0 +1,503 @@
+{
+  "auth": {
+    "login": {
+      "Bienvenue_sur_Shopeo_!": "مرحبًا بكم في Shopeo!",
+      "Connectez_vous_pour_accéder_à_votre_compte.": "تسجيل الدخول للوصول إلى حسابك.",
+      "Email": "البريد الإلكتروني",
+      "Email_est_requis": "البريد الالكتروني مطلوب",
+      "Email_doit_être_une_adresse_mail_valide": "يجب أن يكون البريد الإلكتروني عنوان بريد إلكتروني صالحًا",
+      "Mot_de_passe": "كلمة السر",
+      "Mot_de_passe_est_requis": "كلمة المرور مطلوبة",
+      "Se_souvenir_de_moi": "يتذكرني",
+      "Se_connecter": "يتصل",
+      "Mot_de_passe_oublié": "نسيت رقمك السري",
+      "Vous_n_avez_pas_de_compte_?": "لا يوجد لديك حساب ؟",
+      "S_inscrire_maintenant": "سجل الان"
+    },
+    "signup": {
+      "Inscription_gratuite": "تسجيل مجاني",
+      "Créer_votre_boutique_en_ligne_en_quelques_clics_!": "أنشئ متجرك الإلكتروني ببضع نقرات!",
+      "Inscription_réussie.": "تسجيل ناجح",
+      "Prénom": "الاسم الاول",
+      "Le_champs_est_requis": "مطلوب هذا المجال",
+      "Nom": "الكنية",
+      "Sous_domaine": "المجال الفرعي",
+      "Le_sous_domaine_est_non_disponible": "النطاق الفرعي غير متاح",
+      "Email": "البريد الإلكتروني",
+      "L_Email_est_requis": "البريد الالكتروني مطلوب",
+      "L_Email_doit_être_valide": "يجب ان يكون البريد الاكتروني صحيح",
+      "Mot_de_passe": "كلمة السر",
+      "Le_mot_de_passe_est_requis": "كلمة المرور مطلوبة",
+      "S_inscrire": "تسجيل",
+      "En_vous_inscrivant,_vous_acceptez_les_conditions_générales_de_Shopeo": "بالتسجيل أنت تقبل الشروط العامة لـ Shopeo",
+      "Conditions_générales": "شروط عامة",
+      "Vous_avez_déjà_un_compte_?": "هل لديك حساب ؟",
+      "S_authentifier": "مصادقة",
+      "Adresse_mail": "عنوان البريد الإلكتروني"
+    },
+    "passwordreset": {
+      "Réinitialiser_votre_mot_de_passe": "اعد ضبط كلمه السر",
+      "Mot_de_passe_avec_Shopeo.": "Password with Shopeo.",
+      "Email": "البريد الإلكتروني",
+      "Email_est_requis": "البريد الالكتروني مطلوب",
+      "Email_doit_être_une_adresse_valide": "البريد الإلكتروني يجب أن يكون عنوانًا صالحًا",
+      "Réinitialiser": "إعادة تعيين",
+      "Vous_vous_en_souvenez_?": "انت تتذكر ؟",
+      "Se_connecter": "يتصل",
+      "by_GénéraFI": "بواسطة GénéraFI"
+    },
+    "passwordchange": {
+      "Réinitialiser_votre_mot_de_passe": "اعد ضبط كلمه السر",
+      "Mot_de_passe_avec_Shopeo.": "Password with Shopeo.",
+      "Password": "كلمه السر",
+      "Password_is_required": "كلمة المرور مطلوبة",
+      "Repeat_Password": "اعد كلمة السر",
+      "Repeat_Password_is_required": "كرر كلمة المرور مطلوب",
+      "Réinitialiser": "إعادة تعيين",
+      "Vous_vous_en_souvenez_?": "انت تتذكر ؟",
+      "Se_connecter": "يتصل",
+      "password": "كلمه السر"
+    }
+  },
+  "pages": {
+    "Français": "فرنسي",
+    "Anglais": "الإنجليزية",
+    "Arab": "عرب",
+    "Recherche...": "ابحاث...",
+    "Modifier": "تعديل",
+    "Enregistrer": "حفظ",
+    "Affichage": "عرض",
+    "Nouveau": "جديد",
+    "Information": "معلومات",
+    "List_des": "قائمة من",
+    "sur": "بالتأكيد",
+    "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+    "categories": {
+      "list-category": {
+        "Nouvelle_catégorie": "فئة جديدة",
+        "categories": "التصنيفات",
+        "Nom_de_la_catégorie": "اسم التصنيف",
+        "Variante": "متغير",
+        "Active": "نشيط",
+        "Frais_supplémentaire": "رسوم اضافية",
+        "Promotion": "ترقية وظيفية",
+        "Action": "عمل"
+      },
+      "new-category": {
+        "Catégorie": "الفئة",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Nom": "الكنية",
+        "Order": "طلب",
+        "Promotion": "ترقية وظيفية",
+        "Suppléments": "المكملات",
+        "Frais_supplémentaire": "رسوم اضافية",
+        "Prix": "السعر",
+        "Variant": "متغير",
+        "Actif": "نشيط",
+        "Brand": "علامة تجارية"
+      }
+    },
+    "customers": {
+      "New_Customers": "زبائن الجدد",
+      "clients": "العملاء",
+      "Nom_complet": "الاسم الكامل",
+      "Téléphone_/_Email": "الهاتف / البريد الإلكتروني",
+      "Date_d_inscription": "تاريخ الإدراج",
+      "Action": "عمل"
+    },
+    "dashboards": {
+      "default": {
+        "Tableau_de_bord": "لوحة القيادة",
+        "Bienvenue_à_bord_!": "مرحبا بكم على متن !",
+        "Produit": "المنتج",
+        "Produits": "منتجات",
+        "Commandes": "الطلب #٪ s",
+        "Revenu": "عاد",
+        "Prix_moyen": "متوسط ​​السعر",
+        "Evolution_moyenne_des": "متوسط ​​تطور",
+        "Description_du_produit": "وصف المنتوج",
+        "Prix": "السعر",
+        "Stock": "مخزون",
+        "Nombre_de_commandes": "عدد الطلبات"
+      }
+    },
+    "discount": {
+      "list-discount": {
+        "Nouvelle_promotion": "ترويج جديد",
+        "promotions": "الترقيات",
+        "Nom": "الكنية",
+        "Description": "وصف",
+        "Type": "اكتب",
+        "Montant": "كمية",
+        "Pourcentage": "النسبة المئوية",
+        "Date_début": "تاريخ البداية",
+        "Date_de_fin": "تاريخ النهاية",
+        "Action": "عمل"
+      },
+      "add-discount": {
+        "Nouvelle_promotion": "ترويج جديد",
+        "promotion": "ترقية وظيفية",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Nom": "الكنية",
+        "Description": "وصف",
+        "Type": "اكتب",
+        "Montant": "كمية",
+        "Poucentage": "النسبة المئوية",
+        "Date_de_démarrage": "تاريخ البدء",
+        "Date_de_fin": "تاريخ النهاية",
+        "Affectation_de_la_promotion": "مهمة الترقية",
+        "Magasin": "المحل",
+        "Produit": "المنتج",
+        "Catégorie": "الفئة",
+        "Customer": "العميل"
+      }
+    },
+    "extra": {
+      "list-extra": {
+        "Nouveau_supplément": "ملحق جديد",
+        "Nom_du_supplément": "اسم الملحق",
+        "Action": "عمل",
+        "Suppléments": "المكملات"
+      },
+      "add-extra": {
+        "Supplément": "رسوم اضافية",
+        "Nom": "الكنية",
+        "Merci_de_bien_renseigner_le_nom": "الرجاء ملء الاسم",
+        "Min": "مين",
+        "Max": "ماكس",
+        "Ajouter_un_élément": "إضافة عنصر",
+        "Prix_supplémentaire": "سعر إضافي",
+        "Disponible": "متاح",
+        "Stock": "مخزون",
+        "Enregistrer": "حفظ"
+      }
+    },
+    "characteristic": {
+      "list-characteristic": {
+        "New": "ميزة جديدة",
+        "Name": "اسم الخاصية",
+        "Values": "القيم",
+        "Type": "اكتب",
+        "Action": "عمل",
+        "Caractéristiques": "مميزات"
+      },
+      "add-characteristic": {
+        "Caractéristique": "خاصية",
+        "Name": "اسم الخاصية",
+        "Type": "اكتب",
+        "Element": "جزء",
+        "Add_Element": "إضافة عنصر",
+        "Required": "Le champs est requis",
+        "Selectionner": "Selectionner",
+        "Enregistrer": "حفظ"
+      }
+    },
+    "orders": {
+      "Liste_des_commandes": "قائمة الأوامر",
+      "Modifier": "تعديل",
+      "Supprimer": "إزالة",
+      "Annulée": "ألغيت",
+      "En_cours": "الجاري",
+      "En_livraison": "جاري الارسال",
+      "Livrée": "تم التوصيل",
+      "MAD": "غاضب",
+      "Prix": "السعر",
+      "order-detail": {
+        "Commande_payée": "الطلب مدفوع",
+        "Annuler_le_paiement": "الغاء الدفع",
+        "En_livraison": "جاري الارسال",
+        "Livraison_terminée": "اكتمل التسليم",
+        "Annuler_la_commande": "الغي الطلب",
+        "Client": "العميل",
+        "Livraison": "توصيل",
+        "Adresse_de_livraison_:": "عنوان التسليم :",
+        "Date_de_livraison_:": "تاريخ التسليم :",
+        "Livreur": "رجل تسليم",
+        "Selectionner": "لتحديد",
+        "Commande": "أمر",
+        "Commandes": "الطلب #٪ s",
+        "Etat_de_la_commande_:": "حالة الطلب :",
+        "Date_de_la_commande_:": "تاريخ الطلب:",
+        "Etat_du_paiement_:": "حالة السداد:",
+        "Produit": "المنتج",
+        "Description_du_produit": "وصف المنتوج",
+        "Prix": "السعر",
+        "Quantité": "الكمية",
+        "Total": "مجموع",
+        "Variantes_:": "المتغيرات:",
+        "Sous_Total_:": "المجموع الفرعي:",
+        "Frais_de_livraison_:": "تكاليف التوصيل :",
+        "MAD:": "غاضب",
+        "Total_:": "مجموع :"
+      }
+    },
+    "products": {
+      "list-product": {
+        "Nouveau_produit": "منتج جديد",
+        "Affichage": "عرض",
+        "produits": "منتجات",
+        "Produit": "المنتج",
+        "Nom": "الكنية",
+        "Prix": "السعر",
+        "Publié": "منشور",
+        "Rating": "تقييم",
+        "Action": "عمل",
+        "Reviews_:": "التعليقات:",
+        "Like": "مثل",
+        "Comment": "كيف",
+        "Close": "قريب",
+        "term": "مصطلح"
+      },
+      "new-product": {
+        "produit": "المنتج",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Nom_du_produit": "إسم المنتوج",
+        "Merci_de_bien_renseigner_le_nom": "الرجاء ملء الاسم",
+        "Slug_du_produit": "سبيكة المنتج",
+        "Description": "وصف",
+        "Content_of_the_editor.": "محتوى المحرر",
+        "Images_(maximum_3)": "صور (بحد أقصى 3)",
+        "Image": "صورة",
+        "Catégorie": "الفئة",
+        "catégorie": "الفئة",
+        "Prix": "السعر",
+        "Stock": "مخزون",
+        "Publié": "منشور",
+        "Date_de_publication": "تاريخ النشر",
+        "A_suggérer_seulement": "للاقتراح فقط",
+        "A_la_une": "إلى الرئيسية",
+        "Supplément": "رسوم اضافية",
+        "Nom": "الكنية",
+        "Type": "اكتب",
+        "Min": "مين",
+        "Max": "ماكس",
+        "Ajouter_un_élément": "إضافة عنصر",
+        "Prix_supplémentaire": "سعر إضافي",
+        "Disponible": "متاح",
+        "supplément": "رسوم اضافية",
+        "Selectionner": "لتحديد",
+        "Supplément_existant": "الملحق الحالي",
+        "Variante": "متغير",
+        "Eléments": "عناصر",
+        "variante": "البديل",
+        "Générer_les_variantes": "إنشاء متغيرات",
+        "Enregistrer": "حفظ",
+        "Metadata": "البيانات الوصفية",
+        "Titre": "عنوان",
+        "Annuler": "لالغاء",
+        "picture": {
+          "Images_(maximum_3)": "صور (بحد أقصى 3)",
+          "Image": "صورة"
+        }
+      }
+    },
+    "settings": {
+      "account-setting": {
+        "utilisateur": "المستعمل",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Nom_d_utilisateur": "إسم المستخدم",
+        "Nom": "الكنية",
+        "Prenom": "الاسم الاول",
+        "Email": "البريد الإلكتروني",
+        "Téléphone": "هاتف",
+        "Droit_du_compte": "الحساب الصحيح",
+        "Langage": "اللغة",
+        "Réinitialiser_le_mot_de_passe": "إعادة تعيين كلمة المرور",
+        "Enregistrer_le_profile": "احفظ الملف"
+      },
+      "cashback": {
+        "Cashback": "استرداد نقدي",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Gain_à_partir_de_(en_MAD)": "كسب من (بالدرهم)",
+        "Application_à_partir_de_(en_MAD)": "طلب من (بالدرهم المغربي)",
+        "Gain_(en_%)": "كسب في٪)",
+        "Enregistrer": "حفظ"
+      },
+      "contact": {
+        "Contact": "اتصل",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Téléphone": "هاتف",
+        "Email": "البريد الإلكتروني",
+        "Facebook": "الفيسبوك",
+        "Whatsapp": "ال WhatsApp",
+        "Enregistrer": "حفظ"
+      },
+      "customization": {
+        "Pour_Personnalisation_de_la_boutique": "لتخصيص المتجر",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Logo": "الشعار",
+        "Logo_de_la_boutique": "شعار المتجر",
+        "Votre_logo_sera_visible_sur_la_page_principale_de_la_boutique": "سيكون شعارك مرئيًا على الصفحة الرئيسية للمتجر",
+        "Choisir_un_logo": "اختيار شعار",
+        "Header": "رأس",
+        "Header_de_la_boutique": "عنوان المتجر",
+        "Votre_header_sera_visible_sur_la_page_principale_de_la_boutique": "العنوان الخاص بك سيكون مرئيًا على الصفحة الرئيسية للمتجر",
+        "Choisir_un_header": "اختيار رأس",
+        "List": "قائمة",
+        "Grid": "جريد",
+        "Enregistrer_le_magasin": "احفظ المتجر"
+      },
+      "delivery": {
+        "Choisir_votre_mode_de_livraison": "إختر طريقة التوصيل",
+        "Mode_de_livraison": "طريقة التوصيل",
+        "En_ville": "في المدينة",
+        "De_(min_jour_de_livraison)": "من (أقل يوم توصيل)",
+        "De_(distance_min_rayon_en_km)": "من (أقل مسافة نصف قطر بالكيلومتر)",
+        "A_(max_jour_de_livraison)": "إلى (يوم التسليم الأقصى)",
+        "A_(distance_max_rayon_en_km)": "A (أقصى مسافة لنصف القطر بالكيلومتر)",
+        "Villes_/_Regions": "المدن / المناطق",
+        "Ajouter_un_ville/region": "إضافة مدينة / منطقة",
+        "Temps_de_livraison(heures)": "وقت التسليم (بالساعات)",
+        "Minimum_de_livraison": "الحد الأدنى للتسليم",
+        "Frais": "التكاليف",
+        "Livraison_gratuite_à_partir_de": "توصيل مجاني من",
+        "Ajouter": "إضافة",
+        "Réinitialiser": "إعادة تعيين",
+        "Enregistrer": "حفظ"
+      },
+      "opening-time": {
+        "Temps_d_ouverture_de_votre_magasin": "وقت فتح متجرك",
+        "Toujours_ouvert": "دائما مفتوح",
+        "Précommande": "النظام السابق",
+        "Jour": "يوم",
+        "Selectionner": "لتحديد",
+        "De": "من عند",
+        "À": "الى",
+        "Ajouter": "إضافة",
+        "Enregistrer": "حفظ"
+      },
+      "shop-setting": {
+        "générale_de_la_boutique": "عام المتجر",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Nom_de_la_boutique": "اسم المحل",
+        "Merci_de_bien_renseigner_le_nom": "الرجاء ملء الاسم",
+        "Nom_de_la_société": "اسم الشركة",
+        "Description": "وصف",
+        "Politique_de_remboursement": "سياسة الاسترجاع",
+        "Politique_de_satisfaction": "سياسة الرضا",
+        "Garantie": "ضمان",
+        "Activité": "نشاط",
+        "Avis": "تنويه",
+        "Actif": "نشيط",
+        "À_emporter": "يسلب",
+        "Unité": "وحدة",
+        "Poids": "الوزن",
+        "Dimension": "البعد",
+        "Enregistrer_le_magasin": "احفظ المتجر"
+      },
+      "stores": {
+        "list-store": {
+          "Nouveau_store": "متجر جديد",
+          "Boutiques": "محلات",
+          "Nom_du_store": "اسم المتجر",
+          "Téléphone_/_Email": "الهاتف / البريد الإلكتروني",
+          "Adresse": "عنوان",
+          "Ville": "مدينة",
+          "Action": "عمل"
+        },
+        "new-store": {
+          "Boutique": "متجر",
+          "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+          "Nom": "الكنية",
+          "Merci_de_bien_renseigner_le_nom": "الرجاء ملء الاسم",
+          "Téléphone": "هاتف",
+          "Merci_de_respecter_la_saisie": "الرجاء احترام الإدخال",
+          "Email": "البريد الإلكتروني",
+          "Adresse": "عنوان",
+          "Gps": "نظام تحديد المواقع",
+          "Ville": "مدينة"
+        }
+      },
+      "subdomain": {
+        "Sous_domaine": "المجال الفرعي",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Enregistrer_le_sous_domaine": "حفظ النطاق الفرعي"
+      },
+      "user": {
+        "Nouveau": "جديد",
+        "Nom": "الكنية",
+        "Prenom": "الاسم الاول",
+        "Tel": "هاتف",
+        "Email": "البريد الإلكتروني",
+        "Langage": "اللغة",
+        "Utilisateurs": "المستخدمون",
+        "Role": "وظيفة",
+        "new": {
+          "Utilisateur": "المستعمل",
+          "Nouvelle": "أخبار",
+          "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+          "Nom": "الكنية",
+          "Prenom": "الاسم الاول",
+          "Tel": "هاتف",
+          "Email": "البريد الإلكتروني",
+          "Mot_de_pass": "كلمه السر",
+          "Role": "وظيفة",
+          "Shops": "محلات",
+          "Langage": "اللغة"
+        }
+      }
+    },
+    "tickets": {
+      "list-ticket": {
+        "Nouveau_Ticket": "تذكرة جديدة",
+        "Inbox": "صندوق الوارد",
+        "Départements": "الإدارات",
+        "Support": "الدعم",
+        "Sales": "المبيعات",
+        "Nouveau_ticket": "تذكرة جديدة",
+        "Votre_Message": "رسالتك",
+        "Département": "قسم",
+        "Priorité": "أفضلية",
+        "Annuler": "لالغاء",
+        "Envoyer": "لترسل",
+        "Sujet": "فاعل",
+        "Etat": "حالة",
+        "Date": "تاريخ",
+        "View_Details": "عرض التفاصيل"
+      },
+      "view-ticket": {
+        "Nouveau_ticket": "تذكرة جديدة",
+        "ticket": "تذكرة",
+        "Remplir_les_informations_suivantes": "املأ المعلومات التالية",
+        "Object": "موضوع",
+        "Message": "رسالة",
+        "Priorité": "أفضلية",
+        "Etat": "حالة",
+        "Envoyer_le_ticket": "إرسال تذكرة"
+      }
+    },
+    "cms": {
+      "page": {
+        "pages": "صفحات",
+        "title": "عنوان",
+        "slug": "سبيكة",
+        "description": "وصف",
+        "active": "نشيط",
+        "new-page": {
+          "page": "الصفحة",
+          "title": "عنوان",
+          "slug": "سبيكة",
+          "active": "نشيط",
+          "description": "وصف",
+          "Articles": "مقالات"
+        }
+      },
+      "article": {
+        "articles": "مقالات",
+        "title": "عنوان",
+        "slug": "سبيكة",
+        "content": "المحتوى",
+        "active": "نشيط",
+        "new": {
+          "article": "مقالة - سلعة",
+          "pages": "صفحات",
+          "title": "عنوان",
+          "content": "المحتوى",
+          "slug": "سبيكة",
+          "active": "نشيط",
+          "description": "وصف"
+        }
+      }
+    }
+  }
+}

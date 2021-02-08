@@ -18,7 +18,7 @@
     ]
   },
   "scripts": {
-    "t": "node --require ts-node/register ./generate-i18n/translate.ts",
+    "t": "node --require ts-node/register ./generate-i18n/translate.json.ts",
     "w": "set IS_DEV=development &&  && nodemon --ignore 'generation/*.ts' ./script.ts",
     "s": "set IS_DEV=development && node --require ts-node/register ./script.ts",
     "m": "set IS_DEV=development && node --require ts-node/register ./generator/main.ts isdev",
