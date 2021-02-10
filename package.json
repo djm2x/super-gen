@@ -18,7 +18,7 @@
     ]
   },
   "scripts": {
-    "t": "node --require ts-node/register ./generate-i18n/translate.json.ts",
+    "t": "node --require ts-node/register ./generate-i18n/translate.ts",
     "w": "set IS_DEV=development &&  && nodemon --ignore 'generation/*.ts' ./script.ts",
     "s": "set IS_DEV=development && node --require ts-node/register ./script.ts",
     "m": "set IS_DEV=development && node --require ts-node/register ./generator/main.ts isdev",
@@ -43,7 +43,6 @@
   "dependencies": {
     "@types/glob": "^7.1.3",
     "@types/lodash": "^4.14.168",
-    "@vitalets/google-translate-api": "^5.0.0",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
     "cors": "^2.8.5",

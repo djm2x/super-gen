@@ -1,0 +1,225 @@
+MENU: MenuItem[] = [
+    {
+      id: 1,
+      label: 'pages.menu.Menu',
+      isTitle: true,
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP', 'PARTNER', 'DELIVERY_MAN']
+    },
+    {
+      id: 2,
+      label: 'pages.menu.Tableau de bord',
+      icon: 'bxs-dashboard',
+      link: '/dashboard',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP', 'PARTNER']
+    },
+    {
+      id: 3,
+      label: 'pages.menu.Commandes',
+      icon: 'bx bx-shopping-bag',
+      link: '/order',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP', 'DELIVERY_MAN']
+    },
+    {
+      id: 4,
+      label: 'pages.menu.Produits',
+      icon: 'bxl-product-hunt',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 5,
+          label: 'pages.menu.Nouveau produit',
+          link: '/product/new',
+          parentId: 4
+        },
+        {
+          id: 6,
+          label: 'pages.menu.Liste des produits',
+          link: '/product/list',
+          parentId: 4
+        }
+      ]
+    },
+    {
+      id: 16,
+      label: 'pages.menu.Catégories',
+      icon: 'bx-sitemap',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 17,
+          label: 'pages.menu.Nouvelle catégorie',
+          link: '/category/new',
+          parentId: 16
+        },
+        {
+          id: 18,
+          label: 'pages.menu.Liste des catégories',
+          link: '/category/list',
+          parentId: 16
+        }
+      ]
+    },
+    {
+      id: 31,
+      label: 'pages.menu.Suppléments',
+      icon: 'bx-add-to-queue',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 32,
+          label: 'pages.menu.Nouveau supplément',
+          link: '/extra/new',
+          parentId: 31
+        },
+        {
+          id: 33,
+          label: 'pages.menu.Liste des suppléments',
+          link: '/extra/list',
+          parentId: 31
+        }
+      ]
+    },
+    {
+      id: 41,
+      label: 'pages.menu.Caractéristiques',
+      icon: 'bx-list-ul',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 42,
+          label: 'pages.menu.Nouvelle caractéristique',
+          link: '/characteristic/new',
+          parentId: 41
+        },
+        {
+          id: 43,
+          label: 'pages.menu.Liste des caractéristique',
+          link: '/characteristic/list',
+          parentId: 41
+        }
+      ]
+    },
+    {
+      id: 3,
+      label: 'pages.menu.Promotions',
+      icon: 'bx bxs-discount',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 22,
+          label: 'pages.menu.Nouvelle promotion',
+          link: '/discount/new',
+          parentId: 3
+        },
+        {
+          id: 23,
+          label: 'pages.menu.Liste des promotions',
+          link: '/discount/list',
+          parentId: 3
+        }
+      ]
+    },
+    {
+      id: 9,
+      label: 'pages.menu.Clients',
+      icon: 'bx-user-circle',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      link: '/customer',
+    },
+    {
+      id: 50,
+      label: 'pages.menu.CMS',
+      icon: 'bx bxs-detail',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 51,
+          label: 'pages.menu.Page',
+          link: '/cms/page/list',
+          parentId: 50
+        },
+        {
+          id: 52,
+          label: 'pages.menu.Article',
+          link: '/cms/article/list',
+          parentId: 50
+        }
+      ]
+    },
+    {
+      id: 13,
+      label: 'pages.menu.Paramétrages',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      icon: 'bx-cog',
+      subItems: [
+        {
+          id: 27,
+          label: 'pages.menu.Utilisateurs',
+          link: '/setting/user/list',
+          parentId: 13
+        },
+        {
+          id: 24,
+          label: 'pages.menu.Compte',
+          link: '/setting/account',
+          parentId: 13
+        },
+        {
+          id: 14,
+          label: 'pages.menu.Général',
+          link: '/setting/shop',
+          parentId: 13
+        },
+        {
+          id: 25,
+          label: 'pages.menu.Personnalisation',
+          link: '/setting/customization',
+          parentId: 13
+        },
+        {
+          id: 26,
+          label: 'pages.menu.Sous domaine',
+          link: '/setting/subdomain',
+          parentId: 13
+        },
+        {
+          id: 10,
+          label: 'pages.menu.Points de vente',
+          icon: 'bxs-store-alt',
+          link: '/setting/store/list',
+          parentId: 13
+        },
+        {
+          id: 15,
+          label: 'pages.menu.Ouverture',
+          link: '/setting/opening-time',
+          parentId: 13
+        },
+        {
+          id: 19,
+          label: 'pages.menu.Livraison',
+          icon: 'bx bx-box',
+          link: '/setting/delivery'
+        },
+        {
+          id: 28,
+          label: 'pages.menu.Cashback',
+          link: '/setting/cashback',
+          parentId: 13
+        },
+        {
+          id: 27,
+          label: 'pages.menu.Contact',
+          link: '/setting/contact',
+          parentId: 13
+        }
+      ]
+    },
+    {
+      id: 30,
+      label: 'pages.menu.Tickets',
+      icon: 'bx bxs-message-detail',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      link: '/ticket/list',
+    },
+  ];

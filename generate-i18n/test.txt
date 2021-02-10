@@ -1,0 +1,225 @@
+MENU: MenuItem[] = [
+    {
+      id: 1,
+      label: 'Menu',
+      isTitle: true,
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP', 'PARTNER', 'DELIVERY_MAN']
+    },
+    {
+      id: 2,
+      label: 'Tableau de bord',
+      icon: 'bxs-dashboard',
+      link: '/dashboard',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP', 'PARTNER']
+    },
+    {
+      id: 3,
+      label: 'Commandes',
+      icon: 'bx bx-shopping-bag',
+      link: '/order',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP', 'DELIVERY_MAN']
+    },
+    {
+      id: 4,
+      label: 'Produits',
+      icon: 'bxl-product-hunt',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 5,
+          label: 'Nouveau produit',
+          link: '/product/new',
+          parentId: 4
+        },
+        {
+          id: 6,
+          label: 'Liste des produits',
+          link: '/product/list',
+          parentId: 4
+        }
+      ]
+    },
+    {
+      id: 16,
+      label: 'Catégories',
+      icon: 'bx-sitemap',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 17,
+          label: 'Nouvelle catégorie',
+          link: '/category/new',
+          parentId: 16
+        },
+        {
+          id: 18,
+          label: 'Liste des catégories',
+          link: '/category/list',
+          parentId: 16
+        }
+      ]
+    },
+    {
+      id: 31,
+      label: 'Suppléments',
+      icon: 'bx-add-to-queue',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 32,
+          label: 'Nouveau supplément',
+          link: '/extra/new',
+          parentId: 31
+        },
+        {
+          id: 33,
+          label: 'Liste des suppléments',
+          link: '/extra/list',
+          parentId: 31
+        }
+      ]
+    },
+    {
+      id: 41,
+      label: 'Caractéristiques',
+      icon: 'bx-list-ul',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 42,
+          label: 'Nouvelle caractéristique',
+          link: '/characteristic/new',
+          parentId: 41
+        },
+        {
+          id: 43,
+          label: 'Liste des caractéristique',
+          link: '/characteristic/list',
+          parentId: 41
+        }
+      ]
+    },
+    {
+      id: 3,
+      label: 'Promotions',
+      icon: 'bx bxs-discount',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 22,
+          label: 'Nouvelle promotion',
+          link: '/discount/new',
+          parentId: 3
+        },
+        {
+          id: 23,
+          label: 'Liste des promotions',
+          link: '/discount/list',
+          parentId: 3
+        }
+      ]
+    },
+    {
+      id: 9,
+      label: 'Clients',
+      icon: 'bx-user-circle',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      link: '/customer',
+    },
+    {
+      id: 50,
+      label: 'CMS',
+      icon: 'bx bxs-detail',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      subItems: [
+        {
+          id: 51,
+          label: 'Page',
+          link: '/cms/page/list',
+          parentId: 50
+        },
+        {
+          id: 52,
+          label: 'Article',
+          link: '/cms/article/list',
+          parentId: 50
+        }
+      ]
+    },
+    {
+      id: 13,
+      label: 'Paramétrages',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      icon: 'bx-cog',
+      subItems: [
+        {
+          id: 27,
+          label: 'Utilisateurs',
+          link: '/setting/user/list',
+          parentId: 13
+        },
+        {
+          id: 24,
+          label: 'Compte',
+          link: '/setting/account',
+          parentId: 13
+        },
+        {
+          id: 14,
+          label: 'Général',
+          link: '/setting/shop',
+          parentId: 13
+        },
+        {
+          id: 25,
+          label: 'Personnalisation',
+          link: '/setting/customization',
+          parentId: 13
+        },
+        {
+          id: 26,
+          label: 'Sous domaine',
+          link: '/setting/subdomain',
+          parentId: 13
+        },
+        {
+          id: 10,
+          label: 'Points de vente',
+          icon: 'bxs-store-alt',
+          link: '/setting/store/list',
+          parentId: 13
+        },
+        {
+          id: 15,
+          label: 'Ouverture',
+          link: '/setting/opening-time',
+          parentId: 13
+        },
+        {
+          id: 19,
+          label: 'Livraison',
+          icon: 'bx bx-box',
+          link: '/setting/delivery'
+        },
+        {
+          id: 28,
+          label: 'Cashback',
+          link: '/setting/cashback',
+          parentId: 13
+        },
+        {
+          id: 27,
+          label: 'Contact',
+          link: '/setting/contact',
+          parentId: 13
+        }
+      ]
+    },
+    {
+      id: 30,
+      label: 'Tickets',
+      icon: 'bx bxs-message-detail',
+      role: ['ADMIN', 'SHOP', 'APPROVING_SHOP'],
+      link: '/ticket/list',
+    },
+  ];

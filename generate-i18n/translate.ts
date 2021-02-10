@@ -148,7 +148,55 @@ function doHtml(content: string) {
 }
 
 async function main() {
-  doReady();
+  // doReady();
+
+  const MENU = [
+    "Menu",
+    "Tableau de bord",
+    "Commandes",
+    "Nouveau produit",
+    "Liste des produits",
+    "Produits",
+    "Catégories",
+    "Suppléments",
+    "Caractéristiques",
+    "Promotions",
+    "CMS",
+    "Paramétrages",
+    "Nouvelle catégorie",
+    "Liste des catégories",
+    "Nouveau supplément",
+    "Liste des suppléments",
+    "Nouvelle caractéristique",
+    "Liste des caractéristique",
+    "Nouvelle promotion",
+    "Liste des promotions",
+    "Clients",
+    "Page",
+    "Article",
+    "Utilisateurs",
+    "Compte",
+    "Général",
+    "Personnalisation",
+    "Sous domaine",
+    "Points de vente",
+    "Ouverture",
+    "Livraison",
+    "Cashback",
+    "Contact",
+    "Tickets",
+  ];
+
+  let frJson = fse.readFileSync(`${__dirname}/test.txt`, 'utf8');
+
+  MENU.map((e, i) => {
+    frJson = frJson.replace(`'${e}'`, `'pages.menu.${e}'`)
+  });
+
+  fse.writeFileSync(`${__dirname}/test2.txt`, frJson);
+
+
+
   return
   const stringTest = `
   <h4 class="mb-0 font-size-18">Tableau de bord </h4>
