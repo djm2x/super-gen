@@ -1,6 +1,16 @@
-export class Product {
+export class Mouvement {
   id = 0;
-  tagProducts: TagProduct[] = [];
+  idArticle = 0;
+  article = new Article()
+
+  idEmplacement = 0;
+  emplacement = new Emplacement()
+
+  idCollaborateur = 0;
+  collaborateur = new Collaborateur()
+
+  date = new Date();
+  note = '';
 }
 
 export class TagProduct {

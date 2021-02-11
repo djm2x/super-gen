@@ -37,7 +37,7 @@
     "merge-branch-to-master-branch": "git merge new-one",
     "init": "git init && git remote add origin https://github.com/djm2x/super-gen.git",
     "cmt": "git add . && git commit -m \"translate : add generator\"",
-    "push": "git add . && git commit -m \"update translate.ts\" && git push -u origin master"
+    "push": "git add . && git commit -m \"add model for gsi\" && git push -u origin master"
   },
   "private": true,
   "dependencies": {
