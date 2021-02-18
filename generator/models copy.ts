@@ -1,15 +1,18 @@
 export class Affectation {
   id = 0;
-  idArticle = 0;
-  article: Article;
-  idEmplacement = 0;
-  emplacement: Emplacement;
-  idCollaborateur = 0;
-  collaborateur: Collaborateur;
   dateDebutAffectation = new Date();
   dateFinAffectation = new Date();
   isCurrent = true;
   notes = '';
+
+  idDetailsReception = 0;
+  detailsReception: DetailsReception;
+
+  idEmplacement = 0;
+  emplacement: Emplacement;
+
+  idCollaborateur = 0;
+  collaborateur: Collaborateur;
 }
 
 export class Emplacement {
@@ -48,8 +51,7 @@ export class DetailsDemande {
   qteDemande = 0;
   qteLivree = 0;
 }
-
-
+ 
 
 //
 
@@ -89,7 +91,22 @@ export class Entite {
   parent = new Entite();
   childs: Entite[] = [];
 
-  affectations: Affectation[] = [];
+  rattachements: Rattachement[] = [];
+}
+
+export class Rattachement {
+  id = 0;
+  dateEffet = new Date();
+  actif = false;
+
+  idCollaborateur = 0;
+  collaborateur: Collaborateur;
+
+  idEntite = 0;
+  entite = new Entite();
+
+  idFonction = 0;
+  fonction: Fonction;
 }
 
 export class Categorie {
@@ -117,8 +134,9 @@ export class Collaborateur {
   email = '';
   matricule = '';
   imageUrl = '';
-  actif = true;
+  isActif = true;
   affectations: Affectation[] = [];
+  rattachements: Rattachement[] = [];
 }
 
 export class Fonction {
@@ -126,7 +144,7 @@ export class Fonction {
   nom = '';
   decision = false;
   responsabilite = false;
-  affectations: Affectation[] = [];
+  rattachements: Rattachement[] = [];
 }
 
 // export class Affectation {
@@ -232,6 +250,14 @@ export class DetailsReception {
   notes = '';
   statut = '';
   mobilite = '';
+
+  // Hicham 18-02-21
+  QuantiteUnitaireTotale = 0 ; // Stocker le nombre totale après le calcul (qte * valeur format Emballage)
+  QuantiteConsomme = 0 ; // ça va servir pour les consommables
+
+
+
+
 }
 
 export class FormatEmballage {
