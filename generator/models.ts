@@ -19,12 +19,12 @@ export class Emplacement {
   id = 0;
   idSite = 0;
   site = new Site()
-  CodeEmplacement = '';
-  Description = '';
-  Batiment = '';
-  Etage = '';
-  Departement = '';
-  Service = '';
+  codeEmplacement = '';
+  description = '';
+  batiment = '';
+  etage = '';
+  departement = '';
+  service = '';
 
   affectations: Affectation[] = [];
 }
