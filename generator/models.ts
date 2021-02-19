@@ -267,9 +267,7 @@ export class Options {
       'User',
       'Fonction',
       'Affectation',
-      'Demande',
-      'DetailsDemande',
-      'Rattachement',
+      
     ],
     domaine: [
       'Constructeur',
@@ -279,6 +277,12 @@ export class Options {
       'Reception',
       'DetailsReception',
       'FormatEmballage',
+    ],
+    sortie: [
+      'Demande',
+      'DetailsDemande',
+      'Rattachement',
+      'Emplacement',
     ]
   };
 
