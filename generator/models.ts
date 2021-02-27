@@ -254,6 +254,16 @@ export class FormatEmballage {
   detailsReceptions: DetailsReception[] = [];
 }
 
+export class Inventaire {
+  id = 0;
+  code = '';
+  dateDebut = new Date();
+  dateFin = new Date();
+  CountArticle = 0;
+
+  rapport = '';
+}
+
 
 
 export class Options {
@@ -283,6 +293,7 @@ export class Options {
       'DetailsDemande',
       'Rattachement',
       'Emplacement',
+      'Inventaire',
     ]
   };
 

@@ -201,7 +201,16 @@ export class Article {
 
   detailsReceptions: DetailsReception[] = [];
   demandes: Demande[] = [];
+}
 
+export class Inventaire {
+  id = 0;
+  code = 0;
+  dateDebut = new Date();
+  dateFin = new Date();
+  CountArticle = 0;
+
+  rapport = '';
 }
 
 export class Fournisseur {
@@ -290,7 +299,8 @@ export class Options {
       'Reception',
       'DetailsReception',
       'FormatEmballage',
-    ]
+      'Inventaire',
+    ],
   };
 
   configJson = {
