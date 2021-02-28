@@ -1,304 +1,273 @@
-export class Affectation {
-  id = 0;
-  dateDebutAffectation = new Date();
-  dateFinAffectation = new Date();
-  isCurrent = true;
-  notes = '';
-
-  idDetailsReception = 0;
-  detailsReception: DetailsReception;
-
-  idEmplacement = 0;
-  emplacement: Emplacement;
-
-  idCollaborateur = 0;
-  collaborateur: Collaborateur;
-}
-
-export class Emplacement {
-  id = 0;
-  idSite = 0;
-  site = new Site()
-  codeEmplacement = '';
-  description = '';
-  batiment = '';
-  etage = '';
-  departement = '';
-  service = '';
-
-  affectations: Affectation[] = [];
-}
-
-export class Demande {
-  id = 0;
-  demandeur = 0;
-  reference = '';
-  dateDemande = new Date();
-  etatDemande = 0;
-  valeur = 0;
-  nbrArticle = 0;
-  addOn = new Date();
-  addBy = '';
-  updatedOn = new Date();
-  updatedBy = '';
-
-  DetailsDemandes: DetailsDemande[] = [];
-}
-
-export class DetailsDemande {
-  id = 0;
-  idDemande = 0;
-  demande: Demande;
-  idArticle = 0;
-  article: Article;
-  description = '';
-  qteDemande = 0;
-  qteLivree = 0;
-}
- 
-
-//
-
-export class Organisme {
-  id = 0;
-  nom = '';
-  adresse = '';
-  telephone = '';
-  email = '';
-  ice = '';
-  sites: Site[] = [];
-}
-
-export class Site {
-  id = 0;
-  idOrganisme = 0;
-  organisme = new Organisme();
-  nom = '';
-  adresse = '';
-  ville = '';
-  telephone = '';
-
-  entites: Entite[] = [];
-  emplacements: Emplacement[] = [];
-}
-
-export class Entite {
-  id = 0;
-  nom = '';
-  idSite = 0;
-  site = new Site();
-
-  idCategorie = 0;
-  categorie = new Categorie();
-
-  idParent = 0;
-  parent = new Entite();
-  childs: Entite[] = [];
-
-  rattachements: Rattachement[] = [];
-}
-
-export class Rattachement {
-  id = 0;
-  dateEffet = new Date();
-  actif = false;
-
-  idCollaborateur = 0;
-  collaborateur: Collaborateur;
-
-  idEntite = 0;
-  entite = new Entite();
-
-  idFonction = 0;
-  fonction: Fonction;
-}
-
-export class Categorie {
-  id = 0;
-  nom = 'Direction' || 'Dépertement' || 'Dévision' || 'Service';
-  poids = 0;
-  entites: Entite[] = [];
-}
-
 export class User {
   id = 0;
   nom = '';
+  prenom = '';
+  tel1 = '00';
+  tel2 = '00';
   email = '';
   password = '';
   isActive = false;
+  date = new Date();
+  adresse = 'temara';
   imageUrl = '';
-  profil = '';
+  cin = '';
+  role = '';
+  idVille = 1;
+
+  ville = new Ville();
+  detailUserActivites: DetailUserActivite[] = [];
+  contactUs: ContactUs[] = [];
+  discussions: Discussion[] = [];
+  otherUserDiscussions: Discussion[] = [];
+  messages: Message[] = [];
+  otherUserMessages: Message[] = [];
+  eventProfs: EventProf[] = [];
+  profs: Prof[] = [];
+  students: Student[] = [];
 }
 
+export class Discussion {
+  id = 0;
+  unReaded = 0;
+  date = new Date();
 
-export class Collaborateur {
+  idMe = 0;
+  idOtherUser = 0;
+  me = new User();
+  otherUser = new User();
+  messages: Message[] = [];
+}
+
+export class Message {
+  id = 0;
+  object = 'Lorem ipsum dolor sit amet.';
+  message = 'Lorem ipsum dolor sit amet.';
+  vu = false;
+  date = new Date();
+  idCours = 0;
+  otherUserName = '';
+  otherUserImage = '';
+
+  idMe = 0;
+  idOtherUser = 0;
+  idDiscussion = 0;
+
+  me = new User();
+  otherUser = new User();
+  discussion = new Discussion();
+}
+
+export class EventProf {
+  id = 0;
+  title = '';
+  start = new Date();
+  end = new Date();
+  color = '';
+  draggable = true;
+  resizable = '';
+  month = new Date().getMonth() + 1;
+  year = new Date().getFullYear();
+
+  idUser = 0;
+  user = new User();
+}
+
+export class Ville {
   id = 0;
   nom = '';
-  prenom = '';
-  email = '';
-  matricule = '';
+  nomAr = '';
+
+  users: User[] = [];
+}
+
+export class DetailUserActivite {
+  id = 0;
+  date = new Date();
+  idUser = 0;
+  idActivite = 0;
+
+  user = new User();
+  activite = new Activite();
+}
+
+export class TypeActivite {
+  id = 0;
+  nom = '';
+  nomAr = '';
   imageUrl = '';
-  isActif = true;
-  affectations: Affectation[] = [];
-  rattachements: Rattachement[] = [];
+  active = false;
+
+  activites: Activite[] = [];
 }
 
-export class Fonction {
+export class Activite {
   id = 0;
   nom = '';
-  decision = false;
-  responsabilite = false;
-  rattachements: Rattachement[] = [];
+  nomAr = '';
+  imageUrl = '';
+  idTypeActivite = 0;
+
+  typeActivite = new TypeActivite();
+  detailUserActivites: DetailUserActivite[] = [];
 }
 
-export class Constructeur {
+export class Prof {
+  id = 0;
+  lien = '';
+  description = '';
+  experience = '';
+  approche = '';
+  intro = '';
+  videoUrl = '';
+  cvUrl = '';
+  note = 0;
+
+  prixHrWeb = 0;
+  prixHrHome = 0;
+  prixHrWebGroupe = 0;
+  prixHrHomeGroupe = 0;
+
+  idsTypeActivites = '';
+  idsActivites = '';
+  idsTypeCours = '';
+  idsLieuCours = '';
+  idsNiveauScolaires = '';
+
+  idUser = 0;
+  user = new User();
+}
+
+export class Student {
+  id = 0;
+  ecole = 'ecole';
+  niveau = 1;
+  branche = 1;
+  nomParent = 'nomParent';
+  prenomParent = 'prenomParent';
+  tel1Parent = 'tel1Parent';
+  tel2Parent = 'tel2Parent';
+
+  idUser = 0;
+  idActivite = 0;
+  user = new User();
+  activite = new Activite();
+}
+
+export class TypeCours {
   id = 0;
   nom = '';
-  representant = '';
-  articles: Article[] = [];
+  nomAr = '';
+  offreProfes: OffreProf[] = [];
 }
 
-export class Famille {
+export class LieuCours {
   id = 0;
   nom = '';
-  comptagePar = 'Lot' || 'Unité';
-  idParent = 0;
-  parent = new Famille();
-  childs: Famille[] = [];
-  articles: Article[] = [];
+  nomAr = '';
 }
 
-
-export class Article {
-  id = 0;
-  idFamille = 0;
-  famille = new Famille();
-
-  idConstructeur = 0;
-  constructeur = new Constructeur()
-
-  model = '';
-  reference = '';
-  uniteMesure = '';
-  qteEnStock = 0;
-
-  tauxAmortissement = 0;
-  codeImmobilisation = 0;
-  notes = '';
-
-  detailsReceptions: DetailsReception[] = [];
-  DetailsDemandes: DetailsDemande[] = [];
-
-}
-
-export class Fournisseur {
+export class NiveauScolaire {
   id = 0;
   nom = '';
-  ice = '';
-  patente = '';
-  rc = '';
-  rib = '';
-  telephone = '';
-  adresse = '';
-  email = '';
-  receptions: Reception[] = [];
+  nomAr = '';
+  idCycle = 0;
+  coursLigneGroupe = 0;
+  coursLigneIndividuel = 0;
+  coursDomicileGroupe = 0;
+  coursDomicileIndividuel = 0;
+
+  branches: Branche[] = [];
+  courses: Cours[] = [];
 }
 
-export class Reception {
-  id = 0;
-
-  idFournisseur = 0;
-  fournisseur = new Fournisseur();
-
-  dateReception = new Date();
-  reference = '';
-  nature = '';
-  montantTotal = 0.00;
-  DetailsReceptions: DetailsReception[] = [];
-
-}
-
-export class DetailsReception {
-  id = 0;
-  idReception = 0;
-  reception: Reception;
-
-  idArticle = 0;
-  article: Article;
-
-  idFormatEmballage = 0;
-  formatEmballage: FormatEmballage;
-
-  quantite = 0;
-  prixUnitaireHT = 0.00;
-  numeroSerie = '';
-  numeroInventaire = '';
-  dateMiseEnService = new Date();
-  notes = '';
-  statut = '';
-  mobilite = '';
-
-  // Hicham 18-02-21
-  QuantiteUnitaireTotale = 0 ; // Stocker le nombre totale après le calcul (qte * valeur format Emballage)
-  QuantiteConsomme = 0 ; // ça va servir pour les consommables
-
-
-  affectations: Affectation[] = [];
-}
-
-export class FormatEmballage {
+export class Branche {
   id = 0;
   nom = '';
-  valeur = 0;
-
-  detailsReceptions: DetailsReception[] = [];
+  nomAr = '';
+  idNiveauScolaire = 0;
+  niveauScolaire = new NiveauScolaire();
+  courses: Cours[] = [];
 }
 
-export class Inventaire {
+export class Cours {
   id = 0;
-  code = '';
-  dateDebut = new Date();
-  dateFin = new Date();
-  CountArticle = 0;
+  nom = '';
+  nomAr = '';
+  filesUrl = '';
+  videosUrl = '';
+  semester = 1;
+  idBranche = 0;
+  branche = new Branche();
+  idNiveauScolaire = 0;
+  niveauScolaire = new NiveauScolaire();
 
-  rapport = '';
+  quizzes: Quiz[] = [];
 }
 
 
 
-export class Options {
-  modules = {
-    settings: [
-      'Organisme',
-      'Site',
-      'Entite',
-      'Categorie',
-      'Collaborateur',
-      'User',
-      'Fonction',
-      'Affectation',
-      
-    ],
-    domaine: [
-      'Constructeur',
-      'Famille',
-      'Article',
-      'Fournisseur',
-      'Reception',
-      'DetailsReception',
-      'FormatEmballage',
-    ],
-    sortie: [
-      'Demande',
-      'DetailsDemande',
-      'Rattachement',
-      'Emplacement',
-      'Inventaire',
-    ]
-  };
+export class ContactUs {
+  id = 0;
+  object = '';
+  msg = '';
+  date = new Date();
+  idUser = 0;
+  user = new User();
+}
 
-  configJson = {
-    apptitle: 'GSI',
-    appname: 'Gestion System Informatique',
-  };
+export class Video {
+  id = 0;
+  title = 'ffff';
+  order = 0;
+  description = '';
+  date = new Date();
+  urlVideo = '';
+}
+
+export class OffreProf {
+  id = 0;
+  interval = '';
+  value = 0;
+  idTypeCours = 0;
+  typeCours = new TypeCours();
+}
+
+export class Quiz {
+  id = 0;
+  title = '';
+  description = '';
+  enableTime = true;
+  date = new Date();
+  isActive = true;
+
+  idContext = 0;
+  context = new Cours();
+  questions: Question[] = [];
+}
+
+export class Question {
+  id = 0;
+  value = '';
+  responsesString = '';
+  choices = '';
+  isMultiChoises = false;
+  time = 60;
+
+  idQuiz = 0;
+  Quiz = new Quiz();
+  responses: Response[] = [];
+}
+
+export class Response {
+  id = 0;
+  trueResponse = '';
+  userResponse = '';
+  date = new Date();
+  note = 0;
+
+  idQuestion = 0;
+  question = new Question();
+
+  idUser = 0;
+  user = new User();
 }

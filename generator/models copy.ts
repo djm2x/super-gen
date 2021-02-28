@@ -19,17 +19,19 @@ export class Emplacement {
   id = 0;
   idSite = 0;
   site = new Site()
-  CodeEmplacement = '';
-  Description = '';
-  Batiment = '';
-  Etage = '';
-  Departement = '';
-  Service = '';
+  codeEmplacement = '';
+  description = '';
+  batiment = '';
+  etage = '';
+  departement = '';
+  service = '';
+
+  affectations: Affectation[] = [];
 }
 
 export class Demande {
   id = 0;
-  idDemandeur = 0;
+  demandeur = 0;
   reference = '';
   dateDemande = new Date();
   etatDemande = 0;
@@ -39,6 +41,8 @@ export class Demande {
   addBy = '';
   updatedOn = new Date();
   updatedBy = '';
+
+  DetailsDemandes: DetailsDemande[] = [];
 }
 
 export class DetailsDemande {
@@ -147,23 +151,6 @@ export class Fonction {
   rattachements: Rattachement[] = [];
 }
 
-// export class Affectation {
-//   id = 0;
-
-//   idCollaborateur = 0;
-//   collaborateur = new Collaborateur();
-
-//   idEntite = 0;
-//   entite = new Entite();
-
-//   dateEffet = new Date();
-//   actif = true;
-
-//   idFonction = 0;
-//   fonction = new Fonction();
-
-// }
-
 export class Constructeur {
   id = 0;
   nom = '';
@@ -200,17 +187,8 @@ export class Article {
   notes = '';
 
   detailsReceptions: DetailsReception[] = [];
-  demandes: Demande[] = [];
-}
+  DetailsDemandes: DetailsDemande[] = [];
 
-export class Inventaire {
-  id = 0;
-  code = 0;
-  dateDebut = new Date();
-  dateFin = new Date();
-  CountArticle = 0;
-
-  rapport = '';
 }
 
 export class Fournisseur {
@@ -265,8 +243,7 @@ export class DetailsReception {
   QuantiteConsomme = 0 ; // ça va servir pour les consommables
 
 
-
-
+  affectations: Affectation[] = [];
 }
 
 export class FormatEmballage {
@@ -275,6 +252,16 @@ export class FormatEmballage {
   valeur = 0;
 
   detailsReceptions: DetailsReception[] = [];
+}
+
+export class Inventaire {
+  id = 0;
+  code = '';
+  dateDebut = new Date();
+  dateFin = new Date();
+  CountArticle = 0;
+
+  rapport = '';
 }
 
 
@@ -290,6 +277,7 @@ export class Options {
       'User',
       'Fonction',
       'Affectation',
+      
     ],
     domaine: [
       'Constructeur',
@@ -299,8 +287,14 @@ export class Options {
       'Reception',
       'DetailsReception',
       'FormatEmballage',
-      'Inventaire',
     ],
+    sortie: [
+      'Demande',
+      'DetailsDemande',
+      'Rattachement',
+      'Emplacement',
+      'Inventaire',
+    ]
   };
 
   configJson = {
