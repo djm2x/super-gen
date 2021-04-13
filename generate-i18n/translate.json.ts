@@ -42,7 +42,7 @@ async function doReady() {
 }
 
 async function readTextTranslated() {
-  let ar = fse.readFileSync(`${configs.path}/ar.txt`, 'utf8').split('\r\n');
+  let ar = fse.readFileSync(`${configs.path}/en.txt`, 'utf8').split('\r\n');
   let fr = fse.readFileSync(`${configs.path}/fr.txt`, 'utf8').split('\r\n');
 
   let frJson = fse.readFileSync(`${configs.path}/fr.json`, 'utf8');

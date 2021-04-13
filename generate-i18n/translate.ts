@@ -15,6 +15,7 @@ const configs = {
 
 async function doReady() {
   // const files = fse.readdirSync(configs.pathBaseFiles);
+  // read all html files in base files
   const files = await new Promise<string[]>((res, rej) => new Glob(`${configs.pathBaseFiles}/**/*.html`, (err, files) => err ? rej(err) : res(files)))
 
   await Promise.all(
@@ -24,6 +25,7 @@ async function doReady() {
 
       let htmlContent = fse.readFileSync(e, 'utf8');
 
+      // do html take text between balise html to array of string
       let listOfText = doHtml(htmlContent);
 
       const hierarchy = dist.split('/');
@@ -35,6 +37,7 @@ async function doReady() {
       // }
 
 
+      // repalce content between balise html with a new string | translate
       listOfText.map(e => {
         htmlContent = htmlContent.replace(e, `{{ '${hierarchy.join('.')}.${e.replace(/\s|'/g, '_')}' | translate }}`)
       })
@@ -46,17 +49,17 @@ async function doReady() {
 
       // console.log(`${configs.pathGenerateFiles}/${dist}/${fileName}\r\n`)
 
-      await createJsonFiles(dist, listOfText);
+      await createJsonLangFiles(dist, listOfText);
     })
   );
-  console.log('done')
+  console.log('doReady done')
 }
 
 function timeOut(time = 1000) {
   return new Promise<boolean>((res, _) => setTimeout(() => res(true), time));
 }
 
-async function createJsonFiles(distination: string, listOfText: string[]) {
+async function createJsonLangFiles(distination: string, listOfText: string[]) {
 
   await Promise.all(
     ['en', 'fr', 'ar'].map(async lang => {
@@ -148,52 +151,52 @@ function doHtml(content: string) {
 }
 
 async function main() {
-  // doReady();
+  doReady();
 
-  const MENU = [
-    "Menu",
-    "Tableau de bord",
-    "Commandes",
-    "Nouveau produit",
-    "Liste des produits",
-    "Produits",
-    "Catégories",
-    "Suppléments",
-    "Caractéristiques",
-    "Promotions",
-    "CMS",
-    "Paramétrages",
-    "Nouvelle catégorie",
-    "Liste des catégories",
-    "Nouveau supplément",
-    "Liste des suppléments",
-    "Nouvelle caractéristique",
-    "Liste des caractéristique",
-    "Nouvelle promotion",
-    "Liste des promotions",
-    "Clients",
-    "Page",
-    "Article",
-    "Utilisateurs",
-    "Compte",
-    "Général",
-    "Personnalisation",
-    "Sous domaine",
-    "Points de vente",
-    "Ouverture",
-    "Livraison",
-    "Cashback",
-    "Contact",
-    "Tickets",
-  ];
+  // const MENU = [
+  //   "Menu",
+  //   "Tableau de bord",
+  //   "Commandes",
+  //   "Nouveau produit",
+  //   "Liste des produits",
+  //   "Produits",
+  //   "Catégories",
+  //   "Suppléments",
+  //   "Caractéristiques",
+  //   "Promotions",
+  //   "CMS",
+  //   "Paramétrages",
+  //   "Nouvelle catégorie",
+  //   "Liste des catégories",
+  //   "Nouveau supplément",
+  //   "Liste des suppléments",
+  //   "Nouvelle caractéristique",
+  //   "Liste des caractéristique",
+  //   "Nouvelle promotion",
+  //   "Liste des promotions",
+  //   "Clients",
+  //   "Page",
+  //   "Article",
+  //   "Utilisateurs",
+  //   "Compte",
+  //   "Général",
+  //   "Personnalisation",
+  //   "Sous domaine",
+  //   "Points de vente",
+  //   "Ouverture",
+  //   "Livraison",
+  //   "Cashback",
+  //   "Contact",
+  //   "Tickets",
+  // ];
 
-  let frJson = fse.readFileSync(`${__dirname}/test.txt`, 'utf8');
+  // let frJson = fse.readFileSync(`${__dirname}/test.txt`, 'utf8');
 
-  MENU.map((e, i) => {
-    frJson = frJson.replace(`'${e}'`, `'pages.menu.${e}'`)
-  });
+  // MENU.map((e, i) => {
+  //   frJson = frJson.replace(`'${e}'`, `'pages.menu.${e}'`)
+  // });
 
-  fse.writeFileSync(`${__dirname}/test2.txt`, frJson);
+  // fse.writeFileSync(`${__dirname}/test2.txt`, frJson);
 
 
 
