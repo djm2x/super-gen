@@ -17,9 +17,9 @@ export class Entities {
         
         this.configs.classes.forEach(e => {
             const cls = this.helper.Cap(e.class);
-            const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls;
+            const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls + 's';
 
-            models = `package com.sportvalue.crs.models;\r\nimport javax.persistence.*;\r\nimport com.fasterxml.jackson.annotation.JsonFormat;\r\nimport com.fasterxml.jackson.annotation.JsonIgnore;\r\n@Entity\r\n@Table(name="${classNamePlural}")\r\npublic class ${this.helper.Cap(e.class)} extends AbstractEntity {\r\n`;
+            models = `package com.sportvalue.crs.models;\r\nimport java.util.Set;\r\nimport java.util.Date;\r\nimport javax.persistence.*;\r\nimport com.fasterxml.jackson.annotation.JsonFormat;\r\nimport com.fasterxml.jackson.annotation.JsonIgnore;\r\n@Entity\r\n@Table(name="${classNamePlural}")\r\npublic class ${this.helper.Cap(e.class)} extends AbstractEntity {\r\n`;
 
             e.properties.forEach(p => {
                 const isTypePrimitive = this.helper.isTypePrimitive(p.type);
@@ -58,7 +58,7 @@ export class Entities {
                             // modelBuilderEntity += `entity.HasOne(e => e.${this.helper.Cap(p.name)}).WithMany(e => e.Childs).HasForeignKey(e => e.Id${this.helper.Cap(p.name)});\r\n`;
                         } 
 
-                        models += `@ManyToOne(cascade = CascadeType.ALL)\r\n@JoinColumn(name = "id${this.helper.Cap(e.class)}")\r\n@JsonIgnore\r\nprivate ${this.helper.Cap(p.type !== 'any' ? p.type : p.name)} ${p.name};\r\n\r\n`;
+                        models += `@ManyToOne(cascade = CascadeType.ALL)\r\n@JoinColumn(name = "id${this.helper.Cap(p.name)}")\r\n@JsonIgnore\r\nprivate ${this.helper.Cap(p.type !== 'any' ? p.type : p.name)} ${p.name};\r\n\r\n`;
                     }
                 }
             });

@@ -66,6 +66,7 @@ export class Club {
 }
 
 export class ClubIndicator {
+  id = 0;
   club = new Club();
   indicator = new Indicator();
   score = 0;
@@ -94,6 +95,7 @@ export class Country {
 }
 
 export class CountryIndicator {
+  id = 0;
   indicator = new Indicator();
   country = new Country();
   score = 0
