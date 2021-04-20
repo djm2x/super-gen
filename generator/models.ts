@@ -6,6 +6,7 @@ export class Account {
   type = '';
   highlight = true;
   bold = true;
+  accountValues: AccountValue[] = [];
 }
 
 
@@ -31,7 +32,9 @@ export class Bspl {
   xRate = '';
   currency = '';
   club = new Club();
-  bspl = new Bspl();
+  previous = new Bspl();
+  childs: Bspl[] = [];
+  accountValues: AccountValue[] = [];
 }
 
 
@@ -40,6 +43,7 @@ export class Championship {
   code = '';
   name = '';
   country = new Country();
+  clubs: Club[] = [];
 }
 
 export class Club {
@@ -54,6 +58,11 @@ export class Club {
   logopath = '';
   sport = '';
   championship = new Championship();
+  bspls: Bspl[] = [];
+  bonuses: Bonus[] = [];
+  clubIndicators: ClubIndicator[] = [];
+  comments: Comment[] = [];
+  historys: History[] = [];
 }
 
 export class ClubIndicator {
@@ -80,6 +89,8 @@ export class Country {
   id = 0
   code = '';
   name = '';
+  championships: Championship[] = [];
+  countryIndicators: CountryIndicator[] = [];
 }
 
 export class CountryIndicator {
@@ -114,6 +125,11 @@ export class Indicator {
   type = '';
   sourceType = '';
   noterGroup = new NoterGroup();
+  clubIndicators: ClubIndicator[] = [];
+  countryIndicators: CountryIndicator[] = [];
+  functionNormalizers: FunctionNormalizer[] = [];
+  mapNormalizers: MapNormalizer[] = [];
+  RangeNormalizers: RangeNormalizer[] = [];
 }
 
 export class MapNormalizer {
@@ -130,6 +146,10 @@ export class NoterGroup {
   weight = 0;
   parent = new NoterGroup();
   childs: NoterGroup[] = [];
+  bonuses: Bonus[] = [];
+  comments: Comment[] = [];
+  historys: History[] = [];
+  indicators: Indicator[] = [];
 }
 
 export class NoterReportGroup {
@@ -166,6 +186,7 @@ export class ReportConfig {
   includeBSPLSummary = false;
   includeBSPLDetail = false;
   includeBSPLHistory = false;
+  noterReportGroups: NoterReportGroup[] = [];
 }
 
 export class User {

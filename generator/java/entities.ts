@@ -11,13 +11,15 @@ export class Entities {
         // else if (file === MYCONTEXT_CS) {
         let content = fse.readFileSync(`${this.configs.pathBaseFiles}/${MODEL}`, 'utf8');
         let models = '';
-        let seedClass = '';
-
+        
+        
         fse.ensureDirSync(`${this.configs.aspFolder}/Models`);
-
+        
         this.configs.classes.forEach(e => {
+            const cls = this.helper.Cap(e.class);
+            const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls;
 
-            models = `package com.sportvalue.crs.models;\r\nimport javax.persistence.*;\r\nimport com.fasterxml.jackson.annotation.JsonFormat;\r\nimport com.fasterxml.jackson.annotation.JsonIgnore;\r\n@Entity\r\n@Table(name="${this.helper.Cap(e.class)}s")\r\npublic class ${this.helper.Cap(e.class)} extends AbstractEntity {\r\n`;
+            models = `package com.sportvalue.crs.models;\r\nimport javax.persistence.*;\r\nimport com.fasterxml.jackson.annotation.JsonFormat;\r\nimport com.fasterxml.jackson.annotation.JsonIgnore;\r\n@Entity\r\n@Table(name="${classNamePlural}")\r\npublic class ${this.helper.Cap(e.class)} extends AbstractEntity {\r\n`;
 
             e.properties.forEach(p => {
                 const isTypePrimitive = this.helper.isTypePrimitive(p.type);
@@ -27,7 +29,7 @@ export class Entities {
                         models += `@Id\r\n@GeneratedValue(strategy = GenerationType.IDENTITY)\r\nprivate Long ${p.name};\r\n\r\n`;
 
                     } else if (p.name.toLowerCase() === 'email') {
-                        models += `@Column(unique = true)\r\nprivate String ${p.name}\r\n\r\n;`;
+                        models += `@Column(unique = true)\r\nprivate String ${p.name};\r\n\r\n`;
                     } else if (p.name.toLowerCase().includes('parent')) {
                         // modelBuilderEntity += `entity.Property(e => e.${p.name});\r\n`; // .IsRequired(false)
                         // models += `public int? ${p.name} { get; set; }\r\n`;
@@ -49,14 +51,14 @@ export class Entities {
 
                         const cls = p.type.replace('[]', '');
 
-                        models += `@OneToMany(cascade = CascadeType.ALL)\r\n@JoinColumn(name = "id${this.helper.Cap(e.class)}")\r\n@JsonIgnore\r\nprivate Set<${cls}> ${p.name}\r\n\r\n`;
+                        models += `@OneToMany(cascade = CascadeType.ALL)\r\n@JoinColumn(name = "id${this.helper.Cap(e.class)}")\r\n@JsonIgnore\r\nprivate Set<${cls}> ${p.name};\r\n\r\n`;
 
                     } else {
                         if (p.name.toLowerCase() === 'parent') {
                             // modelBuilderEntity += `entity.HasOne(e => e.${this.helper.Cap(p.name)}).WithMany(e => e.Childs).HasForeignKey(e => e.Id${this.helper.Cap(p.name)});\r\n`;
                         } 
 
-                        models += `@ManyToOne(cascade = CascadeType.ALL)\r\n@JoinColumn(name = "id${this.helper.Cap(e.class)}")\r\n@JsonIgnore\r\nprivate ${this.helper.Cap(p.type !== 'any' ? p.type : p.name)} ${p.name}\r\n\r\n`;
+                        models += `@ManyToOne(cascade = CascadeType.ALL)\r\n@JoinColumn(name = "id${this.helper.Cap(e.class)}")\r\n@JsonIgnore\r\nprivate ${this.helper.Cap(p.type !== 'any' ? p.type : p.name)} ${p.name};\r\n\r\n`;
                     }
                 }
             });
