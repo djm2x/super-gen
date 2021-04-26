@@ -12,6 +12,7 @@ import { AccountController } from './asp/account.controller';
 // import { ModelsHandler } from './angular/models.handler';
 import { ClassModule } from './angular/class.module';
 import { MenuModule } from './angular/menu.module';
+import { Entities } from './java/entities';
 
 const ADMIN_MODULE_TS = 'admin.module.ts';
 const ADMIN_COMPONENT_HTML = 'admin.component.html';
@@ -147,6 +148,32 @@ export class MapHelper {
 
                 case CLASSCONTROLLER_CS: new ClassController(this.helper, this.configs).generateTs(); break;
                 case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
+
+                default: break;
+            }
+        });
+
+        console.log('       asp generation done');
+    }
+
+    mapJava() {
+        const DATASEEDING_CS = 'DataSeeding.cs';
+        const MODEL = 'model.java';
+        const ACCOUNTSCONTROLLER_CS = 'AccountsController.cs';
+        const CLASSCONTROLLER_CS = 'UsersController.cs';
+
+        this.configs.pathBaseFiles = `${this.pathAbs}/generator/java/base.files`;
+
+        const javaBaseFiles = fse.readdirSync(this.configs.pathBaseFiles);
+
+        javaBaseFiles.forEach(file => {
+
+            switch (file) {
+                case MODEL: new Entities(this.helper, this.configs).generateTs(); break;
+                // case DATASEEDING_CS: new DataSeeding(this.helper, this.configs).generateTs(); break;
+
+                // case CLASSCONTROLLER_CS: new ClassController(this.helper, this.configs).generateTs(); break;
+                // case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
 
                 default: break;
             }
