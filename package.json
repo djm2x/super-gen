@@ -24,7 +24,7 @@
     "s": "set IS_DEV=development && node --require ts-node/register ./script.ts",
     "m": "set IS_DEV=development && node --require ts-node/register ./generator/main.ts isdev",
     "-": "-",
-    "didh": "cd didh && nodemon readExcelPs.ts",
+    "didh": "cd didh && nodemon readExcelOt.ts",
     "gam": "cd didh && nodemon readExcelGam.ts",
     "f": "cd angular && ng serve",
     "b0": "set IS_DEV=development && nodemon ./server.ts",

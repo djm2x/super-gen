@@ -29,6 +29,10 @@ async function main() {
         "Etat d'avancement": { prop: 'Etat', type: String, required: false },
         'id_pays': { prop: 'IdPays', type: Number, required: false },
         'id_departement': { prop: 'IdOrganisme', type: String, required: false },
+        'id_Departement': { prop: 'IdOrganisme', type: String, required: false },
+        'id_departemant': { prop: 'IdOrganisme', type: String, required: false },
+        'id_dapartement': { prop: 'IdOrganisme', type: String, required: false },
+        
     }
 
     interface IExcel {

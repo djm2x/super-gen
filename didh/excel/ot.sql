@@ -12,7 +12,7 @@ INSERT INTO Recommendations (Id,Nom,NomAr,CodeRecommendation,CodeRecommendationA
 (607, N'Présenter une version mise à jour  du document de base en 2002 document de base présenté en 2002, qui devrait comporter de 60 à 80 pages, conformément aux directives harmonisées concernant l’établissement des rapports établis au titre des instruments internationaux relatifs aux droits de l’homme, à savoir celles qui se rapportent au document de base commun, telles qu’adoptées par la cinquième réunion inter comités des organes crées en vertu des traités relatifs aux droits de l’homme tenue en juin 2006 (HRI/GEN/2/Rev.4).', N'تقديم نسخة محيَّنة للوثيقة الأساسية التي سبق ت إحالتها في عام 2002، من 60 إلى 80 صفحة، وفقاً للمبادئ التوجيهية المنسقة لتقديم التقارير بموجب المعاهدات الدولية لحقوق الإنسان، ولا سيما ما يتصل منها بالوثيقة الأساسية المشتركة، بالصيغة المعتمدة في الاجتماع الخامس المشترك بين لجان هيئات معاهدات حقوق الإنسان المعقود في حزيران/يونيه 2006 (HRI/GEN/2/Rev.4).', N'R26', N'ت.26', N'Organes de Traités', null, '[2]', '[7]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (608, N'Fournir, dans un délai d’un an à compter de l’adoption des présentes observations finales, des informations sur la suite qu’il aura donnée aux recommandations contenues dans les paragraphes 11,13 et 14 ci-dessus, et ce conformément au au paragraphe 1 de l’article 9 de la Convention et à l’article 65 de son règlement 26 modifié', N'تقديم معلومات بشأن متابعتها للتوصيات الواردة في الفقرات 11 و13 و14 أعلاه، في غضون سنة واحدة من اعتماد هذه الاستنتاجات، عملا بأحكام الفقرة 1 من المادة 9 من الاتفاقية والمادة 65 من نظام اللجنة الداخلي المعدل', N'R27', N'ت.27', N'Organes de Traités', null, '[2]', '[7]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (609, N'soumettre le dix-neuvième, vingtième et vingt-unième rapports périodiques en un seul document, attendu le 17 janvier 2013, qui tiendra compte des directives concernant l’élaboration des documents propres au Comité pour l’élimination de la discrimination raciale, adoptées par le Comité à sa soixante et onzième session (CERD/C/2007/1) et qui ne devrait pas dépasser 40 pages et traitera tous les points soulevés dans les présentes observations finales.', N'تقديم الدولة الطرف التقارير الدورية المقبلة التاسع عشر والعشرين والحادي والعشرين في وثيقة واحدة، لا تتعدى 40 صفحة، في موعد أقصاه 17 كانون الثاني/يناير 2014، مع مراعاة المبادئ التوجيهية المتعلقة بإعداد الوثائق الخاصة بلجنة القضاء على التمييز العنصري، التي اعتمدتها اللجنة في دورتها الحادية والسبعين (CERD/C/2007/1)، على أن يتم تناول جميع النقاط المثارة في هذه الملاحظات الختامية في تلك الوثيقة.', N'R29', N'ت.29', N'Organes de Traités', null, '[2]', '[7]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(610, N'A la lumière de sa Recommandation générale no. 33 (2009) sur le suivi de la Conférence d’examen de Durban, le Comité recommande à l’État partie de tenir compte de la Déclaration et du Programme d’action de Durban adoptés en septembre 2001 par la Conférence mondiale contre le racisme, la discrimination raciale, la xénophobie et l’intolérance qui y est associée, ainsi que du document final de la Conférence d’examen de Durban, qui s’est tenue à Genève en avril 2009, lorsqu’il applique la Convention dans son ordre juridique interne.', N'القيام بإنفاذ إعلان وبرنامج عمل ديربان اللذين اعتمدا في أيلول/سبتمبر 2001 أثناء المؤتمر العالمي لمناهضة العنصرية والتمييز العنصري وكراهية الأجانب وما يتصل بذلك من تعصب، على ضوء توصية اللجنة العامة رقم 33(2009) بشأن متابعة مؤتمر استعراض نتائج ديربان، مع مراعاة الوثيقة الختامية لهذا المؤتمر  الذي عُقد في جنيف في نيسان/أبريل 2009، عندما تكون بصدد إدراج أحكام الاتفاقية في نظامها القانوني الداخلي. وتطلب اللجنة إلى الدولة الطرف أن تورد في تقريرها الدوري المقبل معلومات محددة عن خطط العمل وغيرها من التدابير المتخذة لتنفيذ إعلان وبرنامج عمل ديربان على الصعيد الوطني.', N'R22', N'ت.22', N'Organes de Traités', null, '[2]', '[8]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
+(610, N'A la lumière de sa Recommandation générale no. 33 (2009) sur le suivi de la Conférence d’examen de Durban, le Comité recommande à l’État partie de tenir compte de la Déclaration et du Programme d’action de Durban adoptés en septembre 2001 par la Conférence mondiale contre le racisme, la discrimination raciale, la xénophobie et l’intolérance qui y est associée, ainsi que du document final de la Conférence d’examen de Durban, qui s’est tenue à Genève en avril 2009, lorsqu’il applique la Convention dans son ordre juridique interne.', N'القيام بإنفاذ إعلان وبرنامج عمل ديربان اللذين اعتمدا في أيلول/سبتمبر 2001 أثناء المؤتمر العالمي لمناهضة العنصرية والتمييز العنصري وكراهية الأجانب وما يتصل بذلك من تعصب، على ضوء توصية اللجنة العامة رقم 33(2009) بشأن متابعة مؤتمر استعراض نتائج ديربان، مع مراعاة الوثيقة الختامية لهذا المؤتمر  الذي عُقد في جنيف في نيسان/أبريل 2009، عندما تكون بصدد إدراج أحكام الاتفاقية في نظامها القانوني الداخلي. وتطلب اللجنة إلى الدولة الطرف أن تورد في تقريرها الدوري المقبل معلومات محددة عن خطط العمل وغيرها من التدابير المتخذة لتنفيذ إعلان وبرنامج عمل ديربان على الصعيد الوطني.', N'R22', N'ت.22', N'Organes de Traités', null, '[2]', '[8]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (611, N'Le Comité recommande à l’État partie d’amender sa 9 ou d’adopter une législation spécifique relative à l’interdiction de la discrimination raciale qui soit en pleine conformité avec l’article premier de la Convention.', N'تعديل التشريعات الوطنية أو اعتماد تشريع يتناول تحديداً حظر التمييز العنصري على نحو يتماشى تماماً مع المادة 1 من الاتفاقية.', N'R9', N'ت.9', N'Organes de Traités', null, '[3]', '[9]', 1, null, null, 'En cours', '', 30, '', '', '', 2020),
 (612, N'Envisager l’inscription dans la constitution de la langue amazigh comme langue officielle', N'التفكير في إدراج اللغة الأمازيغية كلغة رسمية في الدستور', N'R11P4', N'ت.11.ف.4', N'Organes de Traités', null, '[3,4]', '[9,13]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (613, N'clarifier la signification et la portée dans sa 9 de la notion de «prénom à caractère marocain» et garantir pleinement l’application par les officiers d’état civil de la circulaire du Ministère de l’intérieur de mars 2010 relative aux choix des prénoms, afin d’assurer pour tous l’inscription de prénoms, en particulier des prénoms amazighs', N'توضيح معنى ونطاق مفهوم "مغربية الاسم" في التشريعات. وضمان تطبيق ضباط الحالة المدنية لما نص عليه تعميم وزارة الداخلية المؤرخ في آذار/مارس 2010 المتعلق باختيار الأسماء والذي يضمن لجميع المواطنين تسجيل الأسماء، وخاصة الأمازيغية منها.', N'R12', N'ت.12', N'Organes de Traités', null, '[3,5]', '[9,29]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
@@ -23,30 +23,30 @@ INSERT INTO Recommendations (Id,Nom,NomAr,CodeRecommendation,CodeRecommendationA
 (618, N'réviser le Code de la nationalité afin de permettre à la femme marocaine de transmettre sa nationalité à son époux d’origine étrangère à égalité avec les hommes de nationalité marocaine.', N'مراجعة قانون الجنسية لكي يتيح للمرأة المغربية نقل جنسيتها إلى زوجها الأجنبي من أجل المساواة في الحقوق بينها وبين الرجل الذي يحمل الجنسية المغربية.', N'R16', N'ت.16', N'Organes de Traités', null, '[3,6]', '[10,30]', 1, null, null, 'En cours', '', 30, '', '', '', 2020),
 (619, N'Prendre les mesures nécessaires pour s’assurer que des amazighs ne soient victimes d’aucune forme de discrimination raciale, notamment dans l’accès aux services de santé.', N'اتخاذ التدابير اللازمة لضمان عدم تعرض الأمازيغ لأي شكل من أشكال التمييز العنصري، لا سيما وفي الحصول على الخدمات الصحية.', N'R11P3', N'·          ت.11.ف.3', N'Organes de Traités', null, '[4,6]', '[13,34]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (620, N'Intensifier ses efforts en vue de promouvoir la langue et la culture amazighes, notamment par leur enseignement et à assurer également l’alphabétisationdes amazighs dans cette langue', N'بذل المزيد من الجهود بغية تعزيز اللغة والثقافة الأمازيغيتين، لا سيما عن طريق تعليمهما
- ضمان محو أمية الأمازيغ بلغتهم', N'R11P1P5', N'·          ت.11.ف.1.ف.5', N'Organes de Traités', null, '[4]', '[14]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
-(621, N'Prendre les mesures nécessaires pour s’assurer que des amazighs ne soient victimes d’aucune forme de discrimination raciale, notamment dans l’accès à l’emploi', N'اتخاذ التدابير اللازمة لضمان عدم تعرض الأمازيغ لأي شكل من أشكال التمييز العنصري، لا سيما في التوظيف', N'R11P2', N'·          ت.11.ف.2', N'Organes de Traités', null, '[4]', '[15]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
-(622, N'Mettre un accent particulier sur le développement des régions habitées par les amazighs, et ce dans le cadre de la Commission consultative de Régionalisation', N'تنمية المناطق التي يسكنها الأمازيغ وذلك في إطار اللجنة الاستشارية للهيكلة الإقليمية.', N'R11P6', N'·          ت.11.ف.6', N'Organes de Traités', null, '[4]', '[16]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
+ ضمان محو أمية الأمازيغ بلغتهم', N'R11P1P5', N'·          ت.11.ف.1.ف.5', N'Organes de Traités', null, '[4]', '[14]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(621, N'Prendre les mesures nécessaires pour s’assurer que des amazighs ne soient victimes d’aucune forme de discrimination raciale, notamment dans l’accès à l’emploi', N'اتخاذ التدابير اللازمة لضمان عدم تعرض الأمازيغ لأي شكل من أشكال التمييز العنصري، لا سيما في التوظيف', N'R11P2', N'·          ت.11.ف.2', N'Organes de Traités', null, '[4]', '[15]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(622, N'Mettre un accent particulier sur le développement des régions habitées par les amazighs, et ce dans le cadre de la Commission consultative de Régionalisation', N'تنمية المناطق التي يسكنها الأمازيغ وذلك في إطار اللجنة الاستشارية للهيكلة الإقليمية.', N'R11P6', N'·          ت.11.ف.6', N'Organes de Traités', null, '[4]', '[16]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (623, N'Assurer l’application des garanties juridiques fondamentales aux personnes soupçonnées de terrorisme, en particulier des étrangers, en tenant compte de la Déclaration adoptée par le Comité, le 8 mars 2002 sur la discrimination raciale et les mesures de lutte contre le terrorisme (A/57/18, paragraphe 514).', N'الحرص على ضمان تطبيق الضمانات القانونية الأساسية على الأشخاص الذين يُشتبه في تورطهم في الإرهاب، خاصةً إذا كانوا يحملون جنسية أجنبية، مع اعتبار الإعلان الذي اعتمدته اللجنة في 8 آذار/مارس 2002 بشأن التمييز العنصري وتدابير مكافحة الإرهاب (A/57/18، الفقرة 514).', N'R15', N'ت.15', N'Organes de Traités', null, '[5]', '[28]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(624, N'Prendre toutes les mesures nécessaires afin de s’assurer de la pleine application du Code de la famille de manière uniforme sur tout le territoire national et d’éviter que certaines catégories parmi les plus vulnérables de sa population, en particulier les femmes et les enfants résidant dans les régions éloignées, ne soient victimes de doubles ou multiples discriminations.', N'اتخاذ جميع التدابير الضرورية لضمان تطبيق كامل وموحد لمدونة الأسرة في جميع أنحاء الإقليم الوطني ولتفادي وقوع فئات معينة من أضعف السكان، وخاصةً النساء والأطفال في المناطق النائية، ضحية التمييز المزدوج أو المتعدد. وتذكّر اللجنة الدولة الطرف خصوصاً بتوصيتها العامة رقم 25(2000) بشأن أبعاد التمييز العنصري المتعلقة بنوع الجنس.', N'R17', N'ت.17', N'Organes de Traités', null, '[6]', '[30]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
+(624, N'Prendre toutes les mesures nécessaires afin de s’assurer de la pleine application du Code de la famille de manière uniforme sur tout le territoire national et d’éviter que certaines catégories parmi les plus vulnérables de sa population, en particulier les femmes et les enfants résidant dans les régions éloignées, ne soient victimes de doubles ou multiples discriminations.', N'اتخاذ جميع التدابير الضرورية لضمان تطبيق كامل وموحد لمدونة الأسرة في جميع أنحاء الإقليم الوطني ولتفادي وقوع فئات معينة من أضعف السكان، وخاصةً النساء والأطفال في المناطق النائية، ضحية التمييز المزدوج أو المتعدد. وتذكّر اللجنة الدولة الطرف خصوصاً بتوصيتها العامة رقم 25(2000) بشأن أبعاد التمييز العنصري المتعلقة بنوع الجنس.', N'R17', N'ت.17', N'Organes de Traités', null, '[6]', '[30]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (625, N'Garantir la protection des droits des réfugiés et des demandeurs d’asile, notamment en ce qui concerne l’accès à l’emploi et l’accès au logement, ainsi que leur protection contre la discrimination raciale', N'ضمان حماية حقوق اللاجئين وطالبي اللجوء فيما يخص الحصول على العمل والسكن وحماية تلك الفئات من الناس من أي تمييز عنصري.', N'R13P2', N'ت.13.ف.2', N'Organes de Traités', null, '[6]', '[34]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (626, N'Prendre des mesures visant à protéger les non-ressortissants dépourvus de titre de séjour contre la discrimination raciale et la xénophobie, à veiller à l’application de toutes garanties juridiques relatives à leur détention, ainsi qu’à faciliter leur accès aux tribunaux. Le Comité recommande également à l’Etat partie de garantir l’application correcte du principe de non-refoulement.', N'اتخاذ تدابير لحماية غير المواطنين الذين لا يملكون رخصة إقامة من التمييز العنصري ومن كراهية الأجانب
 -الحرص على إحاطة احتجازهم غير المواطنين الذين لا يملكون رخصة إقامة بجميع الضمانات القانونية وعلى تيسير لجوئهم إلى المحاكم. وتوصي اللجنة الدولة الطرف كذلك بضمان تطبيق مبدأ عدم الإعادة على النحو الصحيح.', N'R14', N'ت.14', N'Organes de Traités', null, '[6]', '[34]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(627, N'Accentuer les efforts de formation aux droits de l’homme, en particulier à la lutte contre la discrimination raciale, de même que ses efforts de sensibilisation à la tolérance, à l’entente interraciale ou interethnique et aux relations interculturelles auprès des agents chargés de l’application des lois, notamment des personnels de police et de gendarmerie, de la justice, de l’administration pénitentiaire, des avocats, ainsi que des enseignants.', N'- بذل مزيد من الجهود للتدريب على حقوق الإنسان، وخاصة على مكافحة التمييز العنصري، ومزيد من جهود التحسيس كذلك في صفوف الموظفين المكلفين بإنفاذ القوانين، ولا سيما العاملين في الشرطة والدرك والقضاء وإدارة السجون، وفي صفوف المحامين والمدرِّسين، بقيم التسامح والوئام بين الأعراق أو الإثنيات والعلاقات بين الثقافات.', N'R20P1', N'ت.20.ف1', N'Organes de Traités', null, '[7]', '[36]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
-(628, N'Informer la population, en particulier les catégories vulnérables et notamment les Amazighs, les Sahraouis, les noirs, les non-ressortissants, les réfugiés et les demandeurs d’asile, de toutes les voies de recours juridiques disponibles, de simplifier ces recours et d’en faciliter l’accès', N'إعلام السكان، وخاصة الفئات الضعيفة ولا سيما الأمازيغ والصحراويون والزنوج وغير المواطنين واللاجئون وطالبو اللجوء، بجميع سبل الانتصاف القانونية المتاحة، وتبسيط تلك السبل وتسهيل اللجوء إليها', N'R18P2', N'ت.18.ف.2', N'Organes de Traités', null, '[7]', '[37]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
-(629, N'- Poursuivre les initiatives de sensibilisation et d’éducation du public, à la diversité multiculturelle, à l’entente et à la tolérance, notamment à l’égard de certaines catégories vulnérables, en particulier de certains amazighs, des saharawis, des noirs, des non-ressortissants, des réfugiés et des demandeurs d’asile.', N'مواصلة تنفيذ مبادرات تحسيس عامة الناس وتثقيفهم بشأن التنوع الثقافي والوئام والتسامح، خصوصاً تجاه بعض الفئات الضعيفة، وخاصة بعض الأمازيغ والصحراويين والزنوج وغير المواطنين واللاجئين وطالبي اللجوء', N'R20P2', N'ت.20.ف2', N'Organes de Traités', null, '[7]', '[37]', 1, null, null, 'RC', '', 0, '', '', '', 2020),
+(627, N'Accentuer les efforts de formation aux droits de l’homme, en particulier à la lutte contre la discrimination raciale, de même que ses efforts de sensibilisation à la tolérance, à l’entente interraciale ou interethnique et aux relations interculturelles auprès des agents chargés de l’application des lois, notamment des personnels de police et de gendarmerie, de la justice, de l’administration pénitentiaire, des avocats, ainsi que des enseignants.', N'- بذل مزيد من الجهود للتدريب على حقوق الإنسان، وخاصة على مكافحة التمييز العنصري، ومزيد من جهود التحسيس كذلك في صفوف الموظفين المكلفين بإنفاذ القوانين، ولا سيما العاملين في الشرطة والدرك والقضاء وإدارة السجون، وفي صفوف المحامين والمدرِّسين، بقيم التسامح والوئام بين الأعراق أو الإثنيات والعلاقات بين الثقافات.', N'R20P1', N'ت.20.ف1', N'Organes de Traités', null, '[7]', '[36]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(628, N'Informer la population, en particulier les catégories vulnérables et notamment les Amazighs, les Sahraouis, les noirs, les non-ressortissants, les réfugiés et les demandeurs d’asile, de toutes les voies de recours juridiques disponibles, de simplifier ces recours et d’en faciliter l’accès', N'إعلام السكان، وخاصة الفئات الضعيفة ولا سيما الأمازيغ والصحراويون والزنوج وغير المواطنين واللاجئون وطالبو اللجوء، بجميع سبل الانتصاف القانونية المتاحة، وتبسيط تلك السبل وتسهيل اللجوء إليها', N'R18P2', N'ت.18.ف.2', N'Organes de Traités', null, '[7]', '[37]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(629, N'- Poursuivre les initiatives de sensibilisation et d’éducation du public, à la diversité multiculturelle, à l’entente et à la tolérance, notamment à l’égard de certaines catégories vulnérables, en particulier de certains amazighs, des saharawis, des noirs, des non-ressortissants, des réfugiés et des demandeurs d’asile.', N'مواصلة تنفيذ مبادرات تحسيس عامة الناس وتثقيفهم بشأن التنوع الثقافي والوئام والتسامح، خصوصاً تجاه بعض الفئات الضعيفة، وخاصة بعض الأمازيغ والصحراويين والزنوج وغير المواطنين واللاجئين وطالبي اللجوء', N'R20P2', N'ت.20.ف2', N'Organes de Traités', null, '[7]', '[37]', 1, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (630, N'Envisager d’adopter la méthode du «testing» pour récolter des preuves de discrimination raciale.', N'التفكير في اعتماد أسلوب "الاختبار" للحصول على أدلة على التمييز العنصري.', N'R18P3', N'ت.18.ف.3', N'Organes de Traités', null, '[8]', '[]', 1, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (631, N'veiller à la pleine application des articles 21, 73, 74 et 120 du Code de procédure pénale, afin de garantir un service d’interprétation, notamment en procédant à la formation de plus d’ interprètes assermentés, et de s’assurer que des justiciables appartenant à des catégories vulnérables et ne parlant pas l’arabe, notamment les amazighs, les saharawis, les noirs, les migrants, les réfugiés, les demandeurs d’asile, puissent bénéficier d’une bonne administration de la justice.', N'ضمان التطبيق الكامل للمواد 21 و73 و74 و120 من قانون المسطرة الجنائية وبأن تكفل خدمات الترجمة الفورية، خاصة عن طريق تدريب عدد أكبر من المترجمين الفوريين المحلفين، وضمان استفادة المتقاضين من الفئات الضعيفة غير المتحدثة باللغة العربية من نظام جيد لإقامة العدل، لا سيما منهم الأمازيغ والصحراويون والزنوج والمهاجرون واللاجئون وطالبو اللجوء.', N'R19', N'ت.19', N'Organes de Traités', null, '[8]', '[]', 1, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (632, N'Envisager de ratifier le deuxième Protocole facultatif se rapportant au Pacte international relatif aux droits civils et politiques, visant à abolir la peine de mort.', N'النظر في التصديق على البروتوكول الاختياري الثاني الملحق بالعهد الدولي الخاص بالحقوق المدنية والسياسية، الذي يرمي إلى إلغاء عقوبة الإعدام.', N'R21P1', N'ت.21ف.1', N'Organes de Traités', null, '[2,5]', '[5,20]', 2, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (633, N'Envisager d’adhérer à la Convention relative au statut des apatrides (1954) et à la Convention sur la réduction des cas d’apatridie (1966).', N'النظر في الانضمام إلى الاتفاقية المتعلقة بوضع الأشخاص عديمي الجنسية لعام 1954 وإلى اتفاقية خفض حالات انعدام الجنسية لعام 1966.', N'R25P3', N'ت.25.ف.3', N'Organes de Traités', null, '[2,5]', '[5,20]', 2, null, null, 'En cours', '', 30, '', '', '', 2020),
 (634, N'envisager d’adhérer au Protocole facultatif se rapportant à la Convention contre la torture et autres peines ou traitements cruels, inhumains ou dégradants', N'النظر في الانضمام إلى البروتوكول الاختياري لاتفاقية مناهضة التعذيب وغيره من ضروب المعاملة القاسية أو اللاإنسانية أو المهينة.', N'R31P1', N'ت.31.ف.1', N'Organes de Traités', null, '[2,5]', '[5,20]', 2, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (635, N'envisager d’adhérer au Statut de Rome de la Cour pénale internationale.', N'النظر في الانضمام إلى ونظام روما الأساسي للمحكمة الجنائية الدولية.', N'R31P2', N'ت.31.ف.2', N'Organes de Traités', null, '[2]', '[5]', 2, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
-(636, N'Intensifier la coopération avec les mécanismes des droits de l’homme de l’ONU, notamment en autorisant les visites, entre autres :du Groupe de travail sur la détention arbitraire, de la Rapporteuse spéciale sur la traite des êtres humains, en particulier les femmes et les enfants et du Rapporteur spécial sur le droit de réunion et d’association pacifiques', N'تكثيف التعاون مع آليات حقوق الإنسان التابعة للأمم المتحدة، خاصة بترخيص الزيارات والتي من بينها: زيارة فريق العمل المعني بالاحتجاز التعسفي، زيارة المقررة الخاصة المعنية بالاتجار بالبشر، وخاصة النساء والأطفال، زيارة المقرر الخاص المعني بحرية التجمع وتكوين الجمعيات', N'R30', N'ت.30', N'Organes de Traités', null, '[2]', '[6]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+(636, N'Intensifier la coopération avec les mécanismes des droits de l’homme de l’ONU, notamment en autorisant les visites, entre autres :du Groupe de travail sur la détention arbitraire, de la Rapporteuse spéciale sur la traite des êtres humains, en particulier les femmes et les enfants et du Rapporteur spécial sur le droit de réunion et d’association pacifiques', N'تكثيف التعاون مع آليات حقوق الإنسان التابعة للأمم المتحدة، خاصة بترخيص الزيارات والتي من بينها: زيارة فريق العمل المعني بالاحتجاز التعسفي، زيارة المقررة الخاصة المعنية بالاتجار بالبشر، وخاصة النساء والأطفال، زيارة المقرر الخاص المعني بحرية التجمع وتكوين الجمعيات', N'R30', N'ت.30', N'Organes de Traités', null, '[2]', '[6]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (637, N'fournir, avant le 25 novembre 2012, des renseignements sur la suite qui aura été donnée aux recommandations formulées visant à: 1) assurer ou renforcer les garanties juridiques des personnes détenues; 2) mener des enquêtes promptes, impartiales et effectives; 3) poursuivre les suspects et sanctionner les auteurs, de torture ou de mauvais traitements; et 4) octroyer les réparations visées aux paragraphes 7, 11, 15 et 28 du présent document. Informer le comité de la suite qui aura été donnée aux recommandations qu’il lui a adressées sur la loi contre le terrorisme au paragraphe 8 du présent document', N'تقديم معلومات إلى اللجنة، قبل 25 نونبر 2012، عن متابعة التوصيات المقدمة والتي تهدف إلى:حماية وتعزيز الضمانات القانونية للأشخاص المعتقلين؛إجراء تحقيقات فورية ونزيهة وفعالة؛ ملاحقة المتهمين ومعاقبة ممارسي التعذيب وسوء المعاملة؛منح التعويضات المشار إليها في الفقرات 7 و11 و15 و28 من هذه الوثيقة. وعلاوة على ذلك، تطلب اللجنة من الدولة الطرف معلومات ذات صلة عن تنفيذ التوصيات التي قدمتها إليها بشأن قانون مكافحة الإرهاب المذكور في الفقرة 8 من هذه الوثيقة', N'R33', N'ت.33', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (638, N'Mettre à jour, si nécessaire, le document de base en date du 15 avril 2002 (HRI/CORE/1/Add.23/Rev.1 et Corr.1), conformément aux instructions relatives au document de base commun qui figurent dans les Directives harmonisées concernant l’établissement des rapports destinés aux organes créés en vertu d’instruments internationaux relatifs aux droits de l’homme (HRI/GEN/2/Rev.6).', N'تحديث الوثيقة الأساسية المؤرخة في 15 أبريل 2002 (HRI/CORE/1/Add.23/Rev.1 وCorr.1)، وفق التعليمات المتعلقة بالوثيقة الأساسية الموحدة والواردة في المبادئ التوجيهية المنسقة المتعلقة بإعداد التقارير المقدمة بموجب الصكوك الدولية لحقوق الإنسان (HRI/GEN/2/Rev.6).', N'R34', N'ت.34', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(639, N'Présenter dans le prochain rapport au Comité des informations sur les lois et les politiques en vigueur pour lutter contre les violences envers les femmes et rendre compte des effets des mesures prises.', N'تقديم، معلومات عن القوانين والسياسات السارية لمكافحة أعمال العنف المرتكبة في حق المرأة في التقرير المقبل إلى اللجنة، وتقديم معلومات عن آثار التدابير المتخذة.', N'R23P5', N'ت.23.ف.5', N'Organes de Traités', null, '[2,6]', '[7,30]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
-(640, N'Respecter les obligations internationales et se conformer aux décisions finales et provisoires du Comité dans les cas individuels qui lui sont soumis en vertu de l’article 22 de la Convention. Dans le cas de M. Ktiti, le Maroc devrait décider d’annuler son extradition vers son pays d’origine, de manière définitive, sous peine de violer l’article 3 de la Convention', N'احترام الالتزامات الدولية والامتثال للقرارات النهائية والقرارات المؤقتة التي تصدر عن اللجنة في القضايا الفردية المعروضة عليها بموجب المادة 22 من الاتفاقية. فيما يتعلق بقضية السيد كتيتي، ينبغي أن يصدر المغرب قراراً يقضي نهائياً بإلغاء تسليمه إلى بلده الأصلي، وإلا فإنّه سيُعدّ منتهكاً لأحكام المادة 3 من الاتفاقية.', N'R9P4P5', N'ت.9.ف.4.ف.5', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
-(641, N'-            Prendre toutes mesures correctives appropriées et informer le Comité de ses conclusions sur les aveux sous la contrainte mentionnés dans le paragraphe 17 des observations.', N'-          اتخاذ جميع الإجراءات التصحيحية المناسبة وإبلاغ اللجنة بالنتائج التي تخلص إليها بخصوص القضايا المثارة حول التصريحات المنتزعة تحت التعذيب المشار إليها في الفقرة 17 من التوصيات', N'R17P3', N'ت.17ف.3', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
-(642, N'Fournir au Comité des informations sur tout décès en détention résultant d’actes de torture, de mauvais traitements ou d’une négligence volontaire.', N'تقديم معلومات إلى اللجنة عن كل حالة وفاة في الحجز نتيجة التعذيب وسوء المعاملة أو الإهمال المتعمد.', N'R20P2', N'ت.20.ف.2', N'Organes de Traités', null, '[2,5]', '[7,20]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+(639, N'Présenter dans le prochain rapport au Comité des informations sur les lois et les politiques en vigueur pour lutter contre les violences envers les femmes et rendre compte des effets des mesures prises.', N'تقديم، معلومات عن القوانين والسياسات السارية لمكافحة أعمال العنف المرتكبة في حق المرأة في التقرير المقبل إلى اللجنة، وتقديم معلومات عن آثار التدابير المتخذة.', N'R23P5', N'ت.23.ف.5', N'Organes de Traités', null, '[2,6]', '[7,30]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(640, N'Respecter les obligations internationales et se conformer aux décisions finales et provisoires du Comité dans les cas individuels qui lui sont soumis en vertu de l’article 22 de la Convention. Dans le cas de M. Ktiti, le Maroc devrait décider d’annuler son extradition vers son pays d’origine, de manière définitive, sous peine de violer l’article 3 de la Convention', N'احترام الالتزامات الدولية والامتثال للقرارات النهائية والقرارات المؤقتة التي تصدر عن اللجنة في القضايا الفردية المعروضة عليها بموجب المادة 22 من الاتفاقية. فيما يتعلق بقضية السيد كتيتي، ينبغي أن يصدر المغرب قراراً يقضي نهائياً بإلغاء تسليمه إلى بلده الأصلي، وإلا فإنّه سيُعدّ منتهكاً لأحكام المادة 3 من الاتفاقية.', N'R9P4P5', N'ت.9.ف.4.ف.5', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(641, N'-            Prendre toutes mesures correctives appropriées et informer le Comité de ses conclusions sur les aveux sous la contrainte mentionnés dans le paragraphe 17 des observations.', N'-          اتخاذ جميع الإجراءات التصحيحية المناسبة وإبلاغ اللجنة بالنتائج التي تخلص إليها بخصوص القضايا المثارة حول التصريحات المنتزعة تحت التعذيب المشار إليها في الفقرة 17 من التوصيات', N'R17P3', N'ت.17ف.3', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(642, N'Fournir au Comité des informations sur tout décès en détention résultant d’actes de torture, de mauvais traitements ou d’une négligence volontaire.', N'تقديم معلومات إلى اللجنة عن كل حالة وفاة في الحجز نتيجة التعذيب وسوء المعاملة أو الإهمال المتعمد.', N'R20P2', N'ت.20.ف.2', N'Organes de Traités', null, '[2,5]', '[7,20]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (643, N'-  Fournir dans le prochain rapport des informations détaillées sur les lieux de détention et les régimes de détention des étrangers en attente d’expulsion ainsi que des données ventilées par année, genre, lieu, durée de détention et raison justifiant la détention et l’expulsion.', N'تضمين التقرير القادم معلومات مفصلة عن أماكن الاحتجاز وعن أنظمة حبس الأجانب في انتظار طردهم وبيانات مصنّفة حسب السنة ونوع الجنس ومكان ومدة الاحتجاز والسبب الذي يبرر الاحتجاز والطرد.', N'R26P4', N'ت.26.ف.4', N'Organes de Traités', null, '[2,5]', '[7,20]', 2, null, null, 'En cours', '', 30, '', '', '', 2020),
 (644, N'Soumettre le prochain rapport périodique, qui sera le cinquième, le 25 novembre 2015 au plus tard. 
 Accepter, avant le 25 novembre 2012, de soumettre le rapport selon la procédure facultative qui consiste en la transmission par le Comité à l’État partie d’une liste de questions préalable au rapport périodique', N'تقديم التقرير الدوري المقبل، وهو الخامس، في موعد لا يتجاوز 25 نونبر 2015 على أبعد تقدير. القبول، قبل 25 نونبر 2012، بتقديم التقرير طبقاً للإجراء الاختياري الذي يتمثل في إحالة اللجنة إلى الدولة الطرف مجموعة أسئلة تمهيداً للتقرير الدوري. وستشكل ردود الدولة الطرف على هذه المجموعة من الأسئلة التقرير الدوري المقبل للدولة الطرف بموجب المادة 19 من الاتفاقية.', N'R35', N'ت.35', N'Organes de Traités', null, '[2]', '[7]', 2, null, null, 'En cours', '', 30, '', '', '', 2020),
@@ -101,27 +101,27 @@ Accepter, avant le 25 novembre 2012, de soumettre le rapport selon la procédure
 - Veiller à ce que tous les condamnés à mort bénéficient de la protection assurée par la Convention. 
 - Faire en sorte que ces derniers soient traités avec humanité, et qu’ils puissent, en particulier, bénéficier des visites de leur famille et de leurs avocats', N'الاستمرار في التوقف الفعلي عن تنفيذ عقوبة الإعدام
 - العمل على أن تتيح التشريعات إمكانية تخفيف أحكام الإعدام، وأن يستفيد جميع المحكوم عليهم بالإعدام من الحماية التي توفرها الاتفاقية. 
--كفالة معاملة هؤلاء المحكوم عليهم بالإعدام معاملة إنسانية، وبخاصة إتاحة الفرصة أمامهم لتلقي زيارات عائلاتهم ومحاميهم.', N'R21P2P3P4', N'ت.21.ف.2.ف.3.ف.4', N'Organes de Traités', null, '[5]', '[20]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+-كفالة معاملة هؤلاء المحكوم عليهم بالإعدام معاملة إنسانية، وبخاصة إتاحة الفرصة أمامهم لتلقي زيارات عائلاتهم ومحاميهم.', N'R21P2P3P4', N'ت.21.ف.2.ف.3.ف.4', N'Organes de Traités', null, '[5]', '[20]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (671, N'Faire en sorte que des médecins légistes formés à la détection des signes de torture soient présents pendant ces visites. 
 - S’assurer que les patients détenus dans ces institutions contre leur gré soient en mesure de faire appel de la décision d’internement et d’avoir accès à un médecin de leur choix', N'كفالة أن يحضر زيارات أماكن الاحتجاز بما فيها المستشفيات أطباء شرعيون مدربون على كشف علامات التعذيب. 
-- تمكين المرضى المعتقلين في تلك المؤسسات بدون إرادتهم من إمكانية طلب استئناف قرار الاعتقال وإمكانية الاتصال بطبيب من اختيارهم', N'R22P3P4', N'ت.22.ف.3.ف.4', N'Organes de Traités', null, '[5]', '[20]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
-(672, N'-            Faire en sorte que des médecins légistes formés à la détection des signes de torture soient présents pendant les visites périodiques et inopinées des observateurs nationaux et internationaux, prévues par le mécanisme national de contrôle des lieux de détention', N'-          العمل على حضور الزيارات لأماكن الاحتجاز من قبل أطباء شرعيين مدربين على كشف علامات التعذيب.', N'R18P3', N'ت.18.ف.3', N'Organes de Traités', null, '[5]', '[20]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
-(673, N'-            Poursuivre l’effort de construction de nouveaux établissements pénitentiaires et de rénovation des anciens, et continuer d’accroître les ressources allouées au fonctionnement des établissements pénitentiaires, notamment pour la nourriture et les soins médicaux.', N'-           مواصلة الجهود فيما يتعلق ببناء مرافق احتجاز جديدة وترميم القديم منها، والاستمرار في زيادة الموارد المخصصة لتشغيل مرافق الاحتجاز، لا سيما فيما يتصل بالغذاء والرعاية الطبية لجعل ظروف الاحتجاز في جميع أنحاء الأراضي المغربية موافقة لمجموعة القواعد النموذجية الدنيا لمعاملة السجناء.', N'R19P1', N'ت.19.ف1', N'Organes de Traités', null, '[5]', '[21]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+- تمكين المرضى المعتقلين في تلك المؤسسات بدون إرادتهم من إمكانية طلب استئناف قرار الاعتقال وإمكانية الاتصال بطبيب من اختيارهم', N'R22P3P4', N'ت.22.ف.3.ف.4', N'Organes de Traités', null, '[5]', '[20]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(672, N'-            Faire en sorte que des médecins légistes formés à la détection des signes de torture soient présents pendant les visites périodiques et inopinées des observateurs nationaux et internationaux, prévues par le mécanisme national de contrôle des lieux de détention', N'-          العمل على حضور الزيارات لأماكن الاحتجاز من قبل أطباء شرعيين مدربين على كشف علامات التعذيب.', N'R18P3', N'ت.18.ف.3', N'Organes de Traités', null, '[5]', '[20]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(673, N'-            Poursuivre l’effort de construction de nouveaux établissements pénitentiaires et de rénovation des anciens, et continuer d’accroître les ressources allouées au fonctionnement des établissements pénitentiaires, notamment pour la nourriture et les soins médicaux.', N'-           مواصلة الجهود فيما يتعلق ببناء مرافق احتجاز جديدة وترميم القديم منها، والاستمرار في زيادة الموارد المخصصة لتشغيل مرافق الاحتجاز، لا سيما فيما يتصل بالغذاء والرعاية الطبية لجعل ظروف الاحتجاز في جميع أنحاء الأراضي المغربية موافقة لمجموعة القواعد النموذجية الدنيا لمعاملة السجناء.', N'R19P1', N'ت.19.ف1', N'Organes de Traités', null, '[5]', '[21]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (674, N'S’assurer que le Conseil national des droits de l’homme, qui a été désigné pour finaliser les travaux de l’IER, continue de s’efforcer d’élucider les cas de disparitions forcées intervenues entre 1956 et 1999 restés non élucidés, y compris les cas liés au Sahara occidental.
 -            Intensifier les efforts pour assurer aux victimes de torture et de mauvais traitements une réparation sous la forme d’une indemnisation équitable et suffisante et d’une réadaptation aussi complète que possible.', N'التأكد من استمرار المجلس الوطني لحقوق الإنسان، الذي أنيطت به مهمة استكمال أعمال هيئة الإنصاف والمصالحة، في بذل الجهد لتوضيح ملابسات حالات الاختفاء القسري التي وقعت بين عامي 1956 و1999 والتي لم توضح بعد، بما في ذلك القضايا المتعلقة بالصحراء الغربية. 
-- تكثيف الجهود لإنصاف ضحايا التعذيب وسوء المعاملة في شكل تعويض منصف وكاف وإعادة تأهيلهم على أكمل وجه ممكن.', N'R29P1P2', N'ت.29.ف.1.ف.2.', N'Organes de Traités', null, '[5]', '[22]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+- تكثيف الجهود لإنصاف ضحايا التعذيب وسوء المعاملة في شكل تعويض منصف وكاف وإعادة تأهيلهم على أكمل وجه ممكن.', N'R29P1P2', N'ت.29.ف.1.ف.2.', N'Organes de Traités', null, '[5]', '[22]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (675, N'Conformément aux résolutions du Conseil de sécurité, notamment 1456 (2003) et 1566 (2004), et à d’autres résolutions pertinentes, les mesures de lutte contre le terrorisme doivent être appliquées dans le plein respect du droit international relatif aux droits de l’homme.', N'-          يجب، وفقاً لقرارات مجلس الأمن، وخاصة القرارين 1456(2003) و1566(2004) والقرارات الأخرى الوثيقة الصلة بالموضوع، تطبيق تدابير مكافحة الإرهاب في نطاق الاحترام التام للقانون الدولي المتعلق بحقوق الإنسان.', N'R8P3', N'ت.8.ف.3', N'Organes de Traités', null, '[5]', '[28]', 2, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (676, N'Veiller à ce que les femmes et les filles victimes de violences aient immédiatement accès à des moyens de protection, y compris des foyers d’accueil, qu’elles puissent obtenir réparation et que les auteurs soient poursuivis et punis comme il convient.
 - procéder à des études sur les causes et l’ampleur de la violence à l’encontre des femmes et des filles, y compris la violence sexuelle et la violence dans la famille
 .', N'ضمان وصول النساء والفتيات ضحايا العنف فوراً إلى وسائل الحماية، بما في ذلك دور الإيواء، وعلى تمكينهن من الحصول على تعويضات، وعلى مقاضاة الجناة ومعاقبتهم على النحو المناسب.
-- إجراء دراسات بشأن أسباب ومدى انتشار العنف المرتكب في حق النساء والفتيات، بما في ذلك العنف الجنسي والعنف الأُسري.', N'R23P2P4', N'ت.23.ف.2.ف.4', N'Organes de Traités', null, '[6]', '[30]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+- إجراء دراسات بشأن أسباب ومدى انتشار العنف المرتكب في حق النساء والفتيات، بما في ذلك العنف الجنسي والعنف الأُسري.', N'R23P2P4', N'ت.23.ف.2.ف.4', N'Organes de Traités', null, '[6]', '[30]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (677, N'Développer les instruments institutionnels et administratifs propres à mettre en œuvre cette protection, notamment en renforçant sa coopération avec le Haut-Commissariat des Nations Unies pour les réfugiés et en octroyant au Haut-Commissariat un statut d’observateur au cours du processus de réforme du système d’asile. 
 - S’assurer de la mise en place des procédures et des mécanismes propres à garantir l’identification systématique des demandeurs d’asile potentiels à tous les points d’entrée sur le territoire marocain. 
 - Permettre à ces personnes de déposer leur demande d’asile. 
 - Faire en sorte que lesdits mécanismes garantissent que la décision rendue soit susceptible d’un recours avec effet suspensif et que la personne ne soit pas refoulée vers un pays où existe un risque de torture', N'تطوير الأدوات المؤسسية والإدارية القادرة على تنفيذ هذه الحماية، لا سيما بتعزيز تعاونها مع المفوضية السامية لشؤون اللاجئين وبمنح المفوضية السامية صفة مراقب في سياق عملية إصلاح نظام اللجوء. 
 -  وضع إجراءات وآليات قادرة على ضمان تحديد هوية طالبي اللجوء المحتملين بصورة منهجية في جميع نقاط الدخول إلى الأراضي المغربية.
 -  تمكين هؤلاء الأشخاص من تقديم طلبات لجوئهم. 
-- تضمين هذه الآليات أيضاً إمكانية تعرض القرارات المتخذة للطعن وأن يقترن ذلك بوقف التنفيذ وعدم إبعاد الشخص المعني إلى بلد يواجه فيه خطر التعذيب', N'R25P2', N'ت.25.ف.2', N'Organes de Traités', null, '[6]', '[34]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+- تضمين هذه الآليات أيضاً إمكانية تعرض القرارات المتخذة للطعن وأن يقترن ذلك بوقف التنفيذ وعدم إبعاد الشخص المعني إلى بلد يواجه فيه خطر التعذيب', N'R25P2', N'ت.25.ف.2', N'Organes de Traités', null, '[6]', '[34]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (678, N'Prendre des mesures visant à garantir que les garanties légales régissant les reconduites à la frontière des migrants illégaux et l’expulsion des étrangers soient toujours mises en œuvre dans la pratique et que les reconduites et les expulsions soient conformes à la loi marocaine. 
 - Mener des enquêtes impartiales et efficaces sur les allégations selon lesquelles des expulsions de migrants se seraient accompagnées d’un recours excessif à la force ou de mauvais traitements à l’endroit des migrants. 
 - Faire en sorte que les responsables soient traduits en justice et qu’il leur soit infligé des peines à la mesure de la gravité de leurs actes.', N'اتخاذ تدابير تكفل تطبيق الضمانات القانونية التي تحكم اقتياد المهاجرين غير الشرعيين إلى الحدود وطرد الأجانب عملياً على الدوام، وأن تكون عمليات الاقتياد والطرد منسجمة مع القانون المغربي. 
@@ -133,8 +133,8 @@ Accepter, avant le 25 novembre 2012, de soumettre le rapport selon la procédure
 (680, N'Continuer à concevoir des programmes de formation, et à renforcer ces derniers, pour que tous les fonctionnaires – forces de l’ordre, services de renseignement, agents de sécurité, militaires, personnel pénitentiaire et personnel médical des prisons ou des hôpitaux psychiatriques – connaissent bien les dispositions de la Convention; que les violations signalées ne soient pas tolérées; que ces violations donnent lieu à des enquêtes et que les auteurs soient poursuivis. 
 - S’assurer que tous les personnels concernés, y compris les membres du corps médical, apprennent à détecter les signes de torture et de mauvais traitements grâce à des formations spécifiques s’appuyant sur le Manuel pour enquêter efficacement sur la torture et autres peines ou traitements cruels, inhumains ou dégradants (Protocole d’Istanbul). 
 - évaluer l’efficacité et l’incidence de ces programmes de formation et de cet enseignement', N'مواصلة وضع برامج التدريب، وتعزيز تلك البرامج ليتسنى لجميع الموظفين - العاملين ضمن قوات إنقاذ القانون، وأجهزة الاستخبارات، وأفراد الأمن، والعسكريين، وموظفي السجون، وموظفي القطاع الطبي العاملين في السجون أوفي مستشفيات الأمراض النفسانية - من معرفة أحكام الاتفاقية تمام المعرفة، ولكيلا يُتسامح في أمر الانتهاكات التي يبلغ عنها، وأن يحقق في ِشأن تلك الانتهاكات، وأن يلاحَق مرتكبوها قضائياً. وعلاوة على ذلك، 
-- التأكد من تعلّم جميع الموظفين المعنيين، بمن فيهم الطواقم الطبية، كيفية كشف علامات التعذيب وسوء المعاملة عن طريق تنظيم دورات خاصة تعتمد على دليل التحري والتوثيق الفعالين بشأن التعذيب وغيره من ضروب المعاملة أو العقوبة القاسية أو اللاإنسانية أو المهينة (بروتوكول اسطنبول). وأخيراً، ينبغي أن تقيّم الدولة الطرف فعالية وتأثير هذه البرامج التدريبية وهذا التعليم.', N'R28', N'ت.28', N'Organes de Traités', null, '[7]', '[36]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
-(681, N'-            sensibiliser le public aux formes positives, participatives et non violentes de discipline des enfants', N'في سياق تربية الأطفال سواء داخل الأسرة أو داخل مراكز حماية الطفل، يجب توعية الجمهور فيما يتعلق بأشكال التأديب الإيجابية التشاركية لا على الأشكال العنيفة .', N'R24P2', N'ت.24.ف.2', N'Organes de Traités', null, '[7]', '[37]', 2, null, null, 'RC', '', 0, '', '', '', 2020),
+- التأكد من تعلّم جميع الموظفين المعنيين، بمن فيهم الطواقم الطبية، كيفية كشف علامات التعذيب وسوء المعاملة عن طريق تنظيم دورات خاصة تعتمد على دليل التحري والتوثيق الفعالين بشأن التعذيب وغيره من ضروب المعاملة أو العقوبة القاسية أو اللاإنسانية أو المهينة (بروتوكول اسطنبول). وأخيراً، ينبغي أن تقيّم الدولة الطرف فعالية وتأثير هذه البرامج التدريبية وهذا التعليم.', N'R28', N'ت.28', N'Organes de Traités', null, '[7]', '[36]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(681, N'-            sensibiliser le public aux formes positives, participatives et non violentes de discipline des enfants', N'في سياق تربية الأطفال سواء داخل الأسرة أو داخل مراكز حماية الطفل، يجب توعية الجمهور فيما يتعلق بأشكال التأديب الإيجابية التشاركية لا على الأشكال العنيفة .', N'R24P2', N'ت.24.ف.2', N'Organes de Traités', null, '[7]', '[37]', 2, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (682, N'-            Diffuser largement les rapports soumis au Comité, ainsi que les conclusions et recommandations de celui-ci, par le biais des sites Internet officiels, des médias et des organisations non gouvernementales.', N'-           النشر، على نطاق واسع، للتقارير التي تم تقديمها إلى اللجنة وكذلك استنتاجات اللجنة وتوصياتها، عن طريق مواقع الانترنت الرسمية وعبر وسائل الإعلام والمنظمات غير الحكومية.', N'R32', N'ت.32', N'Organes de Traités', null, '[7]', '[37]', 2, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (683, N'Prévoir l’interdiction de toute amnistie éventuelle des crimes de torture et de tout pardon en violation de la Convention, notamment par : 
 - L’instauration d’un mécanisme visant à protéger les subordonnés qui refusent d’obéir aux ordre des supérieurs ou d’une autorité publique qui peuvent être invoqués pour justifier la torture
@@ -216,7 +216,7 @@ c) garantir une prise en charge légale, médicale et psychologique des victimes
  d) mettre un terme aux arrestations collectives et cesser de participer aux opérations d’expulsions collectives de migrants opérées notamment à proximité des villes autonomes espagnoles de Ceuta et Melilla ;', N'(ب) ومواصلة وتعزيز الجهود لتسوية وضع الأشخاص الذين يحتاجون إلى الحماية الدولية، بمن فيهم اللاجئون السوريون، بمنحهم صفة قانونية وبطاقات وطنية للاجئين، من أجل ضمان حقهم في عدم التمييز، بما في ذلك دخول سوق العمل الرسمية؛
 -  (ج) العمل بإجراءات تحديد صفة اللاجئ في نقاط دخول البلد، بما فيها المطارات؛
 -  (د) وضع حد للاعتقالات الجماعية، والتوقف عن المشاركة في عمليات الطرد الجماعي للمهاجرين، خاصة بالقرب من مدينتي سبتة ومليلية الإسبانيتين المستقلتين ذاتياً؛', N'R36P2P3P4', N'ت.36.ف.2.ف.3.ف.4', N'Organes de Traités', null, '[6]', '[34]', 3, null, null, 'En cours', '', 30, '', '', '', 2020),
-(718, N'Poursuivre les efforts pour sensibiliser les juges, les avocats, les procureurs et autres personnes participant à l’administration de la justice aux dispositions du Pacte, de sorte que celles-ci soient prises en compte devant et par les tribunaux nationaux.', N'-          مواصلة الجهود لتوعية القضاة والمحامين والمدعين العامين وغيرهم من المعنيين بإقامة العدل بأحكام العهد بحيث تراعَى هذه الأحكام أمام المحاكم وتراعيها المحاكم.', N'R6P1', N'ت.6.ف.1', N'Organes de Traités', null, '[7]', '[36]', 3, null, null, 'RC', '', 0, '', '', '', 2020),
+(718, N'Poursuivre les efforts pour sensibiliser les juges, les avocats, les procureurs et autres personnes participant à l’administration de la justice aux dispositions du Pacte, de sorte que celles-ci soient prises en compte devant et par les tribunaux nationaux.', N'-          مواصلة الجهود لتوعية القضاة والمحامين والمدعين العامين وغيرهم من المعنيين بإقامة العدل بأحكام العهد بحيث تراعَى هذه الأحكام أمام المحاكم وتراعيها المحاكم.', N'R6P1', N'ت.6.ف.1', N'Organes de Traités', null, '[7]', '[36]', 3, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (719, N'e) prévenir et éliminer le recours excessif à la force par les agents des forces de l’ordre en renforçant notamment les formations à cet égard (migrants et demandeurs asil) ;', N'-          (ه) منع لجوء قوات الأمن في استخدام القوة المفرطة و التخلص من هذه الممارسة، لا سيما بتدعيم التدريب في هذا الصدد', N'R36P5', N'ت.36.ف.5', N'Organes de Traités', null, '[7]', '[36]', 3, null, null, 'En cours', '', 30, '', '', '', 2020),
 (720, N'Assurer une large diffusion du Pacte, du sixième rapport périodique, des réponses écrites à la liste de points établie par le Comité et des observations finales afin de sensibiliser les autorités judiciaires, législatives et administratives, la société civile, les organisations non gouvernementales œuvrant dans le pays et le grand public aux droits consacrés par le Pacte. 
 veiller à ce que le rapport et les présentes observations finales soient traduits dans les langues officielles', N'نشر نص العهد، والتقرير الدوري السادس، والردود الخطية على قائمة المسائل التي وضعتها اللجنة، وهذه الملاحظات الختامية، على نطاق واسع من أجل توعية السلطات القضائية والتشريعية والإدارية، والمجتمع المدني، والمنظمات غير الحكومية العاملة في البلد، وعامة الناس، بالحقوق التي يكرسها العهد. وينبغي أن تترجم التقرير وهذه الملاحظات الختامية إلى لغتيها الرسميتين.', N'R51', N'ت.51', N'Organes de Traités', null, '[7]', '[37]', 3, null, null, 'Réalisé', '', 100, '', '', '', 2020),
@@ -224,7 +224,7 @@ veiller à ce que le rapport et les présentes observations finales soient tradu
 (722, N'e) prévenir et éliminer le recours excessif à la force par les agents des forces de l’ordre en renforçant notamment les mécanismes de contrôle et de responsabilisation (migrants et demandeurs d’asil);', N'-           (ه) منع لجوء قوات الأمن في استخدام القوة المفرطة و التخلص من هذه الممارسة، لا سيما بتدعيم آليات المراقبة والمساءلة؛', N'R36P6', N'ت.36.ف.6', N'Organes de Traités', null, '[8]', '[]', 3, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (723, N'a) Redoubler d’efforts pour lutter efficacement contre la corruption et garantir la transparence dans la conduite des affaires publiques, notamment en appliquant la loi no 113.12 et en tenant compte des observations des organisations de la société civile;
 - b) Veiller à la protection des dénonciateurs et des témoins en garantissant si nécessaire leur anonymat et en les protégeant contre toute forme de représailles ainsi que de fournir une compensation aux victimes', N'(أ) مضاعفة الجهود من أجل مكافحة الفساد وضمان الشفافية في تسيير الشؤون العامة بطرق منها تطبيق القانون رقم 113-12 والأخذ بملاحظات منظمات المجتمع المدني؛
-- (ب) الحرص على حماية المبلغين والشهود بضمان عدم الكشف عن هويتهم، عند الاقتضاء، وحمايتهم من التعرض لأي شكل من أشكال الانتقام ومنح تعويض للضحايا', N'R12P1P2', N'ت.12.ف.1.ف.2', N'Organes de Traités', null, '[1]', '[1]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+- (ب) الحرص على حماية المبلغين والشهود بضمان عدم الكشف عن هويتهم، عند الاقتضاء، وحمايتهم من التعرض لأي شكل من أشكال الانتقام ومنح تعويض للضحايا', N'R12P1P2', N'ت.12.ف.1.ف.2', N'Organes de Traités', null, '[1]', '[1]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (724, N'-            Ratifier Protocole facultatif se rapportant au Pacte international relatif aux droits économiques, sociaux et culturels le plus tôt possible.', N'تشجع اللجنة المملكة المغربية على التصديق على البروتوكول الاختياري الملحق بالعهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية في أقرب وقت ممكن.', N'R51', N'ت.51', N'Organes de Traités', null, '[2]', '[5]', 4, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (725, N'-            Inclure, dans le prochain rapport périodique, des informations relatives aux décisions judiciaires ou administratives prises dans le sens de l’10 de l’ordre juridique interne avec le pacte.', N'-          تضمين التقرير الدوري المقبل معلومات عن القرارات القضائية أو الإدارية المتخذة لتطبيق العهد في النظام القانوني الداخلي', N'R10P2', N'ت.10.ف.2', N'Organes de Traités', null, '[2]', '[7]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
 (726, N'Encourager une collecte systématique de données et d’élaborer et d’utiliser des statistiques sur les indicateurs des droits de l’homme, dont les droits économiques, sociaux et culturels, fondées sur de telles données.
@@ -256,7 +256,7 @@ a) Adopter et mettre en œuvre une loi anti discrimination complète, qui devrai
 (740, N'Abroger la législation concernant l’interdiction totale de l’avortement afin d’adopter une législation compatible avec les droits de la femme et de prendre des mesures pour prévenir F49les avortements dangereux.', N'-          إلغاء التشريع المتعلق بالحظر الكامل للإجهاض تمهيداً لاعتماد تشريعات تتماشى مع حقوق المرأة وباتخاذ تدابير لمنع الإجهاض غير المأمون.', N'R46P2', N'ت.46.ف.2', N'Organes de Traités', null, '[3,6]', '[10,30]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
 (741, N'b) Prendre toutes les mesures nécessaires pour remédier aux disparités régionales qui ne permettent pas à toute la population de jouir sur un pied d’égalité des droits économiques, sociaux et culturels.
 - d) Assurer que les femmes, les personnes handicapées, les demandeurs d’asile, les réfugiés, les migrants, les Sahraouis, les enfants nés hors mariage et les homosexuels puissent jouir des droits reconnus par le Pacte, en particulier l’accès à l’emploi, aux services sociaux, aux soins de santé et à l’éducation.', N'- (ب) اتخاذ جميع التدابير التصحيحية اللازمة لمعالجة الفوارق بين الأقاليم التي تحول دون تمتع جميع السكان بالحقوق الاقتصادية والاجتماعية والثقافية على قدم المساواة؛
-- (د) الحرص على تمكين النساء والأشخاص ذوي الإعاقة وملتمسي اللجوء واللاجئين والمهاجرين، والصحراويين والأطفال غير الشرعيين والمثليين من التمتع بحقوقهم المعترف بها في العهد، بما في ذلك إمكانية الحصول على العمل والخدمات الاجتماعية والرعاية الصحية والتعليم', N'R14P2P4', N'ت.14.ف.2.ف.4', N'Organes de Traités', null, '[4]', '[11]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+- (د) الحرص على تمكين النساء والأشخاص ذوي الإعاقة وملتمسي اللجوء واللاجئين والمهاجرين، والصحراويين والأطفال غير الشرعيين والمثليين من التمتع بحقوقهم المعترف بها في العهد، بما في ذلك إمكانية الحصول على العمل والخدمات الاجتماعية والرعاية الصحية والتعليم', N'R14P2P4', N'ت.14.ف.2.ف.4', N'Organes de Traités', null, '[4]', '[11]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (742, N'Garantir que le salaire minimum national s’applique à tous les secteurs, publics et privés, y compris au sein de l’économie informelle. 
 - Améliorer le salaire minimum agricole afin qu’il garantisse une existence décente aux travailleurs et aux membres de leur famille. 
 - Faire respecter le principe légal de salaire minimum, qui soit régulièrement réexaminé et fixé à un montant suffisant pour permettre à tous les travailleurs et travailleuses et aux membres de leur famille d ’avoir un niveau de vie décent.', N'ضمان تطبيق الحد الأدنى الوطني للأجور في جميع القطاعات، العام منها والخاص، بما في ذلك في الاقتصاد غير النظامي.
@@ -271,7 +271,7 @@ a) Adopter et mettre en œuvre une loi anti discrimination complète, qui devrai
 (744, N'Intensifier les efforts pour réduire la pauvreté, notamment en utilisant une stratégie de réduction de la pauvreté fondée sur les droits de l’homme qui cible spécifiquement les besoins des individus et des groupes défavorisés et marginalisés, en allouant des ressources financières suffisantes ou autres ressources pour sa mise en œuvre et en veillant à ce que ces ressources soient équitablement réparties entre tous ceux touchés par la pauvreté. 
 - le Comité renvoie l’État partie à sa Déclaration sur la pauvreté et le Pacte international relatif aux droits économiques, sociaux et culturels (2001).', N'تكثيف الجهود للحد من الفقر بطرق خاصة منها وضع استراتيجية للحد من الفقر تقوم على حقوق الإنسان وتركز تحديداً على احتياجات المحرومين والمهمشين، أفراداً وجماعات، وذلك بتخصيص ما يكفي من الموارد المالية وغير المالية لتنفيذ هذه الاستراتيجية، 
 - الحرص على توزيع هذه الموارد توزيعاً عادلاً بين جميع ضحايا الفقر.
-- وفي هذا الصدد، تحيل اللجنة الدولة الطرف إلى بيانها بشأن الفقر والعهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية (2001).', N'R42', N'ت.42', N'Organes de Traités', null, '[4]', '[11]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+- وفي هذا الصدد، تحيل اللجنة الدولة الطرف إلى بيانها بشأن الفقر والعهد الدولي الخاص بالحقوق الاقتصادية والاجتماعية والثقافية (2001).', N'R42', N'ت.42', N'Organes de Traités', null, '[4]', '[11]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (745, N'Tenant en compte son observation générale no 20 (2009) sur la non-discrimination dans l’exercice des droits économiques, sociaux et culturels, le Comité appelle à :
 - Prendre des mesures pour assurer aux Amazighs la pleine jouissance de leurs droits consacrés par le Pacte en adoptant si nécessaire des mesures spéciales temporaires', N'رجوعا إلى تعليقها العام رقم 20(2009) بشأن عدم التمييز في الحقوق الاقتصادية والاجتماعية والثقافية، تدعو اللجنة إلى:
 - - (ج) اتخاذ تدابير تكفل للأمازيغ التمتع كلياً بحقوقهم المنصوص عليها في العهد من خلال اعتماد تدابير خاصة مؤقتة عند الاقتضاء؛', N'R14P3', N'ت.14.ف.3', N'Organes de Traités', null, '[4]', '[12]', 4, null, null, 'Réalisé', '', 100, '', '', '', 2020),
@@ -281,8 +281,8 @@ a) Adopter et mettre en œuvre une loi anti discrimination complète, qui devrai
 - Continuer à faciliter l’accès à la culture et à la science pour tous, y compris l’accès à Internet, en particulier pour les personnes handicapées et les personnes les plus démunies de sa population', N'تكثيف الجهود من أجل توفير التعليم الابتدائي والثانوي والجامعي باللغة الأمازيغية، وزيادة الحيز المخصص لها في التلفزيون، وإيجاد حل نهائي لمسألة الأسماء الأمازيغية. 
 - اتخاذ تدابير تكفل للأمازيغ والصحراويين التمتع كلياً بحقهم في المشاركة في الحياة الثقافية دون تقييد. 
 - اتخاذ تدابير إضافية لحماية التنوع الثقافي، وتمكين الأمازيغ والصحراويين من صون هويتهم وتاريخهم وثقافتهم ولغتهم وعاداتهم وتقاليدهم وتعزيزها والتعبير عنها ونشرها. 
-- المضي في تيسير سبل تمتع الجميع بالثقافة والعلوم، بما في ذلك تيسير إمكانية الوصول إلى شبكة الإنترنت، ولا سيما للأشخاص ذوي الإعاقة وللسكان الأشد عوزاً. وفي هذا الصدد، تحيل اللجنة الدولة الطرف إلى تعليقها العام رقم 21(2009) بشأن حق كل فرد في المشاركة في الحياة الثقافية.', N'R50P2P3P4P5', N'ت.50.ف.2.ف.3ف.4.ف.5', N'Organes de Traités', null, '[4]', '[12]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
-(747, N'-            - Fournir à tous des installations, des services, des biens et des informations de qualité pour la santé sexuelle et procréative, en particulier dans les zones rurales, en formant et en augmentant le nombre d’auxiliaires de santé et en sensibilisant les femmes et les hommes aux besoins de santé sexuelle et procréative', N'-          تزويد الجميع، لا سيما في المناطق الريفية، بتجهيزات وخدمات وسلع ومعلومات ذات جودة لتوفير خدمات الصحة الجنسية والإنجابية، عن طريق تدريب المعاونين الصحيين وزيادة عددهم، وتوعية النساء والرجال باحتياجات الصحة الجنسية والإنجابية.', N'R46P1', N'ت.46.ف.1', N'Organes de Traités', null, '[4]', '[13]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+- المضي في تيسير سبل تمتع الجميع بالثقافة والعلوم، بما في ذلك تيسير إمكانية الوصول إلى شبكة الإنترنت، ولا سيما للأشخاص ذوي الإعاقة وللسكان الأشد عوزاً. وفي هذا الصدد، تحيل اللجنة الدولة الطرف إلى تعليقها العام رقم 21(2009) بشأن حق كل فرد في المشاركة في الحياة الثقافية.', N'R50P2P3P4P5', N'ت.50.ف.2.ف.3ف.4.ف.5', N'Organes de Traités', null, '[4]', '[12]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(747, N'-            - Fournir à tous des installations, des services, des biens et des informations de qualité pour la santé sexuelle et procréative, en particulier dans les zones rurales, en formant et en augmentant le nombre d’auxiliaires de santé et en sensibilisant les femmes et les hommes aux besoins de santé sexuelle et procréative', N'-          تزويد الجميع، لا سيما في المناطق الريفية، بتجهيزات وخدمات وسلع ومعلومات ذات جودة لتوفير خدمات الصحة الجنسية والإنجابية، عن طريق تدريب المعاونين الصحيين وزيادة عددهم، وتوعية النساء والرجال باحتياجات الصحة الجنسية والإنجابية.', N'R46P1', N'ت.46.ف.1', N'Organes de Traités', null, '[4]', '[13]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (748, N'Redoubler les efforts pour offrir l’enseignement primaire, secondaire et universitaire en amazigh, augmenter la présence de cette langue dans la télévision et régler définitivement la question des prénoms amazighs.
 - Prendre des mesures pour garantir aux Amazighs et aux Sahraouis la jouissance pleine et sans restriction de leur droit de participer à la vie culturelle.
 - Prendre des mesures additionnelles pour protéger la diversité culturelle et permettre aux Amazighs et aux Sahraouis de préserver, de promouvoir, d’exprimer et de diffuser leur identité, leur histoire, leur culture, leur langue, leurs traditions et leurs coutumes.
@@ -299,30 +299,30 @@ Continuer à œuvrer pour atteindre un pourcentage acceptable de postes bien ré
 (750, N'Prendre les mesures nécessaires pour garantir, en droit comme en pratique, des recours efficaces et accessibles pour la protection du droit du travail. 
 - créer des tribunaux spécialisés en matière de contentieux du travail', N'اتخاذ التدابير اللازمة لكي تضمن، في القانون وفي الممارسة العملية،
 - توفر سبل انتصاف فعالة وميسرة من أجل حماية قانون العمل. وتشجعها على إنشاء محاكم متخصصة في منازعات العمل.', N'R20', N'ت.20', N'Organes de Traités', null, '[4]', '[15]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
-(751, N'Redoubler d’efforts pour réduire sensiblement le taux de chômage en ciblant les femmes et les jeunes, y compris par des programmes de requalification et de formation professionnelle et technique, en plus des mesures incitatives pour les employeurs. le comité invite le Maroc  à se reporter à son observation générale no 18 (2005) sur le droit au travail.', N'مضاعفة جهودها من أجل خفض معدل البطالة بنسبة كبيرة من خلال استهداف النساء والشباب، بوسائل منها وضع برامج لإعادة التأهيل والتدريب المهني والتقني بالإضافة إلى وضع تدابير تحفيزية لأرباب العمل. وفي هذا F84الصدد، تدعو اللجنة F84 إلى الرجوع إلى تعليقها العام رقم 18(2005) بشأن الحق في العمل.', N'R22', N'ت.22', N'Organes de Traités', null, '[4]', '[15]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+(751, N'Redoubler d’efforts pour réduire sensiblement le taux de chômage en ciblant les femmes et les jeunes, y compris par des programmes de requalification et de formation professionnelle et technique, en plus des mesures incitatives pour les employeurs. le comité invite le Maroc  à se reporter à son observation générale no 18 (2005) sur le droit au travail.', N'مضاعفة جهودها من أجل خفض معدل البطالة بنسبة كبيرة من خلال استهداف النساء والشباب، بوسائل منها وضع برامج لإعادة التأهيل والتدريب المهني والتقني بالإضافة إلى وضع تدابير تحفيزية لأرباب العمل. وفي هذا F84الصدد، تدعو اللجنة F84 إلى الرجوع إلى تعليقها العام رقم 18(2005) بشأن الحق في العمل.', N'R22', N'ت.22', N'Organes de Traités', null, '[4]', '[15]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (752, N'Renforcer les efforts pour réguler l’économie informelle et le travail indépendant, notamment en intégrant ces travailleurs dans les régimes de sécurité sociale et en améliorant progressivement leurs conditions de travail.
 -  Etendre de façon systématique les services de l’inspection du travail au secteur informel et aux zones rurales, et s’attaquer plus fermement aux obstacles à la création d’emplois dans l’économie formelle.
 À cet égard, le comité encourage le gouvernement marocain à s’inspirer de la recommandation de 2015 de l’Organisation internationale du Travail sur la transition de l’économie informelle vers l’économie formelle (no 204).', N'تعزيز الجهود من أجل تنظيم الاقتصاد غير النظامي والعمل المستقل بوسائل منها إدماج هؤلاء العمال في أنظمة الضمان الاجتماعي والعمل على تحسين ظروف عملهم تدريجياً. 
 - توسيع نطاق خدمات تفتيش العمل بصورة منهجية لتشمل القطاع غير النظامي والمناطق الريفية، وبالتصدي بحزم أكبر للعقبات التي تحول دون توفير فرص العمل في الاقتصاد النظامي. 
-وفي هذا الصدد، تشجع الدولة الطرف على استلهام توصية منظمة العمل الدولية لعام 2015 بشأن الانتقال من الاقتصاد غير النظامي إلى الاقتصاد النظامي (التوصية رقم 204).', N'R28', N'ت.28', N'Organes de Traités', null, '[4]', '[15]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+وفي هذا الصدد، تشجع الدولة الطرف على استلهام توصية منظمة العمل الدولية لعام 2015 بشأن الانتقال من الاقتصاد غير النظامي إلى الاقتصاد النظامي (التوصية رقم 204).', N'R28', N'ت.28', N'Organes de Traités', null, '[4]', '[15]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (753, N'a) prendre des mesures concrètes pour veiller à ce que les ressources allouées aux programmes de logement soient uniformément et équitablement réparties entre les différentes régions et entre les zones rurales urbaines ;
 - b) renforcer les activités d’amélioration des conditions de vie pour offrir un logement abordable à la population, notamment à ceux qui vivent dans les zones rurales ainsi que dans les bidonvilles urbains et ruraux. Veiller également à ce que les projets de relogement comportent également un volet d’appui aux personnes les plus démunies ;
 - c) résoudre la question des sans-abri en leur offrant un logement et de s’assurer que les victimes d’expulsions forcées bénéficient d’un relogement ou d’une indemnisation adéquate.
 le Comité renvoie  à son observation générale no 7 (1997) sur le droit à un logement suffisant : expulsions forcées et à son observation générale no 4 (1991) sur le droit à un logement suffisant.', N'(أ) اتخاذ تدابير ملموسة لضمان توزيع الموارد المخصصة لبرامج الإسكان توزيعاً متساوياً وعادلاً بين مختلف المناطق وبين المناطق الحضرية والمناطق الريفية؛
 - (ب) تعزيز الأنشطة الرامية إلى تحسين الظروف المعيشية من أجل توفير مساكن ميسورة التكلفة للسكان، ولا سيما لسكان المناطق الريفية وسكان أحياء الصفيح في المدن والأرياف. وتوصيها كذلك بالحرص على إدراج شق يتعلق بتقديم الدعم للسكان الأشد عوزاً في مشاريع إعادة الإسكان؛
 - (ج) إيجاد حل لمشكلة المشردين بتوفير السكن لهم وضمان إعادة إسكان ضحايا الإخلاء القسري أو تقديم تعويضات كافية لهم.
-في هذا الصدد، تحيل اللجنة الدولة الطرف إلى تعليقها العام رقم 7(1997) بشأن الحق في السكن الملائم: حالات إخلاء المساكن بالإكراه، وتعليقها العام رقم 4(1991) بشأن الحق في السكن الملائم.', N'R44', N'ت.44', N'Organes de Traités', null, '[4]', '[18]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+في هذا الصدد، تحيل اللجنة الدولة الطرف إلى تعليقها العام رقم 7(1997) بشأن الحق في السكن الملائم: حالات إخلاء المساكن بالإكراه، وتعليقها العام رقم 4(1991) بشأن الحق في السكن الملائم.', N'R44', N'ت.44', N'Organes de Traités', null, '[4]', '[18]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (754, N'Prendre des mesures pour enquêter et poursuivre les auteurs et permettre aux victimes de la violence faites aux femmes au foyer d’accéder à des moyens de recours utiles et à une protection immédiate, y compris par la mise en place de foyers d’accueil en nombre suffisant.', N'-          اتخاذ التدابير اللازمة للتحقيق في أعمال العنف المنزلي وملاحقة مرتكبيه وتمكين ضحاياه من الوصول إلى سبل الانتصاف الفعالة والحصول على حماية فورية بطرق منها إنشاء عدد كاف من مراكز الإيواء.', N'R38 P2', N'ت.38.ف.2', N'Organes de Traités', null, '[6]', '[30]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
 (755, N'Prendre toutes les mesures nécessaires pour permettre aux personnes handicapées de jouir pleinement de leurs droits économiques, sociaux et culturels. 
 - Appliquer le quota de 7 % et prendre toute autre mesure spéciale pour faciliter l’accès des personnes handicapées à l’emploi, à l’éducation et aux soins de santé.', N'اتخاذ جميع التدابير اللازمة لكي يتسنى للأشخاص ذوي الإعاقة التمتع كلياً بحقوقهم الاقتصادية والاجتماعية والثقافية. 
 - تطبيق حصة 7 في المائة واتخاذ أي من التدابير الخاصة الأخرى لتيسير إمكانية حصول الأشخاص ذوي الإعاقة على العمل والتعليم والرعاية الصحية.', N'R24P2P3', N'ت.24.ف.2.ف.3', N'Organes de Traités', null, '[6]', '[33]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
-(756, N'-            Mener des campagnes de sensibilisation auprès des juges, des avocats et de la population en général sur les dispositions du Pacte et sur sa primauté sur les lois internes permettant son application directe.', N'-          تنظيم حملات توعية في أوساط القضاة والمحامين وعامة الجمهور بشأن أحكام العهد، وأولويته على التشريعات المحلية بما يسمح تطبيقه على نحو مباشر. وتوجه اللجنة انتباه الدولة الطرف إلى تعليقها العام رقم 9(1998) بشأن التطبيق المحلي للعهد.', N'R10P3', N'ت.10.ف.3', N'Organes de Traités', null, '[7]', '[36]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
-(757, N'd)  Mener des campagnes de sensibilisation auprès des responsables politiques, des magistrats, des parlementaires et des fonctionnaires sur la nécessité d’appliquer strictement la loi anticorruption et de tendre vers son élimination complète.', N'-(د) تنظيم حملات توعية في أوساط المسؤولين السياسيين والقضاة والبرلمانيين والموظفين بشأن ضرورة تطبيق قانون محاربة الرشوة تطبيقاً صارماً والسعي إلى القضاء عليها قضاء تاماً.', N'R12P4', N'ت.12.ف.4', N'Organes de Traités', null, '[7]', '[36]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+(756, N'-            Mener des campagnes de sensibilisation auprès des juges, des avocats et de la population en général sur les dispositions du Pacte et sur sa primauté sur les lois internes permettant son application directe.', N'-          تنظيم حملات توعية في أوساط القضاة والمحامين وعامة الجمهور بشأن أحكام العهد، وأولويته على التشريعات المحلية بما يسمح تطبيقه على نحو مباشر. وتوجه اللجنة انتباه الدولة الطرف إلى تعليقها العام رقم 9(1998) بشأن التطبيق المحلي للعهد.', N'R10P3', N'ت.10.ف.3', N'Organes de Traités', null, '[7]', '[36]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(757, N'd)  Mener des campagnes de sensibilisation auprès des responsables politiques, des magistrats, des parlementaires et des fonctionnaires sur la nécessité d’appliquer strictement la loi anticorruption et de tendre vers son élimination complète.', N'-(د) تنظيم حملات توعية في أوساط المسؤولين السياسيين والقضاة والبرلمانيين والموظفين بشأن ضرورة تطبيق قانون محاربة الرشوة تطبيقاً صارماً والسعي إلى القضاء عليها قضاء تاماً.', N'R12P4', N'ت.12.ف.4', N'Organes de Traités', null, '[7]', '[36]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (758, N'Tenant compte de son observation générale no 16 (2005) sur le droit égal de l’homme et de la femme au bénéfice de tous les droits économiques, sociaux et culturels, le Comité recommande de :
 - a) Combattre la discrimination contre les femmes à travers notamment des campagnes de sensibilisation auprès de la population, en particulier des chefs religieux et traditionnels en vue de l’élimination de toute forme de discrimination fondée sur le sexe………
 - b) Abolir la polygamie et de mener des campagnes de sensibilisation pour éliminer les stéréotypes sexistes et promouvoir les droits des femmes', N'في ضوء تعليقها العام رقم 16(2005) بشأن المساواة بين الرجل والمرأة في حق التمتع بجميع الحقوق الاقتصادية والاجتماعية والثقافية، توصي اللجنة بما يلي:
 -  (أ)مكافحة التمييز ضد المرأة بوسائل منها تنظيم حملات للتوعية في أوساط السكان، وبخاصة في صفوف الزعماء الدينيين والتقليديين، من أجل القضاء على جميع أشكال التمييز الجنساني. 
--  ب) إلغاء تعدد الزوجات وتنظيم حملات توعية للقضاء على التنميط الجنساني وتعزيز حقوق المرأة؛', N'R18P1P2', N'ت.18.ف.1.ف.2', N'Organes de Traités', null, '[7]', '[37]', 4, null, null, 'RC', '', 0, '', '', '', 2020),
+-  ب) إلغاء تعدد الزوجات وتنظيم حملات توعية للقضاء على التنميط الجنساني وتعزيز حقوق المرأة؛', N'R18P1P2', N'ت.18.ف.1.ف.2', N'Organes de Traités', null, '[7]', '[37]', 4, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (759, N'-            c) Encourager l’instance nationale de la probité, de la prévention et de la lutte contre la corruption à faire figurer dans ses rapports annuels une description des cas de corruption traités par elle pour dissuader la commission de tels actes et renforcer l’application effective de la loi', N'-          (ج) تشجيع الهيئة الوطنية للنزاهة والوقاية من الرشوة ومحاربتها على تضمين تقاريرها السنوية وصفاً لحالات الفساد التي عالجتها ردعاً لمرتكبي هذه الأفعال وتعزيزاً لتطبيق القانون على نحو فعال؛', N'R12P3', N'ت.12.ف.3', N'Organes de Traités', null, '[8]', '[37]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
 (760, N'-            Mettre sur pied un mécanisme d’inspection pour contrôler les conditions de travail des employés de maison.', N'إنشاء آلية تفتيش لرصد ظروف عمل العمال المنزليين.', N'R30P3', N'ت.30.ف.3', N'Organes de Traités', null, '[8]', '[37]', 4, null, null, 'En cours', '', 30, '', '', '', 2020),
 (761, N'-            Prendre des mesures pour que les victimes (Harcèlement sexuel, notamment dans le milieu du travail) puissent déposer plainte sans craindre des représailles et aient accès aux voies de recours et à une réparation adéquate.', N'-          اتخاذ جميع التدابير التي تمكن ضحايا التحرش الجنسي لا سيما في مكان العمل من تقديم شكاوى دون خوف من الانتقام، ومن الوصول إلى سبل الانتصاف والحصول على الجبر المناسب.', N'R32P2', N'ت.32.ف.2', N'Organes de Traités', null, '[8]', '[37]', 4, null, null, 'Réalisé', '', 100, '', '', '', 2020),
@@ -343,7 +343,7 @@ En l’absence d’informations précises, le Comité souhaiterait obtenir des d
 (772, N'veiller à ce que tous les travailleurs migrants et les membres de leur famille se trouvant sur son territoire ou relevant de sa juridiction jouissent sans discrimination aucune des droits reconnus par la Convention, conformément à l’article 7. 
 
 - adopter une loi contre le racisme et toute discrimination raciale', N'تمتيع جميع العمال المهاجرين وأفراد أسرهم الموجودين في إقليم المملكة المغربية  أو الخاضعين لولايتها، دون أي تمييز كان، بالحقوق المعترف بها في الاتفاقية، وفقاً للمادة 7. 
--  اعتماد قانون لمناهضة العنصرية وجميع أشكال التمييز العنصري،', N'R20P1P3', N'ت.20.ف1.ف 3.', N'Organes de Traités', null, '[3,6]', '[9,34]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
+-  اعتماد قانون لمناهضة العنصرية وجميع أشكال التمييز العنصري،', N'R20P1P3', N'ت.20.ف1.ف 3.', N'Organes de Traités', null, '[3,6]', '[9,34]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (773, N'-       Prendre les mesures appropriées pour mettre en place un cadre juridique régissant les procédures d’expulsion/de renvoi conformément aux dispositions de la Convention et de prendre en compte l’observation générale no 2 du Comité qui énonce en particulier que les intéressés ont le droit de faire valoir les raisons pour lesquelles ils ne devraient pas être expulsés et de faire examiner leur cas par une autorité compétente.', N'. اتخاذ التدابير المناسبة لوضع إطار قانوني ينظم إجراءات الطرد/الإعادة وفقاً لأحكام الاتفاقية، كما توصيها بأن تضع في اعتبارها تعليقها العام رقم 2 الذي ينص تحديدا ًعلى أن من حق الأشخاص المعنيين بيان الأسباب التي تبرر ضرورة عدم طردهم، وعرض حالتهم على سلطة مختصة', N'R32P1', N'ت.32.ف.1', N'Organes de Traités', null, '[3,6]', '[9,34]', 5, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (774, N'Compte tenu de son observation générale no 2 (2013) sur les droits des travailleurs migrants en situation irrégulière et des membres de leur famille, le Comité considère que l’entrée ou la sortie d’un travailleur migrant de l’État partie, sans la documentation requise, ainsi que le séjour au-delà de la durée de validité d’un permis de séjour ne peuvent être considérés comme des infractions pénales. Par conséquent, le Comité recommande à l’État partie de dépénaliser la migration irrégulière et de prévoir des sanctions administratives adéquates.', N'إلغاء تجريم الهجرة غير الشرعية وإقرار عقوبات إدارية مناسبة  اعتبارا للتعليق العام للجنة رقم 2(2013) بشأن حقوق العمال المهاجرين الذين هم في وضع غير نظامي وأفراد أسرهم ولكونها  ترى ان دخول عامل مهاجر الدولة الطرف أو خروجه منها دون حمل الوثائق المطلوبة، وإقامته بها لفترة تتجاوز تاريخ صلاحية تصريح إقامته أمور لا يمكن أن تعتبر جرائم.', N'R26', N'ت.26', N'Organes de Traités', null, '[3,6]', '[9,34]', 5, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (775, N'Prendre les mesures nécessaires pour que la stratégie nationale de lutte contre le trafic des êtres humains comprenne notamment les mesures suivantes :
@@ -369,7 +369,7 @@ Prendre toutes les dispositions nécessaires pour faire figurer dans son prochai
 - Fournir des informations sur les efforts de coopération internationale menés en application de l’article 64 de la Convention', N'اتخاذ التدابير اللازمة لضمان إعادة إدماج المغاربة العائدين إلى البلد. 
 وفقاً للمادة 67 من الاتفاقية، اتخاذ تدابير فعالة لفائدة المغاربة المطرودين من الأراضي الجزائرية. 
 تضمين التقرير الدوري المُقبل معلومات عن هذا الموضوع. 
-تقديم معلومات عن جهود التعاون الدولي المبذولة طبقاً للمادة 64 من الاتفاقية.', N'R44', N'ت.44', N'Organes de Traités', null, '[4]', '[15]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
+تقديم معلومات عن جهود التعاون الدولي المبذولة طبقاً للمادة 64 من الاتفاقية.', N'R44', N'ت.44', N'Organes de Traités', null, '[4]', '[15]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (781, N'prendre des mesures et intensifier les efforts visant à remédier d’urgence aux problèmes des mauvais traitements et autres actes de violence commis contre les travailleurs migrants et les membres de leur famille, quels que soient les auteurs de ces actes. En particulier, le Comité recommande de prendre les mesures suivantes :
 a) Veiller à ce que les travailleurs migrants et les membres de leur famille aient accès à des mécanismes de plaintes indépendants, ainsi qu’à des services de conseils légaux et à des interprètes ;
 b) Veiller à ce que tout acte de torture ou traitement cruel, inhumain ou dégradant, ainsi que toute atteinte à la vie des travailleurs migrants fassent l’objet d’enquêtes et d’investigations; 
@@ -385,7 +385,7 @@ c) Veiller à ce que les responsables soient jugés et condamnés de façon appr
 (786, N'Veiller à ce que la politique globale migratoire en cours d’élaboration se réfère aux différents instruments internationaux des droits de l’homme et plus particulièrement à la Convention. 
 - Renforcer les mesures visant à surveiller l’application de la 9 relative aux travailleurs migrants, ainsi que celle de la Convention', N'الحرص على استرشاد السياسة العامة التي تجري صياغتها فيما يتعلق بالهجرة بمختلف الصكوك الدولية لحقوق الإنسان، لا سيما الاتفاقية.
 وتعزيز التدابير الرامية إلى مراقبة تطبيق التشريعات المتعلقة بالعمال المهاجرين وتطبيق الاتفاقية في مرحلة لاحقة.', N'R10P2P3', N'ت.10.ف2.ف3.', N'Organes de Traités', null, '[6]', '[34]', 5, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(787, N'prendre sans délai des mesures efficaces pour lutter contre la stigmatisation sociale et raciale envers les travailleurs migrants, particulièrement les travailleurs migrants subsahariens.', N'المبادرة إلى اتخاذ تدابير فعالة من أجل مكافحة الوصم الاجتماعي والعنصري الذي يتعرض له العمال المهاجرون، لا سيما المنحدرون من أفريقيا جنوب الصحراء.', N'R20P2', N'ت.20.ف2', N'Organes de Traités', null, '[6]', '[34]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
+(787, N'prendre sans délai des mesures efficaces pour lutter contre la stigmatisation sociale et raciale envers les travailleurs migrants, particulièrement les travailleurs migrants subsahariens.', N'المبادرة إلى اتخاذ تدابير فعالة من أجل مكافحة الوصم الاجتماعي والعنصري الذي يتعرض له العمال المهاجرون، لا سيما المنحدرون من أفريقيا جنوب الصحراء.', N'R20P2', N'ت.20.ف2', N'Organes de Traités', null, '[6]', '[34]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (788, N'Diffuser de l’information auprès des travailleurs migrants et des membres de leur famille, y compris ceux en situation irrégulière, les informer des recours judiciaires ou autres qui leur sont ouverts et de traiter leurs plaintes le plus efficacement possible. 
 - Garantir que les travailleurs migrants et les membres de leur famille, y compris ceux en situation irrégulière, aient les mêmes possibilités que les nationaux de porter plainte et d’exercer un recours utile devant les tribunaux s’ils ont été atteints dans les droits que leur reconnaît la Convention.', N'تعميم المعلومات على العمال المهاجرين وأفراد أسرهم بمن فيهم الموجودون في وضع غير قانوني، وإبلاغهم بسبل الانتصاف القضائية أو غير ذلك من سبل الانتصاف المتاحة لهم، ومعالجة شكاواهم بأقصى قدر ممكن من الفعالية.
 كفالة أن يُتاح للعمال المهاجرين وأفراد أسرهم، بمن فيهم الموجودون في وضع غير قانوني، الإمكانات ذاتها التي تتاح للمواطنين من أجل رفع الشكاوى والاستفادة من سبيل انتصاف فعال أمام المحاكم في حال انتهاك حقوقهم المعترف بها في الاتفاقية.', N'R22', N'ت.22', N'Organes de Traités', null, '[6]', '[34]', 5, null, null, 'En cours', '', 30, '', '', '', 2020),
@@ -399,15 +399,15 @@ d) Mettre en place des mécanismes efficaces d’identification, de protection e
  (د) إقرار آليات فعالة لتحديد جميع ضحايا الاتجار وحمايتهم ومساعدتهم، لا سيما بتوفير مراكز لاستقبالهم ومباشرة مشاريع لمساعدتهم على إعادة بناء حياتهم؛', N'R48P2P3P4', N'ت.48.ف2.ف3.ف4', N'Organes de Traités', null, '[6]', '[35]', 5, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (791, N'a) Intensifier de manière concrète la formation de tous les fonctionnaires qui travaillent dans le domaine des migrations de travail, en particulier les fonctionnaires de police et les agents de contrôle aux frontières, ainsi que les fonctionnaires s’occupant des travailleurs migrants au niveau local et les agents consulaires;
 c) Poursuivre la collaboration avec les organisations de la société civile pour diffuser et promouvoir la Convention.', N'(أ) العمل على تكثيف تدريب جميع الموظفين العاملين في مجال الهجرة لأغراض العمل على نحو ملموس، لا سيما موظفو الشرطة ومراقبة الحدود، وكذلك الموظفون المعنيون على الصعيد المحلي بالعمال المهاجرين وموظفو القنصليات؛
-(ج) مواصلة التعاون مع منظمات المجتمع المدني من أجل نشر الاتفاقية وترويجها.', N'R18P1P3', N'ت.18.ف1.ف3.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
+(ج) مواصلة التعاون مع منظمات المجتمع المدني من أجل نشر الاتفاقية وترويجها.', N'R18P1P3', N'ت.18.ف1.ف3.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (792, N'Rendre les mesures nécessaires pour que la stratégie nationale de lutte contre le trafic des êtres humains comprenne notamment les mesures suivantes :
  e) Renforcer la formation des policiers et autres membres des forces de l’ordre, des juges et des procureurs, des inspecteurs du travail, des enseignants ainsi que du personnel des services de santé, des ambassades et des consulats de l’État partie.', N'اتخاذ التدابير اللازمة كي تتضمن الاستراتيجية الوطنية لمحاربة الاتجار بالبشر التدابير التالية على وجه الخصوص:
  (ﻫ) تعزيز تدريب الشرطة وسائر أفراد قوات حفظ النظام والقضاة وأعضاء النيابة العامة ومفتشي العمل والمدرسين والعاملين في قطاع الصحة وفي سفارات الدولة الطرف وقنصلياتها.', N'R48P5', N'ت.48.ف5.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(793, N'Mener des campagnes de sensibilisation auprès des praticiens de la santé sur les droits des travailleurs migrants.', N'تنظيم حملات لتوعية العاملين في قطاع الصحة بحقوق العمال المهاجرين.', N'R30P2', N'ت.30.ف2.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
+(793, N'Mener des campagnes de sensibilisation auprès des praticiens de la santé sur les droits des travailleurs migrants.', N'تنظيم حملات لتوعية العاملين في قطاع الصحة بحقوق العمال المهاجرين.', N'R30P2', N'ت.30.ف2.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (794, N'Prendre des mesures et intensifier les efforts visant à remédier d’urgence aux problèmes des mauvais traitements et autres actes de violence commis contre les travailleurs migrants et les membres de leur famille, quels que soient les auteurs de ces actes. En particulier, le Comité recommande au Maroc: 
 d) Organiser, pour les fonctionnaires de police et les agents de contrôle aux frontières, des formations sur le respect des droits de l’homme, le non-usage de la violence et plus particulièrement sur le contenu de la Convention.', N'اتخاذ تدابير بتكثيف الجهود في سبيل الإسراع في معالجة مشاكل سوء المعاملة وغير ذلك من أعمال العنف المرتكبة في حق العمال المهاجرين وأفراد أسرهم، أياً كان مرتكبوها. وعلى وجه الخصوص، توصي اللجنة الدولة الطرف باتخاذ التدابير التالية: 
- (د) تدريب موظفي الشرطة ومراقبة الحدود على احترام حقوق الإنسان وعدم استعمال العنف، وبخاصة على محتوى الاتفاقية.', N'R28P4', N'ت.28.ف4.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
-(795, N'Mener des campagnes de sensibilisation et d’éducation au sujet de toutes les formes de discrimination raciale.', N'تنظيم حملات توعية وتثقيف في مجال. مناهضة العنصرية وجميع أشكال التمييز العنصري', N'R20P4', N'ت.20.ف4', N'Organes de Traités', null, '[7]', '[37]', 5, null, null, 'RC', '', 0, '', '', '', 2020),
+ (د) تدريب موظفي الشرطة ومراقبة الحدود على احترام حقوق الإنسان وعدم استعمال العنف، وبخاصة على محتوى الاتفاقية.', N'R28P4', N'ت.28.ف4.', N'Organes de Traités', null, '[7]', '[]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(795, N'Mener des campagnes de sensibilisation et d’éducation au sujet de toutes les formes de discrimination raciale.', N'تنظيم حملات توعية وتثقيف في مجال. مناهضة العنصرية وجميع أشكال التمييز العنصري', N'R20P4', N'ت.20.ف4', N'Organes de Traités', null, '[7]', '[37]', 5, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (796, N'diffuser largement les présentes observations finales, notamment auprès des organismes publics et du pouvoir judiciaire, des organisations non gouvernementales et autres membres de la société civile, et de prendre des mesures pour les faire connaître aux migrants marocains à l’étranger ainsi qu’aux travailleurs migrants étrangers en transit ou résidant au Maroc.', N'تعميم الملاحظات الختامية على نطاق واسع، لا سيما على المؤسسات العامة والسلطة القضائية والمنظمات غير الحكومية وجهات المجتمع المدني الأخرى، واعتماد تدابير من أجل إطلاع المهاجرين المغاربة في الخارج والعمال المهاجرين الأجانب العابرين للمغرب أو المقيمين به على هذه الملاحظات.', N'R51', N'ت.51', N'Organes de Traités', null, '[7]', '[37]', 5, null, null, 'En cours', '', 30, '', '', '', 2020),
 (797, N'Créer des mécanismes de surveillance qui garantissent que les reconduites à la frontière des migrants sont faites dans le strict respect des normes internationales relatives aux migrants.', N'إنشاء آليات مراقبة تكفل تنفيذ عمليات إعادة المهاجرين إلى الحدود في إطار تقيد صارم بالقواعد الدولية المتعلقة بالمهاجرين.', N'R32P2', N'ت.32.ف.2', N'Organes de Traités', null, '[8]', '[37]', 5, null, null, 'En cours', '', 30, '', '', '', 2020),
 (798, N'S’assurer que les autorités consulaires ou diplomatiques fournissent des renseignements et une aide appropriée aux travailleurs migrants marocains et aux membres de leurs familles vivant à l’étranger, y compris ceux en situation irrégulière.', N'كفالة  تقديم السلطات القنصلية أو الدبلوماسية معلومات ومساعدة مناسبة إلى العمال المهاجرين المغاربة وأفراد أسرهم المقيمين بالخارج، بمن فيهم الموجودون في وضع غير قانوني.', N'R46', N'ت.46', N'Organes de Traités', null, '[8]', '[37]', 5, null, null, 'En cours', '', 30, '', '', '', 2020),
@@ -460,7 +460,7 @@ d) Organiser, pour les fonctionnaires de police et les agents de contrôle aux f
 - وضع نصوص قانونية تكفل أن يكون للمرأة، بعد فسخ الزواج، نفس الحقوق التي يتمتع بها الرجل بالنسبة للممتلكات التي تمت حيازتها خلال الزواج، تمشيا مع الفقرة 1 (ح) من المادة 16 من الاتفاقية والتوصية العامة رقم 21 للجنة. وتشجــع اللجنة الدولة الطرف على إجراء تلك التعــديلات بالتشاور مع المنظمات النسائية.', N'R39', N'ت.39', N'Organes de Traités', null, '[3,6]', '[10,30]', 6, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (820, N'Modifier sans délai toute disposition du Code de la nationalité portant atteinte aux droits des femmes afin de l’harmoniser avec la Convention et s’acquitter de cette tâche en consultation avec des organisations féminines.', N'-القيام دون إبطاء بتعديل جميع النصوص التمييزية التي تؤثر على حقوق المرأة، والواردة في مدونة الجنسية، لمواءمتها مع الاتفاقية على نحو تام. وتحــث اللجنة الدولة الطرف على القيـام بتلك المهمة بالتشاور مع المنظمات النسائيـة.', N'R41', N'ت.41', N'Organes de Traités', null, '[3,6]', '[10,30]', 6, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (821, N'Adopter une législation nationale relative aux réfugiés qui soit conforme à la Convention relative au statut des réfugiés et à son Protocole.', N'اعتماد تشريع وطني للاجئين، امتثالا للاتفاقية المتعلقة بمركز اللاجئين والبروتوكول الملحق بها.', N'R45P2', N'ت.45.ف.2', N'Organes de Traités', null, '[3]', '[10]', 6, null, null, 'En cours', '', 30, '', '', '', 2020),
-(822, N'Prendre des mesures, dans le cadre de ses efforts d’intégration de la problématique hommes-femmes et de son Initiative nationale pour le développement humain, pour remédier à la vulnérabilité des femmes démunies, notamment en garantissant leur représentation dans les instances participatives qui gèrent les programmes de réduction de la pauvreté. Il exhorte l’État partie à recourir à cet effet à des mesures temporaires spéciales au titre du paragraphe 1 de l’article 4.', N'اتخاذ تدابير من خلال الجهود المبذولة في مجال التعميم، وفي المبادرة الوطنية للتنمية البشرية، لمعالجة تعرض المرأة على وجه التحديد لمخاطر الفقر، ومن بينها الجهود الرامية لكفالة تمثيل المرأة في النُهج التشاركية المتبعة في إدارة برامج تخفيف حدة الفقر. وتحث اللجنة الدولة الطرف على أن تستخدم في هذا الصدد التدابير الخاصة المؤقتة عملا بالفقرة 1 من المادة 4 من الاتفاقية والتوصية العامة رقم 25.', N'R43', N'ت.43', N'Organes de Traités', null, '[4]', '[11]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
+(822, N'Prendre des mesures, dans le cadre de ses efforts d’intégration de la problématique hommes-femmes et de son Initiative nationale pour le développement humain, pour remédier à la vulnérabilité des femmes démunies, notamment en garantissant leur représentation dans les instances participatives qui gèrent les programmes de réduction de la pauvreté. Il exhorte l’État partie à recourir à cet effet à des mesures temporaires spéciales au titre du paragraphe 1 de l’article 4.', N'اتخاذ تدابير من خلال الجهود المبذولة في مجال التعميم، وفي المبادرة الوطنية للتنمية البشرية، لمعالجة تعرض المرأة على وجه التحديد لمخاطر الفقر، ومن بينها الجهود الرامية لكفالة تمثيل المرأة في النُهج التشاركية المتبعة في إدارة برامج تخفيف حدة الفقر. وتحث اللجنة الدولة الطرف على أن تستخدم في هذا الصدد التدابير الخاصة المؤقتة عملا بالفقرة 1 من المادة 4 من الاتفاقية والتوصية العامة رقم 25.', N'R43', N'ت.43', N'Organes de Traités', null, '[4]', '[11]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (823, N'Améliorer l’accès des femmes aux soins de santé primaires, notamment pour ce qui est de la santé procréative et des moyens de planification de la famille.', N'زيادة فرص حصول المرأة على خدمات الرعاية الصحية الأساسية، بما فيها رعاية الصحة الإنجابية ووسائل تنظيم الأسرة.', N'R31P1', N'ت.31.ف.1', N'Organes de Traités', null, '[4]', '[13]', 6, null, null, 'En cours', '', 30, '', '', '', 2020),
 (824, N'Prendre des mesures temporaires spéciales, conformément au paragraphe 1 de l’article 4 de la Convention, pour s’assurer que les femmes rurales jouissent de leurs droits politiques, sociaux, économiques et culturels sans aucune discrimination, notamment en ce qui concerne l’accès à la santé.', N'اتخاذ تدابير خاصة مؤقتة، على النحو المنصوص عليه في الفقرة 1 من المادة 4 من الاتفاقية، لكفالة تمتع المرأة الريفية بحقوقها السياسية والاجتماعية والاقتصادية والثقافية دونما تمييز، لا سيما فيما يتصل بالحق في والوصول إلى مرافق الرعاية الصحية.', N'R33P2', N'ت.33.ف.2', N'Organes de Traités', null, '[4]', '[13]', 6, null, null, 'En cours', '', 30, '', '', '', 2020),
 (825, N'Prendre des mesures pour garantir l’accès des femmes et des filles à tous les niveaux d’éducation. Ces mesures pourront porter sur les cantines, l’internat, les installations sanitaires, l’eau et l’électricité, qui ont un impact direct sur l’accès à l’éducation, notamment en milieu rural. 
@@ -482,7 +482,7 @@ d) Organiser, pour les fonctionnaires de police et les agents de contrôle aux f
 (830, N'Prendre des dispositions législatives efficaces et s’inscrivant dans la durée pour accroître la représentation des femmes à tous les niveaux de la vie politique, y compris des mesures temporaires spéciales, en application du paragraphe 1 de l’article 4 de la Convention. 
 - Instituer des quotas pour les candidates aux élections municipales de 2009 et adopter des mesures temporaires spéciales qui permettent d’accroître la représentation des femmes aux postes de prise de décisions dans tous les domaines d’activité', N'اتخاذ التدابير القانونية الفعالة والمستدامة لزيادة التمثيل السياسي للمرأة على جميع المستويات، بما في ذلك اتخاذ تدابير استثنائية مؤقتة وفقا للفقرة 1 من المادة 4 من الاتفاقية، بدلا من الاعتماد على تعهدات أخلاقية تقطعها الأحزاب السياسية لخدمة أهداف بعينها. 
 تخصيص حصص قانونية للمرأة في الانتخابات البلدية لعام 2009 واعتماد تدابير استثنائية مؤقتة لزيادة نسبة تمثيل المرأة في مناصب اتخاذ القرار في جميع الأوساط', N'R25P1P2', N'ت.25.ف.1.ف.2', N'Organes de Traités', null, '[5]', '[23]', 6, null, null, 'En cours', '', 30, '', '', '', 2020),
-(831, N'Le comité recommande au Maroc de prendre des mesures temporaires spéciales, conformément au paragraphe 1 de l’article 4 de la Convention, pour s’assurer que les femmes rurales jouissent de leurs droits politiques, sociaux, économiques et culturels sans aucune discrimination. Il recommande aussi que les femmes participent pleinement à la formulation et à l’exécution de toutes les politiques et de tous les programmes sectoriels.', N'إدماج تدابير خاصة مؤقتة، على النحو المنصوص عليه في الفقرة 1 من المادة 4 من الاتفاقية، لكفالة تمتع المرأة الريفية بحقوقها السياسية والاجتماعية والاقتصادية والثقافية دونما تمييز إدماجا تاما في عملية صوغ وتنفيذ جميع السياسات والبرامج في شتى القطاعات.', N'R33P3', N'ت.33.ف.3', N'Organes de Traités', null, '[5]', '[23]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
+(831, N'Le comité recommande au Maroc de prendre des mesures temporaires spéciales, conformément au paragraphe 1 de l’article 4 de la Convention, pour s’assurer que les femmes rurales jouissent de leurs droits politiques, sociaux, économiques et culturels sans aucune discrimination. Il recommande aussi que les femmes participent pleinement à la formulation et à l’exécution de toutes les politiques et de tous les programmes sectoriels.', N'إدماج تدابير خاصة مؤقتة، على النحو المنصوص عليه في الفقرة 1 من المادة 4 من الاتفاقية، لكفالة تمتع المرأة الريفية بحقوقها السياسية والاجتماعية والاقتصادية والثقافية دونما تمييز إدماجا تاما في عملية صوغ وتنفيذ جميع السياسات والبرامج في شتى القطاعات.', N'R33P3', N'ت.33.ف.3', N'Organes de Traités', null, '[5]', '[23]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (832, N'veiller au respect de la législation relative au travail des enfants, afin de protéger les filles contre les formes multiples de discrimination.', N'ضمان إنفاذ القيود المفروضة على عمل الأطفال وذلك لحماية الطفلة من شتى أشكال التمييز', N'R21P7', N'ت.21.ف.7', N'Organes de Traités', null, '[6]', '[32]', 6, null, null, 'En cours', '', 30, '', '', '', 2020),
 (833, N'Permettre aux réfugiés et demandeurs d’asile de bénéficier des services publics, d’octroyer des permis de travail à ceux d’entre eux qui sont en situation régulière et à garantir leur droit à la sécurité notamment en ce qui concerne les femmes et les enfants.', N'السماح للاجئين وملتمسي اللجوء بإمكانية الحصول على الخدمات العامة، وتوفير تصاريح عمل لأولئك اللاجئين وملتمسي اللجوء الذين لديهم وثائق، وأن تكفل حقهم في الأمن، لا سيما بالنسبة إلى النساء والأطفال.', N'R45P3', N'ت.45.ف.3', N'Organes de Traités', null, '[6]', '[34]', 6, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (834, N'Adopter des mesures efficaces pour prévenir et combattre la traite des êtres humains, notamment des femmes et des filles, et d’enquêter de manière approfondie sur les affaires de cette nature, conformément à l’article 6 de la Convention et à sa recommandation générale no 19. 
@@ -491,23 +491,23 @@ d) Organiser, pour les fonctionnaires de police et les agents de contrôle aux f
 (835, N'Intensifier ses campagnes de sensibilisation et la formation relative à la nouvelle législation, ainsi qu’aux dispositions de la Convention à l’intention des procureurs, des avocats et des magistrats, de façon à ancrer dans le pays une culture juridique favorisant l’égalité des sexes et la non-discrimination. 
 
 - Faire mieux connaître aux femmes leurs droits en mettant en place des programmes de vulgarisation et une assistance juridiques s’inscrivant dans la durée.', N'تكثيف حملات التوعية والتدريب بشأن التشريعات المعتمدة حديثا، فضلا عن أحكام الاتفاقية، في أوساط المدعين العامين والمحامين والقضاة، كيما يتسنى غرس ثقافة قانونية مساندة لمساواة المرأة مع الرجل وعدم التمييز 
--زيادة تثقيف النساء بحقوقهن عن طريق تنفيذ برامج مستديمة لمحو الأمية القانونية وتقديم المساعدة القانونية. وتشجع اللجنة الدولة الطرف على مواصلة ما تقوم به من إصلاحات بالتشاور مع المجتمع المدني. ولا سيما المنظمات النسائية.', N'R17P1P2', N'ت.17.ف.1.ف.2', N'Organes de Traités', null, '[7]', '[36]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
+-زيادة تثقيف النساء بحقوقهن عن طريق تنفيذ برامج مستديمة لمحو الأمية القانونية وتقديم المساعدة القانونية. وتشجع اللجنة الدولة الطرف على مواصلة ما تقوم به من إصلاحات بالتشاور مع المجتمع المدني. ولا سيما المنظمات النسائية.', N'R17P1P2', N'ت.17.ف.1.ف.2', N'Organes de Traités', null, '[7]', '[36]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (836, N'Diffuser largement le texte de la Convention et de les recommandations générales auprès de toutes les parties prenantes, y compris les ministères, les 32aires, les autorités judiciaires, les partis politiques, les organisations non gouvernementales, le secteur privé et le public en général.', N'-نشر الاتفاقية وتوصياتها العامة على أوسع نطاق بين جميع أصحاب المصلحة، بما في ذلك الوزارات الحكومية وأعضاء البرلمان والسلطات القضائية، والأحزاب السياسية والمنظمات غير الحكومية والقطاع الخاص وعامة الجمهور.', N'R13P2', N'ت.13.ف.2', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'En cours', '', 30, '', '', '', 2020),
 (837, N'S’attaquer aux stéréotypes concernant le rôle et les responsabilités des femmes et des hommes dans la famille et la société, notamment les schémas et normes cachés qui perpétuent la discrimination directe et indirecte à l’égard des femmes et des filles dans tous les domaines de la vie.
 - Redoubler d’efforts dans la conception et l’application de programmes complets de sensibilisation visant à favoriser une meilleure compréhension de l’égalité entre les hommes et les femmes à tous les échelons de la société afin de modifier les comportements stéréotypés et les normes culturelles négatives relatives au rôle des femmes et des hommes dans la famille et dans la société, conformément à l’article 5 a) de la Convention. 
 - Inciter les médias à donner une image favorable des femmes et à promouvoir l’égalité de statut et de responsabilités des femmes et des hommes dans la société', N'معالجة المواقف النمطية تجاه الأدوار والمسؤوليات المنوطة بالنساء والرجال، بما في ذلك الأنماط والأعراف الثقافية الخفية التي تعمل على إدامة التمييز المباشر وغير المباشر ضد المرأة والفتاة في كافة مناحي الحياة. 
 -مضاعفة جهودها الرامية إلى تصميم وتنفيذ برامج توعية شاملة لتحسين فهم المساواة بين المرأة والرجل على جميع مستويات المجتمع، وذلك بغرض تغيير المواقف النمطية والأعراف الثقافية السلبية بشأن المسؤوليات والأدوار المنوطة بالنساء والرجال في الأسرة والمجتمع، عملا بالمادة 5 (أ) من الاتفاقية. 
--تشجيع وسائط الإعلام على تقديم صورة إيجابية عن المرأة وعن تكافؤ المركز والمسؤوليات بين المرأة والرجل في المجتمع', N'R19', N'ت.19', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
-(838, N'Lancer des campagnes d’information pour attirer l’attention sur l’importance de la participation des femmes à la prise de décisions dans l’ensemble de la société, y compris dans les secteurs public et privé.', N'الاضطلاع بحملات لإذكاء الوعي بشأن الأهمية التي تكتسبها مشاركة المرأة في عملية اتخاذ القرار بالنسبة للمجتمع بأسره، بما في ذلك في القطاعين العام والخاص.', N'R25P3', N'ت.25.ف.3', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
-(839, N'Sensibiliser l’opinion à l’importance de l’éducation en tant que droit fondamental et condition de l’autonomisation des femmes et à prendre des mesures pour modifier les attitudes traditionnelles qui tendent à perpétuer la discrimination.', N'-رفع مستوى الوعي عموما بأهمية التعليم كحق من حقوق الإنسان وكأساس لتمكين المرأة، وعلى اتخاذ خطوات للتغلب على أنماط السلوك التقليدية التي تعمل على استدامة التمييز', N'R27P5', N'ت.27.ف.5', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
-(840, N'Multiplier les campagnes de sensibilisation à l’importance des soins de santé, en y incluant des informations sur la propagation des maladies sexuellement transmissibles et du VIH/sida ainsi que sur la prévention des grossesses non désirées grâce à la planification familiale et à l’éducation sexuelle.', N'توصي اللجنة، في ضوء توصيتها العامة رقم 24، بأن تزيد الدولة من حملات التوعية بأهمية الرعاية الصحية ويشمل ذلك المعلومات المتعلقة بانتشار الأمراض التي تنتقل عن طريق الاتصال الجنسي والإصابة بفيروس نقص المناعة البشرية/الإيدز والمعلومات المتصلة بمنع الحمل غير المرغوب فيه من خلال تنظيم الأسرة والتثقيف الجنسي.', N'R31P2', N'ت.31.ف.2', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
+-تشجيع وسائط الإعلام على تقديم صورة إيجابية عن المرأة وعن تكافؤ المركز والمسؤوليات بين المرأة والرجل في المجتمع', N'R19', N'ت.19', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(838, N'Lancer des campagnes d’information pour attirer l’attention sur l’importance de la participation des femmes à la prise de décisions dans l’ensemble de la société, y compris dans les secteurs public et privé.', N'الاضطلاع بحملات لإذكاء الوعي بشأن الأهمية التي تكتسبها مشاركة المرأة في عملية اتخاذ القرار بالنسبة للمجتمع بأسره، بما في ذلك في القطاعين العام والخاص.', N'R25P3', N'ت.25.ف.3', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(839, N'Sensibiliser l’opinion à l’importance de l’éducation en tant que droit fondamental et condition de l’autonomisation des femmes et à prendre des mesures pour modifier les attitudes traditionnelles qui tendent à perpétuer la discrimination.', N'-رفع مستوى الوعي عموما بأهمية التعليم كحق من حقوق الإنسان وكأساس لتمكين المرأة، وعلى اتخاذ خطوات للتغلب على أنماط السلوك التقليدية التي تعمل على استدامة التمييز', N'R27P5', N'ت.27.ف.5', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(840, N'Multiplier les campagnes de sensibilisation à l’importance des soins de santé, en y incluant des informations sur la propagation des maladies sexuellement transmissibles et du VIH/sida ainsi que sur la prévention des grossesses non désirées grâce à la planification familiale et à l’éducation sexuelle.', N'توصي اللجنة، في ضوء توصيتها العامة رقم 24، بأن تزيد الدولة من حملات التوعية بأهمية الرعاية الصحية ويشمل ذلك المعلومات المتعلقة بانتشار الأمراض التي تنتقل عن طريق الاتصال الجنسي والإصابة بفيروس نقص المناعة البشرية/الإيدز والمعلومات المتصلة بمنع الحمل غير المرغوب فيه من خلال تنظيم الأسرة والتثقيف الجنسي.', N'R31P2', N'ت.31.ف.2', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (841, N'Les présentes observations finales doivent être largement diffusées la population du pays, en particulier les membres de l’administration et les responsables politiques, soit au courant des mesures prises pour assurer l’égalité de droit et de fait entre les sexes et sache quelles mesures restent à prendre à cet égard. 
 - Diffuser largement, surtout auprès des associations féminines et des organisations de défense des droits de l’homme, le texte de la Convention sur l’élimination de toutes les formes de discrimination à l’égard des femmes et de son Protocole facultatif; les recommandations générales du comité; la Déclaration et le Programme d’action de Beijing; et les textes issus de la vingt-troisième session extraordinaire de l’Assemblée générale, intitulée  « Les femmes en l’an 2000 : égalité entre les sexes, développement et paix pour le XXIe siècle ».', N'نشر الملاحظات الختامية على أوسع نطاق ممكن من أجل توعية الشعب المغربي، ولا سيما المديرين الحكوميين والسياسيين، بالخطوات التي اتخذت لكفالة المساواة بين المرأة والرجل قانونيا وفعليا، وبالخطوات التي يتعين اتخاذها مستقبلا في هذا الصدد. 
 -مواصلة نشر اتفاقية القضاء على جميع أشكال التمييز ضد المرأة والبروتوكول الاختياري الملحق بها، على أوسع نطاق، لا سيما بين المنظمات النسائية ومنظمات حقوق الإنسان؛ وكذلك التوصيات العامة للجنة المعنية بالقضاء على التمييز ضد المرأة؛ وإعلان ومنهاج عمل بيجين؛ ونتائج الدورة الاستثنائية الثالثة والعشرين للجمعية العامة المعنونة ”المرأة عام 2000: المساواة بين الجنسين والتنمية والسلام في القرن الحادي والعشرين“.', N'R52', N'ت.52', N'Organes de Traités', null, '[7]', '[37]', 6, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (842, N'Prévoir des procédures précises pour le dépôt des plaintes pour discrimination à l’égard des femmes, des sanctions correspondant à ces actes de discrimination et des voies de recours efficaces pour les femmes dont les droits ont été bafoués.', N'وضع إجراءات واضحة لتقديم الشكاوى بشأن التمييز ضد المرأة، والتنصيص على جزاءات كافية لأفعال التمييز، وتكفل إتاحة سبل الانتصاف الفعالة للنساء اللائي انتهكت حقوقهن', N'R11P4', N'ت.11.ف.4', N'Organes de Traités', null, '[8]', '[]', 6, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (843, N'Entreprendre des études sur les causes et l’ampleur de la violence à l’égard des femmes et des filles, y compris la violence sexuelle et la violence dans la famille. 
 - Recueillir des données ventilées sur toutes les formes de violence à l’égard des femmes,', N'إجراء دراسات عن أسباب العنف الموجه ضد النساء والفتيات ونطاقه، بما في ذلك العنف الجنسي والأسري. 
--جمع بيانات مصنفة عن جميع أشكال العنف ضد المرأة،', N'R21P3P4', N'ت.21.ف3.ف.4', N'Organes de Traités', null, '[8]', '[]', 6, null, null, 'RC', '', 0, '', '', '', 2020),
+-جمع بيانات مصنفة عن جميع أشكال العنف ضد المرأة،', N'R21P3P4', N'ت.21.ف3.ف.4', N'Organes de Traités', null, '[8]', '[]', 6, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (844, N'le Comité encourage le Maroc à retirer la déclaration interprétative concernant le paragraphe 1 de l’article 14 de la Convention.', N'تشجع اللجنة المملكة المغربية على سحب الإعلان التفسيري بشأن الفقرة 1 من المادة 14 من الاتفاقية، تماشياً مع توصياتها السابقة (الوثيقة CRC/C/15/Add.211  لعام 2003، الفقرة 8)، وفي ضوء إعلان وبرنامج عمل فيينا لعام 1993.', N'R9', N'ت.9', N'Organes de Traités', null, '[2]', '[5]', 7, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (845, N'Songer à ratifier la Convention de 1961 sur la réduction des cas d’apatridie.', N'(د) النظر في التصديق على اتفاقية تخفيض حالات انعدام الجنسية  لعام 1961.', N'R31P4', N'ت.31.ف.4', N'Organes de Traités', null, '[2,5]', '[5,29]', 7, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (846, N'Songer à ratifier la Convention no 189 (2011) de l’Organisation internationale du Travail (OIT), sur les travailleuses et travailleurs domestiques ;', N'-           (د) النظر في التصديق على اتفاقية منظمة العمل الدولية رقم 189 بشأن العمل اللائق للعمال المنزليين', N'R65 P4', N'ت.65.ف.4', N'Organes de Traités', null, '[2,4]', '[5,15]', 7, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
@@ -520,12 +520,12 @@ d) De renforcer sa coopération internationale contre le tourisme pédophile par
 - (أ) النظر في إطارها التشريعي المتعلق بالمساءلة القانونية للشركات الخاصة وفروعها العاملة في إقليم الدولة الطرف أو التي تدار انطلاقاً منها، خاصة في قطاع السياحة، وتكييف ذلك الإطار', N'R23P5', N'ت.23.ف.5', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'En cours', '', 30, '', '', '', 2020),
 (850, N'Renvoyant à son Observation générale no 4 (2003) sur la santé et le développement de l’adolescent, le Comité demande instamment à l’État partie:
 d) De solliciter une assistance technique auprès, entre autres, du Programme commun des Nations Unies sur le VIH/sida (ONUSIDA) et l’UNICEF.', N'تشير اللجنة إلى تعليقها العام رقم 4(2003) بشأن صحة المراهقين ونموهم، وتحث الدولة الطرف على ما يلي:
-- (د) التماس المساعدة التقنية من جهات مثل برنامج الأمم المتحدة المشترك بين منظمات الأمم المتحدة لمكافحة الإيدز واليونيسيف', N'R57P4', N'ت.57.ف.4', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
-(851, N'Solliciter à cet égard l’assistance technique du programme international sur l’élimination du travail des enfants de l’OIT', N'(ه) التماس المساعدة التقنية في هذا الصدد من البرنامج الدولي لمنظمة العمل الدولية للقضاء على عمل الأطفال', N'R65 P5', N'ت.65.ف.5', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
-(852, N'Donner suite aux recommandations qui figurent dans ses observations finales concernant le rapport initial du Maroc au titre du Protocole facultatif à la Convention relative aux droits de l’enfant, concernant la vente d’enfants, la prostitution des enfants et la pornographie mettant en scène des enfants, et faire figurer des informations complètes à cet égard dans son prochain rapport périodique.', N'-          نفيذ التوصيات الواردة في ملاحظات اللجنة الختامية بشأن تقرير الدولة الطرف الأولي بمقتضى البروتوكول الاختياري المتعلق ببيع الأطفال واستغلال الأطفال في البغاء وفي المواد الإباحية وتقديم معلومات شاملة في هذا الصدد في تقريرها الدوري القادم.', N'R71', N'ت.71', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- (د) التماس المساعدة التقنية من جهات مثل برنامج الأمم المتحدة المشترك بين منظمات الأمم المتحدة لمكافحة الإيدز واليونيسيف', N'R57P4', N'ت.57.ف.4', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(851, N'Solliciter à cet égard l’assistance technique du programme international sur l’élimination du travail des enfants de l’OIT', N'(ه) التماس المساعدة التقنية في هذا الصدد من البرنامج الدولي لمنظمة العمل الدولية للقضاء على عمل الأطفال', N'R65 P5', N'ت.65.ف.5', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(852, N'Donner suite aux recommandations qui figurent dans ses observations finales concernant le rapport initial du Maroc au titre du Protocole facultatif à la Convention relative aux droits de l’enfant, concernant la vente d’enfants, la prostitution des enfants et la pornographie mettant en scène des enfants, et faire figurer des informations complètes à cet égard dans son prochain rapport périodique.', N'-          نفيذ التوصيات الواردة في ملاحظات اللجنة الختامية بشأن تقرير الدولة الطرف الأولي بمقتضى البروتوكول الاختياري المتعلق ببيع الأطفال واستغلال الأطفال في البغاء وفي المواد الإباحية وتقديم معلومات شاملة في هذا الصدد في تقريرها الدوري القادم.', N'R71', N'ت.71', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (853, N'Le Comité exhorte le Maroc à mettre son système de justice pour mineurs en totale conformité avec la Convention, en particulier avec les articles 37, 39 et 40, ainsi qu’avec d’autres normes applicables et avec l’Observation générale no 10 (2007) du Comité sur les droits de l’enfant dans le système de justice pour mineurs. Il exhorte en particulier le Maroc à:
 f) Utiliser les outils d’assistance technique mis au point par le groupe inter institutions sur la justice pour mineurs et ses membres, notamment l’Office des Nations Unies contre la drogue et le crime.', N'تحث اللجنة المملكة لمغربية على التوفيق التام بين نظامها لعدالة الأحداث والاتفاقية، لا سيما المواد 37 و39 و40، وكذلك مع معايير أخرى متصلة بالموضوع ومع تعليق اللجنة العام رقم 10(2007) بشأن حقوق الطفل في قضاء الأحداث. وتحثها خاصة على الآتي:
--  (و) توظيف أدوات المساعدة التقنية التي وضعها الفريق المشترك بين الوكالات المعني بقضاء الأحداث وأعضاؤه، بما في ذلك مكتب الأمم المتحدة المعني بالمخدرات والجريمة.', N'R75P6', N'ت.75.ف.6', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (و) توظيف أدوات المساعدة التقنية التي وضعها الفريق المشترك بين الوكالات المعني بقضاء الأحداث وأعضاؤه، بما في ذلك مكتب الأمم المتحدة المعني بالمخدرات والجريمة.', N'R75P6', N'ت.75.ف.6', N'Organes de Traités', null, '[2]', '[7]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (854, N'Soumettre les cinquième et sixième rapports en un seul document d’ici à juillet 2020 et à y faire figurer des informations sur la suite donnée aux présentes observations finales. 
 - Le rapport devrait être conforme aux directives harmonisées du Comité pour l’établissement des rapports portant spécifiquement sur l’application de la Convention, adoptées le 1er octobre 2010 (CRC/C/58/Rev.2 et Corr.1) et ne devrait pas excéder 21 200 mots (voir résolution 68/268 de l’Assemblée générale, par. 16). 
 - Si l’État partie soumet un rapport dont le nombre de pages dépasse la limite fixée, il sera invité à le raccourcir et à le soumettre à nouveau conformément à la résolution susmentionnée. S’il n’est pas en mesure de remanier son rapport et de le soumettre à nouveau, la traduction de ce rapport aux fins d’examen par le Comité ne pourra être garantie', N'تقديم التقرير الجامع للتقريرين الدوريين الثالث والرابع بحلول 20 تموز/يوليه 2020 وتضمينه معلومات عن متابعة هذه الملاحظات. 
@@ -548,7 +548,7 @@ a) D’examiner et d’adapter son cadre législatif concernant la responsabilit
 (861, N'Le Comité recommande au Maroc de tenir compte de l’Observation générale no 13 (2011) sur le droit de l’enfant d’être protégé contre toutes les formes de violence, et en particulier de mettre en place, en étroite coopération avec la société civile, un système de protection des enfants bien coordonné et bien financé. Le Maroc devrait en particulier:
 b) Mettre en place un cadre juridique complet, ainsi qu’un cadre national de coordination pour prévenir, interdire et punir toutes les formes de délaissement, de sévices et de violence, notamment dans la famille, à l’égard de tous les enfants jusqu’à l’âge de 18 ans;', N'الأخذ في الحسبان التعليق العام  رقم 13(2011) بشأن حق الطفل في التحرر من جميع أشكال العنف، ووضع نظاماً لحماية الطفل منسقاً تنسيقاً جيداً وممولاً تمويلاً كافياً بتعاون وثيق مع المجتمع المدني و الاضطلاع بما يلي خاصةً:
 -  (ب) وضع إطار قانوني شامل، إضافة إلى إطار تنسيق وطني، لمنع جميع أشكال الإهمال وإساءة المعاملة والعنف، بما فيه العنف المنزلي، التي يتعرض لها كل الأطفال حتى سن 18؛', N'R39P2', N'ت.39.ف.2', N'Organes de Traités', null, '[3,6]', '[9,32]', 7, null, null, 'En cours', '', 30, '', '', '', 2020),
-(862, N'Le Comité appelle le Maroc sur les nombreuses conséquences néfastes des mariages précoces et lui demande instamment de ne pas ramener à 16 ans l’âge minimum du mariage et de prendre des mesures concrètes pour mettre fin à la pratique des mariages précoces et forcés.', N'تلفت اللجنة انتباه الدولة الطرف إلى العواقب الوخيمة الكثيرة الناشئة عن الزواج المبكر، وتحثها على الامتناع عن خفض الحد الأدنى لسن الزواج إلى 16 عاماً وعلى اتخاذ تدابير فعالة من أجل وضع حد للزواج المبكر والزواج بالإكراه.', N'R43', N'ت.43', N'Organes de Traités', null, '[3,6]', '[9,32]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+(862, N'Le Comité appelle le Maroc sur les nombreuses conséquences néfastes des mariages précoces et lui demande instamment de ne pas ramener à 16 ans l’âge minimum du mariage et de prendre des mesures concrètes pour mettre fin à la pratique des mariages précoces et forcés.', N'تلفت اللجنة انتباه الدولة الطرف إلى العواقب الوخيمة الكثيرة الناشئة عن الزواج المبكر، وتحثها على الامتناع عن خفض الحد الأدنى لسن الزواج إلى 16 عاماً وعلى اتخاذ تدابير فعالة من أجل وضع حد للزواج المبكر والزواج بالإكراه.', N'R43', N'ت.43', N'Organes de Traités', null, '[3,6]', '[9,32]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (863, N'Appelant l’attention sur les lignes directrices relatives à la protection de remplacement pour les enfants (résolution 64/142 de l’Assemblée générale, annexe), le Comité demande instamment au Maroc :
 b) D’achever le processus d’adoption du projet de loi sur la protection de remplacement en accordant la priorité à d’autres solutions que le placement en institution, en particulier au placement auprès d’un parent, au placement en famille d’accueil et au renforcement des programmes visant à prévenir le placement dans des structures de remplacement;', N'تلفت اللجنة انتباه المملكة المغربية إلى المبادئ التوجيهية للرعاية البديلة للأطفال (مرفق قرار الجمعية العامة 64/142) وحثتها على ما يلي: 
 -  (ب) وضع الصيغة النهائية لعملية اعتماد مشروع القانون عن الرعاية البديلة، مع إيلاء الأولوية لبدائل المؤسسات، لا سيما رعاية ذوي القربى والحضانة وبرامج توثيق الأواصر الأسرية توقياً للإيداع خارج البيت', N'R49P2', N'ت.49.ف.2', N'Organes de Traités', null, '[3,6]', '[9,32]', 7, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
@@ -570,12 +570,12 @@ C)  Promouvoir des mesures de substitution à la détention telles que la déjud
 - (أ) ضمان عدم اللجوء إلى الاحتجاز، بما فيه الاحتجاز السابق للمحاكمة، إلا عند الضرورة القصوى ولأقصر مدة ممكنة، حتى عن الجرائم الخطرة جداً، وإعادة النظر فيه بانتظام للتخلي عنه؛
 - (ب) ضمان تقديم مساعدة قانونية مؤهلة ومستقلة للأطفال الجانحين في مرحلة مبكرة من الدعوى وطوال الإجراءات القانونية، حتى في حالات التلبس بالجريمة؛
 - (ج) تشجيع التدابير البديلة للاحتجاز ما أمكن، مثل عدم اللجوء إلى القضاء أو الإفراج تحت المراقبة أو الوساطة أو التوجيه أو الخدمة المجتمعية؛', N'R75P1P2P3', N'ت.75.ف.1.ف.2.ف.3', N'Organes de Traités', null, '[3]', '[10]', 7, null, null, 'En cours', '', 30, '', '', '', 2020),
-(871, N'b) Empêcher le placement automatique d’enfants nés hors mariage et d’enfants vivant dans la pauvreté sous le régime de la kafalah en fournissant aux mères célibataires et/ou aux parents le soutien nécessaire pour qu’ils puissent prendre en charge leurs enfants;', N'-           (ب) منع الكفالة التلقائية للأطفال غير المولودين خارج إطار الزواج والأطفال الفقراء عن طريق إمداد الأمهات غير المتزوجات و/أو الوالدين بما يلزم من دعم لرعاية أطفالهم؛', N'R51P2', N'ت.51.ف.2', N'Organes de Traités', null, '[4,6]', '[11,32]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+(871, N'b) Empêcher le placement automatique d’enfants nés hors mariage et d’enfants vivant dans la pauvreté sous le régime de la kafalah en fournissant aux mères célibataires et/ou aux parents le soutien nécessaire pour qu’ils puissent prendre en charge leurs enfants;', N'-           (ب) منع الكفالة التلقائية للأطفال غير المولودين خارج إطار الزواج والأطفال الفقراء عن طريق إمداد الأمهات غير المتزوجات و/أو الوالدين بما يلزم من دعم لرعاية أطفالهم؛', N'R51P2', N'ت.51.ف.2', N'Organes de Traités', null, '[4,6]', '[11,32]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (872, N'Prendre toutes les mesures nécessaires, notamment des mesures de discrimination positives, pour faire face aux disparités économiques dont souffrent les régions rurales et les banlieues urbaines et qui font que des enfants ne jouissent pas de leurs droits sur un pied d’égalité avec les autres. 
 - Mesurer l’incidence des programmes de protection sociale et revoir ces programmes pour faire en sorte qu’ils soient durables et accessibles aux enfants les plus vulnérables et les plus défavorisés;
 - Songer à tenir des consultations ciblées avec les familles, les enfants et les organisations de la société civile qui s’occupent des droits de l’enfant sur la question de la pauvreté des enfants.', N'اتخاذ جميع التدابير اللازمة، بما فيها سياسات التمييز الإيجابي، لتضييق الفوارق الاقتصادية التي تضر بالمناطق الريفية وضواحي المدن والتي تؤدي بعدم تمتع الأطفال بحقوقهم على قدم المساواة. 
 - تقييم آثار برامج الضمان الاجتماعي ومراجعتها بحيث تكون مستدامة وميسّرة لأكثر الأطفال استضعافاً وحرماناً.
-- النظر في عقد مشاورات محددة الغرض مع الأسر والأطفال ومنظمات المجتمع المدني المعنية بحقوق الأطفال لمعالجة قضية فقر الأطفال', N'R59', N'ت.59', N'Organes de Traités', null, '[4,6]', '[11,32]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- النظر في عقد مشاورات محددة الغرض مع الأسر والأطفال ومنظمات المجتمع المدني المعنية بحقوق الأطفال لمعالجة قضية فقر الأطفال', N'R59', N'ت.59', N'Organes de Traités', null, '[4,6]', '[11,32]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (873, N'Compte tenu de l’article 23 de la Convention et de son Observation générale no 9 (2006) sur les droits des enfants handicapés, le Comité demande instamment au Maroc d’adopter une approche du handicap fondée sur les droits de l’homme et recommande en particulier :
 c) D’adopter sans délai des mesures pour faire en sorte que les enfants handicapés aient accès aux soins de santé, y compris aux programmes de dépistage et d’intervention précoces;', N'تحث اللجنة المملكة المغربية، في ضوء المادة 23 من الاتفاقية وتعليقها العام     رقم 9(2006) بشأن حقوق الأطفال ذوي الإعاقة، على انتهاج نهج يقوم على حقوق الإنسان في التعاطي مع الإعاقة، وتوصيها بالآتي تحديداً: 
 -  (ج) اتخاذ تدابير فورية تكفل للأطفال ذوي الإعاقة تلقي الرعاية الصحية، بما فيها برامج الكشف والتدخل المبكرين؛', N'R53P3', N'ت.53.ف.3', N'Organes de Traités', null, '[4,6]', '[13,32,33]', 7, null, null, 'En cours', '', 30, '', '', '', 2020),
@@ -585,7 +585,7 @@ b) De prendre des mesures plus efficaces pour lutter contre la mortalité liée 
 c) Solliciter à cet égard une assistance financière et technique auprès, entre autres, du Fonds des Nations Unies pour l’enfance (UNICEF) et de l’Organisation mondiale de la Santé.', N'تلفت اللجنة انتباه المملكة المغربية إلى تعليقها العام رقم 15(2013) بشأن حق الطفل في التمتع بأعلى مستوى صحي يمكن بلوغه، وتوصيها بالآتي:
 - (أ) الحرص على تخصيص موارد كافية لقطاع الصحة واستخدامها بفاعلية، ووضع سياسات وبرامج شاملة وتنفيذها لتحسين الوضع الصحي للأطفال وتسهيل تلقي الأمهات والأطفال مزيداً من الخدمات الصحية الأولية الجيدة وعلى قدم المساواة مع غيرهم من الشرائح في جميع مناطق البلاد للحد من التفاوت في الحصول على الخدمات الصحية؛
 - (ب) اتخاذ تدابير أكثر لعالية للتقليل من وفيات الأمهات والرضع ومعالجة الوضع الغذائي للصغار؛
-- (ج) التماس المساعدة المالية والتقنية في هذا الصدد من جهات مثل اليونيسيف ومنظمة الصحة العالمية', N'R55', N'ت.55', N'Organes de Traités', null, '[4,6]', '[13,32]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- (ج) التماس المساعدة المالية والتقنية في هذا الصدد من جهات مثل اليونيسيف ومنظمة الصحة العالمية', N'R55', N'ت.55', N'Organes de Traités', null, '[4,6]', '[13,32]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (875, N'Renvoyant à son Observation générale no 4 (2003) sur la santé et le développement de l’adolescent, le Comité demande instamment au Maroc:
 a) D’adopter une politique globale de la santé sexuelle et génésique des adolescents et de faire en sorte que l’éducation dans ce domaine fasse partie du programme scolaire obligatoire, une attention particulière devant être accordée à la prévention de la grossesse précoce et des infections transmises sexuellement;
 c) De faire face au phénomène de la consommation de drogues par les enfants et les adolescents, notamment en leur fournissant des informations précises et objectives et en leur permettant d’acquérir des compétences pratiques de façon à prévenir la consommation de substances toxiques (y compris le tabac et l’alcool), et de mettre en place des services de traitement de la toxicomanie et de réduction des risques qui soient accessibles et adaptés aux jeunes;', N'تشير اللجنة إلى تعليقها العام رقم 4(2003) بشأن صحة المراهقين ونموهم، وتحث الدولة الطرف على ما يلي:
@@ -624,8 +624,8 @@ a) Interdire sans équivoque les châtiments corporels dans tous les contextes;
 (883, N'a) Adopter toutes les mesures nécessaires en vue d’une application effective des modifications apportées à la loi sur la nationalité et à modifier le paragraphe 7 de l’article 16 de la loi no 37-99 pour faire en sorte que toutes les mères, sans distinction aucune, puissent transmettre leur nom de famille à leurs enfants;
 b) Faire en sorte que tous les enfants nés sur le territoire de l’État partie, quel que soit le statut de leurs parents ou la nature de leur permis de résidence, soient enregistrés et obtiennent immédiatement un bulletin de naissance officiel sans obstacle indu;
 c) Abolir les frais imposés pour l’obtention d’un bulletin de naissance, prolonger le court délai d’enregistrement des nouveau-nés (trente jours) et faciliter la délivrance de bulletins de naissance à tous les enfants réfugiés qui n’en possèdent pas encore un;', N'(أ) اتخاذ جميع التدابير اللازمة لتنفيذ إصلاح قانون الجنسية تنفيذاً فعالاً، وتعديل الفقرة 7 من المادة 16 من القانون رقم 37-99 بحيث تستطيع جميع الأمهات، دون تمييز، نقل أسمائهن العائلية إلى أطفالهن؛
-- (ب) تأمين تسجيل جميع الأطفال المولودين على أراضيها، بصرف النظر عن وضع والديهم أو تصاريح إقامتهم القانونية، وتوفير شهادات ميلاد رسمية لهم على الفور، دون أي حواجز لا مبرر لها؛ 
-- (ج) إلغاء رسوم شهادات الميلاد، وتمديد فترة تسجيل الوِلْدان القصيرة (30 يوماً) وتيسير تقديم شهادات الميلاد لجميع أطفال اللاجئين الذين لا يزالون يفتقرون إليها', N'R31P1P2P3', N'ت.31.ف.1.ف2.ف3', N'Organes de Traités', null, '[5]', '[29]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- (ب) تأمين تسجيل جميع الأطفال المولودين على أراضيها، بصرف النظر عن وضع والديهم أو تصاريح إقامتهم القانونية، وتوفير شهادات ميلاد رسمية لهم على الفور، دون أي حواج�� لا مبرر لها؛ 
+- (ج) إلغاء رسوم شهادات الميلاد، وتمديد فترة تسجيل الوِلْدان القصيرة (30 يوماً) وتيسير تقديم شهادات الميلاد لجميع أطفال اللاجئين الذين لا يزالون يفتقرون إليها', N'R31P1P2P3', N'ت.31.ف.1.ف2.ف3', N'Organes de Traités', null, '[5]', '[29]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (884, N'c) Abolir les frais imposés pour l’obtention d’un bulletin de naissance, prolonger le court délai d’enregistrement des nouveau-nés (trente jours) et faciliter la délivrance de bulletins de naissance à tous les enfants réfugiés qui n’en possèdent pas encore un;', N'-           (ج) إلغاء رسوم شهادات الميلاد، وتمديد فترة تسجيل الوِلْدان القصيرة (30 يوماً) وتيسير تقديم شهادات الميلاد لجميع أطفال اللاجئين الذين لا يزالون يفتقرون إليها؛', N'R31P3', N'ت.31.ف3', N'Organes de Traités', null, '[6]', '[34]', 7, null, null, 'En cours', '', 30, '', '', '', 2020),
 (885, N'Le Comité recommande au Maroc d’accélérer l’adoption d’un cadre juridique et institutionnel pour assurer le respect, en toutes circonstances, des droits des enfants migrants, des enfants demandeurs d’asile et des enfants réfugiés non accompagnés, conformément au droit international relatif aux réfugiés et aux droits de l’homme. 
 L’État partie devrait veiller à ce que :
@@ -635,31 +635,31 @@ c) Des mesures soient prises rapidement pour assurer aux enfants migrants, réfu
 -  (أ) عدم انتهاكها القانون بالقبض على الأطفال اللاجئين وملتمسي اللجوء واحتجازهم تعسفاً وطردهم؛
 - (ب) إجراء تحقيق لتحديد ال��سؤوليات عن طرد 5 أطفال في الصحراء في عام 2013، ومعاقبة الجناة، واتخاذ تدابير لمنع تكرار هذا الوضع؛
 - (ج) التعجيل باتخاذ تدابير لتيسير دخول الأطفال ملتمسي اللجوء واللاجئين والمهاجرين وحدات الحماية الموجودة في المشافي، وتحسين الأوضاع الصحية في مراكز استقبال المهاجرين.', N'R63', N'ت.63', N'Organes de Traités', null, '[6]', '[34]', 7, null, null, 'Réalisé', '', 100, '', '', '', 2020),
-(886, N'…….. dispenser aux agents de la force publique la formation requise aux normes régissant le traitement des enfants qui ont affaire à la justice ou sont en conflit avec la loi……………………', N'-          توفير التدريب المناسب لموظفي إنفاذ القانون على قواعد ومعايير معاملة الأطفال الخاضعين لإجراءات قضائية أو المخالفين للقانون', N'R35P2', N'ت.35.ف.2', N'Organes de Traités', null, '[7]', '[36]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+(886, N'…….. dispenser aux agents de la force publique la formation requise aux normes régissant le traitement des enfants qui ont affaire à la justice ou sont en conflit avec la loi……………………', N'-          توفير التدريب المناسب لموظفي إنفاذ القانون على قواعد ومعايير معاملة الأطفال الخاضعين لإجراءات قضائية أو المخالفين للقانون', N'R35P2', N'ت.35.ف.2', N'Organes de Traités', null, '[7]', '[36]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (887, N'Appelant l’attention sur les lignes directrices relatives à la protection de remplacement pour les enfants (résolution 64/142 de l’Assemblée générale, annexe), le Comité demande au Maroc:
 e) De faire en sorte que l’ensemble du personnel des institutions de protection sociale reçoive la formation requise aux droits de l’enfant, notamment à la façon de procéder pour signaler les cas de mauvais traitement, et de fournir toutes les ressources humaines techniques et financières nécessaires pour améliorer la situation des enfants;', N'تلفت اللجنة انتباه المملكة المغربية إلى المبادئ التوجيهية للرعاية البديلة للأطفال (مرفق قرار الجمعية العامة 64/142) وحثتها على ما يلي:  
-- (هـ)  ضمان تدريب جميع الموظفين العاملين في المؤسسات تدريباً كافياً في مجال حقوق الطفل، بما في ذلك بشأن الكيفية التي يمكن بها الإبلاغ عن حالات سوء المعاملة، وتوفير جميع الموارد البشرية والتقنية والمالية اللازمة لتحسين أوضاع الأطفال', N'R49P5', N'ت.49.ف.5', N'Organes de Traités', null, '[7]', '[36]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- (هـ)  ضمان تدريب جميع الموظفين العاملين في المؤسسات تدريباً كافياً في مجال حقوق الطفل، بما في ذلك بشأن الكيفية التي يمكن بها الإبلاغ عن حالات سوء المعاملة، وتوفير جميع الموارد البشرية والتقنية والمالية اللازمة لتحسين أوضاع الأطفال', N'R49P5', N'ت.49.ف.5', N'Organes de Traités', null, '[7]', '[36]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (888, N'Mettre le système de justice pour mineurs en totale conformité avec la Convention, en particulier avec les articles 37, 39 et 40, ainsi qu’avec d’autres normes applicables et avec l’Observation générale no 10 (2007) du Comité sur les droits de l’enfant dans le système de justice pour mineurs, en particulier:
 d) Assurer le renforcement des capacités et la spécialisation de toutes les parties prenantes dans le système de justice, notamment les magistrats, les agents pénitentiaires et les avocats en ce qui concerne les dispositions de la Convention;', N'تحث اللجنة المملكة لمغربية على التوفيق التام بين نظامها لعدالة الأحداث والاتفاقية، لا سيما المواد 37 و39 و40، وكذلك مع معايير أخرى متصلة بالموضوع ومع تعليق اللجنة العام رقم 10(2007) بشأن حقوق الطفل في قضاء الأحداث. وتحثها خاصة على الآتي:
--  (د) ضمان بناء قدرات جميع العاملين في سلك القضاء وتخصصهم                 فيما يتعلق بأحكام الاتفاقية، بمن فيهم القضاة وموظفو السجون والمحامون؛', N'R75P4', N'ت.75.ف.4', N'Organes de Traités', null, '[7]', '[36]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (د) ضمان بناء قدرات جميع العاملين في سلك القضاء وتخصصهم                 فيما يتعلق بأحكام الاتفاقية، بمن فيهم القضاة وموظفو السجون والمحامون؛', N'R75P4', N'ت.75.ف.4', N'Organes de Traités', null, '[7]', '[36]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (889, N'Le Comité appelle l’attention du Maroc sur son Observation générale no 16 (2013) sur les obligations des États concernant les incidences du secteur des entreprises sur les droits de l’enfant et, en particulier, lui recommande :
 c) D’entreprendre des campagnes de sensibilisation auprès du secteur du tourisme et du grand public à la prévention du tourisme pédophile et de diffuser largement la Charte d’honneur pour le tourisme et le code mondial d’éthique du tourisme de l’Organisation mondiale du tourisme auprès des agences de voyages et du secteur du tourisme;', N'تلفت اللجنة انتباه المملكة المغربية إلى تعليقها العام رقم 16(2013) بشأن التزامات الدولة المتعلقة بالآثار التي يحدثها قطاع الأعمال على حقوق الأطفال، وتوصيها خاصة بالآتي: 
-- (ج) تنظيم حملات توعية بمشاركة قطاع السياحة وعامة الناس عن منع سياحة الجنس مع الأطفال، وإشاعة ميثاق الشرف للعاملين في السياحة والمدونة العالمية لأخلاقيات السياحة التي وضعتها منظمة السياحة العالمية بين وكلاء السفر وفي قطاع السياحة؛', N'R23P3', N'ت.23.ف.3', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- (ج) تنظيم حملات توعية بمشاركة قطاع السياحة وعامة الناس عن منع سياحة الجنس مع الأطفال، وإشاعة ميثاق الشرف للعاملين في السياحة والمدونة العالمية لأخلاقيات السياحة التي وضعتها منظمة السياحة العالمية بين وكلاء السفر وفي قطاع السياحة؛', N'R23P3', N'ت.23.ف.3', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (890, N'Le Comité appelle l’attention du Maroc sur son Observation générale no 12 (2009) sur le droit de l’enfant d’être entendu et lui recommande:
 b) D’exécuter des programmes et des activités de sensibilisation en vue de promouvoir une participation active et autonome de tous les enfants à la vie de la famille, de la collectivité et de l’école, notamment dans le cadre des conseils d’élèves, en accordant une attention particulière aux filles et aux enfants vulnérables.', N'تلفت اللجنة انتباه الدولة الطرف إلى تعليقها العام رقم 12(2009) بشأن حق الطفل في أن يُستمع إليه، وتوصيها بالآتي: 
-- (ب) تنفيذ برامج وأنشطة توعية لتشجيع مشاركة جميع الأطفال الجادة والقوية داخل الأسرة والمجتمع والمدرسة، بما في ذلك داخل هيئات مجالس التلاميذ، مع إيلاء اهتمام خاص للفتيات والأطفال المستضعفين', N'R29P2', N'ت.29.ف.2', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+- (ب) تنفيذ برامج وأنشطة توعية لتشجيع مشاركة جميع الأطفال الجادة والقوية داخل الأسرة والمجتمع والمدرسة، بما في ذلك داخل هيئات مجالس التلاميذ، مع إيلاء اهتمام خاص للفتيات والأطفال المستضعفين', N'R29P2', N'ت.29.ف.2', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (891, N'Renvoyant à son Observation générale no 8 (2006) relative aux droits de l’enfant et à une protection contre les châtiments corporels et les autres formes cruelles ou dégradantes de châtiment, le Comité invite le Maroc à:
 c) Organiser des campagnes publiques soutenues d’éducation, de sensibilisation et de mobilisation sociale associant les enfants, les familles, les collectivités et les chefs religieux sur les effets physiques et psychologiques néfastes des châtiments corporels en vue de faire évoluer les mentalités à l’égard de cette pratique et de promouvoir des formes d’éducation et de discipline constructives non violentes et participatives en remplacement des châtiments corporels;', N'في ضوء تعليق اللجنة العام رقم 8(2006) بشأن حق الطفل في الحماية من العقوبة البدنية وغيرها من ضروب العقوبة القاسية أو المهينة، تحث اللجنة الدولة المملكة المغربية على ما يلي: 
--  (ج) وضع برامج مستمرة للتثقيف العام والتوعية والتعبئة الاجتماعية عن الأضرار البدنية والنفسية المترتبة على العقوبة البدنية يشارك فيها الأطفال، والأسر، والمجتمعات المحلية، والقيادات الدينية، بهدف تغيير الموقف العام من هذه الممارسة وتشجيع أشكال إيجابية وخالية من العنف وقائمة على المشاركة لتنشئة الأطفال تكون بديلاً للعقوبة البدنية', N'R37P3', N'ت.37.ف.3', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (ج) وضع برامج مستمرة للتثقيف العام والتوعية والتعبئة الاجتماعية عن الأضرار البدنية والنفسية المترتبة على العقوبة البدنية يشارك فيها الأطفال، والأسر، والمجتمعات المحلية، والقيادات الدينية، بهدف تغيير الموقف العام من هذه الممارسة وتشجيع أشكال إيجابية وخالية من العنف وقائمة على المشاركة لتنشئة الأطفال تكون بديلاً للعقوبة البدنية', N'R37P3', N'ت.37.ف.3', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (892, N'Tenir compte de l’Observation générale no 13 (2011) sur le droit de l’enfant d’être protégé contre toutes les formes de violence, et en particulier de mettre en place, en étroite coopération avec la société civile, un système de protection des enfants bien coordonné et bien financé, en particulier:
 e) Renforcer davantage les programmes de sensibilisation et d’éducation, notamment les campagnes organisées avec la participation des enfants en vue d’informer ces derniers des mécanismes de protection auxquels ils peuvent avoir accès;
 g) Faire face aux causes profondes de la violence et des sévices et prendre des mesures concrètes pour changer les attitudes, les traditions, les coutumes et les comportements qui souvent servent de prétexte à la pratique de la violence dans la famille, en particulier à l’égard des filles.', N'الأخذ في الحسبان التعليق العام رقم 13(2011) بشأن حق الطفل في التحرر من جميع أشكال العنف، ووضع نظام لحماية الطفل منسق تنسيقاً جيداً وممولاً تمويلاً كافياً بتعاون وثيق مع المجتمع المدني والاضطلاع بما يلي خاصةً:
 -  (هـ) مواصلة الارتقاء بمستوى برامج التوعية والتثقيف، بسبل منها تنظيم حملات يشارك فيها الأطفال من أجل إعلام الأطفال بآليات الحماية التي يمكنهم اللجوء إليها؛ 
--  (ز) اجتثاث جذور العنف وإساءة المعاملة، واتخاذ تدابير عملية لتغيير المواقف والتقاليد والعادات والسلوكيات التي تبرر في الغالب العنف المنزلي، خاصة على الفتيات', N'R39P5P7', N'ت.39.ف.5.ف.7', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
-(893, N'Exécuter des activités de sensibilisation pour combattre la stigmatisation des victimes d’exploitation et d’abus sexuels, notamment d’inceste, et de mettre en place des mécanismes accessibles, confidentiels, adaptés aux enfants et efficaces pour dénoncer de telles violations.', N'تنفيذ أنشطة للتوعية من أجل مكافحة وصم ضحايا الاستغلال والاعتداء الجنسيين، بما في ذلك زنى المحارم، وتوفير قنوات ميسّرة وسرية وفعالة ومواتية للأطفال للإبلاغ عن تلك الانتهاكات.', N'R41P3', N'ت.41.ف.3', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (ز) اجتثاث جذور العنف وإساءة المعاملة، واتخاذ تدابير عملية لتغيير المواقف والتقاليد والعادات والسلوكيات التي تبرر في الغالب العنف المنزلي، خاصة على الفتيات', N'R39P5P7', N'ت.39.ف.5.ف.7', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(893, N'Exécuter des activités de sensibilisation pour combattre la stigmatisation des victimes d’exploitation et d’abus sexuels, notamment d’inceste, et de mettre en place des mécanismes accessibles, confidentiels, adaptés aux enfants et efficaces pour dénoncer de telles violations.', N'تنفيذ أنشطة للتوعية من أجل مكافحة وصم ضحايا الاستغلال والاعتداء الجنسيين، بما في ذلك زنى المحارم، وتوفير قنوات ميسّرة وسرية وفعالة ومواتية للأطفال للإبلاغ عن تلك الانتهاكات.', N'R41P3', N'ت.41.ف.3', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (894, N'Le comité recommande au Maroc d’adopter une approche du handicap fondée sur les droits de l’homme et recommande en particulier :
 e) D’entreprendre des campagnes de sensibilisation destinées aux autorités, au public et aux familles pour combattre la stigmatisation des enfants handicapés et les préjugés à leur égard et promouvoir une image positive des enfants et des adultes handicapés.', N'تحث اللجنة المملكة المغربية، في ضوء المادة 23 من الاتفاقية وتعليقها العام     رقم 9(2006) بشأن حقوق الأطفال ذوي الإعاقة، على انتهاج نهج يقوم على حقوق الإنسان في التعاطي مع الإعاقة، وتوصيها بالآتي تحديداً: 
--  (هـ) تنظيم حملات توعية موجهة إلى الحكومة والأسر والناس عامة لمكافحة الوصم والتحامل على الأطفال ذوي الإعاقة، وتقديم صورة إيجابية عن الأطفال والبالغين ذوي الإعاقة.', N'R53P5', N'ت.53.ف.5', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (هـ) تنظيم حملات توعية موجهة إلى الحكومة والأسر والناس عامة لمكافحة الوصم والتحامل على الأطفال ذوي الإعاقة، وتقديم صورة إيجابية عن الأطفال والبالغين ذوي الإعاقة.', N'R53P5', N'ت.53.ف.5', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (895, N'-                        Diffuser largement dans les langues du pays les troisième et quatrième rapports périodiques, les réponses écrites du Maroc et les présentes observations finales.', N'إشاعة التقرير الجامع للتقريرين الدوريين الثالث والرابع والردود الخطية الملاحظات الختامية ، بلغات البلد،.', N'R77P2', N'ت.77.ف.2', N'Organes de Traités', null, '[7]', '[37]', 7, null, null, 'En cours', '', 30, '', '', '', 2020),
 (896, N'Faire en sorte que la politique intégrée en faveur de l’enfance englobe la protection des enfants et s’étende à tous les domaines visés par la Convention et tous les enfants, une attention particulière devant être accordée aux plus vulnérables et aux plus défavorisés d’entre eux. 
 - Etablir, sur la base de cette politique et en partenariat avec les organisations de la société civile, les stratégies requises pour son application, et de consacrer suffisamment de ressources humaines, techniques et financières à cet objectif.', N'الحرص على أن تشمل السياسية المندمجة لحماية الطفولة حماية الأطفال وكل المجالات التي تغطيها الاتفاقية، وكذلك جميعَ الأطفال، على أن يحظى أضعف الأطفال وأشدهم حرماناً باهتمام خاص.
@@ -749,7 +749,7 @@ b) Introduire expressément dans la législation nationale une protection contre
 -  (ب) إدراج حكم في القانون الوطني ينص على توفير حماية صريحة من التعرض لأشكال التمييز المتعدد الجوانب والمتقاطع بسبب الجنس والسن والإعاقة والأصل القومي والأصل الإثني والوضع كمهاجر، وعلى فرض جزاءات فعالة ضد الجناة', N'R13P1P2', N'ت.13.ف1.ف.2', N'Organes de Traités', null, '[3,6]', '[9,33]', 8, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (920, N'conformément à son observation générale no 3 (2016) sur les femmes et les filles handicapées et à la cible 5.2 des objectifs de développement durable, Le Comité recommande de mettre fin à toute forme de violence à l’égard des femmes et des filles handicapées dans les sphères tant publique que privée, notamment à la traite et à l’exploitation, sexuelle et autre. Il recommande également :
 a) D’intégrer la question des droits des femmes et des filles handicapées dans la législation sur l’égalité des sexes, ainsi que dans les lois et les politiques relatives au handicap,….', N'تماشياً مع التعليق العام رقم 3(2016) بشأن النساء والفتيات ذوات الإعاقة والغاية 5-2 من أهداف التنمية المستدامة، توصي اللجنة الدولة الطرف بالقضاء على جميع أشكال العنف ضد النساء والفتيات في المجالين العام والخاص، بما في ذلك الاتجار بالبشر والاستغلال الجنسي وغير ذلك من أشكال الاستغلال. وتوصي الدولة الطرف أيضاً بما يلي:‬‬‬‬ ‬‬
--  (أ) تعميم مراعاة حقوق النساء والفتيات ذوات الإعاقة في التشريعات المتعلقة بالمساواة بين الجنسين وفي التشريعات والسياسات المتعلقة بالإعاقة….', N'R15P1', N'ت.15.ف.1', N'Organes de Traités', null, '[3,6]', '[9,33]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (أ) تعميم مراعاة حقوق النساء والفتيات ذوات الإعاقة في التشريعات المتعلقة بالمساواة بين الجنسين وفي التشريعات والسياسات المتعلقة بالإعاقة….', N'R15P1', N'ت.15.ف.1', N'Organes de Traités', null, '[3,6]', '[9,33]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (921, N'Reconnaître dans sa législation le droit subjectif des personnes handicapées de vivre de façon indépendante et d’être incluses dans la société', N'(أ) الاعتراف في التشريعات بالحق الذاتي للأشخاص ذوي الإعاقة في العيش المستقل وإدماجهم في المجتمع‬ المحلي؛', N'R39P1', N'ت.39.ف.1', N'Organes de Traités', null, '[3,6]', '[9,33]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
 (922, N'b) Adopter des lois et des mesures visant à garantir que les propriétaires et les concepteurs de sites Web rendent leurs sites accessibles aux personnes handicapées, en particulier aux personnes aveugles et malvoyantes 
 - c) Accélérer l’adoption du projet de loi sur le droit à l’accès à l’information et d’en éliminer toute restriction qui entrave la jouissance de ce droit par les personnes handicapées', N'(ب) اعتماد تشريعات وتدابير مناسبة تضمن أن يوفر أصحاب المواقع الشبكية ومصمموها إمكانية الوصول إلى مواقعهم للأشخاص ذوي الإعاقة، ولا سيما للمكفوفين وذوي العاهات البصرية؛
@@ -794,7 +794,7 @@ d) Tenir compte des liens entre l’article 27 de la Convention et la cible 8.5 
 -  (ب) إرساء التزام قانوني بأن يوفر أرباب العمل في جميع قطاعات الاقتصاد الترتيبات التيسيرية المعقولة للأشخاص ذوي الإعاقة في مكان العمل؛ 
 -  (ج) وقف استخدام قوائم الوظائف المخصصة للأشخاص ذوي الإعاقة فقط، وضمان تدريب وتمكين الأشخاص ذوي الإعاقة ليزاولوا جميع أنواع العمل على قدم المساواة مع الآخرين؛ 
 -  (د) إيلاء الاهتمام للصلات القائمة بين المادة 27 من الاتفاقية والغاية 8-5 من أهداف التنمية المستدامة، وذلك بغرض تحقيق العمالة الكاملة والمنتجة وتوفير العمل اللائق للجميع، بمن في ذلك الأشخاص ذوو الإعاقة. ‬‬‬‬', N'R51', N'ت.51', N'Organes de Traités', null, '[4,6]', '[15,33]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
-(939, N'b) Tenir compte des liens entre l’article 28 de la Convention et la cible 10.2 des objectifs de développement durable afin d’autonomiser toutes les personnes et de favoriser leur intégration économique, indépendamment du handicap.', N'-       (ب) إيلاء الاهتمام للصلات القائمة بين المادة 28 من الاتفاقية والغاية 10-2 من أهداف التنمية المستدامة، بهدف تمكين وتعزيز الإدماج الاجتماعي والاقتصادي والسياسي للجميع، بغض النظر عن الإعاقة.', N'R53P2', N'ت.53.ف.2', N'Organes de Traités', null, '[4]', '[16]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+(939, N'b) Tenir compte des liens entre l’article 28 de la Convention et la cible 10.2 des objectifs de développement durable afin d’autonomiser toutes les personnes et de favoriser leur intégration économique, indépendamment du handicap.', N'-       (ب) إيلاء الاهتمام للصلات القائمة بين المادة 28 من الاتفاقية والغاية 10-2 من أهداف التنمية المستدامة، بهدف تمكين وتعزيز الإدماج الاجتماعي والاقتصادي والسياسي للجميع، بغض النظر عن الإعاقة.', N'R53P2', N'ت.53.ف.2', N'Organes de Traités', null, '[4]', '[16]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (940, N'Légiférer et de prendre des mesures concrètes sur le plan administratif pour protéger les personnes handicapées, en particulier les femmes qui présentent un handicap intellectuel ou psychosocial, contre la torture et autres peines ou traitements cruels, inhumains ou dégradants.
 - Prendre des mesures concrètes pour garantir que, dans la pratique, les personnes handicapées ne soient pas soumises à des procédures et à des expérimentations médicales sans y avoir consenti librement et en connaissance de cause', N'(أ) اعتماد أحكام قانونية وتدابير إدارية ملموسة لحماية الأشخاص ذوي الإعاقة، ولا سيما النساء ذوات الإعاقة العقلية و/أو النفسية - الاجتماعية، من التعذيب وغيره من ضروب المعاملة أو العقوبة القاسية أو اللاإنسانية أو المهينة،    
 -  (ب) اعتماد تدابير ملموسة تضمن، في الممارسة العملية، عدم إخضاع الأشخاص ذوي الإعاقة لإجراءات وتجارب طبية من دون موافقتهم الحرة والمستنيرة؛', N'R33P1P3', N'ت.33.ف.1.ف.3', N'Organes de Traités', null, '[5,6]', '[20,33]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
@@ -804,15 +804,15 @@ d) Tenir compte des liens entre l’article 27 de la Convention et la cible 8.5 
 a) D’instituer des mécanismes permettant d’assurer la participation et la consultation effectives et constructives des personnes handicapées, par l’intermédiaire des organisations qui les représentent et de façon régulière, et d’allouer des ressources budgétaires suffisantes de façon à encourager la participation constructive des personnes handicapées ; 
 b) D’encourager et de soutenir la participation des organisations de femmes, d’enfants et de jeunes handicapés et de personnes présentant un handicap intellectuel ou psychosocial, d’élaborer des mécanismes de consultation à l’intention des personnes présentant un handicap intellectuel et de diffuser des informations au sujet de ces mécanismes dans des formats qui soient accessibles à ces personnes.', N'توصي اللجنة المملكة المغربية بما يلي:
 (أ) إنشاء آليات لضمان إشراك ومشاورة الأشخاص ذوي الإعاقة بشكل فعلي ومجد ومنتظم، من خلال المنظمات التي تمثلهم، وضمان توفير موارد كافية في الميزانية من أجل تعزيز مشاركتهم مشاركة مجدية؛
--  (ب) تشجيع ودعم مشاركة المنظمات التي تمثل النساء والأطفال والشباب من ذوي الإعاقة والأشخاص ذوي الإعاقة العقلية و/أو النفسية - الاجتماعية، ووضع آليات لإجراء عمليات التشاور وتوفير المعلومات عنها في أشكال يسهل الاطلاع عليها للأشخاص ذوي الإعاقة العقلية', N'R11', N'ت.11', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (ب) تشجيع ودعم مشاركة المنظمات التي تمثل النساء والأطفال والشباب من ذوي الإعاقة والأشخاص ذوي الإعاقة العقلية و/أو النفسية - الاجتماعية، ووضع آليات لإجراء عمليات التشاور وتوفير المعلومات عنها في أشكال يسهل الاطلاع عليها للأشخاص ذوي الإعاقة العقلية', N'R11', N'ت.11', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (944, N'Le Comité recommande à l’État partie, conformément à son observation générale no 2 (2014) concernant l’accessibilité : 
 a) De concevoir un plan stratégique visant à assurer l’accessibilité des technologies de l’information et des communications, dans lequel il établira des directives concernant la passation de marchés de biens et de services, et d’associer les personnes handicapées et les organisations qui les représentent à ce processus ; 
 c) De tenir compte des liens entre l’article 9 de la Convention et les cibles 11.2 et 11.7 des objectifs de développement durable, afin d’assurer l’accès de tous à des systèmes de transport sûrs, accessibles et viables, à un coût abordable, notamment en développant les transports publics, une attention particulière devant être accordée aux personnes handicapées, et d’assurer l’accès de tous, en particulier des personnes handicapées, à des espaces verts et à des espaces publics sûrs, inclusifs et accessibles.', N'(أ) وضع خطة استراتيجية لتوفير تكنولوجيا معلومات واتصالات يمكن الوصول إليها، وتحدد فيها المبادئ التوجيهية لشراء السلع والخدمات، وضمان إشراك الأشخاص ذوي الإعاقة والمنظمات التي تمثلهم في هذه العملية؛
 -  (ج) إيلاء اهتمام للصلات القائمة بين المادة 9 من الاتفاقية والغايتين 11-2 و11-7 من أهداف التنمية المستدامة، من أجل إتاحة استفادة الجميع من نظم نقل آمن وفي المتناول وميسر ومستدام، ولا سيما من خلال توسيع شبكة النقل العام، مع إيلاء اهتمام خاص لاحتياجات الأشخاص ذوي الإعاقة وتعميم الوصول إلى المساحات العامة الآمنة والشاملة والميسرة والخضراء، وبخاصة للأشخاص ذوي الإعاقة.', N'R23P1P3', N'ت.23.ف.1.ف.3', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
-(945, N'Adopter des mesures aux niveaux national et local pour garantir l’accessibilité des services et des équipements sociaux pour toutes les personnes handicapées dans tous les domaines de la vie', N'(د)  اعتماد تدابير على الصعيدين الوطني والمحلي لضمان إمكانية وصول الأشخاص ذوي الإعاقة كافة إلى الخدمات والمرافق المجتمعية في جميع مجالات الحياة', N'R39P4', N'ت.39.ف.4', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+(945, N'Adopter des mesures aux niveaux national et local pour garantir l’accessibilité des services et des équipements sociaux pour toutes les personnes handicapées dans tous les domaines de la vie', N'(د)  اعتماد تدابير على الصعيدين الوطني والمحلي لضمان إمكانية وصول الأشخاص ذوي الإعاقة كافة إلى الخدمات والمرافق المجتمعية في جميع مجالات الحياة', N'R39P4', N'ت.39.ف.4', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (946, N'Adopter un plan pour garantir l’accessibilité des lieux de vote, notamment par la fourniture de matériel de vote et d’informations électorales dans des formats accessibles à toutes les personnes handicapées, et d’assurer une formation adéquate aux membres du personnel électoral sur les droits des personnes handicapées à toutes les étapes du processus électoral.', N'-      اعتماد خطة لضمان إمكانية الوصول إلى مكان الاقتراع، بما في ذلك من خلال توفير المواد الانتخابية والمعلومات في أشكال يسهل الاطلاع عليها لجميع الأشخاص ذوي الإعاقة، وتوفير التدريب الملائم لموظفي الانتخابات بشأن حقوق الأشخاص ذوي الإعاقة في جميع مراحل العملية الانتخابية.', N'R55', N'ت.55', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
 (947, N'Adopter des mesures visant à assurer la participation effective et l’inclusion et la consultation des personnes handicapées et des organisations qui les représentent dans le cadre des programmes de coopération internationale.', N'-      اعتماد تدابير تضمن إشراك واحتواء ومشاورة الأشخاص ذوي الإعاقة والمنظمات التي تمثلهم، فعلياً، في سياق برامج التعاون الدولي.', N'R61', N'ت.61', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
-(948, N'Assurer la participation permanente des personnes handicapées, par l’intermédiaire de leurs organisations représentatives, au processus de suivi de la mise œuvre de la Convention, notamment en fournissant les fonds nécessaires.', N'-       (د) ضمان المشاركة الدائمة للأشخاص ذوي الإعاقة، من خلال المنظمات التي تمثلهم، في عملية رصد الاتفاقية، بما في ذلك عن طريق توفير التمويل اللازم.', N'R63P4', N'ت.63.ف.4', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+(948, N'Assurer la participation permanente des personnes handicapées, par l’intermédiaire de leurs organisations représentatives, au processus de suivi de la mise œuvre de la Convention, notamment en fournissant les fonds nécessaires.', N'-       (د) ضمان المشاركة الدائمة للأشخاص ذوي الإعاقة، من خلال المنظمات التي تمثلهم، في عملية رصد الاتفاقية، بما في ذلك عن طريق توفير التمويل اللازم.', N'R63P4', N'ت.63.ف.4', N'Organes de Traités', null, '[5,6]', '[23,33]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (949, N'- a) Adopter des mesures concrètes afin de créer une langue des signes marocaine unifiée qui sera reconnue comme langue officielle des personnes sourdes et enseignée dans les écoles, de constituer un vivier d’interprètes en langue des signes qualifiés et d’enseignants formés à la traduction en format tactile, en braille et en langue facile (Easy Read) et de veiller à ce que les chaînes de télévision diffusent le journal télévisé et des programmes dans des formats accessibles, en particulier pour les personnes sourdes ou malentendantes ;', N'-       (أ) اعتماد تدابير محددة لوضع لغة إشارة مغربية موحدة تحظى بالاعتراف بوصفها لغة رسمية للصم وتُدرس في المدارس، وتكوين مجموعة من مترجمي ومدرسي لغة الإشارة المؤهلين والمدربين على استخدام وسائل الاتصال عن طريق اللمس، ومهارات ترجمة النصوص إلى أشكال يسهل الاطلاع عليها وباستخدام طريقة برايل، وضمان تقديم الأخبار والبرامج بالأشكال الميسرة في المحطات التلفزيونية، ولا سيما للصم وضعاف السمع؛', N'R43P1', N'ت.43.ف.1', N'Organes de Traités', null, '[5,6]', '[24,33]', 8, null, null, 'Non réalisé', '', 0, '', '', '', 2020),
 (950, N'Le Comité recommande à l’État partie, conformément à son observation générale no 3 (2016) sur les femmes et les filles handicapées et à la cible 5.2 des objectifs de développement durable, de mettre fin à toute forme de violence à l’égard des femmes et des filles handicapées dans les sphères tant publique que privée, notamment à la traite et à l’exploitation, sexuelle et autre. Il recommande également à l’État partie : 
 d) Mettre en place des mécanismes efficaces permettant de faire en sorte que les femmes et les filles handicapées qui sont victimes de violence et de maltraitance soient protégées et qu’elles puissent bénéficier de soins médicaux, d’un soutien psychologique et de services juridiques au même titre que les autres.', N'تماشياً مع التعليق العام رقم 3(2016) بشأن النساء والفتيات ذوات الإعاقة والغاية 5-2 من أهداف التنمية المستدامة، توصي اللجنة الدولة الطرف بالقضاء على جميع أشكال العنف ضد النساء والفتيات في المجالين العام والخاص، بما في ذلك الاتجار بالبشر والاستغلال الجنسي وغير ذلك من أشكال الاستغلال. وتوصي الدولة الطرف أيضاً بما يلي:‬‬‬‬ ‬‬
@@ -829,18 +829,18 @@ d) Mettre en place des mécanismes efficaces permettant de faire en sorte que le
 a) …… et de mener des campagnes de sensibilisation pour battre en brèche les stéréotypes, les préjugés et les mythes sur les femmes et les filles handicapées 
 b) Sensibiliser la population à toutes les formes de discrimination à l’égard des femmes et de tenir compte des points de vue des femmes qui s’occupent d’enfants handicapés dans les politiques de lutte contre la discrimination sexiste', N'تماشياً مع التعليق العام رقم 3(2016) بشأن النساء والفتيات ذوات الإعاقة والغاية 5-2 من أهداف التنمية المستدامة، توصي اللجنة الدولة الطرف بالقضاء على جميع أشكال العنف ضد النساء والفتيات في المجالين العام والخاص، بما في ذلك الاتجار بالبشر والاستغلال الجنسي وغير ذلك من أشكال الاستغلال. وتوصي الدولة الطرف أيضاً بما يلي:‬‬‬‬ ‬‬
 -  (أ) ......، وتنظيم حملات توعية عامة لمكافحة القوالب النمطية ومواقف التحيز والخرافات السائدة عنها؛ 
--  (ب) التوعية بجميع أشكال التمييز ضد المرأة، والأخذ بوجهات نظر النساء اللواتي يتعهدن أطفالاً من ذوي الإعاقة بالرعاية في السياسات العامة المتعلقة بالتصدي للتمييز الجنساني؛', N'R15 P1P2', N'ت.15.ف.1.ف.2', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+-  (ب) التوعية بجميع أشكال التمييز ضد المرأة، والأخذ بوجهات نظر النساء اللواتي يتعهدن أطفالاً من ذوي الإعاقة بالرعاية في السياسات العامة المتعلقة بالتصدي للتمييز الجنساني؛', N'R15 P1P2', N'ت.15.ف.1.ف.2', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (960, N'a) Renforcer, avec la participation des personnes handicapées par l’intermédiaire des organisations qui les représentent et avec le concours des médias, les campagnes de sensibilisation visant à réaffirmer la valeur et la dignité des personnes handicapées ;
 b) Sensibiliser les responsables politiques, notamment les responsables des pouvoirs législatif, exécutif et judiciaire, aux dispositions de la Convention et du Protocole facultatif s’y rapportant et de s’assurer de leur soutien aux fins de la mise en œuvre des recommandations figurant dans les observations finales du Comité ;
 c) Engager un dialogue au sein de la société, en y associant les responsables des communautés et les dignitaires religieux, en vue de prévenir la stigmatisation de toutes les catégories de personnes handicapées ;
 d) Concevoir des campagnes de sensibilisation et de réviser les supports pédagogiques pour éviter la confusion pouvant résulter du fait d’avoir une orientation sexuelle différente et d’être une personne handicapée.', N'(أ) العمل، بمشاركة الأشخاص ذوي الإعاقة، من خلال المنظمات التي تمثلهم، وبانخراط وسائط الإعلام، على تعزيز حملات التوعية العامة الرامية إلى إعادة تأكيد قيمة الأشخاص ذوي الإعاقة وكرامتهم؛ 
 - (ب) إذكاء الوعي في أوساط السياسيين، بما في ذلك في أوساط السلطات التشريعية والتنفيذية والقضائية، بشأن الاتفاقية وبروتوكولها الاختياري وتأمين دعمها في تنفيذ التوصيات الواردة في الملاحظات الختامية للجنة؛
 - (ج) عقد حوار في المجتمع، ينخرط فيه زعماء المجتمع المحلي والزعماء الدينيون، بهدف منع وصم الأشخاص ذوي الإعاقة بجميع فئاتهم؛
-- (د) إعداد حملات لإذكاء الوعي ومراجعة المواد التعليمية لمنع الخلط المحتمل بين شخص له ميل جنسي مختلف وشخص من ذوي الإعاقة', N'R21', N'ت.21', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
-(961, N'c) Concevoir des programmes de renforcement des capacités à l’intention des fonctionnaires concernant le droit des personnes handicapées à la reconnaissance de leur personnalité juridique dans des conditions d’égalité et le système de prise de décisions assistée, et de sensibiliser les personnes handicapées, leur famille et la société à ce droit et à ce système.', N'(ج) تصميم برامج ترمي إلى بناء قدرات الموظفين العموميين فيما يتعلق بحق الأشخاص ذوي الإعاقة في الاعتراف بهم على قدم المساواة مع الآخرين أمام القانون، وتطبيق نظام تقديم الدعم في اتخاذ القرارات، وإلى إذكاء الوعي في أوساط الأشخاص ذوي الإعاقة وأسرهم والمجتمع بهذا الشأن.', N'R27P3', N'ت.27.ف.3', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
-(962, N'c) Veiller à ce que des programmes de formation et des campagnes de sensibilisation et d’information soient régulièrement mis en œuvre à l’intention du personnel des tribunaux, des juges, des procureurs et des responsables de l’application des lois, notamment de la police et de l’administration pénitentiaire, sur la nécessité d’assurer l’accès des personnes handicapées à la justice', N'-       (ج) ضمان استمرارية برامج التدريب وحملات التوعية والإعلام التي تستهدف موظفي المحاكم والقضاة والمدعين العامين والموظفين المكلفين بإنفاذ القوانين، بمن فيهم أفراد الشرطة وموظفو السجون، بشأن ضرورة تيسير إمكانية اللجوء إلى القضاء للأشخاص ذوي الإعاقة؛', N'R29P3', N'ت.29.ف.3', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
-(963, N'Dispenser une formation aux familles des personnes handicapées, aux personnes qui s’occupent de ces dernières, aux professionnels de la santé et aux agents des forces de l’ordre pour leur permettre de reconnaître toutes les formes d’exploitation, de violence et de maltraitance, et de mieux communiquer et travailler avec les personnes handicapées qui sont victimes d’actes de violence ;', N'-       (ب) توفير التدريب للأسر ومقدمي الرعاية، والموظفين الصحيين، وموظفي إنفاذ القوانين بشأن التعرف على جميع أشكال الاستغلال والعنف والاعتداء، والتواصل والعمل الفعالين مع الأشخاص ذوي الإعاقة من ضحايا العنف؛', N'R35P2', N'ت.35.ف. 2', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
-(964, N'Sensibiliser la population aux effets néfastes de ces pratiques et de renforcer les mécanismes visant à garantir que le consentement éclairé des personnes handicapées soit obtenu pour les traitements médicaux et chirurgicaux.', N'-      .إذكاء الوعي بشأن مضار هذه الممارسات وبتعزيز الآليات الرامية إلى ضمان موافقة الأشخاص ذوي الإعاقة، موافقة مستنيرة، على أي علاج طبي أو جراحي.', N'R37P2', N'ت.37.ف.2', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+- (د) إعداد حملات لإذكاء الوعي ومراجعة المواد التعليمية لمنع الخلط المحتمل بين شخص له ميل جنسي مختلف وشخص من ذوي الإعاقة', N'R21', N'ت.21', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(961, N'c) Concevoir des programmes de renforcement des capacités à l’intention des fonctionnaires concernant le droit des personnes handicapées à la reconnaissance de leur personnalité juridique dans des conditions d’égalité et le système de prise de décisions assistée, et de sensibiliser les personnes handicapées, leur famille et la société à ce droit et à ce système.', N'(ج) تصميم برامج ترمي إلى بناء قدرات الموظفين العموميين فيما يتعلق بحق الأشخاص ذوي الإعاقة في الاعتراف بهم على قدم المساواة مع الآخرين أمام القانون، وتطبيق نظام تقديم الدعم في اتخاذ القرارات، وإلى إذكاء الوعي في أوساط الأشخاص ذوي الإعاقة وأسرهم والمجتمع بهذا الشأن.', N'R27P3', N'ت.27.ف.3', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(962, N'c) Veiller à ce que des programmes de formation et des campagnes de sensibilisation et d’information soient régulièrement mis en œuvre à l’intention du personnel des tribunaux, des juges, des procureurs et des responsables de l’application des lois, notamment de la police et de l’administration pénitentiaire, sur la nécessité d’assurer l’accès des personnes handicapées à la justice', N'-       (ج) ضمان استمرارية برامج التدريب وحملات التوعية والإعلام التي تستهدف موظفي المحاكم والقضاة والمدعين العامين والموظفين المكلفين بإنفاذ القوانين، بمن فيهم أفراد الشرطة وموظفو السجون، بشأن ضرورة تيسير إمكانية اللجوء إلى القضاء للأشخاص ذوي الإعاقة؛', N'R29P3', N'ت.29.ف.3', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(963, N'Dispenser une formation aux familles des personnes handicapées, aux personnes qui s’occupent de ces dernières, aux professionnels de la santé et aux agents des forces de l’ordre pour leur permettre de reconnaître toutes les formes d’exploitation, de violence et de maltraitance, et de mieux communiquer et travailler avec les personnes handicapées qui sont victimes d’actes de violence ;', N'-       (ب) توفير التدريب للأسر ومقدمي الرعاية، والموظفين الصحيين، وموظفي إنفاذ القوانين بشأن التعرف على جميع أشكال الاستغلال والعنف والاعتداء، والتواصل والعمل الفعالين مع الأشخاص ذوي الإعاقة من ضحايا العنف؛', N'R35P2', N'ت.35.ف. 2', N'Organes de Traités', null, '[7]', '[36]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
+(964, N'Sensibiliser la population aux effets néfastes de ces pratiques et de renforcer les mécanismes visant à garantir que le consentement éclairé des personnes handicapées soit obtenu pour les traitements médicaux et chirurgicaux.', N'-      .إذكاء الوعي بشأن مضار هذه الممارسات وبتعزيز الآليات الرامية إلى ضمان موافقة الأشخاص ذوي الإعاقة، موافقة مستنيرة، على أي علاج طبي أو جراحي.', N'R37P2', N'ت.37.ف.2', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (965, N'-                    Diffuser largement les présentes observations finales, notamment auprès des organisations non gouvernementales et des organisations de personnes handicapées, ainsi qu’auprès des personnes handicapées elles-mêmes et de leurs proches, dans les langues nationales et minoritaires, notamment en langue des signes, et sous des formes accessibles. Il lui demande aussi de les diffuser sur le site Web public consacré aux droits de l’homme.', N'نشر هذه الملاحظات الختامية على نطاق واسع، بما يشمل المنظمات غير الحكومية ومنظمات الأشخاص ذوي الإعاقة، والأشخاص ذوي الإعاقة أنفسهم وأفراد أسرهم، باللغات الوطنية ولغات الأقليات، بما في ذلك لغة الإشارة، وفي أشكال يسهل الاطلاع عليها، وإتاحتها في موقع الحكومة الشبكي المتعلق بحقوق الإنسان.', N'R68', N'ت.68', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
 (966, N'Instituer un mécanisme permettant d’assurer une concertation effective avec les enfants handicapés, par l’intermédiaire des organisations qui les représentent, et de veiller à ce que les enfants handicapés soient pleinement intégrés au forum national des enfants, au 32de l’enfant et dans les conseils des enfants à l’échelle des municipalités et des gouvernorats, dans des conditions d’égalité avec les autres enfants.', N'-      اعتماد آلية لإجراء مشاورات فعلية مع الأطفال ذوي الإعاقة من خلال المنظمات التي تمثلهم، وبضمان الإدماج الكامل للأطفال ذوي الإعاقة في المنتدى الوطني للأطفال، وبرلمان الطفل ومجالس الطفولة في المحافظات والمجالس البلدية، على قدم المساواة مع غيرهم من الأطفال.', N'R19', N'ت.19', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
 (967, N'b) De mettre en place un mécanisme visant à contrôler le respect des normes d’accessibilité dans tous les domaines visés par la Convention, de veiller au respect de la loi no 10-03 relative aux accessibilités et d’infliger des sanctions en cas de non-respect', N'-          (ب) وضع آلية لرصد الامتثال لمعايير تيسير إمكانية الوصول في جميع المجالات التي تشملها الاتفاقية، وضمان إنفاذ القانون 10-03 المتعلق بالولوجيات وفرض جزاءات في حالة عدم الامتثال للقانون؛', N'R23P2', N'ت.23.ف2', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
@@ -848,7 +848,7 @@ d) Concevoir des campagnes de sensibilisation et de réviser les supports pédag
 b) D’instituer et de développer, à l’intention des personnes handicapées, des mécanismes de prise de décisions assistée qui respectent leur autonomie, leurs droits, leur volonté et leurs préférences, dans tous les domaines ;', N'تماشياً مع التعليق العام رقم 1(2014) بشأن الاعتراف بالأشخاص ذوي الإعاقة على قدم المساواة مع الآخرين أمام القانون، توصي اللجنة بما يلي: (ب) استحداث وتطوير آليات لتقديم الدعم للأشخاص ذوي الإعاقة في اتخاذ القرارات تحترم استقلاليتهم وحقوقهم وإرادتهم وأفضلياتهم في جميع مجالات الحياة؛', N'R27P2', N'ت.27.ف.2', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
 (969, N'b) Prévoir, au sein du secteur judiciaire, des aménagements effectifs à la procédure en faveur des personnes handicapées, en fonction de leur sexe et de leur âge ;
 d) Prendre les mesures qui s’imposent pour soutenir les personnes handicapées et leur donner les moyens de travailler dans le système de justice, notamment en qualité de juges ou de procureurs, en leur apportant tout l’appui nécessaire, afin d’améliorer l’accès des personnes handicapées à la justice.', N'(ب) توفير ترتيبات إجرائية فعالة، داخل القضاء، للأشخاص ذوي الإعاقة، بحسب نوع الجنس والسن؛ 
-- (ج) ضمان استمرارية برامج التدريب وحملات التوعية والإعلام التي تستهدف موظفي المحاكم والقضاة والمدعين العامين والموظفين المكلفين بإنفاذ القوانين، بمن فيهم أفراد الشرطة وموظفو السجون، بشأن ضرورة تيسير إمكانية اللجوء إلى القضاء للأشخاص ذوي الإعاقة؛', N'R29P2P4', N'ت.29.ف.2.ف.4', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'RC', '', 0, '', '', '', 2020),
+- (ج) ضمان استمرارية برامج التدريب وحملات التوعية والإعلام التي تستهدف موظفي المحاكم والقضاة والمدعين العامين والموظفين المكلفين بإنفاذ القوانين، بمن فيهم أفراد الشرطة وموظفو السجون، بشأن ضرورة تيسير إمكانية اللجوء إلى القضاء للأشخاص ذوي الإعاقة؛', N'R29P2P4', N'ت.29.ف.2.ف.4', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'Recommendation continue', '', 0, '', '', '', 2020),
 (970, N'Habiliter le Conseil national des droits de l’homme, en sa qualité de mécanisme national de prévention, à surveiller tous les lieux dans lesquels les personnes handicapées peuvent être privées de liberté, en application du Protocole facultatif se rapportant à la Convention contre la torture et autres peines ou traitements cruels, inhumains ou dégradants.', N'-           (ج) تمكين المجلس الوطني لحقوق الإنسان، بوصفه الآلية الوقائية الوطنية، من رصد جميع الأماكن التي يمكن أن يُسلَب فيها الأشخاص ذوو الإعاقة حريتهم، تماشياً مع البروتوكول الاختياري لاتفاقية مناهضة التعذيب وغيره من ضروب المعاملة أو العقوبة القاسية أو اللاإنسانية أو المهينة.', N'R33P4', N'ت.33.ف.4', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'En cours', '', 30, '', '', '', 2020),
 (971, N'Mettre en place un mécanisme indépendant chargé de protéger les personnes handicapées contre les actes de violence et les mauvais traitements, de contrôler, conformément au paragraphe 3 de l’article 16 de la Convention, les établissements et programmes destinés aux personnes handicapées et de fournir les ressources budgétaires nécessaires pour que ces établissements et programmes soient fonctionnels et efficaces.', N'-       (ج) إنشاء آلية مستقلة لمنع تعرض الأشخاص ذوي الإعاقة للعنف والاعتداء؛ ورصد المرافق والبرامج المعدة لخدمة الأشخاص ذوي الإعاقة، تماشياً مع المادة 16(3) من الاتفاقية؛ ورصد المخصصات اللازمة في الميزانية لضمان تشغيل هذه المرافق وفعاليتها.', N'R35P3', N'ت.35.ف. 3', N'Organes de Traités', null, '[7]', '[37]', 8, null, null, 'Réalisé', '', 100, '', '', '', 2020),
 (972, N'a) préciser le rôle de la commission interministérielle chargée d’appuyer la mise en œuvre de la Convention et celui des différents points de contact et, en particulier, d’adopter des mesures visant à renforcer l’efficacité de la commission et des points de contact ;
@@ -861,7 +861,407 @@ GO
 -->>>>>>>>>’>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 INSERT INTO RecomOrgs (IdRecommendation, IdOrganisme, Date) values
-(723, 21, '2020-12-01'),
+(600, 3, '2020-12-01'),
+(600, 28, '2020-12-01'),
+(601, 3, '2020-12-01'),
+(602, 15, '2020-12-01'),
+(602, 1, '2020-12-01'),
+(602, 10, '2020-12-01'),
+(603, 15, '2020-12-01'),
+(603, 6, '2020-12-01'),
+(604, 15, '2020-12-01'),
+(605, 15, '2020-12-01'),
+(606, 15, '2020-12-01'),
+(607, 15, '2020-12-01'),
+(608, 15, '2020-12-01'),
+(609, 15, '2020-12-01'),
+(610, 15, '2020-12-01'),
+(610, 3, '2020-12-01'),
+(611, 28, '2020-12-01'),
+(611, 32, '2020-12-01'),
+(612, 7, '2020-12-01'),
+(613, 26, '2020-12-01'),
+(614, 26, '2020-12-01'),
+(614, 29, '2020-12-01'),
+(614, 32, '2020-12-01'),
+(615, 28, '2020-12-01'),
+(616, 7, '2020-12-01'),
+(617, 28, '2020-12-01'),
+(617, 10, '2020-12-01'),
+(617, 32, '2020-12-01'),
+(618, 28, '2020-12-01'),
+(618, 26, '2020-12-01'),
+(618, 32, '2020-12-01'),
+(619, 33, '2020-12-01'),
+(620, 10, '2020-12-01'),
+(620, 40, '2020-12-01'),
+(621, 18, '2020-12-01'),
+(622, 17, '2020-12-01'),
+(622, 39, '2020-12-01'),
+(622, 47, '2020-12-01'),
+(622, 8, '2020-12-01'),
+(622, 20, '2020-12-01'),
+(622, 34, '2020-12-01'),
+(622, 19, '2020-12-01'),
+(623, 26, '2020-12-01'),
+(623, 28, '2020-12-01'),
+(623, 6, '2020-12-01'),
+(624, 6, '2020-12-01'),
+(624, 28, '2020-12-01'),
+(624, 12, '2020-12-01'),
+(625, 26, '2020-12-01'),
+(625, 18, '2020-12-01'),
+(625, 23, '2020-12-01'),
+(626, 26, '2020-12-01'),
+(626, 3, '2020-12-01'),
+(626, 6, '2020-12-01'),
+(627, 26, '2020-12-01'),
+(627, 28, '2020-12-01'),
+(627, 40, '2020-12-01'),
+(627, 10, '2020-12-01'),
+(627, 5, '2020-12-01'),
+(627, 6, '2020-12-01'),
+(627, 13, '2020-12-01'),
+(627, 14, '2020-12-01'),
+(627, 22, '2020-12-01'),
+(627, 4, '2020-12-01'),
+(628, 28, '2020-12-01'),
+(628, 6, '2020-12-01'),
+(628, 15, '2020-12-01'),
+(628, 4, '2020-12-01'),
+(629, 10, '2020-12-01'),
+(629, 5, '2020-12-01'),
+(629, 40, '2020-12-01'),
+(629, 4, '2020-12-01'),
+(630, 28, '2020-12-01'),
+(631, 28, '2020-12-01'),
+(631, 6, '2020-12-01'),
+(631, 9, '2020-12-01'),
+(632, 3, '2020-12-01'),
+(632, 28, '2020-12-01'),
+(632, 15, '2020-12-01'),
+(633, 3, '2020-12-01'),
+(633, 28, '2020-12-01'),
+(633, 26, '2020-12-01'),
+(633, 15, '2020-12-01'),
+(634, 3, '2020-12-01'),
+(634, 28, '2020-12-01'),
+(634, 26, '2020-12-01'),
+(634, 15, '2020-12-01'),
+(635, 3, '2020-12-01'),
+(635, 28, '2020-12-01'),
+(635, 26, '2020-12-01'),
+(635, 15, '2020-12-01'),
+(636, 3, '2020-12-01'),
+(636, 15, '2020-12-01'),
+(637, 15, '2020-12-01'),
+(637, 3, '2020-12-01'),
+(637, 28, '2020-12-01'),
+(637, 26, '2020-12-01'),
+(637, 13, '2020-12-01'),
+(637, 6, '2020-12-01'),
+(638, 15, '2020-12-01'),
+(638, 3, '2020-12-01'),
+(639, 15, '2020-12-01'),
+(639, 12, '2020-12-01'),
+(639, 6, '2020-12-01'),
+(640, 6, '2020-12-01'),
+(640, 15, '2020-12-01'),
+(640, 3, '2020-12-01'),
+(640, 26, '2020-12-01'),
+(641, 15, '2020-12-01'),
+(641, 3, '2020-12-01'),
+(641, 26, '2020-12-01'),
+(642, 15, '2020-12-01'),
+(642, 3, '2020-12-01'),
+(642, 26, '2020-12-01'),
+(642, 6, '2020-12-01'),
+(643, 15, '2020-12-01'),
+(643, 3, '2020-12-01'),
+(643, 26, '2020-12-01'),
+(643, 6, '2020-12-01'),
+(643, 14, '2020-12-01'),
+(643, 22, '2020-12-01'),
+(644, 15, '2020-12-01'),
+(644, 3, '2020-12-01'),
+(645, 32, '2020-12-01'),
+(645, 26, '2020-12-01'),
+(645, 28, '2020-12-01'),
+(646, 28, '2020-12-01'),
+(646, 26, '2020-12-01'),
+(646, 6, '2020-12-01'),
+(646, 32, '2020-12-01'),
+(647, 28, '2020-12-01'),
+(647, 26, '2020-12-01'),
+(647, 6, '2020-12-01'),
+(647, 32, '2020-12-01'),
+(648, 28, '2020-12-01'),
+(648, 12, '2020-12-01'),
+(648, 6, '2020-12-01'),
+(648, 32, '2020-12-01'),
+(649, 3, '2020-12-01'),
+(649, 15, '2020-12-01'),
+(649, 28, '2020-12-01'),
+(649, 26, '2020-12-01'),
+(649, 32, '2020-12-01'),
+(650, 28, '2020-12-01'),
+(650, 26, '2020-12-01'),
+(650, 6, '2020-12-01'),
+(650, 32, '2020-12-01'),
+(651, 28, '2020-12-01'),
+(651, 26, '2020-12-01'),
+(651, 6, '2020-12-01'),
+(651, 32, '2020-12-01'),
+(652, 26, '2020-12-01'),
+(652, 28, '2020-12-01'),
+(652, 6, '2020-12-01'),
+(652, 32, '2020-12-01'),
+(653, 28, '2020-12-01'),
+(653, 32, '2020-12-01'),
+(654, 28, '2020-12-01'),
+(654, 26, '2020-12-01'),
+(654, 6, '2020-12-01'),
+(654, 32, '2020-12-01'),
+(655, 28, '2020-12-01'),
+(655, 26, '2020-12-01'),
+(655, 6, '2020-12-01'),
+(655, 13, '2020-12-01'),
+(656, 28, '2020-12-01'),
+(656, 13, '2020-12-01'),
+(657, 28, '2020-12-01'),
+(657, 12, '2020-12-01'),
+(657, 40, '2020-12-01'),
+(657, 27, '2020-12-01'),
+(658, 28, '2020-12-01'),
+(658, 6, '2020-12-01'),
+(658, 32, '2020-12-01'),
+(659, 6, '2020-12-01'),
+(659, 26, '2020-12-01'),
+(659, 22, '2020-12-01'),
+(659, 14, '2020-12-01'),
+(659, 4, '2020-12-01'),
+(660, 28, '2020-12-01'),
+(660, 26, '2020-12-01'),
+(660, 6, '2020-12-01'),
+(660, 22, '2020-12-01'),
+(661, 14, '2020-12-01'),
+(662, 6, '2020-12-01'),
+(662, 26, '2020-12-01'),
+(662, 3, '2020-12-01'),
+(663, 26, '2020-12-01'),
+(663, 6, '2020-12-01'),
+(663, 14, '2020-12-01'),
+(663, 22, '2020-12-01'),
+(663, 13, '2020-12-01'),
+(663, 4, '2020-12-01'),
+(664, 26, '2020-12-01'),
+(664, 6, '2020-12-01'),
+(665, 6, '2020-12-01'),
+(665, 26, '2020-12-01'),
+(665, 4, '2020-12-01'),
+(666, 26, '2020-12-01'),
+(666, 6, '2020-12-01'),
+(666, 14, '2020-12-01'),
+(666, 22, '2020-12-01'),
+(666, 13, '2020-12-01'),
+(666, 4, '2020-12-01'),
+(667, 26, '2020-12-01'),
+(667, 6, '2020-12-01'),
+(667, 14, '2020-12-01'),
+(667, 22, '2020-12-01'),
+(668, 6, '2020-12-01'),
+(668, 26, '2020-12-01'),
+(668, 14, '2020-12-01'),
+(668, 22, '2020-12-01'),
+(669, 26, '2020-12-01'),
+(669, 6, '2020-12-01'),
+(669, 14, '2020-12-01'),
+(669, 22, '2020-12-01'),
+(669, 4, '2020-12-01'),
+(670, 28, '2020-12-01'),
+(670, 6, '2020-12-01'),
+(670, 13, '2020-12-01'),
+(670, 4, '2020-12-01'),
+(671, 26, '2020-12-01'),
+(671, 33, '2020-12-01'),
+(671, 6, '2020-12-01'),
+(671, 22, '2020-12-01'),
+(671, 14, '2020-12-01'),
+(671, 13, '2020-12-01'),
+(672, 4, '2020-12-01'),
+(672, 6, '2020-12-01'),
+(672, 26, '2020-12-01'),
+(672, 13, '2020-12-01'),
+(672, 14, '2020-12-01'),
+(672, 22, '2020-12-01'),
+(673, 13, '2020-12-01'),
+(674, 7, '2020-12-01'),
+(674, 4, '2020-12-01'),
+(675, 26, '2020-12-01'),
+(675, 6, '2020-12-01'),
+(676, 6, '2020-12-01'),
+(676, 12, '2020-12-01'),
+(676, 27, '2020-12-01'),
+(676, 14, '2020-12-01'),
+(676, 22, '2020-12-01'),
+(677, 26, '2020-12-01'),
+(677, 3, '2020-12-01'),
+(677, 6, '2020-12-01'),
+(678, 26, '2020-12-01'),
+(678, 3, '2020-12-01'),
+(678, 6, '2020-12-01'),
+(678, 14, '2020-12-01'),
+(678, 22, '2020-12-01'),
+(679, 26, '2020-12-01'),
+(679, 33, '2020-12-01'),
+(679, 6, '2020-12-01'),
+(679, 14, '2020-12-01'),
+(679, 22, '2020-12-01'),
+(680, 26, '2020-12-01'),
+(680, 33, '2020-12-01'),
+(680, 15, '2020-12-01'),
+(680, 28, '2020-12-01'),
+(680, 6, '2020-12-01'),
+(680, 22, '2020-12-01'),
+(680, 14, '2020-12-01'),
+(680, 13, '2020-12-01'),
+(680, 4, '2020-12-01'),
+(681, 12, '2020-12-01'),
+(681, 27, '2020-12-01'),
+(681, 40, '2020-12-01'),
+(681, 4, '2020-12-01'),
+(682, 15, '2020-12-01'),
+(682, 4, '2020-12-01'),
+(683, 28, '2020-12-01'),
+(683, 26, '2020-12-01'),
+(683, 11, '2020-12-01'),
+(683, 22, '2020-12-01'),
+(683, 14, '2020-12-01'),
+(684, 4, '2020-12-01'),
+(685, 4, '2020-12-01'),
+(686, 28, '2020-12-01'),
+(686, 6, '2020-12-01'),
+(686, 9, '2020-12-01'),
+(687, 15, '2020-12-01'),
+(687, 3, '2020-12-01'),
+(687, 28, '2020-12-01'),
+(688, 3, '2020-12-01'),
+(688, 28, '2020-12-01'),
+(688, 15, '2020-12-01'),
+(688, 32, '2020-12-01'),
+(689, 3, '2020-12-01'),
+(689, 28, '2020-12-01'),
+(689, 15, '2020-12-01'),
+(689, 26, '2020-12-01'),
+(690, 15, '2020-12-01'),
+(690, 3, '2020-12-01'),
+(691, 15, '2020-12-01'),
+(691, 3, '2020-12-01'),
+(692, 28, '2020-12-01'),
+(692, 26, '2020-12-01'),
+(692, 15, '2020-12-01'),
+(692, 32, '2020-12-01'),
+(693, 26, '2020-12-01'),
+(693, 28, '2020-12-01'),
+(693, 32, '2020-12-01'),
+(694, 28, '2020-12-01'),
+(694, 3, '2020-12-01'),
+(694, 32, '2020-12-01'),
+(694, 15, '2020-12-01'),
+(694, 26, '2020-12-01'),
+(695, 28, '2020-12-01'),
+(695, 26, '2020-12-01'),
+(695, 15, '2020-12-01'),
+(695, 6, '2020-12-01'),
+(695, 32, '2020-12-01'),
+(696, 28, '2020-12-01'),
+(696, 12, '2020-12-01'),
+(696, 15, '2020-12-01'),
+(696, 32, '2020-12-01'),
+(697, 28, '2020-12-01'),
+(697, 12, '2020-12-01'),
+(697, 15, '2020-12-01'),
+(697, 32, '2020-12-01'),
+(698, 28, '2020-12-01'),
+(698, 26, '2020-12-01'),
+(698, 15, '2020-12-01'),
+(698, 6, '2020-12-01'),
+(698, 32, '2020-12-01'),
+(699, 28, '2020-12-01'),
+(699, 33, '2020-12-01'),
+(699, 12, '2020-12-01'),
+(699, 32, '2020-12-01'),
+(700, 28, '2020-12-01'),
+(700, 6, '2020-12-01'),
+(700, 32, '2020-12-01'),
+(701, 3, '2020-12-01'),
+(701, 26, '2020-12-01'),
+(701, 28, '2020-12-01'),
+(701, 15, '2020-12-01'),
+(702, 26, '2020-12-01'),
+(702, 28, '2020-12-01'),
+(702, 5, '2020-12-01'),
+(702, 15, '2020-12-01'),
+(702, 6, '2020-12-01'),
+(703, 7, '2020-12-01'),
+(704, 15, '2020-12-01'),
+(704, 28, '2020-12-01'),
+(704, 32, '2020-12-01'),
+(705, 28, '2020-12-01'),
+(705, 26, '2020-12-01'),
+(705, 6, '2020-12-01'),
+(705, 14, '2020-12-01'),
+(705, 22, '2020-12-01'),
+(705, 4, '2020-12-01'),
+(706, 6, '2020-12-01'),
+(706, 26, '2020-12-01'),
+(707, 28, '2020-12-01'),
+(707, 13, '2020-12-01'),
+(708, 26, '2020-12-01'),
+(709, 26, '2020-12-01'),
+(709, 4, '2020-12-01'),
+(710, 26, '2020-12-01'),
+(710, 6, '2020-12-01'),
+(710, 14, '2020-12-01'),
+(710, 22, '2020-12-01'),
+(711, 28, '2020-12-01'),
+(711, 26, '2020-12-01'),
+(711, 24, '2020-12-01'),
+(712, 28, '2020-12-01'),
+(712, 26, '2020-12-01'),
+(713, 12, '2020-12-01'),
+(713, 28, '2020-12-01'),
+(714, 28, '2020-12-01'),
+(714, 33, '2020-12-01'),
+(714, 12, '2020-12-01'),
+(714, 6, '2020-12-01'),
+(714, 14, '2020-12-01'),
+(714, 22, '2020-12-01'),
+(715, 28, '2020-12-01'),
+(715, 33, '2020-12-01'),
+(715, 40, '2020-12-01'),
+(715, 4, '2020-12-01'),
+(716, 18, '2020-12-01'),
+(716, 12, '2020-12-01'),
+(716, 4, '2020-12-01'),
+(717, 40, '2020-12-01'),
+(717, 33, '2020-12-01'),
+(717, 32, '2020-12-01'),
+(717, 26, '2020-12-01'),
+(717, 3, '2020-12-01'),
+(718, 28, '2020-12-01'),
+(718, 6, '2020-12-01'),
+(718, 9, '2020-12-01'),
+(719, 26, '2020-12-01'),
+(719, 14, '2020-12-01'),
+(719, 22, '2020-12-01'),
+(720, 15, '2020-12-01'),
+(721, 4, '2020-12-01'),
+(721, 32, '2020-12-01'),
+(722, 26, '2020-12-01'),
+(722, 14, '2020-12-01'),
+(722, 22, '2020-12-01'),
+(723, 21, '2020-12-01'),
 (723, 2, '2020-12-01'),
 (723, 6, '2020-12-01'),
 (724, 3, '2020-12-01'),
@@ -1381,4 +1781,137 @@ INSERT INTO RecomOrgs (IdRecommendation, IdOrganisme, Date) values
 (913, 6, '2020-12-01'),
 (913, 12, '2020-12-01'),
 (913, 27, '2020-12-01'),
-(913, 13, '2020-12-01');
+(913, 13, '2020-12-01'),
+(914, 3, '2020-12-01'),
+(915, 15, '2020-12-01'),
+(915, 12, '2020-12-01'),
+(916, 15, '2020-12-01'),
+(916, 12, '2020-12-01'),
+(917, 15, '2020-12-01'),
+(918, 15, '2020-12-01'),
+(918, 3, '2020-12-01'),
+(919, 12, '2020-12-01'),
+(919, 28, '2020-12-01'),
+(919, 32, '2020-12-01'),
+(920, 12, '2020-12-01'),
+(920, 32, '2020-12-01'),
+(920, 28, '2020-12-01'),
+(921, 12, '2020-12-01'),
+(921, 28, '2020-12-01'),
+(921, 32, '2020-12-01'),
+(922, 12, '2020-12-01'),
+(922, 8, '2020-12-01'),
+(922, 21, '2020-12-01'),
+(922, 32, '2020-12-01'),
+(923, 7, '2020-12-01'),
+(923, 4, '2020-12-01'),
+(923, 32, '2020-12-01'),
+(924, 12, '2020-12-01'),
+(924, 32, '2020-12-01'),
+(925, 12, '2020-12-01'),
+(925, 32, '2020-12-01'),
+(926, 12, '2020-12-01'),
+(926, 32, '2020-12-01'),
+(927, 12, '2020-12-01'),
+(927, 28, '2020-12-01'),
+(927, 32, '2020-12-01'),
+(928, 12, '2020-12-01'),
+(928, 28, '2020-12-01'),
+(928, 32, '2020-12-01'),
+(929, 12, '2020-12-01'),
+(929, 28, '2020-12-01'),
+(929, 32, '2020-12-01'),
+(930, 12, '2020-12-01'),
+(931, 12, '2020-12-01'),
+(932, 12, '2020-12-01'),
+(933, 12, '2020-12-01'),
+(934, 33, '2020-12-01'),
+(935, 33, '2020-12-01'),
+(936, 33, '2020-12-01'),
+(937, 40, '2020-12-01'),
+(937, 41, '2020-12-01'),
+(938, 18, '2020-12-01'),
+(938, 8, '2020-12-01'),
+(938, 21, '2020-12-01'),
+(939, 12, '2020-12-01'),
+(939, 8, '2020-12-01'),
+(939, 18, '2020-12-01'),
+(940, 33, '2020-12-01'),
+(940, 28, '2020-12-01'),
+(940, 12, '2020-12-01'),
+(941, 12, '2020-12-01'),
+(941, 6, '2020-12-01'),
+(941, 4, '2020-12-01'),
+(942, 12, '2020-12-01'),
+(943, 12, '2020-12-01'),
+(944, 12, '2020-12-01'),
+(944, 8, '2020-12-01'),
+(944, 35, '2020-12-01'),
+(945, 12, '2020-12-01'),
+(946, 26, '2020-12-01'),
+(947, 12, '2020-12-01'),
+(948, 12, '2020-12-01'),
+(949, 12, '2020-12-01'),
+(949, 40, '2020-12-01'),
+(949, 5, '2020-12-01'),
+(950, 12, '2020-12-01'),
+(950, 33, '2020-12-01'),
+(951, 12, '2020-12-01'),
+(951, 6, '2020-12-01'),
+(951, 4, '2020-12-01'),
+(952, 12, '2020-12-01'),
+(953, 12, '2020-12-01'),
+(954, 12, '2020-12-01'),
+(955, 12, '2020-12-01'),
+(956, 26, '2020-12-01'),
+(956, 12, '2020-12-01'),
+(957, 28, '2020-12-01'),
+(957, 5, '2020-12-01'),
+(957, 6, '2020-12-01'),
+(958, 12, '2020-12-01'),
+(958, 28, '2020-12-01'),
+(958, 6, '2020-12-01'),
+(958, 4, '2020-12-01'),
+(959, 12, '2020-12-01'),
+(959, 5, '2020-12-01'),
+(960, 12, '2020-12-01'),
+(960, 40, '2020-12-01'),
+(960, 28, '2020-12-01'),
+(960, 5, '2020-12-01'),
+(960, 24, '2020-12-01'),
+(960, 10, '2020-12-01'),
+(960, 9, '2020-12-01'),
+(960, 6, '2020-12-01'),
+(960, 32, '2020-12-01'),
+(961, 12, '2020-12-01'),
+(962, 12, '2020-12-01'),
+(962, 28, '2020-12-01'),
+(962, 5, '2020-12-01'),
+(962, 6, '2020-12-01'),
+(963, 12, '2020-12-01'),
+(963, 26, '2020-12-01'),
+(963, 28, '2020-12-01'),
+(963, 33, '2020-12-01'),
+(964, 33, '2020-12-01'),
+(965, 15, '2020-12-01'),
+(965, 12, '2020-12-01'),
+(966, 12, '2020-12-01'),
+(966, 27, '2020-12-01'),
+(966, 32, '2020-12-01'),
+(967, 12, '2020-12-01'),
+(967, 23, '2020-12-01'),
+(967, 33, '2020-12-01'),
+(967, 8, '2020-12-01'),
+(967, 40, '2020-12-01'),
+(967, 35, '2020-12-01'),
+(967, 20, '2020-12-01'),
+(968, 12, '2020-12-01'),
+(969, 28, '2020-12-01'),
+(969, 6, '2020-12-01'),
+(970, 7, '2020-12-01'),
+(970, 4, '2020-12-01'),
+(971, 12, '2020-12-01'),
+(971, 4, '2020-12-01'),
+(971, 27, '2020-12-01'),
+(972, 12, '2020-12-01'),
+(973, 12, '2020-12-01');
