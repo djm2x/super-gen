@@ -18,6 +18,7 @@
     ]
   },
   "scripts": {
+    "sql": "node --require ts-node/register ./database-scripte/main.ts",
     "t": "node --require ts-node/register ./generate-i18n/translate.ts",
     "t2": "node --require ts-node/register ./generate-i18n/translate.json.ts",
     "w": "set IS_DEV=development &&  && nodemon --ignore 'generation/*.ts' ./script.ts",
