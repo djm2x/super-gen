@@ -18,6 +18,7 @@
     ]
   },
   "scripts": {
+    "files": "node --require ts-node/register ./manup-files/main.ts",
     "sql": "node --require ts-node/register ./database-scripte/main.ts",
     "t": "node --require ts-node/register ./generate-i18n/translate.ts",
     "t2": "node --require ts-node/register ./generate-i18n/translate.json.ts",
