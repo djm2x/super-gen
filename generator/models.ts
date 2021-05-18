@@ -1,4 +1,4 @@
-export class Account {
+export class Bspl {
   id = 0
   code = '';
   label = '';
@@ -6,7 +6,11 @@ export class Account {
   type = '';
   highlight = true;
   bold = true;
+  xRate = 0;
+  currency = '';
   accountValues: AccountValue[] = [];
+  previous = new Bspl();
+  childs: Bspl[] = [];
 }
 
 
@@ -14,7 +18,7 @@ export class AccountValue {
   id = 0
   value = '';
   bspl = new Bspl();
-  account = new Account();
+  club = new Club();
 }
 
 export class Bonus {
@@ -26,17 +30,6 @@ export class Bonus {
   noterGroup = new NoterGroup();
 }
 
-export class Bspl {
-  id = 0
-  year = 0;
-  xRate = '';
-  currency = '';
-  club = new Club();
-  previous = new Bspl();
-  childs: Bspl[] = [];
-  accountValues: AccountValue[] = [];
-}
-
 
 export class Championship {
   id = 0
@@ -44,25 +37,50 @@ export class Championship {
   name = '';
   country = new Country();
   clubs: Club[] = [];
+  championshipIndicators: ChampionshipIndicator[] = [];
+}
+
+export class ChampionshipIndicator {
+  id = 0;
+  score = 0;
+  value0 = '';
+  value1 = '';
+  value2 = '';
+  value3 = '';
+
+  indicator = new Indicator();
+  championship = new Championship();
 }
 
 export class Club {
   id = 0
   code = '';
   name = '';
-  peerGroups = '';
   description = '';
   comment = '';
   highlight = '';
   company = '';
   logopath = '';
-  sport = '';
+  sport = new Sport();
   championship = new Championship();
-  bspls: Bspl[] = [];
   bonuses: Bonus[] = [];
   clubIndicators: ClubIndicator[] = [];
   comments: Comment[] = [];
   historys: History[] = [];
+  accountValues: AccountValue[] = [];
+  peerGroups: PeerGroup[] = [];
+}
+
+export class Sport {
+  id = 0
+  name = '';
+  clubs: Club[] = [];
+}
+
+export class PeerGroup {
+  id = 0
+  name = '';
+  club = new Club();
 }
 
 export class ClubIndicator {
@@ -96,10 +114,14 @@ export class Country {
 
 export class CountryIndicator {
   id = 0;
+  score = 0
+  type = '';
+  value0 = '';
+  value1 = '';
+  value2 = '';
+  value3 = '';
   indicator = new Indicator();
   country = new Country();
-  score = 0
-  value = '';
 }
 
 export class FunctionNormalizer {
@@ -131,7 +153,8 @@ export class Indicator {
   countryIndicators: CountryIndicator[] = [];
   functionNormalizers: FunctionNormalizer[] = [];
   mapNormalizers: MapNormalizer[] = [];
-  RangeNormalizers: RangeNormalizer[] = [];
+  rangeNormalizers: RangeNormalizer[] = [];
+  championshipIndicators: ChampionshipIndicator[] = [];
 }
 
 export class MapNormalizer {
@@ -155,7 +178,8 @@ export class NoterGroup {
 }
 
 export class NoterReportGroup {
-  id = 0
+  id = 0;
+  type = '';
   IncludeComment = true;
   IncludeRadar = true;
   IncludeAggregateSubthemes = true;

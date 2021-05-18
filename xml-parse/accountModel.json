@@ -1,0 +1,2532 @@
+"accountModel": [
+      {
+        "sv.accounting.Account": [
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA01"
+            ],
+            "label": [
+              "Current assets"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "BSA02+BSA05+BSA08+BSA09+BSA14"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA02"
+            ],
+            "label": [
+              "Cash and cash equivalents"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSA03+BSA04"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA03"
+            ],
+            "label": [
+              "Marketeable securities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA04"
+            ],
+            "label": [
+              "Bank Balances"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA05"
+            ],
+            "label": [
+              "Accounts receivable from player transfers"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSA06+BSA07"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA06"
+            ],
+            "label": [
+              "Trade receivables due in less than one year (player)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA07"
+            ],
+            "label": [
+              "Player registration rights hold for sale"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA08"
+            ],
+            "label": [
+              "Accounts receivable from group entities and other related parties"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA09"
+            ],
+            "label": [
+              "Other current assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSA10+BSA11+BSA12+BSA13"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA10"
+            ],
+            "label": [
+              "Account receivables (excluding players)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA11"
+            ],
+            "label": [
+              "Other current financial assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA12"
+            ],
+            "label": [
+              "Other current assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA13"
+            ],
+            "label": [
+              "Tax credit"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA14"
+            ],
+            "label": [
+              "Inventories"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA15"
+            ],
+            "label": [
+              "Non-current assets"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "BSA16+BSA17+BSA20+BSA21+BSA22"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA16"
+            ],
+            "label": [
+              "Tangible fixed assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA17"
+            ],
+            "label": [
+              "Intangible assets - players"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSA18+BSA19"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA18"
+            ],
+            "label": [
+              "Goodwills"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA19"
+            ],
+            "label": [
+              "Players registration rights"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA20"
+            ],
+            "label": [
+              "Intangible assets - other"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA21"
+            ],
+            "label": [
+              "Investments"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA22"
+            ],
+            "label": [
+              "Other non-current assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSA23+BSA24+BSA25+BSA26+BSA27+BSA28"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA23"
+            ],
+            "label": [
+              "Account receivables (excluding players)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA24"
+            ],
+            "label": [
+              "Non-current financial assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA25"
+            ],
+            "label": [
+              "Trade receivables due in more than one year (player)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA26"
+            ],
+            "label": [
+              "Investments"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA27"
+            ],
+            "label": [
+              "Deferred taxes"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA28"
+            ],
+            "label": [
+              "Other non current assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSA"
+            ],
+            "code": [
+              "BSA29"
+            ],
+            "label": [
+              "Total Assets"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSA01+BSA15"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL01"
+            ],
+            "label": [
+              "Current liabilities"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "BSL02+BSL05+BSL06+BSL08+BSL09+BSL10+BSL15"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL02"
+            ],
+            "label": [
+              "Bank overdrafts and loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL03+BSL04"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL03"
+            ],
+            "label": [
+              "Bank Loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL04"
+            ],
+            "label": [
+              "Other Loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL05"
+            ],
+            "label": [
+              "Accounts payable relating to player transfers"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL06"
+            ],
+            "label": [
+              "Accounts payable to group entities and other related parties"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL07+BSL071"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL07"
+            ],
+            "label": [
+              "Shareholder loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL071"
+            ],
+            "label": [
+              "Other accounts payable to related parties"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL08"
+            ],
+            "label": [
+              "Accounts payable to employees"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL09"
+            ],
+            "label": [
+              "Accounts payable to social/tax authorities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL10"
+            ],
+            "label": [
+              "Other current liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL11+BSL12+BSL13+BSL14"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL11"
+            ],
+            "label": [
+              "Other current liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL12"
+            ],
+            "label": [
+              "Accounts payables (excluding player)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL13"
+            ],
+            "label": [
+              "Accruals and deferred income"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL14"
+            ],
+            "label": [
+              "Current liabilities from finance leases"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL15"
+            ],
+            "label": [
+              "Short-term provisions"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL16"
+            ],
+            "label": [
+              "Non-current liabilities"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "BSL17+BSL20+BSL21+BSL22+BSL24+BSL29+BSL30"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL17"
+            ],
+            "label": [
+              "Bank and other loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL18+BSL19"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL18"
+            ],
+            "label": [
+              "Bank Loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL19"
+            ],
+            "label": [
+              "Other Loans"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL20"
+            ],
+            "label": [
+              "Accounts payable relating to player transfers"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL21"
+            ],
+            "label": [
+              "Accounts payable to group entities and other related parties"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL22"
+            ],
+            "label": [
+              "Accounts payable to social/tax authorities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL23+BSL231"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL23"
+            ],
+            "label": [
+              "Deferred tax liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL231"
+            ],
+            "label": [
+              "Other accounts payable to social/tax authorities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL24"
+            ],
+            "label": [
+              "Other non-current liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL25+BSL26+BSL27+BSL28"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL25"
+            ],
+            "label": [
+              "Accounts payables (excluding player)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL26"
+            ],
+            "label": [
+              "Accruals and deferred income"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL27"
+            ],
+            "label": [
+              "Non current liabilities from finance leases"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL28"
+            ],
+            "label": [
+              "Other payables"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL29"
+            ],
+            "label": [
+              "Other tax liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL30"
+            ],
+            "label": [
+              "Long-term provisions"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL31+BSL32"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL31"
+            ],
+            "label": [
+              "Provisions for pensions"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL32"
+            ],
+            "label": [
+              "Other types of provisions"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL33"
+            ],
+            "label": [
+              "Net assets/liabilities"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "BSL34"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL34"
+            ],
+            "label": [
+              "Net assets/liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL35"
+            ],
+            "label": [
+              "Equity"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "BSL36"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL36"
+            ],
+            "label": [
+              "Capital and reserves"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL37+BSL38+BSL39+BSL40+BSL41+BSL42"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL37"
+            ],
+            "label": [
+              "Share Capital"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL38"
+            ],
+            "label": [
+              "Share Premium"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL39"
+            ],
+            "label": [
+              "Reserves and retained earnings"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL40"
+            ],
+            "label": [
+              "Net profit"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL41"
+            ],
+            "label": [
+              "Other"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL42"
+            ],
+            "label": [
+              "Non controlling interests"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "BSL"
+            ],
+            "code": [
+              "BSL43"
+            ],
+            "label": [
+              "Total liabilities"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "BSL35+BSL33+BSL16+BSL01"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB01"
+            ],
+            "label": [
+              "Contingent assets"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "OB02+OB03+OB031"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB02"
+            ],
+            "label": [
+              "Contigent assets related to player trading activities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB03"
+            ],
+            "label": [
+              "Guarantees"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB031"
+            ],
+            "label": [
+              "Other contingent assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB04"
+            ],
+            "label": [
+              "Contingent liabilities"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "OB05+OB06+OB07+OB08+OB09+OB10"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB05"
+            ],
+            "label": [
+              "Rent to be paid"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB06"
+            ],
+            "label": [
+              "Contigent liabilities related to purchase of players"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB07"
+            ],
+            "label": [
+              "Contigent liabilities related to conditions within players contracts"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB08"
+            ],
+            "label": [
+              "Other guarantees and securities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB09"
+            ],
+            "label": [
+              "Mortgage Loan"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "OB"
+            ],
+            "code": [
+              "OB10"
+            ],
+            "label": [
+              "Other contingent liabilities"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL01"
+            ],
+            "label": [
+              "Total turnover"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL02+PL46"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL02"
+            ],
+            "label": [
+              "Turnover (excluding trading)"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL04+PL08+PL09+PL12+PL13+PL15"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL04"
+            ],
+            "label": [
+              "Gate receipts"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL05+PL06+PL061+PL07"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL05"
+            ],
+            "label": [
+              "Gate receipt (Championship)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL06"
+            ],
+            "label": [
+              "Gate receipt and prize money (Domestic cup competition)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL061"
+            ],
+            "label": [
+              "Gate receipt and prize money (European cup competition)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL07"
+            ],
+            "label": [
+              "Membership"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL08"
+            ],
+            "label": [
+              "Sponsorship and advertising"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL09"
+            ],
+            "label": [
+              "Broadcasting rights"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL10+PL11"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL10"
+            ],
+            "label": [
+              "TV rights (League)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL11"
+            ],
+            "label": [
+              "TV rights (UEFA)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL12"
+            ],
+            "label": [
+              "Commercial and merchandising"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL13"
+            ],
+            "label": [
+              "Subsidies"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL131+PL14"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL131"
+            ],
+            "label": [
+              "Local subsidies"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL14"
+            ],
+            "label": [
+              "Other subsidies"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL15"
+            ],
+            "label": [
+              "Other operating income"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL16"
+            ],
+            "label": [
+              "Operating expenses"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL17+PL20+PL29+PL32+PL33+PL36"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL17"
+            ],
+            "label": [
+              "Cost of sales/materials"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL18+PL19"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL18"
+            ],
+            "label": [
+              "Materials"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL19"
+            ],
+            "label": [
+              "Cost of sales"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL20"
+            ],
+            "label": [
+              "Employee benefits expenses"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL21+PL22+PL23+PL24+PL25+PL26"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL21"
+            ],
+            "label": [
+              "Wages and salaries"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL22"
+            ],
+            "label": [
+              "Social security costs"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL23"
+            ],
+            "label": [
+              "Profit Sharing"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL24"
+            ],
+            "label": [
+              "DIC"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL25"
+            ],
+            "label": [
+              "Expenses related to stock options"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL26"
+            ],
+            "label": [
+              "Other employees benefits expenses"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL27"
+            ],
+            "label": [
+              "EBITDA"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "PL02-(PL17+PL20+PL33)"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL28"
+            ],
+            "label": [
+              "EBITDA (including trading)"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "PL27+PL45"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL29"
+            ],
+            "label": [
+              "Depreciation and amortisation"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL30+PL31"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL30"
+            ],
+            "label": [
+              "Depreciation (excluding players registration)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL31"
+            ],
+            "label": [
+              "Depreciation (players registration)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL32"
+            ],
+            "label": [
+              "Impairment of fixed assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL33"
+            ],
+            "label": [
+              "Other operating expenses"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL36"
+            ],
+            "label": [
+              "Provisions"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL37"
+            ],
+            "label": [
+              "Operating profit"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "PL27-PL29-PL32-PL36"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL38"
+            ],
+            "label": [
+              "Operating profit (including trading)"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "PL27-PL29-PL32-PL36+PL45"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL39"
+            ],
+            "label": [
+              "Other"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL40+PL42+PL45+PL48-PL49-PL50+PL51"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL40"
+            ],
+            "label": [
+              "Other exceptional profit and loss"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL41+PL411"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL41"
+            ],
+            "label": [
+              "Remittal of debts"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL411"
+            ],
+            "label": [
+              "Other exceptional profit or loss"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL42"
+            ],
+            "label": [
+              "Profit/loss on disposal of assets"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL43-PL44"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL43"
+            ],
+            "label": [
+              "Consideration"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL44"
+            ],
+            "label": [
+              "Net book value of disposals"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL45"
+            ],
+            "label": [
+              "Profit/loss on disposal of intangible assets - players"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL46-PL47"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL46"
+            ],
+            "label": [
+              "Consideration"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL47"
+            ],
+            "label": [
+              "Net book value of players"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL48"
+            ],
+            "label": [
+              "Finance income"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL49"
+            ],
+            "label": [
+              "Finance costs"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL50"
+            ],
+            "label": [
+              "Tax expense"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL51"
+            ],
+            "label": [
+              "Profit or loss after taxation"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL52+PL521"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL52"
+            ],
+            "label": [
+              "Profit or loss from associates"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL521"
+            ],
+            "label": [
+              "Other profit of loss after taxation"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL53"
+            ],
+            "label": [
+              "Net income (before minority shareholders)"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "false"
+            ],
+            "formula": [
+              "PL02-PL16+PL39"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL54"
+            ],
+            "label": [
+              "Profit or loss attributable to minority shareholders"
+            ],
+            "highlight": [
+              "false"
+            ],
+            "bold": [
+              "true"
+            ]
+          },
+          {
+            "type": [
+              "PL"
+            ],
+            "code": [
+              "PL55"
+            ],
+            "label": [
+              "Net income"
+            ],
+            "highlight": [
+              "true"
+            ],
+            "bold": [
+              "true"
+            ],
+            "formula": [
+              "PL53-PL54"
+            ]
+          }
+        ]
+      }
+    ]
