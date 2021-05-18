@@ -13,6 +13,8 @@ import { AccountController } from './asp/account.controller';
 import { ClassModule } from './angular/class.module';
 import { MenuModule } from './angular/menu.module';
 import { Entities } from './java/entities';
+import { Repos } from './java/repos';
+import { Controllers } from './java/controllers';
 
 const ADMIN_MODULE_TS = 'admin.module.ts';
 const ADMIN_COMPONENT_HTML = 'admin.component.html';
@@ -49,6 +51,7 @@ export class MapHelper {
         modelsTs: this.modelsTs,
         angularAppFolder: `${this.generatedAppPath}/angular/src/app`,
         aspFolder: this.generatedAppPath,
+        nameSpace: 'package com.sportvalue.crs',
         currentBaseFile: '',
         pathBaseFiles: '',
         replaceModels: true,
@@ -157,29 +160,22 @@ export class MapHelper {
     }
 
     mapJava() {
-        const DATASEEDING_CS = 'DataSeeding.cs';
-        const MODEL = 'model.java';
-        const ACCOUNTSCONTROLLER_CS = 'AccountsController.cs';
-        const CLASSCONTROLLER_CS = 'UsersController.cs';
+        const list = ['model', 'repos', 'controllers']
 
         this.configs.pathBaseFiles = `${this.pathAbs}/generator/java/base.files`;
 
-        const javaBaseFiles = fse.readdirSync(this.configs.pathBaseFiles);
-
-        javaBaseFiles.forEach(file => {
+        list.forEach(file => {
 
             switch (file) {
-                case MODEL: new Entities(this.helper, this.configs).generateTs(); break;
-                // case DATASEEDING_CS: new DataSeeding(this.helper, this.configs).generateTs(); break;
-
-                // case CLASSCONTROLLER_CS: new ClassController(this.helper, this.configs).generateTs(); break;
-                // case ACCOUNTSCONTROLLER_CS: new AccountController(this.helper, this.configs).generateTs(); break;
+                case 'model': new Entities(this.helper, this.configs).generateTs(); break;
+                case 'repos': new Repos(this.helper, this.configs).generateTs(); break;
+                case 'controllers': new Controllers(this.helper, this.configs).generateTs(); break;
 
                 default: break;
             }
         });
 
-        console.log('       asp generation done');
+        console.log('       java generation done');
     }
 }
 
@@ -191,6 +187,7 @@ export interface IConfigs {
     aspFolder: string;
     currentBaseFile: string;
     pathBaseFiles: string;
+    nameSpace: string;
     replaceModels: boolean;
     classes: Model[],
     modules: { module: string, classes: string[] }[];

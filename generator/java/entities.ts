@@ -19,7 +19,14 @@ export class Entities {
             const cls = this.helper.Cap(e.class);
             const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls + 's';
 
-            models = `package com.sportvalue.crs.models;\r\nimport java.util.Set;\r\nimport java.util.Date;\r\nimport javax.persistence.*;\r\nimport com.fasterxml.jackson.annotation.JsonFormat;\r\nimport com.fasterxml.jackson.annotation.JsonIgnore;\r\n@Entity\r\n@Table(name="${classNamePlural}")\r\npublic class ${this.helper.Cap(e.class)} extends AbstractEntity {\r\n`;
+            models = `${this.configs.nameSpace}.models;\r\n` +
+            `import java.util.Set;\r\nimport java.util.Date;\r\n` +
+            `import javax.persistence.*;\r\n` +
+            `import com.fasterxml.jackson.annotation.JsonFormat;\r\n` +
+            `import com.fasterxml.jackson.annotation.JsonIgnore;\r\n` +
+            `@Entity\r\n` +
+            `@Table(name="${classNamePlural}")\r\n` +
+            `public class ${this.helper.Cap(e.class)} extends AbstractEntity {\r\n`;
 
             e.properties.forEach(p => {
                 const isTypePrimitive = this.helper.isTypePrimitive(p.type);

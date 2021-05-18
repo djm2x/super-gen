@@ -6,9 +6,5 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 public class UowService {
-
 	@Autowired public UsersRepository users;
-	@Autowired public ChampionshipsRepository championships;
-	@Autowired public ClubsRepository clubs;
-	@Autowired public CountiesRepository counties;
 }
