@@ -69,6 +69,7 @@ export class Club {
   historys: History[] = [];
   accountValues: AccountValue[] = [];
   peerGroups: PeerGroup[] = [];
+  reportConfigs: ReportConfig[] = [];
 }
 
 export class Sport {
@@ -126,7 +127,7 @@ export class CountryIndicator {
 
 export class FunctionNormalizer {
   id = 0
-  function = '';
+  _function = '';
   indicator = new Indicator();
 }
 
@@ -159,7 +160,7 @@ export class Indicator {
 
 export class MapNormalizer {
   id = 0
-  key = '';
+  _key = '';
   value = 0;
   indicator = new Indicator();
 }
@@ -213,6 +214,7 @@ export class ReportConfig {
   includeBSPLDetail = false;
   includeBSPLHistory = false;
   noterReportGroups: NoterReportGroup[] = [];
+  club = new Club();
 }
 
 export class User {
