@@ -61,7 +61,9 @@ export class Club {
   highlight = '';
   company = '';
   logopath = '';
+  id_sport = 0;
   sport = new Sport();
+  id_championship = 0;
   championship = new Championship();
   bonuses: Bonus[] = [];
   clubIndicators: ClubIndicator[] = [];
@@ -168,7 +170,7 @@ export class MapNormalizer {
 export class NoterGroup {
   id = 0
   name = '';
-  type = '';
+  level = 0;
   weight = 0;
   parent = new NoterGroup();
   childs: NoterGroup[] = [];

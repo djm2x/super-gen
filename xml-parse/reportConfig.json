@@ -1,0 +1,207 @@
+[
+    {
+      "includeRadar": [
+        "false"
+      ],
+      "includeClubComment": [
+        "false"
+      ],
+      "includeClubHighlight": [
+        "true"
+      ],
+      "includeWageAndRevenue": [
+        "false"
+      ],
+      "includeLossAndRevenue": [
+        "false"
+      ],
+      "includeOffBalance": [
+        "false"
+      ],
+      "includeBSPLSummary": [
+        "true"
+      ],
+      "includeBSPLDetail": [
+        "true"
+      ],
+      "includeBSPLHistory": [
+        "true"
+      ],
+      "themeConfigs": [
+        {
+          "entry": [
+            {
+              "string": [
+                "ckoq9a"
+              ],
+              "sv.report.NoterReportConfig": [
+                {
+                  "includeComment": [
+                    "false"
+                  ],
+                  "includeRadar": [
+                    "true"
+                  ],
+                  "includeAggregateSuthemes": [
+                    "false"
+                  ],
+                  "includeBenchmarkToMedianValue": [
+                    "false"
+                  ],
+                  "noterComments": [
+                    ""
+                  ],
+                  "indicators": [
+                    ""
+                  ],
+                  "peerGroups": [
+                    ""
+                  ],
+                  "comparedTo": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "string": [
+                "tnlbpj"
+              ],
+              "sv.report.NoterReportConfig": [
+                {
+                  "includeComment": [
+                    "false"
+                  ],
+                  "includeRadar": [
+                    "false"
+                  ],
+                  "includeAggregateSuthemes": [
+                    "false"
+                  ],
+                  "includeBenchmarkToMedianValue": [
+                    "false"
+                  ],
+                  "noterComments": [
+                    {
+                      "entry": [
+                        {
+                          "string": [
+                            "jh8mzj"
+                          ],
+                          "boolean": [
+                            "true"
+                          ]
+                        },
+                        {
+                          "string": [
+                            "clzma1"
+                          ],
+                          "boolean": [
+                            "true"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "indicators": [
+                    ""
+                  ],
+                  "peerGroups": [
+                    ""
+                  ],
+                  "comparedTo": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "string": [
+                "vz4exj"
+              ],
+              "sv.report.NoterReportConfig": [
+                {
+                  "includeComment": [
+                    "false"
+                  ],
+                  "includeRadar": [
+                    "true"
+                  ],
+                  "includeAggregateSuthemes": [
+                    "false"
+                  ],
+                  "includeBenchmarkToMedianValue": [
+                    "false"
+                  ],
+                  "noterComments": [
+                    {
+                      "entry": [
+                        {
+                          "string": [
+                            "tut1xe"
+                          ],
+                          "boolean": [
+                            "true"
+                          ]
+                        },
+                        {
+                          "string": [
+                            "3ou3f"
+                          ],
+                          "boolean": [
+                            "true"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "indicators": [
+                    ""
+                  ],
+                  "peerGroups": [
+                    ""
+                  ],
+                  "comparedTo": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "string": [
+                "77mekl"
+              ],
+              "sv.report.NoterReportConfig": [
+                {
+                  "includeComment": [
+                    "false"
+                  ],
+                  "includeRadar": [
+                    "true"
+                  ],
+                  "includeAggregateSuthemes": [
+                    "false"
+                  ],
+                  "includeBenchmarkToMedianValue": [
+                    "false"
+                  ],
+                  "noterComments": [
+                    ""
+                  ],
+                  "indicators": [
+                    ""
+                  ],
+                  "peerGroups": [
+                    ""
+                  ],
+                  "comparedTo": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]

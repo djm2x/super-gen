@@ -1,200 +1,194 @@
-{
-    "users": [
+[
+  {
+    "string": [
+      "mathieu.guyot@sportvalue.fr"
+    ],
+    "sv.entities.User": [
       {
-        "entry": [
-          {
-            "string": [
-              "mathieu.guyot@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "mathieu.guyot@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Mathieu"
-                ],
-                "lastName": [
-                  "Guyot"
-                ],
-                "hashedPassword": [
-                  "ha3PWO88O/lKXeXNgYTnbNIUiFyhnK9nVIAvaRVHQZQR6zCd+OQe+I/At2pqaE4XcpTm7zBrDZZv\n5Ctjo4ppww=="
-                ],
-                "admin": [
-                  "true"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "amir.kasmi@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "amir.kasmi@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Amir "
-                ],
-                "lastName": [
-                  "Kasmi "
-                ],
-                "hashedPassword": [
-                  "gVoZTdi1uvMjDeONWHA6IC2unXpmRmFpW20NErpzYnypw87tFNy9vSN0ViP8JBFVubzAHhCkFvw1\nnNHeURZsVQ=="
-                ],
-                "admin": [
-                  "true"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "michel.lukasiewicz@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "michel.lukasiewicz@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Michel "
-                ],
-                "lastName": [
-                  "Lukasiewicz"
-                ],
-                "hashedPassword": [
-                  "I6/IE72tlz8e3kj/nwfzQC/b8qbhN0aTh8ONogKgq5IzE1iZePz3F6SHNWhFZQ6IxZsfh0Jq2cDt\nLgskIdV0bg=="
-                ],
-                "admin": [
-                  "false"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "nicolas.blanc@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "nicolas.blanc@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Nicolas"
-                ],
-                "lastName": [
-                  "Blanc"
-                ],
-                "hashedPassword": [
-                  "lHiEc9fbuuxuus1Yqet+GWCtkUVYZ0xeO7IjucHxhxI3AZq/x9QKI19eBRSaUzgVQaPLmLDY8aYF\n0yE4Qog77Q=="
-                ],
-                "admin": [
-                  "true"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "abdellah.elbekkali@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "abdellah.elbekkali@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Abdellah"
-                ],
-                "lastName": [
-                  "El Bekkali"
-                ],
-                "hashedPassword": [
-                  "gACctcLm+6Pvu/JksEtk9eIGoYdxHWDNr4VNu/R+cm3KJ+HsgV08qFGGG6HcJamEfWkIxLC16Gh1\nzTSMN88Q9Q=="
-                ],
-                "admin": [
-                  "true"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "germain.landrieu@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "germain.landrieu@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Germain"
-                ],
-                "lastName": [
-                  "Landrieu"
-                ],
-                "hashedPassword": [
-                  "oR2utrxWGqnFw9pjDDuNjMR0VqYfLu8Aml3mAgUSFLsBc2LEsQKV/X9AD+rsuyD5CEsNZBd/eX4z\nIddNXdmfJA=="
-                ],
-                "admin": [
-                  "false"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "nicolas.voisin@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "nicolas.voisin@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Nicolas"
-                ],
-                "lastName": [
-                  "Voisin"
-                ],
-                "hashedPassword": [
-                  "bgkA39AeSbylJCqAURqVOcjQ/ifkTmD/Swzem5GW3Jn5AtnU0iI4k3LVVY26DG7s2x3x36dgJ0RF\nl+4OlhVWJQ=="
-                ],
-                "admin": [
-                  "false"
-                ]
-              }
-            ]
-          },
-          {
-            "string": [
-              "sami.vigneaud@sportvalue.fr"
-            ],
-            "sv.entities.User": [
-              {
-                "email": [
-                  "sami.vigneaud@sportvalue.fr"
-                ],
-                "firstName": [
-                  "Sami "
-                ],
-                "lastName": [
-                  "Vigneaud"
-                ],
-                "hashedPassword": [
-                  "RcvsJqdOJNCGyPjhOYnjXMACi/YV4J99MiLoXckCQP26lIrh70D748TrA4YqUpDturRa3SpjBDvY\nlW8P7fahDg=="
-                ],
-                "admin": [
-                  "false"
-                ]
-              }
-            ]
-          }
+        "email": [
+          "mathieu.guyot@sportvalue.fr"
+        ],
+        "firstName": [
+          "Mathieu"
+        ],
+        "lastName": [
+          "Guyot"
+        ],
+        "hashedPassword": [
+          "ha3PWO88O/lKXeXNgYTnbNIUiFyhnK9nVIAvaRVHQZQR6zCd+OQe+I/At2pqaE4XcpTm7zBrDZZv\n5Ctjo4ppww=="
+        ],
+        "admin": [
+          "true"
         ]
       }
+    ]
+  },
+  {
+    "string": [
+      "amir.kasmi@sportvalue.fr"
     ],
-}
+    "sv.entities.User": [
+      {
+        "email": [
+          "amir.kasmi@sportvalue.fr"
+        ],
+        "firstName": [
+          "Amir "
+        ],
+        "lastName": [
+          "Kasmi "
+        ],
+        "hashedPassword": [
+          "gVoZTdi1uvMjDeONWHA6IC2unXpmRmFpW20NErpzYnypw87tFNy9vSN0ViP8JBFVubzAHhCkFvw1\nnNHeURZsVQ=="
+        ],
+        "admin": [
+          "true"
+        ]
+      }
+    ]
+  },
+  {
+    "string": [
+      "michel.lukasiewicz@sportvalue.fr"
+    ],
+    "sv.entities.User": [
+      {
+        "email": [
+          "michel.lukasiewicz@sportvalue.fr"
+        ],
+        "firstName": [
+          "Michel "
+        ],
+        "lastName": [
+          "Lukasiewicz"
+        ],
+        "hashedPassword": [
+          "I6/IE72tlz8e3kj/nwfzQC/b8qbhN0aTh8ONogKgq5IzE1iZePz3F6SHNWhFZQ6IxZsfh0Jq2cDt\nLgskIdV0bg=="
+        ],
+        "admin": [
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "string": [
+      "nicolas.blanc@sportvalue.fr"
+    ],
+    "sv.entities.User": [
+      {
+        "email": [
+          "nicolas.blanc@sportvalue.fr"
+        ],
+        "firstName": [
+          "Nicolas"
+        ],
+        "lastName": [
+          "Blanc"
+        ],
+        "hashedPassword": [
+          "lHiEc9fbuuxuus1Yqet+GWCtkUVYZ0xeO7IjucHxhxI3AZq/x9QKI19eBRSaUzgVQaPLmLDY8aYF\n0yE4Qog77Q=="
+        ],
+        "admin": [
+          "true"
+        ]
+      }
+    ]
+  },
+  {
+    "string": [
+      "abdellah.elbekkali@sportvalue.fr"
+    ],
+    "sv.entities.User": [
+      {
+        "email": [
+          "abdellah.elbekkali@sportvalue.fr"
+        ],
+        "firstName": [
+          "Abdellah"
+        ],
+        "lastName": [
+          "El Bekkali"
+        ],
+        "hashedPassword": [
+          "gACctcLm+6Pvu/JksEtk9eIGoYdxHWDNr4VNu/R+cm3KJ+HsgV08qFGGG6HcJamEfWkIxLC16Gh1\nzTSMN88Q9Q=="
+        ],
+        "admin": [
+          "true"
+        ]
+      }
+    ]
+  },
+  {
+    "string": [
+      "germain.landrieu@sportvalue.fr"
+    ],
+    "sv.entities.User": [
+      {
+        "email": [
+          "germain.landrieu@sportvalue.fr"
+        ],
+        "firstName": [
+          "Germain"
+        ],
+        "lastName": [
+          "Landrieu"
+        ],
+        "hashedPassword": [
+          "oR2utrxWGqnFw9pjDDuNjMR0VqYfLu8Aml3mAgUSFLsBc2LEsQKV/X9AD+rsuyD5CEsNZBd/eX4z\nIddNXdmfJA=="
+        ],
+        "admin": [
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "string": [
+      "nicolas.voisin@sportvalue.fr"
+    ],
+    "sv.entities.User": [
+      {
+        "email": [
+          "nicolas.voisin@sportvalue.fr"
+        ],
+        "firstName": [
+          "Nicolas"
+        ],
+        "lastName": [
+          "Voisin"
+        ],
+        "hashedPassword": [
+          "bgkA39AeSbylJCqAURqVOcjQ/ifkTmD/Swzem5GW3Jn5AtnU0iI4k3LVVY26DG7s2x3x36dgJ0RF\nl+4OlhVWJQ=="
+        ],
+        "admin": [
+          "false"
+        ]
+      }
+    ]
+  },
+  {
+    "string": [
+      "sami.vigneaud@sportvalue.fr"
+    ],
+    "sv.entities.User": [
+      {
+        "email": [
+          "sami.vigneaud@sportvalue.fr"
+        ],
+        "firstName": [
+          "Sami "
+        ],
+        "lastName": [
+          "Vigneaud"
+        ],
+        "hashedPassword": [
+          "RcvsJqdOJNCGyPjhOYnjXMACi/YV4J99MiLoXckCQP26lIrh70D748TrA4YqUpDturRa3SpjBDvY\nlW8P7fahDg=="
+        ],
+        "admin": [
+          "false"
+        ]
+      }
+    ]
+  }
+]

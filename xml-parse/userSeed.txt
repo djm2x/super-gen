@@ -1,0 +1,8 @@
+new User(1L, "Mathieu", "Guyot", "mathieu.guyot@sportvalue.fr","123", true,"admin"),
+new User(2L, "Amir ", "Kasmi ", "amir.kasmi@sportvalue.fr","123", true,"admin"),
+new User(3L, "Michel ", "Lukasiewicz", "michel.lukasiewicz@sportvalue.fr","123", true,"user"),
+new User(4L, "Nicolas", "Blanc", "nicolas.blanc@sportvalue.fr","123", true,"admin"),
+new User(5L, "Abdellah", "El Bekkali", "abdellah.elbekkali@sportvalue.fr","123", true,"admin"),
+new User(6L, "Germain", "Landrieu", "germain.landrieu@sportvalue.fr","123", true,"user"),
+new User(7L, "Nicolas", "Voisin", "nicolas.voisin@sportvalue.fr","123", true,"user"),
+new User(8L, "Sami ", "Vigneaud", "sami.vigneaud@sportvalue.fr","123", true,"user"),
