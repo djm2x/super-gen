@@ -149,7 +149,7 @@ function writeFile(fileName: string, content: string) {
 }
 
 function h(e: string[]): string {
-    return e ? e[0].replace(/\"/g, '\'').replace(/\n/g, '') : '';
+    return e ? e[0].replace(/\"/g, '\'').replace(/\n/g, '') : null;
 }
 
 function clubChampionShip(e: { $: { reference: string } }[]): string {
@@ -183,14 +183,44 @@ async function parseClub() {
     const file = fse.readFileSync(`${__dirname}/clubs.json`);
 
     const r = JSON.parse(file as any) as ClubJson[];
-    let s = '';
+    let clubsString = '';
+    let reportConfigString = '';
+    let NoterReportConfigString = '';
+    let commentString = '';
 
+    let clubIndicatorString = '';
+    let IndicatorString = '';
+
+    let reportConfigId = 0;
+    let commentId = 0;
+    let NoterReportConfigId = 0;
     r.forEach((e, i) => {
         const o = e['sv.entities.Club'][0];
-        s += `new Club(${i + 1}L, "${h(o.code)}", "${h(o.name)}", "${h(o.description)}", "", "${h(o.highlight)}", "${h(o.company)}", "${h(o.logoPath)}", ${clubChampionShip(o.championship)}, 1L),\r\n`;
-    })
 
-    writeFile(`clusSeed.txt`, s);
+        // clubsString += `new Club(${i + 1}L, "${h(o.code)}", "${h(o.name)}", "${h(o.description)}", "", "${h(o.highlight)}", "${h(o.company)}", "${h(o.logoPath)}", ${clubChampionShip(o.championship)}, 1L),\r\n`;
+    
+        o.reportConfig.forEach((r, j) => {
+            reportConfigId = j + 1;
+            reportConfigString += `new ReportConfig(${reportConfigId}L, ${h(r.includeRadar)}, ${h(r.includeClubComment)}, ${h(r.includeClubHighlight)}, ${h(r.includeWageAndRevenue)}, ${h(r.includeLossAndRevenue)}, ${h(r.includeOffBalance)}, ${h(r.includeBSPLSummary)}, ${h(r.includeBSPLDetail)}, ${h(r.includeBSPLHistory)}, ${i + 1}L),`
+        
+            
+            const NoterReportConfig0: NoterReportConfig[] = [].concat(...r.themeConfigs.map(e => e.entry.map(x => x['sv.report.NoterReportConfig'])));
+            const NoterReportConfig = r.themeConfigs[0]?.entry.map(x => x['sv.report.NoterReportConfig'][0]);
+
+            NoterReportConfig.forEach((t,k) => {
+                NoterReportConfigId = k + 1;
+
+                NoterReportConfigString += `new NoterReportGroup(${NoterReportConfigId}L, ${h(t.includeComment)}, ${h(t.includeRadar)}, false, ${h(t.includeBenchmarkToMedianValue)}, "${h(t.peerGroups)}", "${h(t.comparedTo)}", "${h(t.noterComments)}", "club", "${h(t.indicators)}", ${reportConfigId}L),`
+            });
+        });
+
+        o.comments.map(c => c.entry[0]).forEach((c, ci) => {
+            commentId = ci + 1;
+            commentString += `new Comment(${commentId}L, "${h([c.string[1]])}", "club", ${i + 1}L, null),`
+        })
+    });
+
+    writeFile(`clusSeed.txt`, clubsString);
 }
 
 async function parseCountry() {
@@ -241,7 +271,7 @@ async function parseUsers() {
 
 async function main() {
     // parseCountry();
-    parseChamioship();
+    // parseChamioship();
     parseClub();
     // parseUsers();
 }
