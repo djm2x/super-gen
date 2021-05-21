@@ -1,229 +1,266 @@
-export class Bspl {
+export class Agency {
   id = 0
-  code = '';
   label = '';
-  formula = '';
-  type = '';
-  highlight = true;
-  bold = true;
-  xRate = 0;
-  currency = '';
-  accountValues: AccountValue[] = [];
-  previous = new Bspl();
-  childs: Bspl[] = [];
+  Organization_id = 0;
+  super_entity_id = 0;
+
+  super_entity = new SuperEntity();
+  organization = new Organization();
+  taxSequences: TaxSequence[] = [];
+  thirdPartyInvoiceds: ThirdPartyInvoiced[] = [];
+
 }
 
+export class BillCriteria {
+  id = 0;
+  taxNumber = '';
+  taxCode = '';
+  effectiveDate = new Date();
+  settlementBillPeriod = 0;
+  billFrequency = 0;
+  payment_method_id = 0;
+  paymentMethod = new PaymentMethod();
 
-export class AccountValue {
-  id = 0
-  value = '';
-  bspl = new Bspl();
-  club = new Club();
+  entities: SuperEntity[] = [];
+
 }
 
-export class Bonus {
-  id = 0
-  bonus = 0;
-  comment = '';
-  type = '';
-  club = new Club();
-  noterGroup = new NoterGroup();
-}
-
-
-export class Championship {
-  id = 0
-  code = '';
+export class City {
+  id = 0;
   name = '';
+  code = '';
+  country_id = 0;
+
   country = new Country();
-  clubs: Club[] = [];
-  championshipIndicators: ChampionshipIndicator[] = [];
-}
-
-export class ChampionshipIndicator {
-  id = 0;
-  score = 0;
-  value0 = '';
-  value1 = '';
-  value2 = '';
-  value3 = '';
-
-  indicator = new Indicator();
-  championship = new Championship();
-}
-
-export class Club {
-  id = 0
-  code = '';
-  name = '';
-  description = '';
-  comment = '';
-  highlight = '';
-  company = '';
-  logopath = '';
-  id_sport = 0;
-  sport = new Sport();
-  id_championship = 0;
-  championship = new Championship();
-  bonuses: Bonus[] = [];
-  clubIndicators: ClubIndicator[] = [];
-  comments: Comment[] = [];
-  historys: History[] = [];
-  accountValues: AccountValue[] = [];
-  peerGroups: PeerGroup[] = [];
-  reportConfigs: ReportConfig[] = [];
-}
-
-export class Sport {
-  id = 0
-  name = '';
-  clubs: Club[] = [];
-}
-
-export class PeerGroup {
-  id = 0
-  name = '';
-  club = new Club();
-}
-
-export class ClubIndicator {
-  id = 0;
-  club = new Club();
-  indicator = new Indicator();
-  score = 0;
-  type = '';
-  valueType = '';
-  value0 = '';
-  value1 = '';
-  value2 = '';
-  value3 = '';
-}
-
-export class Comment {
-  id = 0
-  comment = '';
-  type = '';
-  club = new Club();
-  noterGroup = new NoterGroup();
+  entities: SuperEntity[] = [];
 }
 
 export class Country {
-  id = 0
+  id = 0;
+  name = '';
   code = '';
+
+  cities: City[] = [];
+}
+
+export class Contract {
+  id = 0;
+  code = 0;
+  label = 0;
+  settlementPeriod = 0;
+  startDate = new Date();
+  endDate = new Date();
+  comment = '';
+  salesid = 0;
+  trackingid = 0;
+  super_entityid = 0;
+  third_party_invoiced_id = 0;
+  payment_method_id = 0;
+  contract_type_id = 0;
+
+  tracking = new Tracking();
+  super_entity = new SuperEntity();
+  thirdPartyInvoiced = new ThirdPartyInvoiced();
+  paymentMethod = new PaymentMethod();
+  contractType = new ContractType();
+  statuses: Status[] = [];
+  contractService: ContractService[] = [];
+}
+
+export class ContractService {
+  id = 0;
+  contract_id = 0;
+  service_id = 0;
+
+  contract = new Contract();
+  service = new Service();
+}
+
+export class ContractType {
+  id = 0;
   name = '';
-  championships: Championship[] = [];
-  countryIndicators: CountryIndicator[] = [];
+
 }
 
-export class CountryIndicator {
+export class Organization {
   id = 0;
-  score = 0
-  type = '';
-  value0 = '';
-  value1 = '';
-  value2 = '';
-  value3 = '';
-  indicator = new Indicator();
-  country = new Country();
+  label = '';
+  group_id = 0;
+  super_entity_id = 0;
+
+  group = new Group();
+  super_entity = new SuperEntity();
+
+  agencies: Agency[] = [];
 }
 
-export class FunctionNormalizer {
-  id = 0
-  _function = '';
-  indicator = new Indicator();
+export class DefaultPackageCriteria {
+  id = 0;
+  unitVolume = 0;
+  unitWeight = 0;
+  packagesNumber = 0;
+  entities: SuperEntity[] = [];
 }
 
-export class History {
-  id = 0
-  Date = new Date();
-  Label = '';
-  userEmail = '';
-  type = '';
-  club = new Club();
-  noterGroup = new NoterGroup();
-}
-
-export class Indicator {
-  id = 0
+export class Document {
+  id = 0;
   name = '';
-  weight = 0;
-  hint = '';
-  wa = true;
-  type = '';
-  sourceType = '';
-  noterGroup = new NoterGroup();
-  clubIndicators: ClubIndicator[] = [];
-  countryIndicators: CountryIndicator[] = [];
-  functionNormalizers: FunctionNormalizer[] = [];
-  mapNormalizers: MapNormalizer[] = [];
-  rangeNormalizers: RangeNormalizer[] = [];
-  championshipIndicators: ChampionshipIndicator[] = [];
+  createdBy = 0;
+  creationDate = new Date();
+  path = '';
+  super_entity_id = 0;
+  super_entity = new SuperEntity();
+
 }
 
-export class MapNormalizer {
-  id = 0
-  _key = '';
-  value = 0;
-  indicator = new Indicator();
+export class Group {
+  id = 0;
+  label = '';
+  super_entity_id = 0;
+  super_entity = new SuperEntity();
+  organizations: Organization[] = [];
 }
 
-export class NoterGroup {
-  id = 0
+export class Service {
+  id = 0;
+  code = 0;
+  label = 0;
+  startDate = new Date();
+  endDate = new Date();
+  description = '';
+  tracking_id = 0;
+  super_entity_id = 0;
+  service_type_id = 0;
+
+  tracking = new Tracking();
+  super_entity = new SuperEntity();
+  serviceType = new ServiceType();
+
+  statuses: Status[] = [];
+  contractServices: ContractService[] = [];
+}
+
+export class ServiceType {
+  id = 0;
   name = '';
-  level = 0;
-  weight = 0;
-  parent = new NoterGroup();
-  childs: NoterGroup[] = [];
-  bonuses: Bonus[] = [];
-  comments: Comment[] = [];
-  historys: History[] = [];
-  indicators: Indicator[] = [];
+  services: Service[] = [];
 }
 
-export class NoterReportGroup {
+export class Status {
   id = 0;
+  label = '';
+  user_id = 0;
+  creationDate = new Date();
+  super_entity_id = 0;
+  service_id = 0;
+  contract_id = 0;
+
+  super_entity = new SuperEntity();
+  service = new Service();
+  contract = new Contract();
+}
+
+export class TaxSequence {
+  id = 0;
+  number = 0;
+  code = '';
+  agency_id = 0;
+  agency = new Agency();
+}
+
+export class SuperEntity {
+  id = 0;
+  code = '';
+  label = '';
+  name = '';
+  logoUrl = '';
+  address = '';
+  zipCode = '';
+  phone = '';
+  fax = '';
+  email = '';
   type = '';
-  IncludeComment = true;
-  IncludeRadar = true;
-  IncludeAggregateSubthemes = true;
-  IncludeBenchmarkToMedianValue = true;
-  peerGroups = '';
-  comparedTos = '';
-  noterComments = '';
-  indicators = '';
-  reportConfig = new ReportConfig();
+  isBillable = false;
+  city_id = 0;
+  default_package_criteriaid = 0;
+  bill_criteriaid = 0;
+  tracking_id = 0;
+  language_id = 0;
+
+  city = new City();
+  defaultPackageCriteria = new DefaultPackageCriteria();
+  billCriteria = new BillCriteria();
+  tracking = new Tracking();
+  language = new Language();
+
+  groups: Group[] = [];
+  organizations: Organization[] = [];
+  agencies: Agency[] = [];
+  thirdPartyInvoiceds: ThirdPartyInvoiced[] = [];
+
+  // group = new Group();
+  // organization = new Organization();
+  // agency = new Agency();
+  // thirdPartyInvoiced = new ThirdPartyInvoiced();
+
+  documents: Document[] = [];
+  reviews: Review[] = [];
+  services: Service[] = [];
+  statuses: Status[] = [];
 }
 
-export class RangeNormalizer {
+export class ThirdPartyInvoiced {
   id = 0;
-  r0 = 0;
-  r1 = 0;
-  r2 = 0;
-  r3 = 0;
-  r4 = 0;
-  indicator = new Indicator();
+  label = 0;
+  agence_id = 0;
+  super_entity_id = 0;
+
+
+  agency = new Agency();
+  super_entity = new SuperEntity();
 }
 
-export class ReportConfig {
+export class Tracking {
   id = 0;
-  includeRadar = false;
-  includeClubComment = false;
-  includeClubHighlight = false;
-  includeWageAndRevenue = false;
-  includeLossAndRevenue = false;
-  includeOffBalance = false;
-  includeBSPLSummary = false;
-  includeBSPLDetail = false;
-  includeBSPLHistory = false;
-  noterReportGroups: NoterReportGroup[] = [];
-  club = new Club();
+  activationDate = 0;
+  deactivationDate = 0;
+  disabledBy = 0;
+  createdBy = 0;
+  creationDate = 0;
+  editBy = 0;
+  editionDate = 0;
+
+  contracts: Contract[] = [];
+  entities: SuperEntity[] = [];
+  services: Service[] = [];
+}
+
+export class PaymentMethod {
+  id = 0;
+  name = '';
+  billCriterias: BillCriteria[] = [];
+  contracts: Contract[] = [];
+}
+
+
+export class Review {
+  id = 0;
+  score = 0;
+  comment = '';
+  creationDate = 0;
+  user_id = 0;
+  super_entity_id = 0;
+  entitie = new SuperEntity();
+}
+
+export class Language {
+  id = 0;
+  name = '';
+  entities: SuperEntity[] = [];
 }
 
 export class User {
   id = 0;
   email = '';
-  firstname = '';
-  lastname = '';
-  hasedpassword = '';
   role = '';
 }

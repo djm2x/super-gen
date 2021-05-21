@@ -9,16 +9,16 @@ export class Controllers {
     generateTs() {
         let controller = '';
         
-        fse.ensureDirSync(`${this.configs.aspFolder}/Controllers`);
+        fse.ensureDirSync(`${this.configs.aspFolder}/controllers`);
         
         this.configs.classes.forEach(e => {
             const cls = this.helper.Cap(e.class);
             const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls + 's';
 
-            controller = `${this.configs.nameSpace}.controllers;\r\n\r\n`+
+            controller = `package ${this.configs.nameSpace}.controllers;\r\n\r\n`+
             `import org.springframework.web.bind.annotation.*;\r\n`+
-            `import com.sportvalue.crs.models.*;\r\n`+
-            `import com.sportvalue.crs.repositories.UowService;\r\n`+
+            `import ${this.configs.nameSpace}.models.*;\r\n`+
+            `import ${this.configs.nameSpace}.repositories.UowService;\r\n`+
             `import javax.annotation.security.RolesAllowed;\r\n\r\n`+
             `@RolesAllowed({ "admin", "user" })\r\n`+
             `@RestController\r\n`+
@@ -32,9 +32,9 @@ export class Controllers {
             `}`
             ;
 
-            fse.writeFileSync(`${this.configs.aspFolder}/Controllers/${classNamePlural}Controller.java`, controller);
+            fse.writeFileSync(`${this.configs.aspFolder}/controllers/${classNamePlural}Controller.java`, controller);
         });
         
-        this.helper.progress(`>> Controllers done`);
+        this.helper.progress(`>> controllers done`);
     }
 }

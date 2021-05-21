@@ -51,7 +51,7 @@ export class MapHelper {
         modelsTs: this.modelsTs,
         angularAppFolder: `${this.generatedAppPath}/angular/src/app`,
         aspFolder: this.generatedAppPath,
-        nameSpace: 'package com.sportvalue.crs',
+        nameSpace: 'com.transport.logisticsrepository',
         currentBaseFile: '',
         pathBaseFiles: '',
         replaceModels: true,

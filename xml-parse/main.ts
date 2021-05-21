@@ -190,7 +190,11 @@ async function parseClub() {
 
     let clubIndicatorString = '';
     let IndicatorString = '';
+    let bsplString = '';
 
+    let clubIndicatorId = 0;
+    let IndicatorId = 0;
+    let bsplId = 0;
     let reportConfigId = 0;
     let commentId = 0;
     let NoterReportConfigId = 0;
@@ -217,7 +221,24 @@ async function parseClub() {
         o.comments.map(c => c.entry[0]).forEach((c, ci) => {
             commentId = ci + 1;
             commentString += `new Comment(${commentId}L, "${h([c.string[1]])}", "club", ${i + 1}L, null),`
-        })
+        });
+
+
+        o.values.map(c => c.entry[0]).forEach((c, ci) => {
+            IndicatorId = ci + 1;
+            IndicatorString += `new Indicator(${IndicatorId}L, "${h(c.string)}", 4L, "${h(c.string)}", false, null, "club", null),`;
+
+            c['sv.score.indicators.Value'].forEach((cl, cli) => {
+                clubIndicatorId = cli + 1;
+
+                clubIndicatorString += `new ClubIndicator(${clubIndicatorId}L, 0, null, null, ${cl.value0}L, ${cl.value1}L, ${cl.value2}L, ${cl.value3}L, ${i + 1}L, ${IndicatorId}L),`;
+            })
+        });
+
+        o.bspls.map(c => c.entry[0]).forEach((c, ci) => {
+            commentId = ci + 1;
+            commentString += `new Comment(${commentId}L, "${h([c.string[1]])}", "club", ${i + 1}L, null),`
+        });
     });
 
     writeFile(`clusSeed.txt`, clubsString);
