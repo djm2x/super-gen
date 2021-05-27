@@ -7,7 +7,7 @@ export class ModelsHandler {
     constructor(private helper: HelperFunctions, private configs: IConfigs) { }
 
     generateTs() {
-        const MODELS_TS = 'models.ts';
+        const modelsTs = this.configs.modelsTs;
         const publicPath = `${this.configs.pathAbs}/api/public`;
 
 
@@ -25,17 +25,17 @@ export class ModelsHandler {
                 codeOfVerification = '';
             }\r\n\r\n
             `;
-            let content = fse.readFileSync(`${publicPath}/${MODELS_TS}`, 'utf8');
+            let content = fse.readFileSync(`${publicPath}/${modelsTs}`, 'utf8');
 
             content = cls + content;
 
-            fse.writeFileSync(`${publicPath}/${MODELS_TS}`, content);
+            fse.writeFileSync(`${publicPath}/${modelsTs}`, content);
             
-            console.log(`>> ${publicPath}/${MODELS_TS} done`);
+            console.log(`>> ${publicPath}/${modelsTs} done`);
         } else { }
 
         if (this.configs.replaceModels) {
-            fse.copySync(`${this.configs.pathAbs}/api/public/${MODELS_TS}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`)
+            fse.copySync(`${this.configs.pathAbs}/api/public/${modelsTs}`, `${this.configs.angularAppFolder}/models/${modelsTs}`)
         }
     }
 

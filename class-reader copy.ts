@@ -4,8 +4,8 @@ export class ClassReader {
 
   constructor() { }
 
-  methode(MODELS_TS: string) {
-    const program = ts.createProgram([`${process.cwd()}/api/public/${MODELS_TS}`], {
+  methode(modelsTs: string) {
+    const program = ts.createProgram([`${process.cwd()}/api/public/${modelsTs}`], {
       module: ts.ModuleKind.ES2015,
       moduleResolution: ts.ModuleResolutionKind.NodeJs,
       target: ts.ScriptTarget.Latest

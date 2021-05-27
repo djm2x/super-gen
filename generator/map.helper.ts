@@ -1,3 +1,4 @@
+import { Seeds } from './java/seeds';
 import * as fse from 'fs-extra';
 import { ClassReader } from './class-reader';
 import { HelperFunctions, Model, IConfig } from './helper.functions';
@@ -17,34 +18,21 @@ import { Repos } from './java/repos';
 import { Controllers } from './java/controllers';
 
 const ADMIN_MODULE_TS = 'admin.module.ts';
-const ADMIN_COMPONENT_HTML = 'admin.component.html';
-
 const UOW_SERVICE_TS = 'uow.service.ts';
-
 const MENU_MODULE_TS = 'menu.module.ts';
-
 const CLASS_ROUTING_MODULE_TS = 'class-routing.module.ts';
 const CLASS_MODULE_TS = 'class.module.ts';
-
 const CLASS_COMPONENT_HTML = 'class.component.html';
-const CLASS_COMPONENT_SCSS = 'class.component.scss';
 const CLASS_COMPONENT_TS = 'class.component.ts';
-
 const UPDATE_COMPONENT_HTML = 'update.component.html';
-const UPDATE_COMPONENT_SCSS = 'update.component.scss';
 const UPDATE_COMPONENT_TS = 'update.component.ts';
-
-
-const CLASS_SERVICE_TS = 'class.service.ts';
-// const MODELS_TS = 'models.ts';
-
 
 export class MapHelper {
     private pathAbs = this.isDev ? `${process.cwd()}` : `${process.cwd()}/dist`;
     private generatedAppPath0 = `${this.pathAbs}/generated_app`;
     private generatedAppPath = `${this.pathAbs}/test`;
     private helper = new HelperFunctions();
-    private modelsTs = `${this.pathAbs}/generator/models.ts`;
+    private modelsTs = `${this.pathAbs}/generator/modelsTransport.ts`;
 
     private configs: IConfigs = {
         pathAbs: this.pathAbs,
@@ -160,7 +148,7 @@ export class MapHelper {
     }
 
     mapJava() {
-        const list = ['model', 'repos', 'controllers']
+        const list = ['model', 'repos', 'controllers', 'seeds']
 
         this.configs.pathBaseFiles = `${this.pathAbs}/generator/java/base.files`;
 
@@ -170,6 +158,7 @@ export class MapHelper {
                 case 'model': new Entities(this.helper, this.configs).generateTs(); break;
                 case 'repos': new Repos(this.helper, this.configs).generateTs(); break;
                 case 'controllers': new Controllers(this.helper, this.configs).generateTs(); break;
+                case 'seeds': new Seeds(this.helper, this.configs).generateTs(); break;
 
                 default: break;
             }

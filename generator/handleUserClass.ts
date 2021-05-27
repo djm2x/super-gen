@@ -5,8 +5,8 @@ import * as fse from 'fs-extra';
 export class HandleUserClass {
 
 
-    constructor(MODELS_TS = 'models.ts', publicPath: string) {
-        const classes: Model[] = new ClassReader().methode(MODELS_TS);
+    constructor(modelsTs: string, publicPath: string) {
+        const classes: Model[] = new ClassReader().methode(modelsTs);
 
 
         const user = classes.find(e => e.class.includes('user') || e.class.includes('utilisateur'));
@@ -22,13 +22,13 @@ export class HandleUserClass {
                 codeOfVerification = '';
             }\r\n\r\n
             `;
-            let content = fse.readFileSync(`${publicPath}/${MODELS_TS}`, 'utf8');
+            let content = fse.readFileSync(`${publicPath}/${modelsTs}`, 'utf8');
 
             content = cls + content;
 
-            fse.writeFileSync(`${publicPath}/${MODELS_TS}`, content);
+            fse.writeFileSync(`${publicPath}/${modelsTs}`, content);
             
-            console.log(`>> ${publicPath}/${MODELS_TS} done`);
+            console.log(`>> ${publicPath}/${modelsTs} done`);
         } else { }
 
     }

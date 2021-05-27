@@ -11,6 +11,7 @@ function main(argvs: string[]) {
     // m.mapAngular();
     // m.mapAsp();
     m.mapJava();
+    // m.mapIonic();
 }
 
 // launch programme

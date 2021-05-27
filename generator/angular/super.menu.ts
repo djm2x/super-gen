@@ -5,7 +5,6 @@ import { IConfigs } from '../map.helper';
 const ADMIN_ROUTING_MODULE_TS = 'admin-routing.module.ts';
 const ADMIN_MODULE_TS = 'admin.module.ts';
 const ADMIN_COMPONENT_HTML = 'admin.component.html';
-const MODELS_TS = 'models.ts';
 
 
 export class SuperMenu {
@@ -95,6 +94,6 @@ export class SuperMenu {
     }
 
     copyModels() {
-        fse.copySync(`${this.configs.modelsTs}`, `${this.configs.angularAppFolder}/models/${MODELS_TS}`);
+        fse.copySync(`${this.configs.modelsTs}`, `${this.configs.angularAppFolder}/models/models.ts`);
     }
 }
