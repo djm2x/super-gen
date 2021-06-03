@@ -36,9 +36,9 @@ class Category {
 class Bonuse {
     entry: {
         string: string[],
-        'sv.score.indicators.Bonus': { 
-            bonus: string[] ,
-            comment: string[] ,
+        'sv.score.indicators.Bonus': {
+            bonus: string[],
+            comment: string[],
         }[]
     }[]
 }
@@ -194,6 +194,7 @@ async function parseClub() {
     const file = fse.readFileSync(`${__dirname}/clubs.json`);
 
     const r = JSON.parse(file as any) as ClubJson[];
+    let clubsString = '';
     let bonusString = '';
     let reportConfigString = '';
     let NoterReportConfigString = '';
@@ -215,7 +216,7 @@ async function parseClub() {
     r.forEach((e, i) => {
         const o = e['sv.entities.Club'][0];
         const clubId = i + 1;
-        // clubsString += `new Club(${clubId}L, "${h(o.code)}", "${h(o.name)}", "${h(o.description)}", "", "${h(o.highlight)}", "${h(o.company)}", "${h(o.logoPath)}", ${clubChampionShip(o.championship)}, 1L),\r\n`;
+        clubsString += `new Club(${clubId}L, "${h(o.code)}", "${h(o.name)}", "${h(o.description)}", "", "${h(o.highlight)}", "${h(o.company)}", "logos/${h(o.logoPath)}", ${clubChampionShip(o.championship)}, 1L),\r\n`;
 
         o.reportConfig.forEach((r, j) => {
             reportConfigId = j + 1 + i;
@@ -271,7 +272,7 @@ async function parseClub() {
                 return;
             }
 
-            
+
             bsplString += `new Bspl(${++bsplId}L, "", "", "", "", false, false, ${b.xRate}f, "${b.currency}", ${bsplId > 1 ? bsplId - 1 + 'L' : null}),\r\n`;
 
             b.accounts[0].entry?.forEach((ac, acIndex) => {
@@ -289,15 +290,15 @@ async function parseClub() {
 
     });
 
-    writeFile(`reportConfigString.txt`, reportConfigString);
-    writeFile(`NoterReportConfigString.txt`, NoterReportConfigString);
-    writeFile(`commentString.txt`, commentString);
-    writeFile(`clubIndicatorString.txt`, clubIndicatorString);
-    writeFile(`bsplString.txt`, bsplString);
-    writeFile(`accountValueString.sql`, accountValueString);
-    writeFile(`IndicatorString.txt`, IndicatorString);
-    writeFile(`clubIndicatorString.txt`, clubIndicatorString);
-    writeFile(`bonusString.txt`, bonusString);
+    writeFile(`clubsString.txt`, clubsString);
+    //     writeFile(`reportConfigString.txt`, reportConfigString);
+    //     writeFile(`NoterReportConfigString.txt`, NoterReportConfigString);
+    //     writeFile(`commentString.txt`, commentString);
+    //     writeFile(`clubIndicatorString.txt`, clubIndicatorString);
+    //     writeFile(`bsplString.txt`, bsplString);
+    //     writeFile(`accountValueString.sql`, accountValueString);
+    //     writeFile(`IndicatorString.txt`, IndicatorString);
+    //     writeFile(`bonusString.txt`, bonusString);
 }
 
 async function parseCountry() {

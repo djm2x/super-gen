@@ -8,8 +8,11 @@ export class Bspl {
   bold = true;
   xRate = 0;
   currency = '';
-  accountValues: AccountValue[] = [];
+
+  id_previous = 0;
   previous = new Bspl();
+
+  accountValues: AccountValue[] = [];
   childs: Bspl[] = [];
 }
 
@@ -17,6 +20,8 @@ export class Bspl {
 export class AccountValue {
   id = 0
   value = '';
+  id_club = 0;
+  id_bspl = 0;
   bspl = new Bspl();
   club = new Club();
 }
@@ -26,7 +31,11 @@ export class Bonus {
   bonus = 0;
   comment = '';
   type = '';
+
+  id_club = 0;
   club = new Club();
+  
+  id_noter_group = 0;
   noterGroup = new NoterGroup();
 }
 
@@ -35,6 +44,7 @@ export class Championship {
   id = 0
   code = '';
   name = '';
+  id_country = 0;
   country = new Country();
   clubs: Club[] = [];
   championshipIndicators: ChampionshipIndicator[] = [];
@@ -47,7 +57,8 @@ export class ChampionshipIndicator {
   value1 = '';
   value2 = '';
   value3 = '';
-
+  id_indicator = 0;
+  id_championship = 0;
   indicator = new Indicator();
   championship = new Championship();
 }
@@ -63,8 +74,10 @@ export class Club {
   logopath = '';
   id_sport = 0;
   sport = new Sport();
+
   id_championship = 0;
   championship = new Championship();
+
   bonuses: Bonus[] = [];
   clubIndicators: ClubIndicator[] = [];
   comments: Comment[] = [];
@@ -83,11 +96,15 @@ export class Sport {
 export class PeerGroup {
   id = 0
   name = '';
+  id_club = 0;
+
   club = new Club();
 }
 
 export class ClubIndicator {
   id = 0;
+  id_club = 0;
+  id_indicator = 0;
   club = new Club();
   indicator = new Indicator();
   score = 0;
@@ -103,7 +120,9 @@ export class Comment {
   id = 0
   comment = '';
   type = '';
+  id_club = 0;
   club = new Club();
+  id_noter_group = 0;
   noterGroup = new NoterGroup();
 }
 
@@ -123,6 +142,8 @@ export class CountryIndicator {
   value1 = '';
   value2 = '';
   value3 = '';
+  id_indicator = 0;
+  id_country = 0;
   indicator = new Indicator();
   country = new Country();
 }
@@ -130,6 +151,7 @@ export class CountryIndicator {
 export class FunctionNormalizer {
   id = 0
   _function = '';
+  id_indicator = 0;
   indicator = new Indicator();
 }
 
@@ -139,6 +161,8 @@ export class History {
   Label = '';
   userEmail = '';
   type = '';
+  id_club = 0;
+  id_noter_group = 0;
   club = new Club();
   noterGroup = new NoterGroup();
 }
@@ -151,7 +175,9 @@ export class Indicator {
   wa = true;
   type = '';
   sourceType = '';
+  id_noter_group = 0;
   noterGroup = new NoterGroup();
+
   clubIndicators: ClubIndicator[] = [];
   countryIndicators: CountryIndicator[] = [];
   functionNormalizers: FunctionNormalizer[] = [];
@@ -164,6 +190,7 @@ export class MapNormalizer {
   id = 0
   _key = '';
   value = 0;
+  id_indicator = 0;
   indicator = new Indicator();
 }
 
@@ -172,7 +199,10 @@ export class NoterGroup {
   name = '';
   level = 0;
   weight = 0;
+
+  id_parent = 0;
   parent = new NoterGroup();
+
   childs: NoterGroup[] = [];
   bonuses: Bonus[] = [];
   comments: Comment[] = [];
@@ -191,6 +221,8 @@ export class NoterReportGroup {
   comparedTos = '';
   noterComments = '';
   indicators = '';
+
+  id_report_config = 0;
   reportConfig = new ReportConfig();
 }
 
@@ -201,6 +233,8 @@ export class RangeNormalizer {
   r2 = 0;
   r3 = 0;
   r4 = 0;
+
+  id_indicator = 0;
   indicator = new Indicator();
 }
 
@@ -215,8 +249,11 @@ export class ReportConfig {
   includeBSPLSummary = false;
   includeBSPLDetail = false;
   includeBSPLHistory = false;
-  noterReportGroups: NoterReportGroup[] = [];
+
+  id_club = 0;
   club = new Club();
+
+  noterReportGroups: NoterReportGroup[] = [];
 }
 
 export class User {
@@ -224,6 +261,7 @@ export class User {
   email = '';
   firstname = '';
   lastname = '';
-  hasedpassword = '';
+  password = '';
   role = '';
+  active = false;
 }
