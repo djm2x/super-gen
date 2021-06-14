@@ -1,0 +1,1361 @@
+{
+    "string": [
+        "ckoq9a"
+    ],
+    "sv.score.NoterGroup": [
+        {
+            "uid": [
+                "ckoq9a"
+            ],
+            "name": [
+                "Macroeconomy"
+            ],
+            "scorableClass": [
+                "com.sportvalue.model.entities.Country"
+            ],
+            "history": [
+                {
+                    "histo": [
+                        ""
+                    ]
+                }
+            ],
+            "subNoters": [
+                {
+                    "$": {
+                        "class": "linked-hash-map"
+                    },
+                    "entry": [
+                        {
+                            "string": [
+                                "yv03nd"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "yv03nd"
+                                    ],
+                                    "name": [
+                                        "Growth"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "h49u3k"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "h49u3k"
+                                                            ],
+                                                            "name": [
+                                                                "Growth"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "1svd1w"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "1svd1w"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "GNP growth rate (year n)"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "50.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "history": [
+                                                                                                        {
+                                                                                                            "histo": [
+                                                                                                                {
+                                                                                                                    "sv.entities.History_-Event": [
+                                                                                                                        {
+                                                                                                                            "date": [
+                                                                                                                                "2020-12-09 13:38:16.326 UTC"
+                                                                                                                            ],
+                                                                                                                            "label": [
+                                                                                                                                "File updated"
+                                                                                                                            ],
+                                                                                                                            "userEmail": [
+                                                                                                                                "abdellah.elbekkali@sportvalue.fr"
+                                                                                                                            ],
+                                                                                                                            "attachment": [
+                                                                                                                                "xls/1607521096170.BASE Macroeconomy FV2.xlsx"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    "name": [
+                                                                                                        "BASE Macroeconomy FV2.xlsx"
+                                                                                                    ],
+                                                                                                    "path": [
+                                                                                                        "xls/1607521096170.BASE Macroeconomy FV2.xlsx"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "Growth_rate_N0"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "-1.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "0.5"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "3.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "string": [
+                                                                                "qyi6pa"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "qyi6pa"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "GNP growth rate (year n+1)"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "35.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "Growth_Rate_N1"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "-1.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "0.5"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "3.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "string": [
+                                                                                "qyi6q5"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "qyi6q5"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "GNP growth rate (year n+2)"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "15.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "Growth_Rate_N11"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "-1.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "0.5"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "3.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "15.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "string": [
+                                "xkrpfb"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "xkrpfb"
+                                    ],
+                                    "name": [
+                                        "Unemployment"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "n6rty4"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "n6rty4"
+                                                            ],
+                                                            "name": [
+                                                                "Unemployment"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "3g3nkx"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "3g3nkx"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "Unemployment rate"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "100.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../../../../../../../entry/sv.score.NoterGroup/subNoters/entry/sv.score.NoterGroup/subNoters/entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "Unemployment"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "20.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "11.0"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "8.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "15.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "string": [
+                                "lqgz48"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "lqgz48"
+                                    ],
+                                    "name": [
+                                        "Inflation"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "h8krhq"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "h8krhq"
+                                                            ],
+                                                            "name": [
+                                                                "Inflation"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "7ar8l7"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "7ar8l7"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "Annual inflation rate"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "60.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../../../../../../../entry/sv.score.NoterGroup/subNoters/entry/sv.score.NoterGroup/subNoters/entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "Inflation_Rate"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "5.4"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "2.7"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "1.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "string": [
+                                                                                "x8csye"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "x8csye"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "Global IPCH monthly index"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "40.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../../../../../../../entry/sv.score.NoterGroup/subNoters/entry/sv.score.NoterGroup/subNoters/entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "HICP_Global"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "130.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "120.0"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "110.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "15.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "string": [
+                                "8733hu"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "8733hu"
+                                    ],
+                                    "name": [
+                                        "Trade"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "nrx90u"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "nrx90u"
+                                                            ],
+                                                            "name": [
+                                                                "Trade"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "ibvj0m"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "ibvj0m"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "FDI (%GDP)"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "100.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../../../../../../../entry/sv.score.NoterGroup/subNoters/entry/sv.score.NoterGroup/subNoters/entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "FDI"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "0.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "2.0"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "18.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "10.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "string": [
+                                "pqw00z"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "pqw00z"
+                                    ],
+                                    "name": [
+                                        "Sovereign rating"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "kj7wig"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "kj7wig"
+                                                            ],
+                                                            "name": [
+                                                                "Sovereign rating"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "5snuuy"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "5snuuy"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "Standard & Poor's rating"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "100.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../../../../../../../entry/sv.score.NoterGroup/subNoters/entry/sv.score.NoterGroup/subNoters/entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "Standard"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "#"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.MapNormalizer"
+                                                                                            },
+                                                                                            "map": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "linked-hash-map"
+                                                                                                    },
+                                                                                                    "entry": [
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "AAA"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "10.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "AA+"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "9.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "AA"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "9.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "AA-"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "8.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "A+"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "7.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "A"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "7.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "A-"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "6.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "BBB+"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "5.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "BBB"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "4.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "BBB-"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "4.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "BB+"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "3.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "BB"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "2.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "BB-"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "2.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "B+"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "1.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "B"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "0.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "B-"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "0.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "CCC+"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "0.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "CCC"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "0.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "CCC-"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "0.0"
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "string": [
+                                                                                                                "D"
+                                                                                                            ],
+                                                                                                            "double": [
+                                                                                                                "0.0"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "15.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "string": [
+                                "ssshpd"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "ssshpd"
+                                    ],
+                                    "name": [
+                                        "Wealth"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "x2qsd0"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "x2qsd0"
+                                                            ],
+                                                            "name": [
+                                                                "Wealth"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "xxmx1z"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "xxmx1z"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "Annual GNP per inhabitant (PPA)"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "100.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "false"
+                                                                                    ],
+                                                                                    "source": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.sources.XlsSource"
+                                                                                            },
+                                                                                            "file": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "reference": "../../../../../../../../../../entry/sv.score.NoterGroup/subNoters/entry/sv.score.NoterGroup/subNoters/entry/sv.score.indicators.Indicator/source/file"
+                                                                                                    }
+                                                                                                }
+                                                                                            ],
+                                                                                            "refFinder": [
+                                                                                                {
+                                                                                                    "$": {
+                                                                                                        "class": "sv.score.sources.RangeRefFinder"
+                                                                                                    },
+                                                                                                    "range": [
+                                                                                                        "#"
+                                                                                                    ],
+                                                                                                    "intersect": [
+                                                                                                        "Wealth"
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "80.0"
+                                                                                            ],
+                                                                                            "r2": [
+                                                                                                "100.0"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "130.0"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "15.0"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "string": [
+                                "2574g0"
+                            ],
+                            "sv.score.NoterGroup": [
+                                {
+                                    "uid": [
+                                        "2574g0"
+                                    ],
+                                    "name": [
+                                        "Demography"
+                                    ],
+                                    "scorableClass": [
+                                        "com.sportvalue.model.entities.Country"
+                                    ],
+                                    "history": [
+                                        {
+                                            "histo": [
+                                                ""
+                                            ]
+                                        }
+                                    ],
+                                    "subNoters": [
+                                        {
+                                            "$": {
+                                                "class": "linked-hash-map"
+                                            },
+                                            "entry": [
+                                                {
+                                                    "string": [
+                                                        "6ss4xa"
+                                                    ],
+                                                    "sv.score.NoterGroup": [
+                                                        {
+                                                            "uid": [
+                                                                "6ss4xa"
+                                                            ],
+                                                            "name": [
+                                                                "Demography"
+                                                            ],
+                                                            "scorableClass": [
+                                                                "com.sportvalue.model.entities.Country"
+                                                            ],
+                                                            "history": [
+                                                                {
+                                                                    "histo": [
+                                                                        ""
+                                                                    ]
+                                                                }
+                                                            ],
+                                                            "subNoters": [
+                                                                {
+                                                                    "$": {
+                                                                        "class": "linked-hash-map"
+                                                                    },
+                                                                    "entry": [
+                                                                        {
+                                                                            "string": [
+                                                                                "iiqvsj"
+                                                                            ],
+                                                                            "sv.score.indicators.Indicator": [
+                                                                                {
+                                                                                    "uid": [
+                                                                                        "iiqvsj"
+                                                                                    ],
+                                                                                    "scorableClass": [
+                                                                                        "com.sportvalue.model.entities.Country"
+                                                                                    ],
+                                                                                    "name": [
+                                                                                        "Inhabitants"
+                                                                                    ],
+                                                                                    "weight": [
+                                                                                        "100.0"
+                                                                                    ],
+                                                                                    "wa": [
+                                                                                        "true"
+                                                                                    ],
+                                                                                    "normalizer": [
+                                                                                        {
+                                                                                            "$": {
+                                                                                                "class": "sv.score.normalizers.RangeNormalizer"
+                                                                                            },
+                                                                                            "r0": [
+                                                                                                "2.0E7"
+                                                                                            ],
+                                                                                            "r4": [
+                                                                                                "8.0E7"
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "weight": [
+                                        "15.0"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "weight": [
+                "5.0"
+            ]
+        }
+    ]
+}

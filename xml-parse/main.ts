@@ -291,14 +291,14 @@ async function parseClub() {
     });
 
     writeFile(`clubsString.txt`, clubsString);
-    //     writeFile(`reportConfigString.txt`, reportConfigString);
-    //     writeFile(`NoterReportConfigString.txt`, NoterReportConfigString);
-    //     writeFile(`commentString.txt`, commentString);
-    //     writeFile(`clubIndicatorString.txt`, clubIndicatorString);
-    //     writeFile(`bsplString.txt`, bsplString);
-    //     writeFile(`accountValueString.sql`, accountValueString);
-    //     writeFile(`IndicatorString.txt`, IndicatorString);
-    //     writeFile(`bonusString.txt`, bonusString);
+        writeFile(`reportConfigString.txt`, reportConfigString);
+        writeFile(`NoterReportConfigString.txt`, NoterReportConfigString);
+        writeFile(`commentString.txt`, commentString);
+        writeFile(`clubIndicatorString.txt`, clubIndicatorString);
+        writeFile(`bsplString.txt`, bsplString);
+        writeFile(`accountValueString.sql`, accountValueString);
+        writeFile(`IndicatorString.txt`, IndicatorString);
+        writeFile(`bonusString.txt`, bonusString);
 }
 
 async function parseCountry() {
