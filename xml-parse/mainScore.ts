@@ -2,13 +2,15 @@ import * as _ from 'lodash';
 import * as fse from 'fs-extra';
 import { Parser } from 'xml2js';
 
-class Score {
+class NoterGroup {
     'sv.score.NoterGroup': {
         name: string[], // 1
+        weight: string[],
         subNoters: {
             entry: {
                 'sv.score.NoterGroup': {
                     name: string[], // 2
+                    weight: string[],
                     subNoters: {
                         entry: {
                             'sv.score.NoterGroup': {
@@ -27,10 +29,11 @@ class Score {
     }[] = []
 }
 
-class Indicator{
+class Indicator {
     name: string[]; // indicator
     scorableClass: string[];
     weight: string[];
+    hint: string[];
     wa: string[];
     normalizer: RangeNormalizer[] | MapNormalizer[] | FunctionNormalizer[];
 }
@@ -73,7 +76,7 @@ async function parseXml() {
 }
 
 function writeFile(fileName: string, content: string) {
-    fse.createWriteStream(`${__dirname}/seeds/${fileName}`, { flags: 'w' }).write(content);
+    fse.createWriteStream(`${__dirname}/seedScore/${fileName}`, { flags: 'w' }).write(content);
 }
 
 function h(e: string[]): string {
@@ -86,108 +89,80 @@ function h(e: string[]): string {
 
 async function parseScore() {
 
-    const file = fse.readFileSync(`${__dirname}/clubs.json`);
+    const file = fse.readFileSync(`${__dirname}/scores.json`);
 
-    const r = JSON.parse(file as any) as Score[];
-    let scoreString = '';
-    let indicatorString = '';
-    let rangeNormalizerString = '';
-    let mapNormalizerString = '';
-    let functionNormalizerString = '';
+    const r = JSON.parse(file as any) as NoterGroup[];
+    let noterGroupString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT noter_groups ON\r\nINSERT INTO noter_groups (id, id_parent ,level ,name ,weight) VALUES\r\n';
+    let indicatorString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT indicators ON\r\nINSERT INTO indicators (id, hint ,id_noter_group ,name ,source_type ,type ,wa ,weight) VALUES\r\n';
+    let rangeNormalizerString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT range_normalizers ON\r\nINSERT INTO range_normalizers (id, r0 ,r1 ,r2 ,r3 ,r4 ,id_indicator) VALUES\r\n';
+    let mapNormalizerString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT map_normalizers ON\r\nINSERT INTO map_normalizers (id, _key ,value ,id_indicator) VALUES\r\n';
+    let functionNormalizerString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT function_normalizers ON\r\nINSERT INTO function_normalizers (id, _function ,id_indicator) VALUES\r\n';
 
     // ids
-    let scoreId = 0;
+    let noterGroupId = 0;
+    // let noterGroupId2 = 0;
+    // let noterGroupId3 = 0;
     let indicatorId = 0;
     let rangeNormalizerId = 0;
     let mapNormalizerId = 0;
     let functionNormalizerId = 0;
 
-    r.forEach((e, i) => {
-        const o = e['sv.entities.Club'][0];
-        const clubId = i + 1;
-        scoreString += `new Club(${clubId}L, "${h(o.code)}", "${h(o.name)}", "${h(o.description)}", "", "${h(o.highlight)}", "${h(o.company)}", "logos/${h(o.logoPath)}", ${clubChampionShip(o.championship)}, 1L),\r\n`;
+    r.map(e => e['sv.score.NoterGroup'][0]).forEach((ng1, i) => {
+        // noterGroupId3 = 0;
+        // noterGroupId = noterGroupId2 !== 0 ? noterGroupId2 + 1 + 1 : 1 + i
+        noterGroupString += `(${++noterGroupId}, NULL, 1, '${h(ng1.name)?.replace("'", "`")}', ${h(ng1.weight)}),\r\n`;
 
-        o.reportConfig.forEach((r, j) => {
-            reportConfigId = j + 1 + i;
-            rangeNormalizerString += `new ReportConfig(${reportConfigId}L, ${h(r.includeRadar)}, ${h(r.includeClubComment)}, ${h(r.includeClubHighlight)}, ${h(r.includeWageAndRevenue)}, ${h(r.includeLossAndRevenue)}, ${h(r.includeOffBalance)}, ${h(r.includeBSPLSummary)}, ${h(r.includeBSPLDetail)}, ${h(r.includeBSPLHistory)}, ${clubId}L),\r\n`
+        // multi level 2
+        ng1.subNoters[0].entry.map(e => e['sv.score.NoterGroup'][0]).forEach((ng2, j) => {
+            // noterGroupId2 = noterGroupId3 !== 0 ? noterGroupId3 + 1 : noterGroupId + 1 + j
+            noterGroupString += `(${++noterGroupId}, ${noterGroupId - 1}, 2, '${h(ng2.name)?.replace("'", "`")}', ${h(ng2.weight)}),\r\n`;
+
+            ng2.subNoters[0].entry.map(e => e['sv.score.NoterGroup'][0]).forEach((ng3, k) => {
+                // noterGroupId3 = noterGroupId2 + 1 + k
+                noterGroupString += `(${++noterGroupId}, ${noterGroupId - 1}, 3, '${h(ng3.name)?.replace("'", "`")}', NULL),\r\n`;
+
+                ng3.subNoters[0].entry.map(e => e['sv.score.indicators.Indicator'][0]).forEach((ind, j) => {
+
+                    const st = ind.normalizer[0].$.class;
+                    const source_type = st.includes('RangeNormalizer') ? 'RangeNormalizer' : (st.includes('MapNormalizer') ? 'MapNormalizer' : 'FunctionNormalizer');
+
+                    const type = h(ind.scorableClass).substring(h(ind.scorableClass).lastIndexOf('.') + 1);
+
+                    indicatorString += `(${++indicatorId}, ${h(ind.hint) === null ?  'NULL' : "'" + h(ind.hint) + "'" }, ${noterGroupId}, '${h(ind.name)?.replace("'", "`")}','${source_type}', '${type}', ${h(ind.wa) === 'true' ? 1 : 0}, ${ind.weight}),\r\n`;
 
 
-            // const NoterReportConfig0: NoterReportConfig[] = [].concat(...r.themeConfigs.map(e => e.entry.map(x => x['sv.report.NoterReportConfig'])));
-            const NoterReportConfig = r.themeConfigs[0]?.entry?.map(x => x['sv.report.NoterReportConfig'][0]);
+                    if (source_type === 'RangeNormalizer') {
+                        const n = ind.normalizer[0] as RangeNormalizer;
+                        rangeNormalizerString += `(${++rangeNormalizerId}, ${h(n.r0)}, ${h(n.r1)}, ${h(n.r2)}, ${h(n.r3)}, ${h(n.r4)}, ${indicatorId}),\r\n`
+                    } else if (source_type === 'MapNormalizer') {
+                        const n = ind.normalizer[0] as MapNormalizer;
 
-            NoterReportConfig?.forEach((t, k) => {
-                NoterReportConfigId = k + 1;
+                        n.map[0].entry.forEach(m => {
 
-                mapNormalizerString += `new NoterReportGroup(${NoterReportConfigId}L, ${h(t.includeComment)}, ${h(t.includeRadar)}, false, ${h(t.includeBenchmarkToMedianValue)}, "${h(t.peerGroups)}", "${h(t.comparedTo)}", "${h(t.noterComments)}", "club", "${h(t.indicators)}", ${reportConfigId}L),\r\n`
+                            mapNormalizerString += `(${++mapNormalizerId}, '${h(m.string)}', ${h(m.double)}, ${indicatorId}),\r\n`
+                        })
+                    } else {
+                        const n = ind.normalizer[0] as FunctionNormalizer;
+
+                        functionNormalizerString += `(${++functionNormalizerId}, '${h(n.function)}', ${indicatorId}),\r\n`
+                    }
+                });
             });
         });
 
-        o.comments.map(c => c.entry ? c.entry[0] : [] as any).forEach((c, ci) => {
-            commentId = ci + clubId;
-            functionNormalizerString += `new Comment(${commentId}L, "${h([c.string ? c.string[1] : []])}", "club", ${clubId}L, null),\r\n`
-        });
-
-        o.bonuses[0].entry?.forEach((c, ci) => {
-            //  bonusId = ci + clubId;
-            const ob = c['sv.score.indicators.Bonus'][0]
-            indicatorString += `new Bonus(${++bonusId}L, ${h(ob?.bonus)}f, "${h(ob?.comment)}", "${h(c.string)}", ${clubId}L),\r\n`
-        });
-
-
-        o.values.map(c => c.entry ? c.entry[0] : [] as any).forEach((c, ci) => {
-            IndicatorId = ci + clubId;
-            IndicatorString += `new Indicator(${IndicatorId}L, "${h(c.string)}", 4L, "${h(c.string)}", false, null, "club", null),\r\n`;
-
-            c['sv.score.indicators.Value']?.forEach((cl, cli) => {
-                clubIndicatorId = cli + clubId;
-
-                clubIndicatorString += `new ClubIndicator(${clubIndicatorId}L, 0L, null, null, "${cl.value0 || '0'}", "${cl.value1 || '0'}", "${cl.value2 || '0'}", "${cl.value3 || '0'}", ${clubId}L, ${IndicatorId}L),\r\n`;
-            })
-        });
-
-        let bspls: Bspl[] = [];
-
-        try {
-            bspls = o.bspls[0]['sv.accounting.Bspl']
-        } catch { }
-
-        // bsplId = clubId;
-
-
-        (function fn(bs: Bspl[]) {
-            const b = bs ? bs[0] : null;
-
-            if (!b) {
-                return;
-            }
-
-
-            bsplString += `new Bspl(${++bsplId}L, "", "", "", "", false, false, ${b.xRate}f, "${b.currency}", ${bsplId > 1 ? bsplId - 1 + 'L' : null}),\r\n`;
-
-            b.accounts[0].entry?.forEach((ac, acIndex) => {
-                accountValueId += 1;
-                accountValueString += `INSERT INTO account_values (value, year , id_club, id_bspl) values ('${ac.int}', ${h(b.year)}, ${clubId}, ${bsplId});\r\n`;
-            })
-
-
-            if (b) {
-                fn(b.previous);
-            }
-        })(bspls);
-
-
-
     });
 
-    writeFile(`clubsString.txt`, scoreString);
-    writeFile(`reportConfigString.txt`, rangeNormalizerString);
-    writeFile(`NoterReportConfigString.txt`, mapNormalizerString);
-    writeFile(`commentString.txt`, functionNormalizerString);
-    writeFile(`clubIndicatorString.txt`, clubIndicatorString);
-    writeFile(`bsplString.txt`, bsplString);
-    writeFile(`accountValueString.sql`, accountValueString);
-    writeFile(`IndicatorString.txt`, IndicatorString);
-    writeFile(`bonusString.txt`, indicatorString);
+    noterGroupString += `\r\nSET IDENTITY_INSERT noter_groups OFF\r\nGO`;
+    indicatorString += `\r\nSET IDENTITY_INSERT indicators OFF\r\nGO`;
+    rangeNormalizerString += `\r\nSET IDENTITY_INSERT range_normalizers OFF\r\nGO`;
+    mapNormalizerString += `\r\nSET IDENTITY_INSERT map_normalizers OFF\r\nGO`;
+    functionNormalizerString += `\r\nSET IDENTITY_INSERT function_normalizers OFF\r\nGO`;
+
+    writeFile(`1.noterGroupString.sql`, noterGroupString);
+    writeFile(`2.indicatorString.sql`, indicatorString);
+    writeFile(`3.rangeNormalizerString.sql`, rangeNormalizerString);
+    writeFile(`4.mapNormalizerString.sql`, mapNormalizerString);
+    writeFile(`5.functionNormalizerString.sql`, functionNormalizerString);
 }
 
 

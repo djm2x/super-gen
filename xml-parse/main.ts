@@ -252,7 +252,7 @@ async function parseClub() {
             c['sv.score.indicators.Value']?.forEach((cl, cli) => {
                 clubIndicatorId = cli + clubId;
 
-                clubIndicatorString += `new ClubIndicator(${clubIndicatorId}L, 0L, null, null, "${cl.value0 || '0'}", "${cl.value1 || '0'}", "${cl.value2 || '0'}", "${cl.value3 || '0'}", ${clubId}L, ${IndicatorId}L),\r\n`;
+                clubIndicatorString += `new ClubIndicator(${clubIndicatorId}L, 0L, null, null, "${cl.value0 || '0'}", "${cl.value1 || '0'}", "${cl.value2 || '0'}", "${cl.value3 || '0'}", ${clubId}L, null),\r\n`;
             })
         });
 
