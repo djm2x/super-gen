@@ -16,6 +16,11 @@ import { MenuModule } from './angular/menu.module';
 import { Entities } from './java/entities';
 import { Repos } from './java/repos';
 import { Controllers } from './java/controllers';
+import { ControllersHexa } from './javaHexa/controllers';
+import { EntitiesHexa } from './javaHexa/entities';
+import { ReposHexa } from './javaHexa/repos';
+import { UowHexa } from './javaHexa/uow';
+import { SeedsHexa } from './javaHexa/seeds';
 
 const ADMIN_MODULE_TS = 'admin.module.ts';
 const UOW_SERVICE_TS = 'uow.service.ts';
@@ -148,17 +153,18 @@ export class MapHelper {
     }
 
     mapJavaHexa() {
-        const list = ['model', 'repos', 'controllers', 'seeds']
+        const list = ['seeds', 'model', 'repos', 'controllers', 'uow']
 
         this.configs.pathBaseFiles = `${this.pathAbs}/generator/javaHexa/base.files`;
 
         list.forEach(file => {
 
             switch (file) {
-                case 'model': new Entities(this.helper, this.configs).generateTs(); break;
-                case 'repos': new Repos(this.helper, this.configs).generateTs(); break;
-                case 'controllers': new Controllers(this.helper, this.configs).generateTs(); break;
-                // case 'seeds': new Seeds(this.helper, this.configs).generateTs(); break;
+                case 'seeds': new SeedsHexa(this.helper, this.configs).generateTs(); break;
+                case 'model': new EntitiesHexa(this.helper, this.configs).generateTs(); break;
+                case 'repos': new ReposHexa(this.helper, this.configs).generateTs(); break;
+                case 'uow': new UowHexa(this.helper, this.configs).generateTs(); break;
+                case 'controllers': new ControllersHexa(this.helper, this.configs).generateTs(); break;
 
                 default: break;
             }

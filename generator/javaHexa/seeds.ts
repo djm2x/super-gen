@@ -2,16 +2,16 @@ import * as fse from 'fs-extra';
 import { HelperFunctions } from '../helper.functions';
 import { IConfigs } from '../map.helper';
 
-export class Seeds {
+export class SeedsHexa {
     constructor(private helper: HelperFunctions, private configs: IConfigs) { }
 
     generateTs() {
         let seeds = '';
 
 
-        
+        let importModels = '';
 
-        seeds = `package ${this.configs.nameSpace}.models.seed;\r\n\r\n` +
+        seeds = `package ${this.configs.nameSpace}.shared.seeds;\r\n\r\n` +
             `import org.springframework.beans.factory.annotation.Autowired;\r\n` +
             `import org.springframework.boot.context.event.ApplicationReadyEvent;\r\n` +
             `import org.springframework.context.event.EventListener;\r\n` +
@@ -20,8 +20,8 @@ export class Seeds {
             `import java.util.*;\r\n\r\n` +
 
             `import com.github.javafaker.Faker;\r\n` +
-            `import com.transport.logisticsrepository.models.*;\r\n` +
-            `import com.transport.logisticsrepository.repositories.UowService;\r\n` +
+            `importModels\r\n` +
+            `import ${this.configs.nameSpace}.shared.repositories.UowService;\r\n` +
 
             `@Component\r\n` +
             `public class DatabaseSeeder {\r\n\r\n` +
@@ -39,7 +39,11 @@ export class Seeds {
             const cls = this.helper.Cap(e.class);
             const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls + 's';
             seeds += `\t\tAdd${classNamePlural}();\r\n`;
-        })
+
+            importModels += `import ${this.configs.nameSpace}.components.${e.class}.models.*;\r\n`;
+        });
+
+        seeds = seeds.replace('importModels', importModels);
 
         seeds += `\t}\r\n\r\n`;
 
@@ -79,7 +83,7 @@ export class Seeds {
                     }
                 }
 
-            });
+            }); 
             seeds = seeds.substring(0, seeds.length - 3);
 
             seeds += `\r\n\t\t\t);\r\n\r\n`;

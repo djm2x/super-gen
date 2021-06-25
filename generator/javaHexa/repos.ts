@@ -2,7 +2,7 @@ import * as fse from 'fs-extra';
 import { HelperFunctions } from '../helper.functions';
 import { IConfigs } from '../map.helper';
 
-export class Repos {
+export class ReposHexa {
     constructor(private helper: HelperFunctions, private configs: IConfigs) { }
 
 
@@ -23,7 +23,9 @@ export class Repos {
             const classNamePlural = cls.endsWith('s') ? cls + 'es' : cls.endsWith('y') ? cls.slice(0, -1) + 'ies' : cls + 's';
 
             repo = `package ${this.configs.nameSpace}.components.${e.class}.repositories;\r\n\r\n`+
-            `import ${this.configs.nameSpace}.components.${e.class}.*;\r\n\r\n`+
+            `import ${this.configs.nameSpace}.shared.repositories.GenericRepository;\r\n`+
+            `import ${this.configs.nameSpace}.components.${e.class}.models.*;\r\n\r\n`+
+
             `public interface ${classNamePlural}Repository extends GenericRepository<${cls}, Long> { }\r\n`;
 
             fse.ensureDirSync(`${this.configs.aspFolder}/components/${e.class}/repositories`);

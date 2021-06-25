@@ -11,7 +11,7 @@ export class Agency {
 }
 
 export class BaseOrderStatus {
-  id = '';
+  id = 0;
   label = '';
 }
 
