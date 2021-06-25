@@ -93,7 +93,7 @@ async function parseScore() {
 
     const r = JSON.parse(file as any) as NoterGroup[];
     let noterGroupString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT noter_groups ON\r\nINSERT INTO noter_groups (id, id_parent ,level ,name ,weight) VALUES\r\n';
-    let indicatorString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT indicators ON\r\nINSERT INTO indicators (id, hint ,id_noter_group ,name ,source_type ,type ,wa ,weight) VALUES\r\n';
+    let indicatorString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT indicators ON\r\nINSERT INTO indicators (id, hint ,id_noter_group ,name ,source_type ,type ,wa ,weight, normalizer) VALUES\r\n';
     let rangeNormalizerString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT range_normalizers ON\r\nINSERT INTO range_normalizers (id, r0 ,r1 ,r2 ,r3 ,r4 ,id_indicator) VALUES\r\n';
     let mapNormalizerString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT map_normalizers ON\r\nINSERT INTO map_normalizers (id, _key ,value ,id_indicator) VALUES\r\n';
     let functionNormalizerString = 'use crs\r\nGO\r\nSET IDENTITY_INSERT function_normalizers ON\r\nINSERT INTO function_normalizers (id, _function ,id_indicator) VALUES\r\n';
@@ -110,16 +110,17 @@ async function parseScore() {
     r.map(e => e['sv.score.NoterGroup'][0]).forEach((ng1, i) => {
         // noterGroupId3 = 0;
         // noterGroupId = noterGroupId2 !== 0 ? noterGroupId2 + 1 + 1 : 1 + i
+        const parentId1 = noterGroupId + 1
         noterGroupString += `(${++noterGroupId}, NULL, 1, '${h(ng1.name)?.replace("'", "`")}', ${h(ng1.weight)}),\r\n`;
 
         // multi level 2
         ng1.subNoters[0].entry.map(e => e['sv.score.NoterGroup'][0]).forEach((ng2, j) => {
-            // noterGroupId2 = noterGroupId3 !== 0 ? noterGroupId3 + 1 : noterGroupId + 1 + j
-            noterGroupString += `(${++noterGroupId}, ${noterGroupId - 1}, 2, '${h(ng2.name)?.replace("'", "`")}', ${h(ng2.weight)}),\r\n`;
+            const parentId2 = noterGroupId + 1
+            noterGroupString += `(${++noterGroupId}, ${parentId1}, 2, '${h(ng2.name)?.replace("'", "`")}', ${h(ng2.weight)}),\r\n`;
 
             ng2.subNoters[0].entry.map(e => e['sv.score.NoterGroup'][0]).forEach((ng3, k) => {
-                // noterGroupId3 = noterGroupId2 + 1 + k
-                noterGroupString += `(${++noterGroupId}, ${noterGroupId - 1}, 3, '${h(ng3.name)?.replace("'", "`")}', NULL),\r\n`;
+                const parentId3 = noterGroupId + 1
+                noterGroupString += `(${++noterGroupId}, ${parentId2}, 3, '${h(ng3.name)?.replace("'", "`")}', NULL),\r\n`;
 
                 ng3.subNoters[0].entry.map(e => e['sv.score.indicators.Indicator'][0]).forEach((ind, j) => {
 
@@ -128,24 +129,46 @@ async function parseScore() {
 
                     const type = h(ind.scorableClass).substring(h(ind.scorableClass).lastIndexOf('.') + 1);
 
-                    indicatorString += `(${++indicatorId}, ${h(ind.hint) === null ?  'NULL' : "'" + h(ind.hint) + "'" }, ${noterGroupId}, '${h(ind.name)?.replace("'", "`")}','${source_type}', '${type}', ${h(ind.wa) === 'true' ? 1 : 0}, ${ind.weight}),\r\n`;
-
-
+                    
+                    let normalizer: RangeNormalizer | MapNormalizer | FunctionNormalizer = {} as any;
                     if (source_type === 'RangeNormalizer') {
                         const n = ind.normalizer[0] as RangeNormalizer;
+                        normalizer = n;
+                        delete normalizer.$;
+
+                        (normalizer as any).r0 = normalizer?.r0?.length > 0 ? normalizer?.r0[0] : '';
+                        (normalizer as any).r1 = normalizer?.r1?.length > 0 ? normalizer?.r1[0] : '';
+                        (normalizer as any).r2 = normalizer?.r2?.length > 0 ? normalizer?.r2[0] : '';
+                        (normalizer as any).r3 = normalizer?.r3?.length > 0 ? normalizer?.r3[0] : '';
+                        (normalizer as any).r4 = normalizer?.r4?.length > 0 ? normalizer?.r4[0] : '';
+
                         rangeNormalizerString += `(${++rangeNormalizerId}, ${h(n.r0)}, ${h(n.r1)}, ${h(n.r2)}, ${h(n.r3)}, ${h(n.r4)}, ${indicatorId}),\r\n`
                     } else if (source_type === 'MapNormalizer') {
                         const n = ind.normalizer[0] as MapNormalizer;
 
-                        n.map[0].entry.forEach(m => {
+                        // normalizer = n;
+                        // delete normalizer.$;
 
-                            mapNormalizerString += `(${++mapNormalizerId}, '${h(m.string)}', ${h(m.double)}, ${indicatorId}),\r\n`
+                        (normalizer as any).mapValue = '';
+                        
+                        n.map[0].entry.forEach((m, mi) => {
+                            (normalizer as any).mapValue += `${h(m.string)}:${h(m.double)}${n.map[0].entry.length > (mi + 1) ? ',' : ''}`;
+                            mapNormalizerString += `(${++mapNormalizerId}, '${h(m.string)}', ${h(m.double)}, ${indicatorId}),\r\n`;
                         })
+
                     } else {
                         const n = ind.normalizer[0] as FunctionNormalizer;
 
+                        // normalizer = n;
+                        // delete normalizer.$;
+
+                        (normalizer as any).functionValue = h(n.function);
+                        
                         functionNormalizerString += `(${++functionNormalizerId}, '${h(n.function)}', ${indicatorId}),\r\n`
                     }
+
+
+                    indicatorString += `(${++indicatorId}, ${h(ind.hint) === null ?  'NULL' : "'" + h(ind.hint) + "'" }, ${parentId3}, '${h(ind.name)?.replace("'", "`")}','${source_type}', '${type}', ${h(ind.wa) === 'true' ? 1 : 0}, ${ind.weight}, '${JSON.stringify(normalizer)}'),\r\n`;
                 });
             });
         });

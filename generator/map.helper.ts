@@ -32,14 +32,14 @@ export class MapHelper {
     private generatedAppPath0 = `${this.pathAbs}/generated_app`;
     private generatedAppPath = `${this.pathAbs}/test`;
     private helper = new HelperFunctions();
-    private modelsTs = `${this.pathAbs}/generator/modelsCrs.ts`;
+    private modelsTs = `${this.pathAbs}/generator/models.ts`;
 
     private configs: IConfigs = {
         pathAbs: this.pathAbs,
         modelsTs: this.modelsTs,
         angularAppFolder: `${this.generatedAppPath}/angular/src/app`,
         aspFolder: this.generatedAppPath,
-        nameSpace: 'com.transport.logisticsrepository',
+        nameSpace: 'com.logistics.order',
         currentBaseFile: '',
         pathBaseFiles: '',
         replaceModels: true,
@@ -145,6 +145,26 @@ export class MapHelper {
         });
 
         console.log('       asp generation done');
+    }
+
+    mapJavaHexa() {
+        const list = ['model', 'repos', 'controllers', 'seeds']
+
+        this.configs.pathBaseFiles = `${this.pathAbs}/generator/javaHexa/base.files`;
+
+        list.forEach(file => {
+
+            switch (file) {
+                case 'model': new Entities(this.helper, this.configs).generateTs(); break;
+                case 'repos': new Repos(this.helper, this.configs).generateTs(); break;
+                case 'controllers': new Controllers(this.helper, this.configs).generateTs(); break;
+                // case 'seeds': new Seeds(this.helper, this.configs).generateTs(); break;
+
+                default: break;
+            }
+        });
+
+        console.log('       java hexa generation done');
     }
 
     mapJava() {

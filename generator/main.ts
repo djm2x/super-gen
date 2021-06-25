@@ -8,9 +8,9 @@ function main(argvs: string[]) {
     const m = new MapHelper(isDev);
 
     m.onInit();
-    m.mapAngular();
+    // m.mapAngular();
     // m.mapAsp();
-    // m.mapJava();
+    m.mapJavaHexa();
     // m.mapIonic();
 }
 
