@@ -39,6 +39,7 @@ export class Operation {
   contract_id     = 0;
   start_datetime  = new Date();
   end_datetime    = new Date();
+  operation_instruction = '';
   order_id         = 0;
   order: Order;
   orderStatuses: OrderStatus[] = [];
@@ -68,23 +69,17 @@ export class Order {
   user_id                  = 0;
   creation_date            = new Date();
   updated_date               = new Date();
-  agency_id                = 0;
-  agency: Agency;
 
-  orderConstraints: OrderConstraint[] = [];
-  operations: Operation[] = [];
-}
-
-export class OrderConstraint {
-  id = 0;
   pickup_start_datetime   = new Date();
   pickup_end_datetime     = new Date();
   pickup_instruction      = '';
   delivery_start_datetime = new Date();
   delivery_end_datetime   = new Date();
-  delivery_instruction    = '';
-  order_id                 = 0;
-  order: Order;
+
+  agency_id                = 0;
+  agency: Agency;
+
+  operations: Operation[] = [];
 }
 
 

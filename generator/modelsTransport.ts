@@ -24,6 +24,24 @@ export class BillCriteria {
 
 }
 
+export class UpdateToValidate {
+  id = 0;
+  table_name = '';
+  object_id = 0;
+  object_name = '';
+  old_value = '';
+  new_value = '';
+  type_of_value = '';
+  status = '';
+  comment = '';
+  creation_date = new Date();
+  created_by = 0;
+  update_date = new Date();
+  updated_by = 0;
+
+  document_id = 0;
+  document = new Document();
+}
 export class City {
   id = 0;
   name = '';
@@ -109,6 +127,7 @@ export class Document {
   super_entity_id = 0;
   super_entity = new SuperEntity();
 
+  updateToValidates: UpdateToValidate[] = [];
 }
 
 export class Group {

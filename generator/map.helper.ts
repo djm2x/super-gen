@@ -37,14 +37,14 @@ export class MapHelper {
     private generatedAppPath0 = `${this.pathAbs}/generated_app`;
     private generatedAppPath = `${this.pathAbs}/test`;
     private helper = new HelperFunctions();
-    private modelsTs = `${this.pathAbs}/generator/models.ts`;
+    private modelsTs = `${this.pathAbs}/generator/modelsTransport.ts`;
 
     private configs: IConfigs = {
         pathAbs: this.pathAbs,
         modelsTs: this.modelsTs,
         angularAppFolder: `${this.generatedAppPath}/angular/src/app`,
         aspFolder: this.generatedAppPath,
-        nameSpace: 'com.logistics.order',
+        nameSpace: 'com.logistics.repo',
         currentBaseFile: '',
         pathBaseFiles: '',
         replaceModels: true,
